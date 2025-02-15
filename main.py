@@ -1,6 +1,6 @@
-from decrypt import remove_password_from_pdf
-from extract import extract_and_clean
-from get_info import get_customer_name, get_transactions
+from utils.decrypt import remove_password_from_pdf
+from utils.extract import extract_and_clean
+from utils.get_info import get_customer_name, get_transactions
 
 remove_password_from_pdf("documents/statement.pdf", "open-statement.pdf", "855268")
 

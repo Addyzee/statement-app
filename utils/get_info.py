@@ -1,5 +1,5 @@
 import re
-from utils import transaction_mapper
+from utils.transaction_mapper import transaction_mapper
 
 
 def get_customer_name(text):
