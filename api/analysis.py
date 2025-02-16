@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 from typing import Dict, List
 from collections.abc import Callable
-from api.data.clean import clean_data
+from data.clean import clean_data
 
 data = clean_data()
 
