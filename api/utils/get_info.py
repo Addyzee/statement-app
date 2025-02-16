@@ -101,4 +101,4 @@ async def get_transactions(text):
         raise e
     output_dir = get_output_dir()
     df = pd.DataFrame(transactions)
-    df.to_csv(f"{output_dir}/transactions.csv")
+    df.to_csv(f"{output_dir}/raw_transactions.csv", index=False)

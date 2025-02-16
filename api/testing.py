@@ -7,7 +7,7 @@ remove_password_from_pdf(password="855268")
 # remove_password_from_pdf(password="353794")
 # remove_password_from_pdf(password="408884")
 
-text = extract_and_clean("documents/output/open_statement.pdf")
+text = extract_and_clean()
 
 async def main():
     customer_name = await get_customer_name(text=text)

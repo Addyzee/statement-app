@@ -1,9 +1,9 @@
 from pypdf import PdfReader
 
-def extract_and_clean(path: str):
-    text = extract_text(path)
+def extract_and_clean(path: str = "data/documents/output", file_name: str = "open_statement.pdf"):
+    text = extract_text(f"{path}/{file_name}")
     text = remove_table_headers(text)
-    with open("pdftext.txt","w") as f:
+    with open(f"{path}/pdftext.txt","w") as f:
         f.write(text)
     return text
 
