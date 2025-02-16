@@ -29,6 +29,23 @@ transaction_types = {
 def find_2nd(string, substring):
    return string.find(substring, string.find(substring) + 1)
 
+def party_account_number(party: str):
+    party = party.strip()
+    split = party.find("=")
+    if split == -1:
+        split = party.find(" ")
+        if split == -1:
+            account_number = party 
+            party_dets = party
+        else: 
+            account_number = party[:split].strip()
+            party_dets = party[split:].strip()
+    else:
+        account_number = party[:split]
+        party_dets = party[split:].strip()
+    return account_number.strip(), party_dets.strip("-").strip()
+  
+
 
 def words_checker(info: str):
     info = info.lower()
@@ -60,19 +77,21 @@ def transaction_mapper(description: str, amount: int, mid: bool = False):
     ):  # mid represents a hyphen. Safaricom transactions don't have a hyphen
         t_type_description = description
         t_party_description = "Safaricom"
+        t_acc, t_party_dets = party_account_number(t_party_description)
+
 
     elif mid == True:
         splitter_1, splitter_2 = words_checker(description)
         t_type_description = description[:splitter_1].strip().replace("\n", "")            
         t_party_description = description[splitter_2:].strip().replace("\n", "").strip("-")
+        t_acc, t_party_dets = party_account_number(t_party_description)
     
     
 
     if description == "":
         t_type_description = "No description"
-        return t_type_description, direction, t_party_description
+        return t_type_description, direction, t_acc, t_party_dets
     
-
 
     description_lower = t_type_description.lower()
     
@@ -80,7 +99,7 @@ def transaction_mapper(description: str, amount: int, mid: bool = False):
 
     for transaction_type in transaction_types.keys():
         if transaction_type.lower() in description_lower:            
-            return transaction_types[transaction_type], direction, t_party_description
+            return transaction_types[transaction_type], direction, t_acc, t_party_dets
 
-    return f"Unidentified: {description}", direction, t_party_description
+    return f"Unidentified: {description}", direction, t_acc, t_party_dets
 

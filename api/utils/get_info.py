@@ -87,14 +87,14 @@ async def get_transactions(text):
             mid = info[0].find(" -")
 
             if mid != -1:
-                transaction["Type"], transaction["Direction"], transaction["Party"] = (
+                transaction["Type"], transaction["Direction"], transaction["Account"], transaction["Party Details"] = (
                     transaction_mapper(
                         description=info[0], amount=transaction["Amount"], mid=True
                     )
                 )
 
             if mid == -1:
-                transaction["Type"], transaction["Direction"], transaction["Party"] = (
+                transaction["Type"], transaction["Direction"], transaction["Account"], transaction["Party Details"] = (
                     transaction_mapper(
                         description=info[0].strip(),
                         amount=transaction["Amount"],

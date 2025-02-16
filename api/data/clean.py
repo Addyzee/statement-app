@@ -7,11 +7,16 @@ def remove_negatives(data: pd.DataFrame):
     data["Amount"] = data["Amount"].map(lambda x: abs(x))
     return data
 
+def uniform_safaricom_naming(data: pd.DataFrame):
+    data.loc[data["Account"].str.lower().str.contains("safaricom"),"Account"] = "Safaricom"
+    return data
+
 def clean_data(path: str = f"{output_dir}/raw_transactions.csv"):
     try:
         data = pd.read_csv(path)
         data = remove_negatives(data=data)
-        data.to_csv("data/transactions.csv")
+        data = uniform_safaricom_naming(data=data)
+        data.to_csv("data/transactions.csv", index=False)
         return remove_negatives(data=data)
     except Exception as e:
         raise e

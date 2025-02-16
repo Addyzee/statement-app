@@ -68,7 +68,7 @@ def convert_to_default(defaulter_function: Callable[[],np.ndarray], object: List
         raise "Type must be str, list, or None"
     
 def get_transaction_parties_per_type(type:str, max:int=10, data: pd.DataFrame = data):
-    data.loc[data["Type"] == type,"Party"]
+    return data.loc[data["Type"] == type,"Party"].unique()
 
 
 def amount_per_party(
