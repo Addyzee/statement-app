@@ -1,5 +1,6 @@
 import re
 import json
+import pandas as pd
 from utils.transaction_mapper import transaction_mapper
 from utils.dirs import get_output_dir
 from typing import List
@@ -97,8 +98,7 @@ async def get_transactions(text):
 
             transactions.append(transaction)
     except Exception as e:
-        print(e, chunk, idx)
-        print(chunks[idx+1])
+        raise e
     output_dir = get_output_dir()
-    with open(f"{output_dir}/transactions.json", "w") as outfile:
-        json.dump(transactions, outfile, indent=4)
+    df = pd.DataFrame(transactions)
+    df.to_csv(f"{output_dir}/transactions.csv")
