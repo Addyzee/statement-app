@@ -3,6 +3,8 @@ from pypdf import PdfReader
 def extract_and_clean(path: str):
     text = extract_text(path)
     text = remove_table_headers(text)
+    with open("pdftext.txt","w") as f:
+        f.write(text)
     return text
 
 def extract_text(path:str):

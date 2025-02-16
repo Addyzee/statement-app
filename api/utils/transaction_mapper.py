@@ -5,6 +5,7 @@ transaction_types = {
     "Recharge": "Airtime",
     "Airtime Purchase":"Airtime",
     "Customer Bundle Purchase": "Airtime",
+    "Buy Bundles":"Airtime",
     "Pay Bill": "Paybill",
     "Customer Payment to SmallBusiness": "Pochi la Biashara",
     "Merchant Payment": "Buy Goods",
@@ -17,25 +18,27 @@ transaction_types = {
     "Customer Withdrawal": "Withdraw Money",
     "Deposit": "Deposit Cash",
     "M-Shwari Loan": "M-Shwari Loan",
-    "Withdrawal Charge": "Safaricom Charges",
+    "Withdrawal Charge": "Withdrawal Charges",
     "IMT Send Charge": "Safaricom Charges",
     "Pay Merchant Charge": "Safaricom Charges",
     "": "No description" 
 }
 
-def transaction_mapper(description: str):
-    if 'to' in description:
+def transaction_mapper(description: str, amount: int):
+    if amount < 0:
         direction = "Out"
-    elif "from" in description:
-        direction = "In"
     else:
-        direction = "Out"
-        
+        direction = "In"
+
+    if description == "":
+        return "No description", direction
+
+    description_lower = description.lower()
+    
     for transaction_type in transaction_types.keys():
-        if transaction_type in description:
-            t_type = transaction_types[transaction_type]
-            break
-        else:
-            t_type = f"Unidentified: {description}"
-    return t_type, direction
+        if transaction_type.lower() in description_lower:
+            return transaction_types[transaction_type], direction
+
+    return f"Unidentified: {description}", direction
+
         

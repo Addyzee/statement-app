@@ -24,7 +24,7 @@ def remove_password_from_pdf(filename=dir_name, output_name="open_statement.pdf"
         return output_path
 
     except Exception as e:
-        raise Exception
+        raise e
 
 
 
