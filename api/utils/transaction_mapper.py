@@ -1,3 +1,5 @@
+import re
+
 transaction_types = {
     "Customer Transfer": "Send money",
     "Funds received": "Receive money",
@@ -6,6 +8,7 @@ transaction_types = {
     "Airtime Purchase": "Airtime",
     "Customer Bundle Purchase": "Airtime",
     "Buy Bundles": "Airtime",
+    "Pay Bill Charge": "Safaricom Charges",
     "Pay Bill": "Paybill",
     "Customer Payment to Small": "Pochi la Biashara",
     "Merchant Payment": "Buy Goods",
@@ -49,21 +52,27 @@ def party_account_number(party: str):
 
 def words_checker(info: str):
     info = info.lower()
-    if " to" in info:
-        count = info.count(" to")
-        split = info.find(" to") if count == 1 else find_2nd(info, " to")
-        return split, split + 3
-    elif "from" in info:
-        count = info.count("from")
-        split = info.find("from") if count == 1 else find_2nd(info, "from")
-        return split, split + 5
-    elif " at" in info:
-        count = info.count(" at")
-        split = info.find(" at") if count == 1 else find_2nd(info, " at")
-        return split, split + 3
+
+    if re.search(r'\bto\b', info):
+        matches = list(re.finditer(r'\bto\b', info))  
+        split = matches[0].start() if len(matches) == 1 else matches[1].start()
+        return split, split + 2  
+
+    elif re.search(r'\bfrom\b', info):
+        matches = list(re.finditer(r'\bfrom\b', info))
+        split = matches[0].start() if len(matches) == 1 else matches[1].start()
+        return split, split + 4  
+
+    elif re.search(r'\bat\b', info):
+        matches = list(re.finditer(r'\bat\b', info))
+        split = matches[0].start() if len(matches) == 1 else matches[1].start()
+        return split, split + 2 
+
+    # Default case: look for " -"
     else:
         split = info.find(" -")
-        return split, split + 2
+        return (split, split + 2) if split != -1 else (-1, -1) 
+
 
 
 def transaction_mapper(description: str, amount: int, mid: bool = False):
