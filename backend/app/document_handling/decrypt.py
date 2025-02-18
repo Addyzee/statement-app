@@ -1,7 +1,7 @@
 import os
 from pypdf import PdfReader, PdfWriter
-from utils.dirs import get_output_dir, get_document_dir
-dir_name = get_document_dir()
+from app.config import DOCUMENT_DIR, OUTPUT_DIR
+dir_name = DOCUMENT_DIR
 
 
 def remove_password_from_pdf(filename=dir_name, output_name="open_statement.pdf", password=None):
@@ -14,7 +14,7 @@ def remove_password_from_pdf(filename=dir_name, output_name="open_statement.pdf"
 
         writer = PdfWriter(clone_from=reader)
 
-        output_dir = get_output_dir()
+        output_dir = OUTPUT_DIR
         os.makedirs(output_dir, exist_ok=True)
 
         output_path = os.path.join(output_dir, output_name)

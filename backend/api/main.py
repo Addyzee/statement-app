@@ -1,7 +1,7 @@
 from fastapi import FastAPI
-from utils.get_info import get_customer_name
-from utils.extract import extract_and_clean
-from utils.decrypt import remove_password_from_pdf
+from backend.app.data_writing.write_data import get_customer_name
+from backend.app.document_handling.extract import extract_and_clean
+from backend.app.document_handling.decrypt import remove_password_from_pdf
 
 text = extract_and_clean("documents/output/open_statement.pdf")
 

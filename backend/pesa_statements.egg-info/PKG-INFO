@@ -1,0 +1,7 @@
+Metadata-Version: 2.2
+Name: pesa_statements
+Version: 0.1
+Requires-Dist: pandas
+Requires-Dist: pypdf2
+Requires-Dist: fastapi
+Dynamic: requires-dist
