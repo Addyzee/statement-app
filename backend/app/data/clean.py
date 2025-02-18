@@ -14,9 +14,10 @@ def uniform_safaricom_naming(data: pd.DataFrame):
     data.loc[data["Type"].str.lower().str.contains("airtime"),"Account Name"] = "Safaricom"    
     return data
 
-def uniform_mali_naming(data: pd.DataFrame):
-    data.loc[data["Account Name"].str.lower().str.contains("mali"), "Account Name"] = \
-    data.loc[data["Account Name"].str.lower().str.contains("mali"), "Account Name"].map(lambda x: x[:21])
+
+def remove_original_conversation_messages(data: pd.DataFrame):
+    mask = data["Account Name"].str.lower().str.contains("original conversation", na=False)
+    data.loc[mask, "Account Name"] = data.loc[mask, "Account Name"].map(lambda x: x[:x.lower().find("original conversation")])
     return data
 
     
@@ -26,7 +27,7 @@ def clean_data(path: str = f"{output_dir}/raw_transactions.csv"):
         data = pd.read_csv(path)
         data = remove_negatives(data=data)
         data = uniform_safaricom_naming(data=data)
-        data = uniform_mali_naming(data=data)
+        data = remove_original_conversation_messages(data=data)
         data.to_csv(DATA_DIR / "transactions.csv", index=False)
         return remove_negatives(data=data)
     except Exception as e:

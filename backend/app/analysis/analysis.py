@@ -165,4 +165,5 @@ def amount_per_account_name_per_type(
 # print(amount_per_account_name_per_type(transaction_type="Receive money" ))
 # print(get_account_names_sum())
 # print(get_transaction_types_sum())
-print(amount_outin_per_account_name()["In"])
+# print(amount_outin_per_account_name()["In"])
+# print(total_cashflow(data=querying("Account Name", "Andrew Kamau Kimani")))
