@@ -1,27 +1,36 @@
-import { ChangeEvent, useState } from "react";
+import { ChangeEvent, useRef, useState } from "react";
 import { Button } from "./ui/button";
 import axios from "axios";
 
-type UploadStatus = "idle" | "uploading" | "success" | "error";
+type UploadStatus = "idle" | "instate" | "uploading" | "success" | "error";
 
 const FileUploader = () => {
   const [pdfFile, setPDFFile] = useState<File | null>(null);
   const [status, setStatus] = useState<UploadStatus>("idle");
   const [uploadProgress, setUploadProgress] = useState(0);
+  const fileRef = useRef<HTMLInputElement |null>(null);
   const handleFileChange = (e: ChangeEvent<HTMLInputElement>) => {
     if (e.target.files) {
       setPDFFile(e.target.files[0]);
     }
   };
+  const clearFileField = () => {
+    setPDFFile(null);
+    setStatus("idle");
+    setUploadProgress(0);
+    if (fileRef.current){
+        fileRef.current.value = ''
+    }
+  }
   async function handleFileUpload() {
     if (!pdfFile) return;
     setStatus("uploading");
     setUploadProgress(0);
 
     const formData = new FormData();
-    formData.append("statement", pdfFile);
+    formData.append("file", pdfFile);
     try {
-      await axios.post("https://httpbin.org/post", formData, {
+      await axios.post("http://127.0.0.1:8000/upload/", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
@@ -42,17 +51,27 @@ const FileUploader = () => {
 
   return (
     <div className="text-white h-full w-full flex justify-center items-center">
-      <div className="w-3/4 h-1/2 border border-white flex flex-col justify-center items-center">
-        <input type="file" onChange={handleFileChange} />
+      <div className=" border border-white flex flex-col items-center p-3 gap-2">
+        {pdfFile && status != "uploading" && (
+          <div className="flex justify-end w-full">
+            <button onClick={clearFileField}>X</button>
+          </div>
+        )}
+
+
+        <input ref={fileRef} type="file" onChange={handleFileChange} className=""/>
         {pdfFile && (
           <div>
-            <p>{pdfFile.name.slice(0,20)}</p>
-            <p>{(pdfFile.size / 1024).toFixed(2)}</p>
-            <p>{pdfFile.type}</p>
+            <p>
+              {pdfFile.name.slice(0, 10)}
+            </p>
           </div>
         )}
         {pdfFile && status != "uploading" && (
-          <Button onClick={handleFileUpload}>Upload Button</Button>
+          <div>
+
+            <Button onClick={handleFileUpload}>Upload Button</Button>
+          </div>
         )}
         {pdfFile && status === "uploading" && (
           <p className="text-green-600">Upload status: {uploadProgress}%</p>
