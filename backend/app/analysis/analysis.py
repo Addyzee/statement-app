@@ -2,10 +2,10 @@ import pandas as pd
 import numpy as np
 from typing import Dict, List
 from collections.abc import Callable
-from app.data.clean import clean_data2
+from app.data.clean import clean_data2, clean_data
 
-# data = clean_data()
-data = clean_data2()
+data = clean_data()
+# data = clean_data2()
 
 
 def querying(column: str, condition: str | float, data: pd.DataFrame = data):
@@ -39,8 +39,9 @@ def total_cashflow(
         raise e
 
 
-def get_transaction_types(data: pd.DataFrame = data):
-    return data["Type"].unique()
+def get_transaction_types(data: pd.DataFrame = data)-> List[str]:
+    print("called")
+    return list(data["Type"].unique())
 
 
 def get_transaction_types_sum(data: pd.DataFrame = data):
@@ -48,10 +49,11 @@ def get_transaction_types_sum(data: pd.DataFrame = data):
 
 
 def amount_outin_per_transaction_type(
-    transaction_types: str | List[str] | None = None, data: pd.DataFrame = data
+    data: pd.DataFrame, transaction_types: str | List[str] | None = None
 ) -> Dict[str, Dict[str, float]]:
 
     transaction_types = convert_to_default(
+        data=data,
         object=transaction_types, defaulter_function=get_transaction_types
     )
 
@@ -69,16 +71,18 @@ def amount_outin_per_transaction_type(
     return mapped_amounts
 
 
-def get_top_account_names_outin(data: pd.DataFrame = data):
+def get_top_account_names_outin(data: pd.DataFrame):
     return (list(get_account_names_sum(data[data["Direction"] == "Out"], 10).keys()) +list(get_account_names_sum(data[data["Direction"] == "In"], 10).keys()))
     
 
 
 def amount_outin_per_account_name(
-    account_names: str | List[str] | Dict[str, List[str]] | None = None, data: pd.DataFrame = data
+    data: pd.DataFrame,
+    account_names: str | List[str] | Dict[str, List[str]] | None = None
 ) -> Dict[str, Dict[str, float]]:
     
     account_names = convert_to_default(
+        data=data,
         object=account_names, defaulter_function=get_top_account_names_outin
     )
 
@@ -97,10 +101,10 @@ def amount_outin_per_account_name(
 
 
 def convert_to_default(
-    defaulter_function: Callable[[], np.ndarray], object: List[str] | str | None
+    defaulter_function: Callable[[], List[str]], data:pd.DataFrame, object: List[str] | str | None
 ):
     if object == None:
-        return defaulter_function()
+        return defaulter_function(data)
     elif type(object) == str:
         return [object]
     elif type(object) == List[str]:
@@ -157,6 +161,19 @@ def amount_per_account_name_per_type(
             .reset_index()
             .to_dict(orient="records")
         )
+        
+def transaction_type_analysis(data:pd.DataFrame):
+    try:
+        transaction_types = get_transaction_types(data)
+        frequencies = get_transaction_types_sum(data)    
+        amounts = amount_outin_per_transaction_type(data)
+        return {
+            "transaction_types": transaction_types,
+            "frequencies": frequencies,
+            "amounts": amounts
+        }
+    except Exception as e:
+        raise e
 
 
 # print(total_cashflow())

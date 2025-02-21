@@ -104,4 +104,4 @@ async def get_customer_name(text):
     length = text[start:].find("\n")
     line = text[start : start + length]
     
-    return line.split(":")[1]
+    return line.split(":")[1].strip()

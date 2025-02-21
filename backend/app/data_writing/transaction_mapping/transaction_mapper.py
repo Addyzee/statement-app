@@ -53,7 +53,7 @@ def transaction_mapper(description: str, amount: int, mid: bool = False):
     
 
     for transaction_type in transaction_types.keys():
-        if transaction_type.lower() in description_lower:                     
+        if transaction_type.lower() in description_lower:   
             return transaction_types[transaction_type], direction, t_acc_id, t_acc_name
 
     return f"Unidentified: {t_type_description}", direction, t_acc_id, t_acc_name
