@@ -1,4 +1,5 @@
 import { ChangeEvent, useRef, useState } from "react";
+import { ArchiveX } from "lucide-react";
 import { Button } from "./ui/button";
 import axios from "axios";
 
@@ -6,6 +7,7 @@ type UploadStatus = "idle" | "instate" | "uploading" | "success" | "error";
 
 const FileUploader = () => {
   const [pdfFile, setPDFFile] = useState<File | null>(null);
+  const [password, setPassword] = useState<string | null>(null);
   const [status, setStatus] = useState<UploadStatus>("idle");
   const [uploadProgress, setUploadProgress] = useState(0);
   const fileRef = useRef<HTMLInputElement | null>(null);
@@ -22,14 +24,22 @@ const FileUploader = () => {
       fileRef.current.value = "";
     }
   };
+
+  const recordPassword = (e: ChangeEvent<HTMLInputElement>) => {
+    if (e.target.value) {
+      setPassword(e.target.value);
+    }
+  };
+
   async function handleFileUpload() {
     if (!pdfFile) return;
+    if (!password) return;
     setStatus("uploading");
     setUploadProgress(0);
 
     const formData = new FormData();
     formData.append("file", pdfFile);
-    formData.append("password", "408884");
+    formData.append("password", password);
     try {
       await axios.post("http://127.0.0.1:8000/decrypt/", formData, {
         headers: {
@@ -51,30 +61,43 @@ const FileUploader = () => {
   }
 
   return (
-    <div className="text-white h-full w-full flex justify-center items-center">
-      <div className=" border border-white flex flex-col items-center p-3 gap-2">
-        {pdfFile && status != "uploading" && (
-          <div className="flex justify-end w-full">
-            <button onClick={clearFileField}>X</button>
-          </div>
-        )}
+    <div className="flex flex-col gap-3 justify-center items-center ">
+      <h2 className="text-lg">Upload your M-PESA statement pdf</h2>
+      <div
+        className={` border border-white flex flex-col justify-center items-center p-3 gap-2 ${
+          !pdfFile ? "hover:bg-slate-800" : ""
+        }`}
+      >
+        <div className="flex gap-5">
+          {!pdfFile && (
+            <input
+              ref={fileRef}
+              type="file"
+              onChange={handleFileChange}
+              className="flex justify-center"
+            />
+          )}
 
-        <input
-          ref={fileRef}
-          type="file"
-          onChange={handleFileChange}
-          className=""
-        />
-        {pdfFile && (
-          <div>
-            <p>{pdfFile.name.slice(0, 10)}</p>
-          </div>
-        )}
-        {pdfFile && status != "uploading" && (
-          <div>
-            <Button onClick={handleFileUpload}>Upload Button</Button>
-          </div>
-        )}
+          {pdfFile && status != "uploading" && (
+            <div className="border border-white px-2 flex gap-5 hover:bg-yellow-300 hover:text-black">
+              <label>
+                {pdfFile.name.slice(0, 20)}
+                <input
+                  ref={fileRef}
+                  type="file"
+                  onChange={handleFileChange}
+                  className=" justify-center hidden"
+                />
+              </label>
+            </div>
+          )}
+          {pdfFile && status != "uploading" && (
+            <div className="flex justify-end cursor-pointer">
+              <ArchiveX onClick={clearFileField}></ArchiveX>
+            </div>
+          )}
+        </div>
+
         {pdfFile && status === "uploading" && (
           <p className="text-green-600">Upload status: {uploadProgress}%</p>
         )}
@@ -84,7 +107,24 @@ const FileUploader = () => {
         {pdfFile && status === "error" && (
           <p className="text-red-700">Upload failed. Please try again.</p>
         )}
+        {pdfFile && status != "uploading" && (
+          <div className="flex gap-3">
+            <label htmlFor="password">Enter statement password</label>
+            <input
+              type="text"
+              name="password"
+              id=""
+              className="border border-white text-right"
+              onChange={recordPassword}
+            />
+          </div>
+        )}
       </div>
+      {pdfFile && status != "uploading" && (
+        <div>
+          <Button onClick={handleFileUpload}>Upload Button</Button>
+        </div>
+      )}
     </div>
   );
 };

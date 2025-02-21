@@ -23,13 +23,6 @@ app.add_middleware(
 )
 
 
-# text = extract_and_clean()
-
-
-# @app.get("/summary")
-# async def get_summary():
-#     customer_name = await get_customer_name(text=text)
-#     return {"Customer Name": customer_name}
 
 @app.post("/upload/")
 async def upload_statement(file: UploadFile):
@@ -41,11 +34,12 @@ async def decrypt_pdf(file: UploadFile, password: Annotated[str, Body()]):
         decrypted_file = remove_password_from_pdf2(file.file, password)
         text = extract_and_clean2(file=decrypted_file)
         customer_name = await get_customer_name(text=text)
-        print(customer_name)
         return {"the pdf":file.filename,
                 "the name": customer_name}
     except Exception as e:
         raise e
+
+
     
     
     

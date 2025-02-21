@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: QuickSand;
+  src: url('./assets/fonts/Quicksand/Quicksand-VariableFont_wght.ttf');
+}
+
 @plugin "tailwindcss-animate";
 
 @custom-variant dark (&:is(.dark *));
@@ -88,6 +93,7 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+  --font-quicksand: QuickSand, "sans-serif";
 }
 
 @layer base {
