@@ -8,7 +8,7 @@ const FileUploader = () => {
   const [pdfFile, setPDFFile] = useState<File | null>(null);
   const [status, setStatus] = useState<UploadStatus>("idle");
   const [uploadProgress, setUploadProgress] = useState(0);
-  const fileRef = useRef<HTMLInputElement |null>(null);
+  const fileRef = useRef<HTMLInputElement | null>(null);
   const handleFileChange = (e: ChangeEvent<HTMLInputElement>) => {
     if (e.target.files) {
       setPDFFile(e.target.files[0]);
@@ -18,10 +18,10 @@ const FileUploader = () => {
     setPDFFile(null);
     setStatus("idle");
     setUploadProgress(0);
-    if (fileRef.current){
-        fileRef.current.value = ''
+    if (fileRef.current) {
+      fileRef.current.value = "";
     }
-  }
+  };
   async function handleFileUpload() {
     if (!pdfFile) return;
     setStatus("uploading");
@@ -29,8 +29,9 @@ const FileUploader = () => {
 
     const formData = new FormData();
     formData.append("file", pdfFile);
+    formData.append("password", "408884");
     try {
-      await axios.post("http://127.0.0.1:8000/upload/", formData, {
+      await axios.post("http://127.0.0.1:8000/decrypt/", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
@@ -58,18 +59,19 @@ const FileUploader = () => {
           </div>
         )}
 
-
-        <input ref={fileRef} type="file" onChange={handleFileChange} className=""/>
+        <input
+          ref={fileRef}
+          type="file"
+          onChange={handleFileChange}
+          className=""
+        />
         {pdfFile && (
           <div>
-            <p>
-              {pdfFile.name.slice(0, 10)}
-            </p>
+            <p>{pdfFile.name.slice(0, 10)}</p>
           </div>
         )}
         {pdfFile && status != "uploading" && (
           <div>
-
             <Button onClick={handleFileUpload}>Upload Button</Button>
           </div>
         )}

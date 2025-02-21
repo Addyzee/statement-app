@@ -26,13 +26,15 @@ def remove_password_from_pdf(filename=dir_name, output_name="open_statement.pdf"
     except Exception as e:
         raise e
     
-def remove_password_from_pdf2(filename=dir_name, output_name="open_statement.pdf", password=None):
+def remove_password_from_pdf2(file,  password=None):
     try:
-        reader = PdfReader(filename)
+        reader = PdfReader(file)
 
         if reader.is_encrypted:
             if not reader.decrypt(password):  
                 raise ValueError("Incorrect password or decryption failed.")
+        return reader
+            
     except Exception as e:
         return e
         

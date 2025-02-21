@@ -1,9 +1,11 @@
-from fastapi import FastAPI, File, UploadFile
+from fastapi import FastAPI, UploadFile, Body
 from fastapi.middleware.cors import CORSMiddleware
+
+from typing import Annotated
 
 from app.data_writing.write_data import get_customer_name
 from app.document_handling.extract import extract_and_clean
-from app.document_handling.decrypt import remove_password_from_pdf
+from app.document_handling.decrypt import remove_password_from_pdf2
 
 app = FastAPI()
 
@@ -32,6 +34,16 @@ async def get_summary():
 @app.post("/upload/")
 async def upload_statement(file: UploadFile):
     return {"filename":file.filename}
+
+@app.post("/decrypt/")
+async def decrypt_pdf(file: UploadFile, password: Annotated[str, Body()]):
+    try:
+        remove_password_from_pdf2(file, password)
+        return {"filename":file.filename}
+    except Exception as e:
+        raise e
+    
+    
     
 
 
