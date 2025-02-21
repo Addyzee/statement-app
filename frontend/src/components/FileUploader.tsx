@@ -122,7 +122,7 @@ const FileUploader = () => {
       </div>
       {pdfFile && status != "uploading" && (
         <div>
-          <Button onClick={handleFileUpload}>Upload Button</Button>
+          <Button onClick={handleFileUpload}>Upload PDF</Button>
         </div>
       )}
     </div>
