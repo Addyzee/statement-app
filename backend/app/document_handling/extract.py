@@ -1,7 +1,7 @@
 from pypdf import PdfReader
 from app.config import OUTPUT_DIR
 
-def extract_and_clean2(file: PdfReader):
+def extract_and_clean2(file):
     text = extract_text2(file=file)
     text = remove_table_headers(text=text)
     return text
