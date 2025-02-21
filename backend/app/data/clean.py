@@ -32,3 +32,12 @@ def clean_data(path: str = f"{output_dir}/raw_transactions.csv"):
         return remove_negatives(data=data)
     except Exception as e:
         raise e
+    
+def clean_data2(data: pd.DataFrame):
+    try:
+        data = remove_negatives(data=data)
+        data = uniform_safaricom_naming(data=data)
+        data = remove_original_conversation_messages(data=data)
+        return remove_negatives(data=data)
+    except Exception as e:
+        raise e

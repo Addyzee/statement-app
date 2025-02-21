@@ -2,9 +2,10 @@ import pandas as pd
 import numpy as np
 from typing import Dict, List
 from collections.abc import Callable
-from app.data.clean import clean_data
+from app.data.clean import clean_data2
 
-data = clean_data()
+# data = clean_data()
+data = clean_data2()
 
 
 def querying(column: str, condition: str | float, data: pd.DataFrame = data):
