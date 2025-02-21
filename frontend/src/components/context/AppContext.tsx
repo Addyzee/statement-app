@@ -9,12 +9,24 @@ const PagingContext = {
   setCurrentPage: () => {},
 };
 
-type DataContextType = {
+
+type UserContextType = {
   userName: string | null;
+  setUserName: React.Dispatch<React.SetStateAction<string | null>>;
 };
-const DataContext = {
+
+const UserContext: UserContextType = {
   userName: null,
+  setUserName: () => {},
 };
+
+type DataContextType = {
+    userContext: UserContextType
+}
+
+const DataContext = {
+    userContext: UserContext
+}
 
 type AppContextType = {
   pagingContext: PagingContextType;
