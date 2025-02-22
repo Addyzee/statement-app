@@ -1,5 +1,5 @@
 import pandas as pd
-from .analysis import total_cashflow
+from .totals import total_cashflow
 from .utils import convert_to_default
 from typing import Dict, List
 
@@ -24,11 +24,19 @@ def amount_outin_per_transaction_type(
         raise "No transactions"
 
     mapped_amounts = {"In": {}, "Out": {}}
+
+    grouped_data = data.groupby("Type")
+
     for dir in ["In", "Out"]:
-        for transaction_type in transaction_types:
-            df = data[data["Type"] == transaction_type]
+        total = total_cashflow(data=data, direction=dir)
+
+        for transaction_type, df in grouped_data:
             amount = total_cashflow(data=df, direction=dir)
-            if amount > 0:
+            percent = (amount / total * 100) if total != 0 else 0
+
+            if amount > 0 and percent >= 7:
                 mapped_amounts[dir][transaction_type] = amount
+            elif amount > 0 and percent < 7:
+                mapped_amounts[dir].setdefault("others", {})[transaction_type] = amount
 
     return mapped_amounts

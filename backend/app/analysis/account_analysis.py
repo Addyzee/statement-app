@@ -1,7 +1,7 @@
 import pandas as pd
 from typing import Dict, List
 from .utils import convert_to_default
-from .analysis import total_cashflow
+from .totals import total_cashflow
 
 
 def get_top_account_names_outin(data: pd.DataFrame):
