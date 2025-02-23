@@ -1,0 +1,18 @@
+[
+  {
+    "Type": "International Money Transfer Receipt",
+    "Amount": 136167.63
+  },
+  {
+    "Type": "Receive money",
+    "Amount": 546342
+  },
+  {
+    "Type": "Receive money from bank/org",
+    "Amount": 896888
+  },
+  {
+    "Type": "Others",
+    "Amount": 67708
+  }
+]
