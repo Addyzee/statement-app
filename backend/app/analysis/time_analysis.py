@@ -8,6 +8,6 @@ def total_outin_by_month(data: pd.DataFrame):
     
     for date, df in grouped_data:
         month_year = date.strftime("%b-%Y")
-        amounts = total_cashflow(data=df)
+        amounts = total_cashflow(df)
         mapped_amounts[month_year] = amounts
     return mapped_amounts
