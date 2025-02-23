@@ -8,7 +8,12 @@ from app.data_writing.write_data import get_customer_name, write_transactions_da
 from app.document_handling.extract import extract_and_clean2
 from app.document_handling.decrypt import remove_password_from_pdf2
 from app.data.clean import clean_data2
-from app.analysis.analysis import total_cashflow, transaction_type_analysis, get_top_account_names_outin, amount_outin_per_account_name, get_account_names_sum, get_account_names_per_type
+from app.analysis.analysis import (
+    transaction_type_analysis,
+    transaction_accounts_analysis,
+    time_analysis
+)
+from app.analysis.totals import total_cashflow
 
 
 app = FastAPI()
@@ -27,10 +32,10 @@ app.add_middleware(
 )
 
 
-
 @app.post("/upload/")
 async def upload_statement(file: UploadFile):
-    return {"filename":file.filename}
+    return {"filename": file.filename}
+
 
 @app.post("/decrypt/")
 async def decrypt_pdf(file: UploadFile, password: Annotated[str, Body()]):
@@ -41,40 +46,28 @@ async def decrypt_pdf(file: UploadFile, password: Annotated[str, Body()]):
         data = await write_transactions_data2(text)
         clean_data = clean_data2(data)
         analysis = await basic_analysis(data=clean_data)
-                
-        
-        
-        return {"the pdf":file.filename,
-                "the name": customer_name,
-                "analysis": analysis}
+
+        return {
+            "the_pdf": file.filename,
+            "the_name": customer_name,
+            "analysis": analysis,
+        }
     except Exception as e:
         raise e
-    
+
+
 async def basic_analysis(data: pd.DataFrame):
     try:
         total_amounts = total_cashflow(data)
         types_analysis = transaction_type_analysis(data)
-        
+        accounts_analysis = transaction_accounts_analysis(data)
+        months_analysis = time_analysis(data)
+
         return {
             "total_cashflow": total_amounts,
-            "transaction_type_analysis": types_analysis
+            "transaction_type_analysis": types_analysis,
+            "accounts_analysis": accounts_analysis,
+            "months_analysis": months_analysis,
         }
     except Exception as e:
         raise e
- 
-    
-    
-    
-
-
-
-
-
-    
-    
-    
-
-
-
-    
-    
