@@ -1,0 +1,55 @@
+{
+    "the pdf": "statement.pdf",
+    "the name": "ANDREW",
+    "analysis": {
+      "total_cashflow": {
+        "In": "number",
+        "Out": "number"
+      },
+      "transaction_type_analysis": {
+        "types": [
+          "list","of strings"
+        ],
+        "frequencies": {
+          "string": "number",
+          "string2": "number",
+          "a lot of strings...": "corresponding numbers"
+         
+        },
+        "amounts": {
+          "In": {
+            "string": "number",
+          "string2": "number",
+          "a lot of strings...": "corresponding numbers"
+          },
+          "Out": {
+            "string": "number",
+            "string2": "number",
+            "a lot of strings...": "corresponding numbers"
+          }
+        }
+      },
+      "accounts_analysis": {
+        "types": [
+          "list", "of strings"
+        ],
+        "frequencies": {
+            "string": "number",
+            "string2": "number",
+            "a lot of strings...": "corresponding numbers"
+        },
+        "amounts": {
+          "In": {
+            "string": "number",
+            "string2": "number",
+            "a lot of strings...": "corresponding numbers"
+          },
+          "Out": {
+            "string": "number",
+            "string2": "number",
+            "a lot of strings...": "corresponding numbers"
+          }
+        }
+      }
+    }
+  }

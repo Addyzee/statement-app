@@ -1,0 +1,7 @@
+[
+  { "browser": "chrome", "visitors": 275},
+  { "browser": "safari", "visitors": 200},
+  { "browser": "firefox", "visitors": 287},
+  { "browser": "edge", "visitors": 173},
+  { "browser": "other", "visitors": 190}
+]
