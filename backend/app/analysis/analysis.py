@@ -13,6 +13,7 @@ from .account_analysis import (
     get_account_names_sum,
     get_top_account_names_outin,
 )
+from .time_analysis import total_outin_by_month
 
 
 def querying(column: str, condition: str | float, data: pd.DataFrame):
@@ -47,3 +48,6 @@ def transaction_accounts_analysis(data: pd.DataFrame):
     amounts = amount_outin_per_account_name(data)
     frequencies = get_account_names_frequencies(data)
     return {"types": top_account_names, "frequencies": frequencies, "amounts": amounts}
+
+def time_analysis(data:pd.DataFrame):
+    return total_outin_by_month(data)

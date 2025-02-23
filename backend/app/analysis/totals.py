@@ -20,3 +20,5 @@ def total_cashflow(
         return {"In": money_received, "Out": money_sent}
     except Exception as e:
         raise e
+    
+

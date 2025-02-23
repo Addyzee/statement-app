@@ -25,6 +25,6 @@ transaction_types = {
     "Withdrawal Charge": "Safaricom Charges",
     "IMT Send Charge": "Safaricom Charges",
     "Pay Merchant Charge": "Safaricom Charges",
-    "Daraja": "Daraja",
+    "Reversal by Daraja": "Daraja",
     "": "Unidentified",
 }
