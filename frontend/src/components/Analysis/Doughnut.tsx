@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { Label, Pie, PieChart } from "recharts";
+import { Label, Legend, Pie, PieChart } from "recharts";
 import { capitalizeFirstLetter } from "./Utils";
 
 import {
@@ -13,8 +13,8 @@ import {
 
 // Define the base data structure type
 interface ChartDataItem {
-    [key: string]: string | number ;
-    fill: string;
+  [key: string]: string | number;
+  fill: string;
 }
 
 interface DoughnutProps {
@@ -24,9 +24,9 @@ interface DoughnutProps {
 export function Doughnut({ data }: DoughnutProps) {
   const total = React.useMemo(() => {
     if (data.length === 0) return 0;
-  
+
     const [, valueKey] = Object.keys(data[0]); // Extract value key inside useMemo
-  
+
     return data.reduce((acc, curr) => acc + Number(curr[valueKey]), 0);
   }, [data]);
 
@@ -65,16 +65,22 @@ export function Doughnut({ data }: DoughnutProps) {
   return (
     <ChartContainer
       config={chartConfig}
-      className="mx-auto aspect-square max-h-[250px] text-white"
+      className="mx-auto aspect-square max-h-[300px] text-white"
     >
       <PieChart>
         <ChartTooltip content={<ChartTooltipContent hideLabel />} />
+        <Legend 
+          verticalAlign="bottom"
+          align="left"
+          layout="horizontal"
+        />
         <Pie
           data={chartData}
           dataKey={valueKey}
           nameKey={labelKey}
           innerRadius={60}
           strokeWidth={5}
+          
         >
           <Label
             content={({ viewBox }) => {
@@ -88,17 +94,18 @@ export function Doughnut({ data }: DoughnutProps) {
                   >
                     <tspan
                       x={viewBox.cx}
-                      y={viewBox.cy}
-                      className="fill-background text-3xl font-bold"
-                    >
-                      {total.toLocaleString()}
-                    </tspan>
-                    <tspan
-                      x={viewBox.cx}
                       y={(viewBox.cy || 0) + 24}
                       className="fill-muted-foreground"
                     >
                       KSh
+                    </tspan>
+                  
+                    <tspan
+                      x={viewBox.cx}
+                      y={viewBox.cy}
+                      className="fill-background text-3xl font-bold"
+                    >
+                      {total.toLocaleString()}
                     </tspan>
                   </text>
                 );

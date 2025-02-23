@@ -1,12 +1,15 @@
-// import { Doughnut } from "./Doughnut"
-import { MultipleBarChart } from "./BarChart"
+import { MultipleBarChart } from "./MultipleBarChart";
+import data from "./Data.json";
+
 
 const IncomevExpenses = () => {
-  return (
-    <div>
-      <MultipleBarChart/>
-    </div>
-  )
-}
+  const month_analysis = data.analysis.months_analysis;
 
-export default IncomevExpenses
+  return (
+    <div className="flex justify-center">
+      <MultipleBarChart chartData={month_analysis}/>
+    </div>
+  );
+};
+
+export default IncomevExpenses;
