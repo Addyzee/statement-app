@@ -23,7 +23,7 @@ def amount_outin_per_transaction_type(
     if not transaction_types:
         raise ValueError("No transactions")
 
-    mapped_amounts = {"In": [], "Out": []}
+    mapped_amounts = {"In": {}, "Out": {}}
 
     # Filter data before grouping to avoid unnecessary processing
     filtered_data = data[data["Type"].isin(transaction_types)]
@@ -34,7 +34,7 @@ def amount_outin_per_transaction_type(
 
         if total == 0:
             continue
-        mapped_amounts[dir] = []
+        mapped_amounts[dir]["Main"] = []
         others = {"Others": []}
 
         for transaction_type, df in grouped_data:
@@ -42,14 +42,15 @@ def amount_outin_per_transaction_type(
             percent = (amount / total * 100) if total > 0 else 0
             attrs = {"Type": transaction_type, "Amount": amount}
             if amount > 0 and percent >= 7:
-                mapped_amounts[dir].append(attrs)
+                mapped_amounts[dir]["Main"].append(attrs)
 
             elif amount > 0 and percent < 7:
                 others["Others"].append(attrs)
 
         if len(others["Others"]) > 0:
+            mapped_amounts[dir]["Others"] = []
             total_others = sum([attr["Amount"] for attr in others["Others"]])
-            mapped_amounts[dir].append({"Type": "Others", "Amount": total_others})
-            mapped_amounts[dir].append(others)
+            mapped_amounts[dir]["Main"].append({"Type": "Others", "Amount": total_others})
+            mapped_amounts[dir]["Others"].append(others)
 
     return mapped_amounts
