@@ -3,16 +3,13 @@ import { ArchiveX } from "lucide-react";
 import { Button } from "./ui/button";
 import axios from "axios";
 import { PagingContext } from "./context/PagingContext";
-import {DataContext} from "./context/DataContext"
+import { useResponse } from "./context/ResponseContext";
 
 type UploadStatus = "idle" | "instate" | "uploading" | "success" | "error";
 
 const FileUploader = () => {
-  const context = useContext(DataContext);
-  if (!context) throw new Error("DataContext must be used within a DataContextProvider");
+  const { setData, setIsLoading, setError} = useResponse();
 
-  const { setUserName } = context.userContext;
-  const {setMonthlyAnalysisData} = context.monthlyAnalysisContext
   const { setCurrentPage } = useContext(PagingContext);
   const [pdfFile, setPDFFile] = useState<File | null>(null);
   const [password, setPassword] = useState<string | null>(null);
@@ -45,6 +42,8 @@ const FileUploader = () => {
     formData.append("password", password);
 
     try {
+      setIsLoading(true)
+      setError(null)
       const response = await axios.post(
         "http://127.0.0.1:8000/decrypt/",
         formData,
@@ -60,12 +59,14 @@ const FileUploader = () => {
       );
       setStatus("success");
       setUploadProgress(100);
-      setUserName(response.data["the_name"]);
       setCurrentPage("Analysis");
-      setMonthlyAnalysisData(response.data.analysis.months_analysis)
-    } catch {
+      setData(response.data)
+    } catch(err) {
       setStatus("error");
       setUploadProgress(0);
+      setError(err instanceof Error ? err : new Error('Unknown error occurred'))
+    } finally {
+      setIsLoading(false)
     }
   };
 

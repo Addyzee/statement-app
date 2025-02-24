@@ -1,10 +1,10 @@
 import { Doughnut } from "./Doughnut";
-import data from "./Data.json";
+import { useTransactionAnalysis } from "../context/ResponseContext";
 
-const t_type_amounts_out =
-  data.analysis.transaction_type_analysis.amounts.Out.Main;
 
 const ExpenditureType = () => {
+    const t_type_amounts_out = useTransactionAnalysis().amounts.Out.Main
+  
   return (
     <div className="lg:flex lg:flex-row-reverse border">
       

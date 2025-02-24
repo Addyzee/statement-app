@@ -1,17 +1,14 @@
-import { useContext } from "react";
-import { DataContext } from "../context/DataContext";
+import { useMonthlyAnalysis } from "../context/ResponseContext";
 import { MultipleBarChart } from "./MultipleBarChart";
 
-
 const IncomevExpenses = () => {
-  const context = useContext(DataContext);
-  if (!context) throw new Error("DataContext must be used within a DataContextProvider");
 
-  const month_analysis = context.monthlyAnalysisContext.monthlyAnalysisData
+
+  const month_analysis = useMonthlyAnalysis()
 
   return (
     <div className="flex justify-center">
-      <MultipleBarChart chartData={month_analysis}/>
+      <MultipleBarChart chartData={month_analysis} />
     </div>
   );
 };
