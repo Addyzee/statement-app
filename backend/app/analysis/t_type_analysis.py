@@ -25,7 +25,7 @@ def amount_outin_per_transaction_type(
 
     mapped_amounts = {"In": {}, "Out": {}}
 
-    # Filter data before grouping to avoid unnecessary processing
+    
     filtered_data = data[data["Type"].isin(transaction_types)]
     grouped_data = filtered_data.groupby("Type")
 

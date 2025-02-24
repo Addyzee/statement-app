@@ -37,7 +37,6 @@ def get_account_names_frequencies(data: pd.DataFrame, max: int = 15):
 
 
 def get_account_names_sum(data: pd.DataFrame, max: int = 15):
-    # Deprecated
     return data.groupby("Account Name")["Amount"].sum().nlargest(max).to_dict()
 
 
@@ -48,7 +47,7 @@ def get_account_names_per_type(data: pd.DataFrame, type: str):
 def amount_per_account_name_per_type(
     data: pd.DataFrame,
     transaction_type: str,
-    transaction_party: List[str] | str | None = None,
+    account_name: List[str] | str | None = None,
     max: int = 15,
 ):
     """
@@ -56,7 +55,7 @@ def amount_per_account_name_per_type(
     Transaction type is a mandatory parameter.
     If transaction party is not provided, this returns the highest 15 transaction parties(highest == ordered by amount).
     """
-    if transaction_party == None:
+    if account_name == None:
 
         return (
             data.loc[data["Type"] == transaction_type, ["Amount", "Account Name"]]
@@ -68,13 +67,13 @@ def amount_per_account_name_per_type(
         )
 
     else:
-        transaction_party = (
-            [transaction_party] if type(transaction_party) == str else transaction_party
+        account_name = (
+            [account_name] if type(account_name) == str else account_name
         )
         return (
             data.loc[
                 (data["Type"] == transaction_type)
-                & (data["Account Name"].isin(transaction_party)),
+                & (data["Account Name"].isin(account_name)),
                 ["Amount", "Account Name"],
             ]
             .groupby("Account Name")
