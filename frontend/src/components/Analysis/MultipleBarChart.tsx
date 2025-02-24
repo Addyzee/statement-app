@@ -19,9 +19,9 @@ import {
 } from "@/components/ui/chart";
 
 interface MonthlyTransaction {
-  Month: string;
-  In: number;
-  Out: number;
+  Month: string | null;
+  In: number | null;
+  Out: number | null;
 }
 
 interface BarChartProps {
