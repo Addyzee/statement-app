@@ -34,36 +34,24 @@ def highest_outin_months(mapped_amounts: List[Dict]):
 
 
 def get_period(data: pd.DataFrame):
-    last_date = data.iloc[0]["Date"]
-    first_date = data.iloc[-1]["Date"]
+    last_date = data.iloc[0]["Date"].date()
+    first_date = data.iloc[-1]["Date"].date()
     return {"from": first_date, "to": last_date}
 
 
 def average_outin_per_month(data: pd.DataFrame):
     last_date = data.iloc[0]["Date"]
     first_date = data.iloc[-1]["Date"]
-    months_num = (last_date - first_date) / np.timedelta64(1, "M")
+    months_num = (last_date - first_date).days / 30.436875
     total_amounts = total_cashflow(data=data)
-    amounts_in = total_amounts["In"] / months_num
-    amounts_out = total_amounts["Out"] / months_num
+    amounts_in = round(total_amounts["In"] / months_num, 2)
+    amounts_out = round(total_amounts["Out"] / months_num, 2)
     return {"average_in": amounts_in, "average_out": amounts_out}
 
 def calculate_percentage_differences(amount: float, average: float) -> float:
-    return (amount/average * 100) - 100
+    return round((amount/average * 100) - 100,2)
 
-def time_analysis(data:pd.DataFrame):
-    period = get_period(data)
-    monthly_outin = total_outin_by_month(data)
-    month_average = average_outin_per_month(data)
-    highest_months = highest_outin_months(monthly_outin)
-    average_out_difference = calculate_percentage_differences(highest_months["highest_out"]["Amount"], month_average["average_out"])
-    return {
-        "period": period,
-        "monthly_analysis": monthly_outin,
-        "average_monthly": month_average,
-        "highest_months": highest_months,
-        "highest_out_percent_above_average": average_out_difference
-    }
+
     
 
     

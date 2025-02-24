@@ -52,5 +52,10 @@ def amount_outin_per_transaction_type(
             total_others = sum([attr["Amount"] for attr in others["Others"]])
             mapped_amounts[dir]["Main"].append({"Type": "Others", "Amount": total_others})
             mapped_amounts[dir]["Others"].append(others)
+        else:
+            all_transactions = mapped_amounts[dir]["Main"]
+            del mapped_amounts[dir]["Main"]
+            mapped_amounts[dir] = []
+            mapped_amounts[dir] = all_transactions
 
     return mapped_amounts

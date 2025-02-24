@@ -5,9 +5,19 @@ from .totals import total_cashflow
 
 
 def get_top_account_names_outin(data: pd.DataFrame):
-    return list(
-        get_account_names_sum(data[data["Direction"] == "Out"], 10).keys()
-    ) + list(get_account_names_sum(data[data["Direction"] == "In"], 10).keys())
+    # Defaulter function + exported
+    return (
+        [key[0] for key in get_account_names_sum(data[data["Direction"] == "Out"], 10).keys()] + [key[0] for key in get_account_names_sum(data[data["Direction"] == "In"], 10).keys()])
+
+
+def get_top_accounts_with_amounts_outin(data: pd.DataFrame):
+    acc_amounts_in = get_account_names_sum(data[data["Direction"] == "In"], 10)
+    acc_amounts_out = get_account_names_sum(data[data["Direction"] == "Out"], 10)
+
+    return {
+        "In": [{"Account_name": k[0], "Type": k[1], "Amount": v} for k, v in acc_amounts_in.items()],
+        "Out": [{"Account_name": k[0], "Type": k[1],  "Amount": v} for k, v in acc_amounts_out.items()],
+    }
 
 
 def amount_outin_per_account_name(
@@ -22,22 +32,32 @@ def amount_outin_per_account_name(
     if len(account_names) == 0:
         raise "No transactions"
 
+    filtered_data = data[data["Type"].isin(account_names)]
+    grouped_data = filtered_data.groupby("Type")
+
     mapped_amounts = {"In": {}, "Out": {}}
     for dir in ["In", "Out"]:
-        for account_name in account_names:
-            df = data[data["Account Name"] == account_name]
+        total = total_cashflow(data=filtered_data, direction=dir)
+
+        if total == 0:
+            continue
+
+        mapped_amounts[dir] = []
+        for account_name, df in grouped_data:
             amount = total_cashflow(data=df, direction=dir)
-            if abs(amount) > 0:
-                mapped_amounts[dir][account_name] = amount
+            attrs = {"Account_name": account_name, "Amount": amount}
+
+            mapped_amounts[dir].append(attrs)
 
     return mapped_amounts
+
 
 def get_account_names_frequencies(data: pd.DataFrame, max: int = 15):
     return data["Account Name"].value_counts()[:max].to_dict()
 
 
 def get_account_names_sum(data: pd.DataFrame, max: int = 15):
-    return data.groupby("Account Name")["Amount"].sum().nlargest(max).to_dict()
+    return data.groupby(["Account Name", "Type"])["Amount"].sum().nlargest(max).to_dict()
 
 
 def get_account_names_per_type(data: pd.DataFrame, type: str):
@@ -67,9 +87,7 @@ def amount_per_account_name_per_type(
         )
 
     else:
-        account_name = (
-            [account_name] if type(account_name) == str else account_name
-        )
+        account_name = [account_name] if type(account_name) == str else account_name
         return (
             data.loc[
                 (data["Type"] == transaction_type)

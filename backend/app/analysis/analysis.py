@@ -12,8 +12,15 @@ from .account_analysis import (
     amount_per_account_name_per_type,
     get_account_names_sum,
     get_top_account_names_outin,
+    get_top_accounts_with_amounts_outin
 )
-from .time_analysis import total_outin_by_month
+from .time_analysis import (
+    total_outin_by_month,
+    calculate_percentage_differences,
+    average_outin_per_month,
+    get_period,
+    highest_outin_months,
+)
 
 
 def querying(column: str, condition: str | float, data: pd.DataFrame):
@@ -34,20 +41,44 @@ def transaction_type_analysis(data: pd.DataFrame):
         transaction_types = get_transaction_types(data)
         frequencies = get_transaction_types_frequencies(data)
         amounts = amount_outin_per_transaction_type(data)
+        safaricom_charges = amount_outin_per_transaction_type(
+            data, transaction_types="Safaricom Charges"
+        )
         return {
             "types": transaction_types,
             "frequencies": frequencies,
             "amounts": amounts,
+            "safaricom_charges": safaricom_charges,
         }
     except Exception as e:
         raise e
 
 
 def transaction_accounts_analysis(data: pd.DataFrame):
-    top_account_names = get_top_account_names_outin(data)
-    amounts = amount_outin_per_account_name(data)
+    top_account_list = get_top_account_names_outin(data)
     frequencies = get_account_names_frequencies(data)
-    return {"types": top_account_names, "frequencies": frequencies, "amounts": amounts}
+    amounts = get_top_accounts_with_amounts_outin(data)
+    top_accounts = {"In":amounts["In"][0],"Out":amounts["Out"][0]}
+    return {"types": top_account_list, "frequencies": frequencies, "amounts": amounts,"top_accounts":top_accounts}
 
-def time_analysis(data:pd.DataFrame):
-    return total_outin_by_month(data)
+
+def time_analysis(data: pd.DataFrame):
+    period = get_period(data)
+    monthly_outin = total_outin_by_month(data)
+    month_average = average_outin_per_month(data)
+    highest_months = highest_outin_months(monthly_outin)
+    average_out_difference = calculate_percentage_differences(
+        highest_months["highest_out"]["Amount"], month_average["average_out"]
+    )
+    average_in_difference = calculate_percentage_differences(
+        highest_months["highest_in"]["Amount"], month_average["average_in"]
+    )
+    highest_months["highest_in"]["percent_average_difference"] = average_in_difference
+    highest_months["highest_out"]["percent_average_difference"] = average_out_difference
+    return {
+        "period": period,
+        "monthly_analysis": monthly_outin,
+        "average_monthly": month_average,
+        "highest_months": highest_months,
+    }
+

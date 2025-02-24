@@ -11,7 +11,7 @@ from app.data.clean import clean_data2
 from app.analysis.analysis import (
     transaction_type_analysis,
     transaction_accounts_analysis,
-    time_analysis
+    time_analysis,
 )
 from app.analysis.totals import total_cashflow
 
@@ -45,7 +45,7 @@ async def decrypt_pdf(file: UploadFile, password: Annotated[str, Body()]):
         customer_name = await get_customer_name(text=text)
         data = await write_transactions_data2(text)
         clean_data = clean_data2(data)
-        analysis = await basic_analysis(data=clean_data)
+        analysis = await main_analysis(data=clean_data)
 
         return {
             "the_pdf": file.filename,
@@ -56,18 +56,27 @@ async def decrypt_pdf(file: UploadFile, password: Annotated[str, Body()]):
         raise e
 
 
-async def basic_analysis(data: pd.DataFrame):
+async def main_analysis(data: pd.DataFrame):
     try:
         total_amounts = total_cashflow(data)
         types_analysis = transaction_type_analysis(data)
         accounts_analysis = transaction_accounts_analysis(data)
-        months_analysis = time_analysis(data)
-
+        times_analysis = time_analysis(data)
+        
         return {
-            "total_cashflow": total_amounts,
+            "summary": {
+                "total_cashflow": total_amounts,
+                "period": times_analysis["period"],
+                "top_accounts": accounts_analysis["top_accounts"],
+                "highest_months": times_analysis["highest_months"],
+                "average_monthly": times_analysis["average_monthly"],
+                "safaricom_charges": types_analysis["safaricom_charges"]
+            }, 
+            "months_analysis": times_analysis["monthly_analysis"],
             "transaction_type_analysis": types_analysis,
-            "accounts_analysis": accounts_analysis,
-            "months_analysis": months_analysis,
+            "accounts_analysis": accounts_analysis
+            
         }
+
     except Exception as e:
         raise e
