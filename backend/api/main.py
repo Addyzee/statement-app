@@ -12,6 +12,7 @@ from app.analysis.analysis import (
     transaction_type_analysis,
     transaction_accounts_analysis,
     time_analysis,
+    filterable_headers
 )
 from app.analysis.totals import total_cashflow
 
@@ -54,6 +55,8 @@ async def decrypt_pdf(file: UploadFile, password: Annotated[str, Body()]):
         }
     except Exception as e:
         raise e
+    
+
 
 
 async def main_analysis(data: pd.DataFrame):
@@ -62,6 +65,7 @@ async def main_analysis(data: pd.DataFrame):
         types_analysis = transaction_type_analysis(data)
         accounts_analysis = transaction_accounts_analysis(data)
         times_analysis = time_analysis(data)
+        headers = filterable_headers()
         
         return {
             "summary": {
@@ -70,7 +74,8 @@ async def main_analysis(data: pd.DataFrame):
                 "top_accounts": accounts_analysis["top_accounts"],
                 "highest_months": times_analysis["highest_months"],
                 "average_monthly": times_analysis["average_monthly"],
-                "safaricom_charges": types_analysis["safaricom_charges"]
+                "safaricom_charges": types_analysis["safaricom_charges"],
+                "filterable_headers": headers
             }, 
             "months_analysis": times_analysis["monthly_analysis"],
             "transaction_type_analysis": types_analysis,

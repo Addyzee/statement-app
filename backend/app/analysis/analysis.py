@@ -7,6 +7,7 @@ from .t_type_analysis import (
 )
 from .account_analysis import (
     get_account_names_frequencies,
+    get_all_account_names,
     get_account_names_per_type,
     amount_outin_per_account_name,
     amount_per_account_name_per_type,
@@ -34,6 +35,9 @@ def create_df_by_dates(
         return data[data["Date"] > start_date & data["Date"] <= end_date]
     else:
         return data[data["Date"] > start_date]
+    
+def filterable_headers():
+    return ["Type", "Account Name", "Direction"]
 
 
 def transaction_type_analysis(data: pd.DataFrame):
@@ -55,11 +59,11 @@ def transaction_type_analysis(data: pd.DataFrame):
 
 
 def transaction_accounts_analysis(data: pd.DataFrame):
-    top_account_list = get_top_account_names_outin(data)
+    all_accounts = get_all_account_names(data=data)
     frequencies = get_account_names_frequencies(data)
     amounts = get_top_accounts_with_amounts_outin(data)
     top_accounts = {"In":amounts["In"][0],"Out":amounts["Out"][0]}
-    return {"types": top_account_list, "frequencies": frequencies, "amounts": amounts,"top_accounts":top_accounts}
+    return {"accounts": all_accounts, "frequencies": frequencies, "amounts": amounts,"top_accounts":top_accounts}
 
 
 def time_analysis(data: pd.DataFrame):

@@ -47,7 +47,7 @@ export function MultipleBarChart({ chartData }: BarChartProps) {
     <Card className="w-10/12">
       <CardHeader>
         <CardTitle>Income vs Spending per Month</CardTitle>
-        <CardDescription>December 2023 - December 2024</CardDescription>
+        <CardDescription>{chartData[0].Month} - {chartData[chartData.length-1].Month}</CardDescription>
       </CardHeader>
       <CardContent>
         <ChartContainer config={chartConfig}>
@@ -74,7 +74,6 @@ export function MultipleBarChart({ chartData }: BarChartProps) {
           Trending up by 5.2% this month <TrendingUp className="h-4 w-4" />
         </div>
         <div className="leading-none text-muted-foreground">
-          Showing total visitors for the last 6 months
         </div>
       </CardFooter>
     </Card>

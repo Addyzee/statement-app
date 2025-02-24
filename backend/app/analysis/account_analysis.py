@@ -3,9 +3,12 @@ from typing import Dict, List
 from .utils import convert_to_default
 from .totals import total_cashflow
 
+def get_all_account_names(data:pd.DataFrame):
+    return list(data["Account Name"].unique())
+
 
 def get_top_account_names_outin(data: pd.DataFrame):
-    # Defaulter function + exported
+    # Defaulter function 
     return (
         [key[0] for key in get_account_names_sum(data[data["Direction"] == "Out"], 10).keys()] + [key[0] for key in get_account_names_sum(data[data["Direction"] == "In"], 10).keys()])
 
@@ -31,6 +34,7 @@ def amount_outin_per_account_name(
 
     if len(account_names) == 0:
         raise "No transactions"
+    
 
     filtered_data = data[data["Type"].isin(account_names)]
     grouped_data = filtered_data.groupby("Type")

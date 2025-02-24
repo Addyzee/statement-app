@@ -22,6 +22,9 @@ const Analysis = () => {
           <h2 className="font-semibold text-lg">3. Spending Breakdown</h2>
           <ExpenditureType />
         </li>
+        <li>
+        <h2 className="font-semibold text-lg">4. Query data</h2>
+        </li>
       </ol>
     </div>
   );
