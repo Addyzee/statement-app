@@ -10,7 +10,7 @@ def convert_to_default(
         return defaulter_function(data)
     elif type(object) == str:
         return [object]
-    elif type(object) == List[str]:
+    elif isinstance(object, list):
         return object
     else:
         raise "Type must be str, list, or None"

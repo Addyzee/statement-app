@@ -95,27 +95,14 @@ export function SummarySection() {
           </div>
         </div>
 
-        {/* Largest Account Names */}
+        {/* Highest spending and income sources */}
         <div className="p-4 rounded-lg border border-gray-700 shadow-md">
           <p className="font-medium text-white">
-            Largest spending and income sources
+            Cummulative spending and income sources
           </p>
           <ul className="space-y-2">
-            <li>
-              📤 Cumulatively, you have sent the highest amounts to:{" "}
-              <span className="font-medium text-white">
-                {summary.top_accounts.Out.Account_name} via{" "}
-                {summary.top_accounts.Out.Type}
-              </span>
-              <div className="ml-4 text-sm">
-                Total:{" "}
-                <span className="font-semibold text-red-400">
-                  KES {summary.top_accounts.Out.Amount.toLocaleString()}
-                </span>
-              </div>
-            </li>
-            <li>
-              📥 You have received the highest amounts from:{" "}
+          <li>
+              📥 Highest amount received from:{" "}
               <span className="font-medium text-white">
                 {summary.top_accounts.In.Account_name} 
                 <span className="font-light">{" "} type </span>
@@ -128,6 +115,20 @@ export function SummarySection() {
                 </span>
               </div>
             </li>
+            <li>
+              📤 Highest amount sent to:{" "}
+              <span className="font-medium text-white">
+                {summary.top_accounts.Out.Account_name} via{" "}
+                {summary.top_accounts.Out.Type}
+              </span>
+              <div className="ml-4 text-sm">
+                Total:{" "}
+                <span className="font-semibold text-red-400">
+                  KES {summary.top_accounts.Out.Amount.toLocaleString()}
+                </span>
+              </div>
+            </li>
+           
           </ul>
         </div>
 

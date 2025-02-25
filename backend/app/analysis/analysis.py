@@ -1,4 +1,5 @@
 import pandas as pd
+from typing import Dict
 from app.data.clean import clean_data2, clean_data
 from .t_type_analysis import (
     get_transaction_types,
@@ -12,8 +13,9 @@ from .account_analysis import (
     amount_outin_per_account_name,
     amount_per_account_name_per_type,
     get_account_names_sum,
+    get_account_names_sum_with_others,
     get_top_account_names_outin,
-    get_top_accounts_with_amounts_outin
+    get_top_accounts_with_amounts_outin,
 )
 from .time_analysis import (
     total_outin_by_month,
@@ -24,10 +26,6 @@ from .time_analysis import (
 )
 
 
-def querying(column: str, condition: str | float, data: pd.DataFrame):
-    return data[data[column] == condition]
-
-
 def create_df_by_dates(
     data: pd.DataFrame, start_date: str, end_date: str | None = None
 ):
@@ -35,7 +33,8 @@ def create_df_by_dates(
         return data[data["Date"] > start_date & data["Date"] <= end_date]
     else:
         return data[data["Date"] > start_date]
-    
+
+
 def filterable_headers():
     return ["Type", "Account Name", "Direction"]
 
@@ -58,12 +57,32 @@ def transaction_type_analysis(data: pd.DataFrame):
         raise e
 
 
+def query_analysis(data: pd.DataFrame, queries: Dict[str, str]):
+    if "account_name" in queries:
+        # print(type(queries["account_name"]))
+        # return 1
+        return amount_outin_per_account_name(data=data, account_names=queries["account_name"])
+    return get_account_names_sum_with_others(data)
+
+     
+    
+        
+    
+    
+    
+
+
 def transaction_accounts_analysis(data: pd.DataFrame):
     all_accounts = get_all_account_names(data=data)
     frequencies = get_account_names_frequencies(data)
     amounts = get_top_accounts_with_amounts_outin(data)
-    top_accounts = {"In":amounts["In"][0],"Out":amounts["Out"][0]}
-    return {"accounts": all_accounts, "frequencies": frequencies, "amounts": amounts,"top_accounts":top_accounts}
+    top_accounts = {"In": amounts["In"][0], "Out": amounts["Out"][0]}
+    return {
+        "accounts": all_accounts,
+        "frequencies": frequencies,
+        "amounts": amounts,
+        "top_accounts": top_accounts,
+    }
 
 
 def time_analysis(data: pd.DataFrame):
@@ -85,4 +104,3 @@ def time_analysis(data: pd.DataFrame):
         "average_monthly": month_average,
         "highest_months": highest_months,
     }
-

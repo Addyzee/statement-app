@@ -6,6 +6,7 @@ export type TransactionType = {
 export type Response = {
   the_pdf: string;
   the_name: string;
+  session_id: string;
   analysis: {
     summary: {
       total_cashflow: {
@@ -48,6 +49,7 @@ export type Response = {
         In: Record<string, never>;
         Out: TransactionType[];
       };
+      filterable_headers: string[]
     };
     months_analysis: Array<{
       Month: string;

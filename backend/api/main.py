@@ -1,8 +1,10 @@
-from fastapi import FastAPI, UploadFile, Body
+from fastapi import FastAPI, UploadFile, Body,Query
 from fastapi.middleware.cors import CORSMiddleware
 import pandas as pd
+import uuid
 
-from typing import Annotated
+from typing import Annotated, List
+from app.config import DATA_DIR
 
 from app.data_writing.write_data import get_customer_name, write_transactions_data2
 from app.document_handling.extract import extract_and_clean2
@@ -12,7 +14,8 @@ from app.analysis.analysis import (
     transaction_type_analysis,
     transaction_accounts_analysis,
     time_analysis,
-    filterable_headers
+    filterable_headers,
+    query_analysis
 )
 from app.analysis.totals import total_cashflow
 
@@ -33,9 +36,8 @@ app.add_middleware(
 )
 
 
-@app.post("/upload/")
-async def upload_statement(file: UploadFile):
-    return {"filename": file.filename}
+session_data = {}
+session_data["0"] = pd.read_csv(DATA_DIR / "transactions.csv")
 
 
 @app.post("/decrypt/")
@@ -46,17 +48,18 @@ async def decrypt_pdf(file: UploadFile, password: Annotated[str, Body()]):
         customer_name = await get_customer_name(text=text)
         data = await write_transactions_data2(text)
         clean_data = clean_data2(data)
+        session_id = str(uuid.uuid4())
         analysis = await main_analysis(data=clean_data)
+        session_data[session_id] = clean_data
 
         return {
             "the_pdf": file.filename,
             "the_name": customer_name,
+            "session_id": session_id,
             "analysis": analysis,
         }
     except Exception as e:
         raise e
-    
-
 
 
 async def main_analysis(data: pd.DataFrame):
@@ -66,7 +69,7 @@ async def main_analysis(data: pd.DataFrame):
         accounts_analysis = transaction_accounts_analysis(data)
         times_analysis = time_analysis(data)
         headers = filterable_headers()
-        
+
         return {
             "summary": {
                 "total_cashflow": total_amounts,
@@ -75,13 +78,40 @@ async def main_analysis(data: pd.DataFrame):
                 "highest_months": times_analysis["highest_months"],
                 "average_monthly": times_analysis["average_monthly"],
                 "safaricom_charges": types_analysis["safaricom_charges"],
-                "filterable_headers": headers
-            }, 
+                "filterable_headers": headers,
+            },
             "months_analysis": times_analysis["monthly_analysis"],
             "transaction_type_analysis": types_analysis,
-            "accounts_analysis": accounts_analysis
-            
+            "accounts_analysis": accounts_analysis,
         }
 
     except Exception as e:
         raise e
+
+
+@app.post("/query/")
+async def query_transactions(
+    session_id: str, t_type: Annotated[str | List[str] | None, Query()] = None, account_name: Annotated[str | List[str] | None, Query()] = None
+):
+    if session_id not in session_data:
+        return {"Error": "session expired or not found"}
+
+    data: pd.DataFrame = session_data[session_id]
+    query = {}
+
+    if t_type:
+        if type(t_type) == str:
+            t_type = [t_type]
+        data = data[data["Type"].isin(t_type)]
+        query["Type"] = t_type
+        
+    if account_name:
+        if type(account_name) == str:
+            account_name = [account_name]
+        data = data[data["Account Name"].isin(account_name)]
+        query["account_name"] = account_name
+    try: 
+        return query_analysis(data=data, queries=query)
+    except Exception as e:
+        raise e
+
