@@ -48,7 +48,7 @@ def transaction_type_analysis(data: pd.DataFrame):
             data, transaction_types="Safaricom Charges"
         )
         return {
-            "types": transaction_types,
+            "types": sorted(transaction_types, key=str.casefold),
             "frequencies": frequencies,
             "amounts": amounts,
             "safaricom_charges": safaricom_charges,
@@ -59,17 +59,8 @@ def transaction_type_analysis(data: pd.DataFrame):
 
 def query_analysis(data: pd.DataFrame, queries: Dict[str, str]):
     if "account_name" in queries:
-        # print(type(queries["account_name"]))
-        # return 1
         return amount_outin_per_account_name(data=data, account_names=queries["account_name"])
-    return get_account_names_sum_with_others(data)
-
-     
-    
-        
-    
-    
-    
+    return get_account_names_sum_with_others(data)    
 
 
 def transaction_accounts_analysis(data: pd.DataFrame):
@@ -78,7 +69,7 @@ def transaction_accounts_analysis(data: pd.DataFrame):
     amounts = get_top_accounts_with_amounts_outin(data)
     top_accounts = {"In": amounts["In"][0], "Out": amounts["Out"][0]}
     return {
-        "accounts": all_accounts,
+        "accounts": sorted(all_accounts, key=str.casefold),
         "frequencies": frequencies,
         "amounts": amounts,
         "top_accounts": top_accounts,

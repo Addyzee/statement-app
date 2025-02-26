@@ -37,7 +37,7 @@ app.add_middleware(
 
 
 session_data = {}
-session_data["0"] = pd.read_csv(DATA_DIR / "transactions.csv")
+# session_data["0"] = pd.read_csv(DATA_DIR / "transactions.csv")
 
 
 @app.post("/decrypt/")

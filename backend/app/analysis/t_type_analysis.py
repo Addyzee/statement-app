@@ -39,8 +39,8 @@ def amount_outin_per_transaction_type(
 
         for transaction_type, df in grouped_data:
             amount = total_cashflow(data=df, direction=dir)
-            percent = (amount / total * 100) if total > 0 else 0
-            attrs = {"Type": transaction_type, "Amount": amount}
+            percent = round(amount / total * 100, 2) if total > 0 else 0
+            attrs = {"Type": transaction_type, "Amount": amount, "Percent": percent}
             if amount > 0 and percent >= 7:
                 mapped_amounts[dir]["Main"].append(attrs)
 
