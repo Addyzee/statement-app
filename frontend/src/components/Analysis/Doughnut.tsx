@@ -22,6 +22,13 @@ interface DoughnutProps {
 }
 
 export function Doughnut({ data }: DoughnutProps) {
+  const [isTouchDevice, setIsTouchDevice] = React.useState(false);
+
+  React.useEffect(() => {
+    setIsTouchDevice("ontouchstart" in window || navigator.maxTouchPoints > 0);
+  }, []);
+
+
   const total = React.useMemo(() => {
     if (data.length === 0) return 0;
 
@@ -62,13 +69,18 @@ export function Doughnut({ data }: DoughnutProps) {
     ),
   } satisfies ChartConfig;
 
+  
+
   return (
     <ChartContainer
       config={chartConfig}
-      className="mx-auto aspect-square max-h-[300px] text-white"
+      className="mx-auto aspect-square max-h-[350px] text-white"
     >
       <PieChart>
-        <ChartTooltip content={<ChartTooltipContent hideLabel />} />
+        <ChartTooltip
+            content={<ChartTooltipContent hideLabel />}
+            trigger={isTouchDevice ? "click" : "hover"}
+          />
         <Legend 
           verticalAlign="bottom"
           align="left"
@@ -97,7 +109,7 @@ export function Doughnut({ data }: DoughnutProps) {
                       y={(viewBox.cy || 0) + 24}
                       className="fill-muted-foreground"
                     >
-                      KSh
+                      KES
                     </tspan>
                   
                     <tspan

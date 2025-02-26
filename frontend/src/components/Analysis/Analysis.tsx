@@ -6,18 +6,18 @@ import QueryComponent from "./QueryComponent";
 
 const Analysis = () => {
   return (
-    <div className="h-full lg:w-2/3 overflow-y-scroll pr-2">
+    <div className="h-full lg:w-10/12 overflow-y-scroll pr-2">
       <SummarySection />
       <ol className="flex flex-col gap-10">
-        <li className="border rounded-xl p-3">
-          <h2 className="font-semibold text-lg">1. Income Type Breakdown</h2>
+        <li className="border rounded-xl p-3 border-gray-700">
+          <h2 className="font-semibold text-lg">1. Income Breakdown</h2>
           <IncomeType />
         </li>
-        <li className="border rounded-xl p-3">
+        <li className="border border-gray-700 rounded-xl p-3">
           <h2 className="font-semibold text-lg">2. Spending Breakdown</h2>
           <ExpenditureType />
         </li>
-        <li className="border rounded-xl p-3">
+        <li className="border rounded-xl p-3 border-gray-700">
           <h2 className="font-semibold text-lg">
             3. Expenses vs Income per Month
           </h2>

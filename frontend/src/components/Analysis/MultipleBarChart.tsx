@@ -1,6 +1,6 @@
 "use client";
 
-import { Bar, BarChart, CartesianGrid, XAxis } from "recharts";
+import { Bar, BarChart, CartesianGrid, XAxis, YAxis, Rectangle } from "recharts";
 
 import {
   Card,
@@ -41,12 +41,17 @@ export function MultipleBarChart({ chartData }: BarChartProps) {
     },
   } satisfies ChartConfig;
   return (
-    <Card className="w-11/12 lg:w-10/12 border-0 bg-transparent text-white">
+    <Card className="w-full border-0 bg-transparent text-white">
       <CardHeader>
-        <CardDescription>{chartData[0].Month} - {chartData[chartData.length-1].Month}</CardDescription>
+        <CardDescription>
+          {chartData[0].Month} - {chartData[chartData.length - 1].Month}
+        </CardDescription>
       </CardHeader>
       <CardContent>
-        <ChartContainer config={chartConfig}>
+        <ChartContainer
+          config={chartConfig}
+          className="w-full flex justify-start"
+        >
           <BarChart accessibilityLayer data={chartData}>
             <CartesianGrid vertical={false} />
             <XAxis
@@ -56,16 +61,16 @@ export function MultipleBarChart({ chartData }: BarChartProps) {
               axisLine={false}
               tickFormatter={(value) => value.slice(0, 8)}
             />
+              <YAxis  orientation="left" />
             <ChartTooltip
               cursor={false}
               content={<ChartTooltipContent indicator="dashed" />}
             />
-            <Bar dataKey="In" fill={`var(--color-${valueKey1})`} radius={4} />
-            <Bar dataKey="Out" fill={`var(--color-${valueKey2})`} radius={4} />
+            <Bar dataKey="In"  fill={`var(--color-${valueKey1})`} radius={4} activeBar={<Rectangle stroke="white" />}/>
+            <Bar dataKey="Out" fill={`var(--color-${valueKey2})`} radius={4} activeBar={<Rectangle stroke="white" />}/>
           </BarChart>
         </ChartContainer>
       </CardContent>
-     
     </Card>
   );
 }

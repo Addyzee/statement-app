@@ -98,11 +98,11 @@ export function SummarySection() {
         {/* Highest spending and income sources */}
         <div className="p-4 rounded-lg border border-gray-700 shadow-md">
           <p className="font-medium text-white">
-            Cummulative spending and income sources
+            Highest cumulative spending and income
           </p>
           <ul className="space-y-2">
           <li>
-              📥 Highest amount received from:{" "}
+              📥 Highest amount from:{" "}
               <span className="font-medium text-white">
                 {summary.top_accounts.In.Account_name} 
                 <span className="font-light">{" "} type </span>
