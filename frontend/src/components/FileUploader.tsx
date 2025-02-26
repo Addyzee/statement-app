@@ -73,8 +73,8 @@ const FileUploader = () => {
   return (
     <div className="flex flex-col gap-3 justify-center items-center">
       <div
-        className={`border border-white flex flex-col justify-center items-center p-3 gap-2 ${
-          !pdfFile ? "hover:bg-slate-800" : ""
+        className={`border border-white flex flex-col  justify-center items-center p-3 gap-2 ${
+          !pdfFile ? "hover:bg-slate-800 cursor-pointer" : ""
         }`}
       >
         <div className="flex gap-5">
@@ -102,7 +102,7 @@ const FileUploader = () => {
           )}
 
           {pdfFile && status !== "uploading" && (
-            <div className="flex justify-end cursor-pointer">
+            <div className="flex justify-end">
               <ArchiveX onClick={clearFileField} />
             </div>
           )}
@@ -136,7 +136,7 @@ const FileUploader = () => {
       </div>
 
       {pdfFile && status !== "uploading" && (
-        <Button onClick={handleFileUpload}>Upload PDF</Button>
+        <Button variant="default" onClick={handleFileUpload}>Upload PDF</Button>
       )}
     </div>
   );

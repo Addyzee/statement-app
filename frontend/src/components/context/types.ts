@@ -1,6 +1,7 @@
 export type TransactionType = {
   Type: string;
   Amount: number;
+  Percent: number;
 };
 
 export type Response = {
@@ -79,7 +80,7 @@ export type Response = {
       };
     };
     accounts_analysis: {
-      types: string[];
+      accounts: string[];
       frequencies: Record<string, number>;
       amounts: {
         In: Array<{

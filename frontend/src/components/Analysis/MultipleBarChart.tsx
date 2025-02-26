@@ -1,15 +1,12 @@
 "use client";
 
-import { TrendingUp } from "lucide-react";
 import { Bar, BarChart, CartesianGrid, XAxis } from "recharts";
 
 import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
-  CardTitle,
 } from "@/components/ui/card";
 import {
   ChartConfig,
@@ -44,9 +41,8 @@ export function MultipleBarChart({ chartData }: BarChartProps) {
     },
   } satisfies ChartConfig;
   return (
-    <Card className="w-10/12">
+    <Card className="w-11/12 lg:w-10/12 border-0 bg-transparent text-white">
       <CardHeader>
-        <CardTitle>Income vs Spending per Month</CardTitle>
         <CardDescription>{chartData[0].Month} - {chartData[chartData.length-1].Month}</CardDescription>
       </CardHeader>
       <CardContent>
@@ -69,13 +65,7 @@ export function MultipleBarChart({ chartData }: BarChartProps) {
           </BarChart>
         </ChartContainer>
       </CardContent>
-      <CardFooter className="flex-col items-start gap-2 text-sm">
-        <div className="flex gap-2 font-medium leading-none">
-          Trending up by 5.2% this month <TrendingUp className="h-4 w-4" />
-        </div>
-        <div className="leading-none text-muted-foreground">
-        </div>
-      </CardFooter>
+     
     </Card>
   );
 }
