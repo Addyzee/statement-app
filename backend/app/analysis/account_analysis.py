@@ -59,7 +59,7 @@ def amount_outin_per_account_name(
         raise "No transactions"
 
     filtered_data = data[data["Account Name"].isin(account_names)]
-    grouped_data = filtered_data.groupby("Account Name")
+
 
     mapped_amounts = {"In": {}, "Out": {}}
     for dir in ["In", "Out"]:
@@ -71,41 +71,41 @@ def amount_outin_per_account_name(
         mapped_amounts[dir] = []
         transactions = []
         
-        for account_name, df in grouped_data:
-            df = df[df["Direction"] == dir]
-            amount = total_cashflow(data=df, direction=dir)
-            attrs = {"Account_name": account_name, "Total": amount}
-            head_df = df[:10]
+        df = filtered_data[filtered_data["Direction"] == dir].sort_values(by="Amount",ascending=False)
+        amount = total_cashflow(data=df, direction=dir)
+        attrs = {"Total": amount}
+        head_df = df[:10]
+        others = {}
+        if df.shape[0]>10:
+            tail_df = df[10:]
+            tail_total = total_cashflow(data=tail_df, direction=dir)
             others = {}
-            if df.shape[0]>10:
-                tail_df = df[10:]
-                tail_total = total_cashflow(data=tail_df, direction=dir)
-                others = {}
-                others["Original Message"] = "Others"
-                others["Date"] = f"{tail_df.iloc[-1]["Date"]} - {tail_df.iloc[0]["Date"]}"
-                others["Amount"] = tail_total
-                others["Direction"] = dir
-                
-            for idx, row in head_df.iterrows():
-                transaction = {}
-                transaction["Date"] = row["Date"]
-                transaction["Amount"] = row["Amount"]
-                transaction["Direction"] = row["Direction"]
-                original_transaction = row["Original Transaction"]
-                transaction["Original Message"] = (
-                    "No description" if
-                    type(original_transaction)==float
-                    else original_transaction
-                )
-                transactions.append(transaction)
-            if len(others.keys()) > 0:
-                transactions.append(others)
+            others["Original Message"] = "Others"
+            others["Date"] = f"{tail_df.iloc[-1]["Date"]} - {tail_df.iloc[0]["Date"]}"
+            others["Amount"] = tail_total
+            others["Direction"] = dir
             
-            
-            attrs["Transactions"] = transactions
+        for idx, row in head_df.iterrows():
+            transaction = {}
+            transaction["Account"] = row["Account Name"]
+            transaction["Date"] = row["Date"]
+            transaction["Amount"] = row["Amount"]
+            transaction["Direction"] = row["Direction"]
+            original_transaction = row["Original Transaction"]
+            transaction["Original Message"] = (
+                "No description" if
+                type(original_transaction)==float
+                else original_transaction
+            )
+            transactions.append(transaction)
+        if len(others.keys()) > 0:
+            transactions.append(others)
+        
+        
+        attrs["Transactions"] = transactions
             
 
-            mapped_amounts[dir].append(attrs)
+        mapped_amounts[dir].append(attrs)
 
     return mapped_amounts
 
