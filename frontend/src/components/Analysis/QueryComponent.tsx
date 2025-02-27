@@ -9,7 +9,6 @@ import { useMemo } from "react";
 
 const QueryComponent = () => {
   const transactionTypes = useTransactionAnalysis().types;
-//   const accountNames = useAccountsAnalysis().accounts;
   const accountsAnalysis = useAccountsAnalysis()
 const accountNames = useMemo(() => accountsAnalysis.accounts, [accountsAnalysis]);
 

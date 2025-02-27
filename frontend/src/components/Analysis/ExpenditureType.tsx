@@ -49,7 +49,7 @@ const ExpenditureType = () => {
           <div>
             Other expenditures include{" "}
             {t_type_others.map((t_type, idx) => (
-              <span className="font-bold">
+              <span key={idx} className="font-bold">
                 {idx == t_type_others.length - 1
                   ? `and ${t_type.Type}.`
                   : `${t_type.Type}, `}
