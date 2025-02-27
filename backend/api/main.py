@@ -1,7 +1,9 @@
 from fastapi import FastAPI, UploadFile, Body,Query
 from fastapi.middleware.cors import CORSMiddleware
+from pydantic import BaseModel
 import pandas as pd
 import uuid
+
 
 from typing import Annotated, List
 from app.config import DATA_DIR
@@ -35,9 +37,15 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+class QueryPost(BaseModel):
+    SessionId: str 
+    TTypes: str | List[str] | None = None
+    AccountNames: str | List[str] | None = None
+    
+
 
 session_data = {}
-# session_data["0"] = pd.read_csv(DATA_DIR / "transactions.csv")
+session_data["0"] = pd.read_csv(DATA_DIR / "transactions.csv")
 
 
 @app.post("/decrypt/")
@@ -91,13 +99,16 @@ async def main_analysis(data: pd.DataFrame):
 
 @app.post("/query/")
 async def query_transactions(
-    session_id: str, t_type: Annotated[str | List[str] | None, Query()] = None, account_name: Annotated[str | List[str] | None, Query()] = None
+    query_post: QueryPost
 ):
-    if session_id not in session_data:
+    if query_post.SessionId not in session_data:
         return {"Error": "session expired or not found"}
 
-    data: pd.DataFrame = session_data[session_id]
+    data: pd.DataFrame = session_data[query_post.SessionId]
     query = {}
+    
+    t_type = query_post.TTypes
+    account_name = query_post.AccountNames
 
     if t_type:
         if type(t_type) == str:
