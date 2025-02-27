@@ -72,8 +72,15 @@ def amount_outin_per_account_name(
         transactions = []
         
         df = filtered_data[filtered_data["Direction"] == dir].sort_values(by="Amount",ascending=False)
-        amount = total_cashflow(data=df, direction=dir)
-        attrs = {"Total": amount}
+        attrs = {}
+        attrs["Amounts"] ={}
+        attrs["Amounts"]["Totals"] = total
+        grouped_df = df.groupby("Account Name")
+        for acc_name, small_df in grouped_df:
+            attrs["Amounts"][acc_name] = small_df["Amount"].sum()
+        
+        
+        
         head_df = df[:10]
         others = {}
         if df.shape[0]>10:
