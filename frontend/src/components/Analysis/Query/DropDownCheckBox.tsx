@@ -12,65 +12,75 @@ import {
 
 interface DropdownMenuCheckboxInterface {
   values: string[];
+  title: string;
+  setter: React.Dispatch<React.SetStateAction<string[] | null>>
 }
 
 export function DropdownMenuCheckbox({
-  values,
+  values, setter, title
 }: DropdownMenuCheckboxInterface) {
   const memoizedValues = React.useMemo(() => ["All", ...values], [values]);
-  
-  const [checkedItems, setCheckedItems] = React.useState<Map<string, boolean>>(() => {
-    const initialMap = new Map();
-    memoizedValues.forEach((val) => initialMap.set(val, true));
-    return initialMap;
-  });
-  
+
+  const [checkedItems, setCheckedItems] = React.useState<Map<string, boolean>>(
+    () => {
+      const initialMap = new Map();
+      memoizedValues.forEach((val) => initialMap.set(val, true));
+      return initialMap;
+    }
+  );
+
   const [open, setOpen] = React.useState<boolean>(false);
   const [searchTerm, setSearchTerm] = React.useState<string>("");
-  
+
   // Calculate if "All" should be checked
   React.useEffect(() => {
     const regularItemsCount = values.length;
     let checkedRegularItemsCount = 0;
-    
+
     checkedItems.forEach((checked, key) => {
       if (checked && key !== "All") {
         checkedRegularItemsCount++;
       }
     });
-    
+
     // All items checked except "All"
-    if (checkedRegularItemsCount === regularItemsCount && !checkedItems.get("All")) {
-      setCheckedItems(prev => {
+    if (
+      checkedRegularItemsCount === regularItemsCount &&
+      !checkedItems.get("All")
+    ) {
+      setCheckedItems((prev) => {
         const newMap = new Map(prev);
         newMap.set("All", true);
         return newMap;
       });
-    } 
+    }
     // Not all regular items are checked but "All" is checked
-    else if (checkedRegularItemsCount < regularItemsCount && checkedItems.get("All")) {
-      setCheckedItems(prev => {
+    else if (
+      checkedRegularItemsCount < regularItemsCount &&
+      checkedItems.get("All")
+    ) {
+      setCheckedItems((prev) => {
         const newMap = new Map(prev);
         newMap.set("All", false);
         return newMap;
       });
     }
   }, [checkedItems, values.length]);
-  
+
   // Filter values based on search term
   const filteredValues = React.useMemo(() => {
     if (!searchTerm) return memoizedValues;
-    
+
     const results = ["All"];
-    values.forEach(value => {
+    values.forEach((value) => {
       if (value.toLowerCase().includes(searchTerm.toLowerCase())) {
         results.push(value);
       }
     });
-    
+
     return results.length > 1 ? results : memoizedValues;
   }, [searchTerm, memoizedValues, values]);
-  
+
   // Count selected items (excluding "All")
   const selectedCount = React.useMemo(() => {
     let count = 0;
@@ -81,26 +91,42 @@ export function DropdownMenuCheckbox({
     });
     return count;
   }, [checkedItems]);
-  
+
   // Handle search input change
   const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearchTerm(e.target.value);
   };
-  
+
+  const  setValues  = setter
+  React.useEffect(() => {
+    if (checkedItems.get("All")) setValues(null);
+    else {
+      const newSelectedValues: string[] = [];
+      checkedItems.forEach((_, val) => newSelectedValues.push(val));
+      setValues(newSelectedValues);
+    }
+
+  }, [checkedItems, setValues])
+
   return (
     <DropdownMenu open={open} onOpenChange={setOpen}>
       <DropdownMenuTrigger asChild>
         <Button variant="default">
-          Accounts{selectedCount == values.length ? ": All" : selectedCount > 0 ? `: ${selectedCount}` : ""}
+          {title}
+          {selectedCount == values.length
+            ? ": All"
+            : selectedCount > 0
+            ? `: ${selectedCount}`
+            : ""}
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56">
         <div className="p-2">
-          <input 
-            type="text" 
+          <input
+            type="text"
             onChange={handleSearchChange}
             value={searchTerm}
-            placeholder="Search accounts..."
+            placeholder="Search..."
             className="w-full p-1"
           />
         </div>
@@ -117,13 +143,13 @@ export function DropdownMenuCheckbox({
                   if (value === "All") {
                     // When "All" is toggled, update all items
                     const newCheckedItems = new Map();
-                    memoizedValues.forEach(val => {
+                    memoizedValues.forEach((val) => {
                       newCheckedItems.set(val, !!checked);
                     });
                     setCheckedItems(newCheckedItems);
                   } else {
                     // When an individual item is toggled
-                    setCheckedItems(prev => {
+                    setCheckedItems((prev) => {
                       const newMap = new Map(prev);
                       newMap.set(value, !!checked);
                       return newMap;

@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 import { createContext } from "react";
 
-type transactionsContextType = {
-  selectedTransactionTypes: string | null;
+type transactionTypesContextType = {
+  selectedTransactionTypes: string[] | null;
   setSelectedTransactionTypes: React.Dispatch<
-    React.SetStateAction<string | null>
+    React.SetStateAction<string[] | null>
   >;
 };
 
@@ -14,7 +14,7 @@ type accountsContextType = {
 }
 
 type QueryContextType = {
-  transactionsContext: transactionsContextType;
+  transactionTypesContext: transactionTypesContextType;
   accountsContext: accountsContextType;
 };
 

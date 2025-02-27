@@ -2,7 +2,7 @@ import IncomeType from "./IncomeType";
 import IncomevExpenses from "./IncomevExpenses";
 import ExpenditureType from "./ExpenditureType";
 import { SummarySection } from "./SummarySection";
-import QueryComponent from "./QueryComponent";
+import QueryComponent from "./Query/QueryComponent";
 
 const Analysis = () => {
   return (
