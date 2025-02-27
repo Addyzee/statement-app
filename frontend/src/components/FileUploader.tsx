@@ -1,6 +1,7 @@
 import { ChangeEvent, useContext, useRef, useState } from "react";
 import { ArchiveX } from "lucide-react";
 import { Button } from "./ui/button";
+import { LoadingButton } from "./ui/loadingbutton";
 import axios from "axios";
 import { PagingContext } from "./context/PagingContext";
 import { useResponseMain } from "./context/ResponseContext";
@@ -8,7 +9,7 @@ import { useResponseMain } from "./context/ResponseContext";
 type UploadStatus = "idle" | "instate" | "uploading" | "success" | "error";
 
 const FileUploader = () => {
-  const { setData, setIsLoading, setError} = useResponseMain();
+  const { setData, isLoading, setIsLoading, setError } = useResponseMain();
 
   const { setCurrentPage } = useContext(PagingContext);
   const [pdfFile, setPDFFile] = useState<File | null>(null);
@@ -42,8 +43,8 @@ const FileUploader = () => {
     formData.append("password", password);
 
     try {
-      setIsLoading(true)
-      setError(null)
+      setIsLoading(true);
+      setError(null);
       const response = await axios.post(
         "http://127.0.0.1:8000/decrypt/",
         formData,
@@ -60,13 +61,15 @@ const FileUploader = () => {
       setStatus("success");
       setUploadProgress(100);
       setCurrentPage("Analysis");
-      setData(response.data)
-    } catch(err) {
+      setData(response.data);
+    } catch (err) {
       setStatus("error");
       setUploadProgress(0);
-      setError(err instanceof Error ? err : new Error('Unknown error occurred'))
+      setError(
+        err instanceof Error ? err : new Error("Unknown error occurred")
+      );
     } finally {
-      setIsLoading(false)
+      setIsLoading(false);
     }
   };
 
@@ -119,6 +122,7 @@ const FileUploader = () => {
             {status === "error" && (
               <p className="text-red-700">Upload failed. Please try again.</p>
             )}
+            {isLoading && <LoadingButton />}
           </>
         )}
 
@@ -136,7 +140,9 @@ const FileUploader = () => {
       </div>
 
       {pdfFile && status !== "uploading" && (
-        <Button variant="default" onClick={handleFileUpload}>Upload PDF</Button>
+        <Button variant="default" onClick={handleFileUpload}>
+          Upload PDF
+        </Button>
       )}
     </div>
   );
