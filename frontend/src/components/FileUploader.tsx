@@ -3,12 +3,12 @@ import { ArchiveX } from "lucide-react";
 import { Button } from "./ui/button";
 import axios from "axios";
 import { PagingContext } from "./context/PagingContext";
-import { useResponse } from "./context/ResponseContext";
+import { useResponseMain } from "./context/ResponseContext";
 
 type UploadStatus = "idle" | "instate" | "uploading" | "success" | "error";
 
 const FileUploader = () => {
-  const { setData, setIsLoading, setError} = useResponse();
+  const { setData, setIsLoading, setError} = useResponseMain();
 
   const { setCurrentPage } = useContext(PagingContext);
   const [pdfFile, setPDFFile] = useState<File | null>(null);

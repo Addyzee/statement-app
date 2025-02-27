@@ -1,7 +1,7 @@
 export type TransactionType = {
   Type: string;
   Amount: number;
-  Percent: number;
+  Percent?: number;
 };
 
 export type Response = {
@@ -47,10 +47,10 @@ export type Response = {
         average_out: number;
       };
       safaricom_charges: {
-        In: Record<string, never>;
+        In: Record<string, TransactionType>;
         Out: TransactionType[];
       };
-      filterable_headers: string[]
+      filterable_headers: string[];
     };
     months_analysis: Array<{
       Month: string;
@@ -62,25 +62,29 @@ export type Response = {
       frequencies: Record<string, number>;
       amounts: {
         In: {
-          Main: TransactionType[];
-          Others: Array<{
-            Others: TransactionType[];
-          }>;
+          Main: TransactionType[] | undefined;
+          Others:
+            | Array<{
+                Others: TransactionType[];
+              }>
+            | undefined;
         };
         Out: {
           Main: TransactionType[];
-          Others: Array<{
-            Others: TransactionType[];
-          }>;
+          Others:
+            | Array<{
+                Others: TransactionType[];
+              }>
+            | undefined;
         };
       };
       safaricom_charges: {
-        In: Record<string, never>;
+        In?: Record<string, TransactionType[]>;
         Out: TransactionType[];
       };
     };
     accounts_analysis: {
-      accounts: string[];
+      accounts: Array<Partial<Record<string, string[]>>>;
       frequencies: Record<string, number>;
       amounts: {
         In: Array<{

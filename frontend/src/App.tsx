@@ -6,7 +6,7 @@ import { PagingContext } from "./components/context/PagingContext";
 import { ResponseProvider } from "./components/context/ResponseProvider";
 
 function App() {
-  const [currentPage, setCurrentPage] = useState<string>("Home");
+  const [currentPage, setCurrentPage] = useState<string>("Analysis");
   const pagingContext = { currentPage, setCurrentPage };
 
 

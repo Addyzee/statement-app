@@ -13,13 +13,17 @@ import {
 interface DropdownMenuCheckboxInterface {
   values: string[];
   title: string;
-  setter: React.Dispatch<React.SetStateAction<string[] | null>>
+  setter: React.Dispatch<React.SetStateAction<string[] | null>>;
 }
 
 export function DropdownMenuCheckbox({
-  values, setter, title
+  values,
+  setter,
+  title,
 }: DropdownMenuCheckboxInterface) {
-  const memoizedValues = React.useMemo(() => ["All", ...values], [values]);
+  const memoizedValues = React.useMemo(() => {
+    return ["All", ...values];
+  }, [values]);
 
   const [checkedItems, setCheckedItems] = React.useState<Map<string, boolean>>(
     () => {
@@ -28,6 +32,18 @@ export function DropdownMenuCheckbox({
       return initialMap;
     }
   );
+
+  React.useEffect(() => {
+    setCheckedItems((initialCheckList) => {
+      const newChecklist = new Map();
+      initialCheckList.forEach((checked, key) => {
+        if (memoizedValues.includes(key) && checked) {
+          newChecklist.set(key, true);
+        }
+      });
+      return newChecklist
+    });
+  }, [memoizedValues]);
 
   const [open, setOpen] = React.useState<boolean>(false);
   const [searchTerm, setSearchTerm] = React.useState<string>("");
@@ -97,16 +113,17 @@ export function DropdownMenuCheckbox({
     setSearchTerm(e.target.value);
   };
 
-  const  setValues  = setter
+  const setValues = setter;
   React.useEffect(() => {
     if (checkedItems.get("All")) setValues(null);
     else {
       const newSelectedValues: string[] = [];
-      checkedItems.forEach((_, val) => newSelectedValues.push(val));
+      checkedItems.forEach((checked, val) => {
+        if (checked) newSelectedValues.push(val);
+      });
       setValues(newSelectedValues);
     }
-
-  }, [checkedItems, setValues])
+  }, [checkedItems, setValues]);
 
   return (
     <DropdownMenu open={open} onOpenChange={setOpen}>
@@ -114,7 +131,7 @@ export function DropdownMenuCheckbox({
         <Button variant="default">
           {title}
           {selectedCount == values.length
-            ? ": All"
+            ? `: All (${selectedCount})`
             : selectedCount > 0
             ? `: ${selectedCount}`
             : ""}
@@ -147,7 +164,7 @@ export function DropdownMenuCheckbox({
                       newCheckedItems.set(val, !!checked);
                     });
                     setCheckedItems(newCheckedItems);
-                  } else {
+                  }else {
                     // When an individual item is toggled
                     setCheckedItems((prev) => {
                       const newMap = new Map(prev);
