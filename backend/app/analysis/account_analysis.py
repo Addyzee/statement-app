@@ -7,6 +7,14 @@ def get_all_account_names(data:pd.DataFrame):
     # Used
     return list(data["Account Name"].unique())
 
+def get_all_account_names_by_type(data:pd.DataFrame):
+    # Used
+    dfs = data.groupby("Type")["Account Name"]
+    accounts = []
+    for t_type, df in dfs:
+        accounts.append({t_type: sorted(list(set(df.values)), key=str.casefold)})
+    return accounts
+
 
 def get_top_account_names_outin(data: pd.DataFrame):
     # Defaulter function 

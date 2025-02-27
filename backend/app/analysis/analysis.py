@@ -8,7 +8,7 @@ from .t_type_analysis import (
 )
 from .account_analysis import (
     get_account_names_frequencies,
-    get_all_account_names,
+    get_all_account_names_by_type,
     get_account_names_per_type,
     amount_outin_per_account_name,
     amount_per_account_name_per_type,
@@ -64,12 +64,12 @@ def query_analysis(data: pd.DataFrame, queries: Dict[str, str]):
 
 
 def transaction_accounts_analysis(data: pd.DataFrame):
-    all_accounts = get_all_account_names(data=data)
+    all_accounts = get_all_account_names_by_type(data=data)
     frequencies = get_account_names_frequencies(data)
     amounts = get_top_accounts_with_amounts_outin(data)
     top_accounts = {"In": amounts["In"][0], "Out": amounts["Out"][0]}
     return {
-        "accounts": sorted(all_accounts, key=str.casefold),
+        "accounts": all_accounts,
         "frequencies": frequencies,
         "amounts": amounts,
         "top_accounts": top_accounts,
