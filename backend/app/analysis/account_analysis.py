@@ -129,17 +129,21 @@ def get_account_names_sum_with_others(data: pd.DataFrame, max: int = 15):
     others = acc_names_sum.nsmallest(acc_names_shape - max, "all")
     max_largest_dict = max_largest.to_dict()
     all_acc_dict = {}
+    all_acc_dict["Amounts"] = {}
+    all_acc_dict["Amounts"]["Total"] = total_sum
+    grouped_df = data.groupby("Type")
+    for t_type, small_df in grouped_df:
+            all_acc_dict["Amounts"][t_type] = small_df["Amount"].sum()
+
     others_sum = others.values.sum()
-    all_acc_dict["Main"] = [
+    all_acc_dict["Transactions"] = [
         {"Account Name": k[0], "Type": k[1], "Amount": v}
         for k, v in max_largest_dict.items()
     ]
-    all_acc_dict["Main"].append(
+    all_acc_dict["Transactions"].append(
         {"Account Name": "Others", "Type": "Others", "Amount": others_sum}
     )
-    all_acc_dict["Total"] = total_sum
-    others_types = others.index.get_level_values(0).unique().to_list()
-    all_acc_dict["Others"] = [others_types]
+   
     return all_acc_dict
 
 
