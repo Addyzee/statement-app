@@ -7,13 +7,13 @@ import {
 const IncomeType = () => {
   const t_type_amounts_in = useTransactionAnalysis().amounts.In.Main;
   const t_type_others =
-    useTransactionAnalysis().amounts.In.Others[0].Others.slice(0, 5);
+    useTransactionAnalysis().amounts.In.Others?.[0]?.Others?.slice(0, 5) || [];
   const top_accounts_in = useAccountsAnalysis().amounts.In.slice(0, 5);
 
   return (
     <div className="lg:flex">
       <div className="flex-1">
-        <Doughnut data={t_type_amounts_in} />
+        {t_type_amounts_in && <Doughnut data={t_type_amounts_in} />}
       </div>
       <div className="flex-1">
         {top_accounts_in ? (

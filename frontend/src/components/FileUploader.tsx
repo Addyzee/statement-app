@@ -134,7 +134,7 @@ const FileUploader = () => {
             <input
               type="text"
               name="password"
-              className="border border-white text-right"
+              className="border border-white text-right h-9"
               onChange={recordPassword}
             />
           </div>

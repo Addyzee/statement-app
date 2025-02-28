@@ -1,17 +1,17 @@
 import { useQueryResponseContext } from "./Context/QueryResponseContext";
 import { DataTable } from "./Utils/DataTable";
 import { useQueryContext } from "./Context/QueryContext";
+import TotalsTable from "./TotalsTable";
 
 const QueryTables = () => {
   const { accountsQueryData, transactionTypeQuery } = useQueryResponseContext();
-  const {accountsContext, transactionTypesContext}= useQueryContext()
-  const {selectedAccounts} = accountsContext
-  const {selectedTransactionTypes} = transactionTypesContext
+  const { accountsContext, transactionTypesContext } = useQueryContext();
+  const { selectedAccounts } = accountsContext;
+  const { selectedTransactionTypes } = transactionTypesContext;
   return (
     <div className="flex-1 mt-7 ">
       {accountsQueryData ? (
         <div>
-
           {selectedAccounts && (
             <p>
               Accounts selected:{" "}
@@ -66,9 +66,25 @@ const QueryTables = () => {
               </h3>
             )}
           </div>
+          <div className="flex justify-center border border-gray-700 rounded-xl mb-5 mt-3">
+            <div className="lg:flex mt-3 rounded-xl p-3 w-4/5 justify-around">
+              {transactionTypeQuery.In?.Accounts && (
+                <div className="lg:border-r lg:pr-3">
+                  <h3 className="font-bold text-right">Income</h3>
+                  <TotalsTable Amounts={transactionTypeQuery.In.Amounts} />
+                </div>
+              )}
+              {transactionTypeQuery.Out?.Accounts && (
+                <div className="lg:border-l lg:pl-3">
+                  <h3 className="font-bold">Expenditure</h3>
+                  <TotalsTable Amounts={transactionTypeQuery.Out.Amounts} />
+                </div>
+              )}
+            </div>
+          </div>
 
           {transactionTypeQuery.In?.Accounts && (
-            <div className="border p-2 rounded-xl mb-4 border-gray-700">
+            <div className=" p-2 rounded-xl mb-4 border border-gray-700">
               <h3 className="font-semibold text-base">Income</h3>
               <DataTable
                 tableData={transactionTypeQuery.In.Accounts}
@@ -78,9 +94,8 @@ const QueryTables = () => {
             </div>
           )}
           {transactionTypeQuery.Out?.Accounts && (
-            <div className="border p-2 rounded-xl mb-4 border-gray-700">
+            <div className="p-2 rounded-xl mb-4 border border-gray-700">
               <h3 className="font-semibold text-base">Expenditure</h3>
-
               <DataTable
                 tableData={transactionTypeQuery.Out.Accounts}
                 tableHeaders={Object.keys(transactionTypeQuery.Out.Accounts[0])}

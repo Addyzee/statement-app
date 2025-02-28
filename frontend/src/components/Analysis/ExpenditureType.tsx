@@ -7,7 +7,7 @@ import {
 const ExpenditureType = () => {
   const t_type_amounts_out = useTransactionAnalysis().amounts.Out.Main;
   const t_type_others =
-    useTransactionAnalysis().amounts.Out.Others[0].Others.slice(0, 5);
+    useTransactionAnalysis()?.amounts?.Out?.Others?.[0]?.Others?.slice(0, 5) ?? [];
   const top_accounts_out = useAccountsAnalysis().amounts.Out.slice(0, 5);
 
   return (
