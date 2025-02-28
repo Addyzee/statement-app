@@ -139,13 +139,13 @@ type TransactionDetail = {
 export type AccountsQuery = {
   In:
     | {
-        Amount: Record<string, number>;
+        Amounts: Record<string, number>;
         Transactions: TransactionDetail[];
       }
     | undefined;
   Out:
     | {
-        Amount: Record<string, number>;
+        Amounts: Record<string, number>;
         Transactions: TransactionDetail[];
       }
     | undefined;

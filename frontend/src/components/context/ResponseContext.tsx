@@ -1,6 +1,5 @@
-import { createContext, useContext } from 'react';
-import { Response } from './types';
-import Data from "../Analysis/Data.json"
+import { createContext, useContext } from "react";
+import { Response } from "./types";
 type ResponseContextType = {
   data: Response | null;
   setData: React.Dispatch<React.SetStateAction<Response | null>>;
@@ -10,44 +9,47 @@ type ResponseContextType = {
   setError: React.Dispatch<React.SetStateAction<Error | null>>;
 };
 
-export const ResponseContext = createContext<ResponseContextType | undefined>(undefined);
+export const ResponseContext = createContext<ResponseContextType | undefined>(
+  undefined
+);
 
-export function useResponseMain(){
+export function useResponseTest() {
   const context = useContext(ResponseContext);
-  if (!context) throw new Error('useResponse must be used within ResponseProvider');
-  return context
+  if (!context)
+    throw new Error("useResponse must be used within ResponseProvider");
+  return context;
+  // created this to test without having to rely on the api
+  // const  data  = Data
+  // return { data }
 }
 
 export function useResponse() {
-  // created this to test without having to rely on the api
-  // const context = useContext(ResponseContext);
-  // if (!context) throw new Error('useResponse must be used within ResponseProvider');
-  const  data  = Data
-  return { data }
-
-  // return context;
+  const context = useContext(ResponseContext);
+  if (!context)
+    throw new Error("useResponse must be used within ResponseProvider");
+  return context;
 }
 
 export function useSummary() {
   const { data } = useResponse();
-  if (!data) throw new Error('No Response data available');
+  if (!data) throw new Error("No Response data available");
   return data.analysis.summary;
 }
 
 export function useMonthlyAnalysis() {
   const { data } = useResponse();
-  if (!data) throw new Error('No Response data available');
+  if (!data) throw new Error("No Response data available");
   return data.analysis.months_analysis;
 }
 
 export function useTransactionAnalysis() {
   const { data } = useResponse();
-  if (!data) throw new Error('No Response data available');
+  if (!data) throw new Error("No Response data available");
   return data.analysis.transaction_type_analysis;
 }
 
 export function useAccountsAnalysis() {
   const { data } = useResponse();
-  if (!data) throw new Error('No Response data available');
+  if (!data) throw new Error("No Response data available");
   return data.analysis.accounts_analysis;
 }

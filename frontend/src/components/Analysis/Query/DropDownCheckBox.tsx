@@ -41,7 +41,7 @@ export function DropdownMenuCheckbox({
           newChecklist.set(key, true);
         }
       });
-      return newChecklist
+      return newChecklist;
     });
   }, [memoizedValues]);
 
@@ -115,8 +115,9 @@ export function DropdownMenuCheckbox({
 
   const setValues = setter;
   React.useEffect(() => {
-    if (checkedItems.get("All")) setValues(null);
-    else {
+    if (checkedItems.get("All")) {
+      setValues(null);
+    } else {
       const newSelectedValues: string[] = [];
       checkedItems.forEach((checked, val) => {
         if (checked) newSelectedValues.push(val);
@@ -164,7 +165,7 @@ export function DropdownMenuCheckbox({
                       newCheckedItems.set(val, !!checked);
                     });
                     setCheckedItems(newCheckedItems);
-                  }else {
+                  } else {
                     // When an individual item is toggled
                     setCheckedItems((prev) => {
                       const newMap = new Map(prev);

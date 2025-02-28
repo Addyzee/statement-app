@@ -4,12 +4,12 @@ import { Button } from "./ui/button";
 import { LoadingButton } from "./ui/loadingbutton";
 import axios from "axios";
 import { PagingContext } from "./context/PagingContext";
-import { useResponseMain } from "./context/ResponseContext";
+import { useResponse } from "./context/ResponseContext";
 
 type UploadStatus = "idle" | "instate" | "uploading" | "success" | "error";
 
 const FileUploader = () => {
-  const { setData, isLoading, setIsLoading, setError } = useResponseMain();
+  const { setData, isLoading, setIsLoading, setError } = useResponse();
 
   const { setCurrentPage } = useContext(PagingContext);
   const [pdfFile, setPDFFile] = useState<File | null>(null);
@@ -60,8 +60,9 @@ const FileUploader = () => {
       );
       setStatus("success");
       setUploadProgress(100);
-      setCurrentPage("Analysis");
       setData(response.data);
+      localStorage.setItem('sessionId', response.data.session_id);
+      setCurrentPage("Analysis");
     } catch (err) {
       setStatus("error");
       setUploadProgress(0);
@@ -72,6 +73,7 @@ const FileUploader = () => {
       setIsLoading(false);
     }
   };
+
 
   return (
     <div className="flex flex-col gap-3 justify-center items-center">

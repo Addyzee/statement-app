@@ -12,22 +12,25 @@ import {
 interface QueryTableProps {
   tableData: Record<string, string | number>[];
   tableHeaders: string[];
-  totalAmounts?: Record<string, number>;
+  totalAmount?: number;
 }
 
 export function QueryTable({
   tableData,
   tableHeaders,
-  totalAmounts,
+  totalAmount,
 }: QueryTableProps) {
   const customizedTableData = tableData.map((tableValues) => {
     if (tableHeaders.includes("Amount")) {
-      return { ...tableValues, Amount: `KES ${tableValues["Amount"]}` };
+      return {
+        ...tableValues,
+        Amount: `KES ${tableValues["Amount"].toLocaleString()}`,
+      };
     } else return { ...tableValues };
   });
 
   return (
-    <Table className="max-h-40 h-32">
+    <Table className="max-h-40">
       <TableCaption>A list of your recent data.</TableCaption>
       <TableHeader className="hover:text-white">
         <TableRow className="hover:text-white">
@@ -43,7 +46,7 @@ export function QueryTable({
           ))}
         </TableRow>
       </TableHeader>
-      <TableBody className="h-40 max-h-40">
+      <TableBody className="max-h-40">
         {customizedTableData.map((tableValues, idx) => (
           <TableRow key={idx}>
             {tableHeaders.map((header, idx2) => (
@@ -58,15 +61,14 @@ export function QueryTable({
         ))}
       </TableBody>
       <TableFooter>
-        {totalAmounts &&
-          Object.keys(totalAmounts).map((title, idx) => (
-            <TableRow key={idx}>
-              <TableCell colSpan={2}>{title}</TableCell>
+        {totalAmount &&(
+            <TableRow>
+              <TableCell colSpan={tableHeaders.length-1}>Total</TableCell>
               <TableCell className="text-right">
-                KES {totalAmounts[title].toLocaleString()}
+                KES {totalAmount.toLocaleString()}
               </TableCell>
             </TableRow>
-          ))}
+          )}
       </TableFooter>
     </Table>
   );
