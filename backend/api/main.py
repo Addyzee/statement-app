@@ -43,7 +43,7 @@ class QueryPost(BaseModel):
     AccountNames: str | List[str] | None = None
     
 
-session_data = {}
+session_data = {} 
 session_data["0"] = pd.read_csv(DATA_DIR / "transactions.csv")
 
 

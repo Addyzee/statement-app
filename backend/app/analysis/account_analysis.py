@@ -122,29 +122,39 @@ def get_account_names_frequencies(data: pd.DataFrame, max: int = 15):
 
 
 def get_account_names_sum_with_others(data: pd.DataFrame, max: int = 15):
-    acc_names_sum = data.groupby(["Account Name", "Type"])["Amount"].sum()
-    total_sum = acc_names_sum.values.sum()
-    acc_names_shape = acc_names_sum.shape[0]
-    max_largest = acc_names_sum.nlargest(max, "all")
-    others = acc_names_sum.nsmallest(acc_names_shape - max, "all")
-    max_largest_dict = max_largest.to_dict()
-    all_acc_dict = {}
-    all_acc_dict["Amounts"] = {}
-    all_acc_dict["Amounts"]["Total"] = total_sum
-    grouped_df = data.groupby("Type")
-    for t_type, small_df in grouped_df:
-            all_acc_dict["Amounts"][t_type] = small_df["Amount"].sum()
-
-    others_sum = others.values.sum()
-    all_acc_dict["Transactions"] = [
-        {"Account Name": k[0], "Type": k[1], "Amount": v}
-        for k, v in max_largest_dict.items()
-    ]
-    all_acc_dict["Transactions"].append(
-        {"Account Name": "Others", "Type": "Others", "Amount": others_sum}
-    )
-   
-    return all_acc_dict
+    mapped_amounts = {"In": {}, "Out": {}}
+    for dir in ["In", "Out"]:
+        filtered_data = data[data["Direction"] == dir]
+        acc_names_sum = filtered_data.groupby(["Account Name", "Type"])["Amount"].sum()
+        total_sum = acc_names_sum.values.sum()
+        if total_sum == 0:
+            continue
+        acc_names_shape = acc_names_sum.shape[0]
+        # Get sum of first <max> numbers
+        max_largest = acc_names_sum.nlargest(max, "all")
+        # Others sum
+        others = acc_names_sum.nsmallest(acc_names_shape - max, "all")
+        max_largest_dict = max_largest.to_dict()
+        all_acc_dict = {}
+        all_acc_dict["Amounts"] = {}
+        all_acc_dict["Amounts"]["Total"] = total_sum
+        grouped_df = filtered_data.groupby("Type")
+        for t_type, small_df in grouped_df:
+                all_acc_dict["Amounts"][t_type] = small_df["Amount"].sum()
+                
+        
+        all_acc_dict["Accounts"] = [
+            {"Account Name": k[0], "Type": k[1], "Amount": v}
+            for k, v in max_largest_dict.items()
+        ]
+        if others.shape[0] > 0:
+            others_sum = others.values.sum()
+            all_acc_dict["Accounts"].append(
+                {"Account Name": "Others", "Type": "Others", "Amount": others_sum}
+            )
+        mapped_amounts[dir] = all_acc_dict
+    
+    return mapped_amounts
 
 
 def get_account_names_sum(data: pd.DataFrame, max: int = 15):
