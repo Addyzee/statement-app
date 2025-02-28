@@ -1,5 +1,5 @@
 Metadata-Version: 2.2
-Name: statement-app
+Name: pesa_statements
 Version: 0.1
 Requires-Dist: pandas
 Requires-Dist: pypdf2

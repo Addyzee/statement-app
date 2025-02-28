@@ -5,6 +5,7 @@ import { LoadingButton } from "./ui/loadingbutton";
 import axios from "axios";
 import { PagingContext } from "./context/PagingContext";
 import { useResponse } from "./context/ResponseContext";
+const baseURL = import.meta.env.VITE_BACKEND_URL
 
 type UploadStatus = "idle" | "instate" | "uploading" | "success" | "error";
 
@@ -46,7 +47,7 @@ const FileUploader = () => {
       setIsLoading(true);
       setError(null);
       const response = await axios.post(
-        "http://127.0.0.1:8000/decrypt/",
+        `${baseURL}decrypt/`,
         formData,
         {
           headers: { "Content-Type": "multipart/form-data" },

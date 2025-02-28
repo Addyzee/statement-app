@@ -4,7 +4,12 @@ api/main.py
 app/__init__.py
 app/config.py
 app/analysis/__init__.py
+app/analysis/account_analysis.py
 app/analysis/analysis.py
+app/analysis/t_type_analysis.py
+app/analysis/time_analysis.py
+app/analysis/totals.py
+app/analysis/utils.py
 app/data/__init__.py
 app/data/clean.py
 app/data_writing/__init__.py

@@ -5,6 +5,7 @@ import { useQueryContext } from "./Context/QueryContext";
 import { useTransactionAnalysis, useAccountsAnalysis, useResponse } from "@/components/context/ResponseContext";
 import { DropdownMenuCheckbox } from "./Utils/DropDownCheckBox";
 import { useQueryResponseContext } from "./Context/QueryResponseContext";
+const baseURL = import.meta.env.VITE_BACKEND_URL
 
 const FilterComponents = () => {
   const { accountsContext, transactionTypesContext } = useQueryContext();
@@ -70,7 +71,7 @@ const FilterComponents = () => {
       setAccountsQueryData(null);
       setTransactionTypeQuery(null);
       const response = await axios.post(
-        "http://127.0.0.1:8000/query/",
+        `${baseURL}query/`,
         {
           SessionId: sessionID,
           TTypes: !selectedTransactionTypes ? [] : selectedTransactionTypes,
