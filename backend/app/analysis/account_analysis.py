@@ -1,11 +1,10 @@
 import pandas as pd
-import numpy as np
 from typing import Dict, List
 from .utils import convert_to_default
 from .totals import total_cashflow
 
 
-def get_all_account_names(data: pd.DataFrame):
+def all_account_names(data: pd.DataFrame):
     # Used
     return list(data["Account Name"].unique())
 
@@ -68,13 +67,12 @@ def amount_outin_per_account_name(
         if total == 0:
             continue
 
-        mapped_amounts[dir] = []
         transactions = []
         
         df = filtered_data[filtered_data["Direction"] == dir].sort_values(by="Amount",ascending=False)
         attrs = {}
         attrs["Amounts"] ={}
-        attrs["Amounts"]["Totals"] = total
+        attrs["Amounts"]["Total"] = total
         grouped_df = df.groupby("Account Name")
         for acc_name, small_df in grouped_df:
             attrs["Amounts"][acc_name] = small_df["Amount"].sum()
@@ -87,32 +85,34 @@ def amount_outin_per_account_name(
             tail_df = df[10:]
             tail_total = total_cashflow(data=tail_df, direction=dir)
             others = {}
-            others["Original Message"] = "Others"
+            others["Original Message"] = "-"
+            others["Account"] = "Others"
             others["Date"] = f"{tail_df.iloc[-1]["Date"]} - {tail_df.iloc[0]["Date"]}"
             others["Amount"] = tail_total
-            others["Direction"] = dir
+
             
         for idx, row in head_df.iterrows():
             transaction = {}
             transaction["Account"] = row["Account Name"]
             transaction["Date"] = row["Date"]
-            transaction["Amount"] = row["Amount"]
-            transaction["Direction"] = row["Direction"]
             original_transaction = row["Original Transaction"]
             transaction["Original Message"] = (
                 "No description" if
                 type(original_transaction)==float
                 else original_transaction
             )
+            transaction["Amount"] = row["Amount"]
+
             transactions.append(transaction)
         if len(others.keys()) > 0:
+            others.values
             transactions.append(others)
         
         
         attrs["Transactions"] = transactions
             
 
-        mapped_amounts[dir].append(attrs)
+        mapped_amounts[dir] = attrs
 
     return mapped_amounts
 
@@ -141,6 +141,7 @@ def get_account_names_sum_with_others(data: pd.DataFrame, max: int = 15):
         grouped_df = filtered_data.groupby("Type")
         for t_type, small_df in grouped_df:
                 all_acc_dict["Amounts"][t_type] = small_df["Amount"].sum()
+        all_acc_dict["Amounts"] = {k: v for k, v in sorted(all_acc_dict["Amounts"].items(), key=lambda item: item[1], reverse=True)}
                 
         
         all_acc_dict["Accounts"] = [

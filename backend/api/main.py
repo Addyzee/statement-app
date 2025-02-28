@@ -101,6 +101,7 @@ async def query_transactions(
     query_post: QueryPost
 ):
     if query_post.SessionId not in session_data:
+        print(session_data.keys())
         return {"Error": "session expired or not found"}
 
     data: pd.DataFrame = session_data[query_post.SessionId]
