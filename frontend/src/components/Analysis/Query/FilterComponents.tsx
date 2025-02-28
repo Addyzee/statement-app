@@ -112,7 +112,7 @@ const FilterComponents = () => {
             values={accountNamesByTrasactionType}
           />
         </li>
-        <li className="absolute right-5">
+        <li className="lg:absolute right-5">
           <Button variant={"outline"} onClick={sendQuery}>
             Request Query
           </Button>
