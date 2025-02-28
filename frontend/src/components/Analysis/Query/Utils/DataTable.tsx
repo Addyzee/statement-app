@@ -9,17 +9,17 @@ import {
   TableRow,
 } from "@/components/ui/table";
 
-interface QueryTableProps {
+interface DataTableProps {
   tableData: Record<string, string | number>[];
   tableHeaders: string[];
   totalAmount?: number;
 }
 
-export function QueryTable({
+export function DataTable({
   tableData,
   tableHeaders,
   totalAmount,
-}: QueryTableProps) {
+}: DataTableProps) {
   const customizedTableData = tableData.map((tableValues) => {
     if (tableHeaders.includes("Amount")) {
       return {
@@ -30,14 +30,14 @@ export function QueryTable({
   });
 
   return (
-    <Table className="max-h-40">
+    <Table className="">
       <TableCaption>A list of your recent data.</TableCaption>
       <TableHeader className="hover:text-white">
         <TableRow className="hover:text-white">
           {tableHeaders.map((header, idx) => (
             <TableHead
               key={idx}
-              className={`w-[100px] ${
+              className={`w-8 ${
                 header == "Amount" ? "text-right" : "w-48"
               }`}
             >
@@ -46,7 +46,7 @@ export function QueryTable({
           ))}
         </TableRow>
       </TableHeader>
-      <TableBody className="max-h-40">
+      <TableBody className="">
         {customizedTableData.map((tableValues, idx) => (
           <TableRow key={idx}>
             {tableHeaders.map((header, idx2) => (
