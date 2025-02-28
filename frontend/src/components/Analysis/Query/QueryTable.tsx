@@ -1,94 +1,73 @@
 import {
-    Table,
-    TableBody,
-    TableCaption,
-    TableCell,
-    TableFooter,
-    TableHead,
-    TableHeader,
-    TableRow,
-  } from "@/components/ui/table"
-  
-  const invoices = [
-    {
-      invoice: "INV001",
-      paymentStatus: "Paid",
-      totalAmount: "$250.00",
-      paymentMethod: "Credit Card",
-    },
-    {
-      invoice: "INV002",
-      paymentStatus: "Pending",
-      totalAmount: "$150.00",
-      paymentMethod: "PayPal",
-    },
-    {
-      invoice: "INV003",
-      paymentStatus: "Unpaid",
-      totalAmount: "$350.00",
-      paymentMethod: "Bank Transfer",
-    },
-    {
-      invoice: "INV004",
-      paymentStatus: "Paid",
-      totalAmount: "$450.00",
-      paymentMethod: "Credit Card",
-    },
-    {
-      invoice: "INV005",
-      paymentStatus: "Paid",
-      totalAmount: "$550.00",
-      paymentMethod: "PayPal",
-    },
-    {
-      invoice: "INV006",
-      paymentStatus: "Pending",
-      totalAmount: "$200.00",
-      paymentMethod: "Bank Transfer",
-    },
-    {
-      invoice: "INV007",
-      paymentStatus: "Unpaid",
-      totalAmount: "$300.00",
-      paymentMethod: "Credit Card",
-    },
-    {
-      invoice: "INV008",
-      paymentStatus: "Unpaid",
-      totalAmount: "$300.00",
-      paymentMethod: "Credit Card",
-    },
-  ]
-  
-  export function QueryTable() {
-    return (
-      <Table className="max-h-40 h-32">
-        <TableCaption>A list of your recent invoices.</TableCaption>
-        <TableHeader>
-          <TableRow>
-            <TableHead className="w-[100px]">Invoice</TableHead>
-            <TableHead>Status</TableHead>
-            <TableHead>Method</TableHead>
-            <TableHead className="text-right">Amount</TableHead>
+  Table,
+  TableBody,
+  TableCaption,
+  TableCell,
+  TableFooter,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table";
+
+interface QueryTableProps {
+  tableData: Record<string, string | number>[];
+  tableHeaders: string[];
+  totalAmounts?: Record<string, number>;
+}
+
+export function QueryTable({
+  tableData,
+  tableHeaders,
+  totalAmounts,
+}: QueryTableProps) {
+  const customizedTableData = tableData.map((tableValues) => {
+    if (tableHeaders.includes("Amount")) {
+      return { ...tableValues, Amount: `KES ${tableValues["Amount"]}` };
+    } else return { ...tableValues };
+  });
+
+  return (
+    <Table className="max-h-40 h-32">
+      <TableCaption>A list of your recent data.</TableCaption>
+      <TableHeader className="hover:text-white">
+        <TableRow className="hover:text-white">
+          {tableHeaders.map((header, idx) => (
+            <TableHead
+              key={idx}
+              className={`w-[100px] ${
+                header == "Amount" ? "text-right" : "w-48"
+              }`}
+            >
+              {header}
+            </TableHead>
+          ))}
+        </TableRow>
+      </TableHeader>
+      <TableBody className="h-40 max-h-40">
+        {customizedTableData.map((tableValues, idx) => (
+          <TableRow key={idx}>
+            {tableHeaders.map((header, idx2) => (
+              <TableCell
+                key={`${idx}${idx2}`}
+                className={`${header == "Amount" ? "text-right" : ""}`}
+              >
+                {(tableValues as Record<string, string | number>)[header]}
+              </TableCell>
+            ))}
           </TableRow>
-        </TableHeader>
-        <TableBody className="h-40 max-h-40">
-          {invoices.map((invoice) => (
-            <TableRow key={invoice.invoice}>
-              <TableCell className="font-medium">{invoice.invoice}</TableCell>
-              <TableCell>{invoice.paymentStatus}</TableCell>
-              <TableCell>{invoice.paymentMethod}</TableCell>
-              <TableCell className="text-right">{invoice.totalAmount}</TableCell>
+        ))}
+      </TableBody>
+      <TableFooter>
+        {totalAmounts &&
+          Object.keys(totalAmounts).map((title, idx) => (
+            <TableRow key={idx}>
+              <TableCell colSpan={2}>{title}</TableCell>
+              <TableCell className="text-right">
+                KES {totalAmounts[title].toLocaleString()}
+              </TableCell>
             </TableRow>
           ))}
-        </TableBody>
-        <TableFooter>
-          <TableRow>
-            <TableCell colSpan={3}>Total</TableCell>
-            <TableCell className="text-right">$2,500.00</TableCell>
-          </TableRow>
-        </TableFooter>
-      </Table>
-    )
-  }
-  
+      </TableFooter>
+    </Table>
+  );
+}

@@ -113,3 +113,40 @@ export type Response = {
     };
   };
 };
+type AccountDetail = {
+  "Account Name": string;
+  Type: string;
+  Amount: number;
+};
+export type TransactionTypeQuery = {
+  In: {
+    Amounts: Record<string, number>;
+    Accounts: AccountDetail[] | undefined;
+  }| undefined;
+  Out: {
+    Amounts: Record<string, number>;
+    Accounts: AccountDetail[] | undefined;
+  }|undefined;
+};
+type TransactionDetail = {
+  Account: string;
+  Date: string;
+  Amount: number;
+  Direction: string;
+  "Original Message": string;
+};
+
+export type AccountsQuery = {
+  In:
+    | {
+        Amount: Record<string, number>;
+        Transactions: TransactionDetail[];
+      }
+    | undefined;
+  Out:
+    | {
+        Amount: Record<string, number>;
+        Transactions: TransactionDetail[];
+      }
+    | undefined;
+};
