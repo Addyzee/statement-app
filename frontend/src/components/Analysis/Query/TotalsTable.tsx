@@ -5,7 +5,7 @@ type TotalsTableProps =  {
 const TotalsTable = ({Amounts}: TotalsTableProps) => {
   const amountsData =  Amounts
   return (
-    <div> <table className="w-96 text-sm border-0">
+    <div> <table className="lg:w-96 text-sm border-0">
     <thead>
       <tr className="border-b">
         <th className="p-2 border-l-0 text-left">Type</th>

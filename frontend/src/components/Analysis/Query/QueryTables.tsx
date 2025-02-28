@@ -27,7 +27,7 @@ const QueryTables = () => {
             </p>
           )}
           {accountsQueryData.In?.Transactions && (
-            <div className="border p-2 rounded-xl mb-3 border-gray-700">
+            <div className="border p-2 rounded-xl mb-3 border-gray-700 mt-4">
               <h3 className="font-semibold text-base">Income</h3>
               <DataTable
                 tableData={accountsQueryData?.In?.Transactions}
@@ -35,6 +35,7 @@ const QueryTables = () => {
                   accountsQueryData?.In?.Transactions[0]
                 )}
                 totalAmount={accountsQueryData.In.Amounts.Total}
+                tableCaption="Top Transactions In"
               />
             </div>
           )}
@@ -47,6 +48,7 @@ const QueryTables = () => {
                   accountsQueryData?.Out.Transactions[0]
                 )}
                 totalAmount={accountsQueryData.Out.Amounts.Total}
+                tableCaption="Top Transactions Out"
               />
             </div>
           )}
@@ -66,16 +68,16 @@ const QueryTables = () => {
               </h3>
             )}
           </div>
-          <div className="flex justify-center border border-gray-700 rounded-xl mb-5 mt-3">
-            <div className="lg:flex mt-3 rounded-xl p-3 w-4/5 justify-around">
+          <div className="flex justify-center p-3 border border-gray-700 rounded-xl mb-5 mt-3">
+            <div className="lg:flex mt-3 rounded-xl lg:p-3 lg:w-4/5 justify-around">
               {transactionTypeQuery.In?.Accounts && (
                 <div className="lg:border-r lg:pr-3">
-                  <h3 className="font-bold text-right">Income</h3>
+                  <h3 className="font-bold lg:text-right">Income</h3>
                   <TotalsTable Amounts={transactionTypeQuery.In.Amounts} />
                 </div>
               )}
               {transactionTypeQuery.Out?.Accounts && (
-                <div className="lg:border-l lg:pl-3">
+                <div className="lg:border-l max-lg:pt-3 max-lg:pb-3 lg:pl-3">
                   <h3 className="font-bold">Expenditure</h3>
                   <TotalsTable Amounts={transactionTypeQuery.Out.Amounts} />
                 </div>
@@ -90,6 +92,8 @@ const QueryTables = () => {
                 tableData={transactionTypeQuery.In.Accounts}
                 tableHeaders={Object.keys(transactionTypeQuery.In.Accounts[0])}
                 totalAmount={transactionTypeQuery.In.Amounts["Total"]}
+                tableCaption="Top Transactions In"
+
               />
             </div>
           )}
@@ -100,6 +104,8 @@ const QueryTables = () => {
                 tableData={transactionTypeQuery.Out.Accounts}
                 tableHeaders={Object.keys(transactionTypeQuery.Out.Accounts[0])}
                 totalAmount={transactionTypeQuery.Out.Amounts["Total"]}
+                tableCaption="Top Transactions Out"
+
               />
             </div>
           )}

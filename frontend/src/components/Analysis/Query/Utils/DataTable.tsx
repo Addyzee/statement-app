@@ -13,12 +13,14 @@ interface DataTableProps {
   tableData: Record<string, string | number>[];
   tableHeaders: string[];
   totalAmount?: number;
+  tableCaption: string
 }
 
 export function DataTable({
   tableData,
   tableHeaders,
   totalAmount,
+  tableCaption
 }: DataTableProps) {
   const customizedTableData = tableData.map((tableValues) => {
     if (tableHeaders.includes("Amount")) {
@@ -31,7 +33,7 @@ export function DataTable({
 
   return (
     <Table className="">
-      <TableCaption>A list of your recent data.</TableCaption>
+      <TableCaption>{tableCaption}</TableCaption>
       <TableHeader className="hover:text-white">
         <TableRow className="hover:text-white">
           {tableHeaders.map((header, idx) => (
