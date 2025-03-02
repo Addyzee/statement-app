@@ -125,7 +125,7 @@ const FileUploader = () => {
             {status === "error" && (
               <p className="text-red-700">Upload failed. Please try again.</p>
             )}
-            {isLoading && <LoadingButton />}
+            {isLoading && uploadProgress===100 && <LoadingButton />}
           </>
         )}
 
