@@ -17,7 +17,6 @@ async def cleanup_sessions_timely(data_sessions: Dict):
     '''
     while True:
         sessions_length = len(list(data_sessions.keys()))
-        print(sessions_length)
         await asyncio.sleep(900)
         threshhold_value = 10
         if sessions_length > threshhold_value:
