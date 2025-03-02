@@ -1,11 +1,16 @@
-from fastapi import FastAPI, UploadFile, Body,Query
-from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel
 import pandas as pd
 import uuid
 
+from fastapi import FastAPI, UploadFile, Body
+from fastapi.middleware.cors import CORSMiddleware
+from pydantic import BaseModel
+
 
 from typing import Annotated, List
+from threading import Thread
+
+from api.cleanup import cleanup_sessions_timely, cleanup_max_sessions
+
 from app.config import DATA_DIR
 
 from app.data_writing.write_data import get_customer_name, write_transactions_data2
@@ -39,14 +44,16 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+
+session_data = {} 
+
+
 class QueryPost(BaseModel):
     SessionId: str 
     TTypes: str | List[str] | None = None
     AccountNames: str | List[str] | None = None
     
 
-session_data = {} 
-# session_data["0"] = pd.read_csv(DATA_DIR / "transactions.csv")
 
 
 @app.post("/decrypt/")
@@ -127,4 +134,10 @@ async def query_transactions(
         return query_analysis(data=data, queries=query)
     except Exception as e:
         raise e
+    
+
+    
+Thread(target=cleanup_sessions_timely, args=(session_data,), daemon=True).start()
+Thread(target=cleanup_max_sessions, args=(session_data,), daemon=True).start()
+        
 
