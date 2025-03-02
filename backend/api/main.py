@@ -1,13 +1,18 @@
-from fastapi import FastAPI, UploadFile, Body,Query
-from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel
 import pandas as pd
 import uuid
 
+from fastapi import FastAPI, UploadFile, Body, BackgroundTasks
+from fastapi.middleware.cors import CORSMiddleware
+from pydantic import BaseModel
+from contextlib import asynccontextmanager
 
+import asyncio
+import datetime
 from typing import Annotated, List
-from app.config import DATA_DIR
 
+from api.cleanup import all_cleanup
+
+from app.config import DATA_DIR
 from app.data_writing.write_data import get_customer_name, write_transactions_data2
 from app.document_handling.extract import extract_and_clean2
 from app.document_handling.decrypt import remove_password_from_pdf2
@@ -21,8 +26,16 @@ from app.analysis.analysis import (
 )
 from app.analysis.totals import total_cashflow
 
+data_sessions = {} 
 
-app = FastAPI()
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    asyncio.create_task(all_cleanup(data_sessions))
+    yield
+    data_sessions.clear()
+
+
+app = FastAPI(lifespan=lifespan)
 
 
 origins = [
@@ -31,6 +44,7 @@ origins = [
     "https://statement-app.vercel.app",
     "https://statement-app.vercel.app/"
 ]
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
@@ -39,18 +53,15 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+
 class QueryPost(BaseModel):
     SessionId: str 
     TTypes: str | List[str] | None = None
     AccountNames: str | List[str] | None = None
-    
-
-session_data = {} 
-# session_data["0"] = pd.read_csv(DATA_DIR / "transactions.csv")
-
+  
 
 @app.post("/decrypt/")
-async def decrypt_pdf(file: UploadFile, password: Annotated[str, Body()]):
+async def decrypt_pdf(file: UploadFile, password: Annotated[str, Body()], background_tasks: BackgroundTasks):
     try:
         decrypted_file = remove_password_from_pdf2(file.file, password)
         text = extract_and_clean2(file=decrypted_file)
@@ -59,7 +70,11 @@ async def decrypt_pdf(file: UploadFile, password: Annotated[str, Body()]):
         clean_data = clean_data2(data)
         session_id = str(uuid.uuid4())
         analysis = await main_analysis(data=clean_data)
-        session_data[session_id] = clean_data
+        data_sessions[session_id] = {}
+        data_sessions[session_id]["data"] = clean_data
+        data_sessions[session_id]["time_created"] = datetime.datetime.now()
+        background_tasks.add_task(all_cleanup, data_sessions=data_sessions)
+        
 
         return {
             "the_pdf": file.filename,
@@ -102,11 +117,10 @@ async def main_analysis(data: pd.DataFrame):
 async def query_transactions(
     query_post: QueryPost
 ):
-    if query_post.SessionId not in session_data:
-        print(session_data.keys())
+    if query_post.SessionId not in data_sessions:
         return {"Error": "session expired or not found"}
 
-    data: pd.DataFrame = session_data[query_post.SessionId]
+    data: pd.DataFrame = data_sessions[query_post.SessionId]["data"]
     query = {}
     
     t_type = query_post.TTypes
@@ -127,4 +141,5 @@ async def query_transactions(
         return query_analysis(data=data, queries=query)
     except Exception as e:
         raise e
+        
 
