@@ -25,8 +25,9 @@ from app.analysis.analysis import (
     query_analysis
 )
 from app.analysis.totals import total_cashflow
+sample_df = pd.read_csv(f"{DATA_DIR}/sample.csv")
 
-data_sessions = {} 
+data_sessions = {"0":sample_df} 
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -61,7 +62,7 @@ class QueryPost(BaseModel):
   
 
 @app.post("/decrypt/")
-async def decrypt_pdf(file: UploadFile, password: Annotated[str, Body()], background_tasks: BackgroundTasks):
+async def decrypt_pdf(file: UploadFile, password: Annotated[str, Body()]):
     try:
         decrypted_file = remove_password_from_pdf2(file.file, password)
         text = extract_and_clean2(file=decrypted_file)
@@ -73,13 +74,36 @@ async def decrypt_pdf(file: UploadFile, password: Annotated[str, Body()], backgr
         data_sessions[session_id] = {}
         data_sessions[session_id]["data"] = clean_data
         data_sessions[session_id]["time_created"] = datetime.datetime.now()
-        background_tasks.add_task(all_cleanup, data_sessions=data_sessions)
+
         
 
         return {
             "the_pdf": file.filename,
             "the_name": customer_name,
             "session_id": session_id,
+            "analysis": analysis,
+        }
+    except Exception as e:
+        raise e
+    
+@app.post("/sample-data/")
+async def sample_analysis():
+    try:
+        customer_name = "Sample Statement"
+        data = data_sessions["0"]
+        clean_data = clean_data2(data)
+        session_id = str(uuid.uuid4())
+        analysis = await main_analysis(data=clean_data)
+        data_sessions[session_id] = {}
+        data_sessions[session_id]["data"] = clean_data
+        data_sessions[session_id]["time_created"] = datetime.datetime.now()
+
+        
+
+        return {
+            "the_pdf": "sample",
+            "the_name": customer_name,
+            "session_id": "0",
             "analysis": analysis,
         }
     except Exception as e:

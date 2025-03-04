@@ -22,8 +22,9 @@ async def cleanup_sessions_timely(data_sessions: Dict):
         if sessions_length > threshhold_value:
             expired_sessions = list(data_sessions.keys())[:threshhold_value-1]
             for session in expired_sessions:
-                print("Sessions length",sessions_length,"Timely cleanup deleting", session)
-                del data_sessions[session]
+                if session != "0":
+                    print("Sessions length",sessions_length,"Timely cleanup deleting", session)
+                    del data_sessions[session]
 
 async def cleanup_max_sessions(data_sessions: Dict):
     ''' 
@@ -37,8 +38,9 @@ async def cleanup_max_sessions(data_sessions: Dict):
         if sessions_length > MAX_SESSIONS:
             expired_sessions = list(data_sessions.keys())[:sessions_length-2]
             for session in expired_sessions:
-                print("Sessions length", sessions_length, "Max cleanup deleting", session)
-                del data_sessions[session]
+                if session != "0":
+                    print("Sessions length", sessions_length, "Max cleanup deleting", session)
+                    del data_sessions[session]
 
 async def daily_cleanup(data_sessions: Dict):
     while True:
@@ -47,7 +49,8 @@ async def daily_cleanup(data_sessions: Dict):
         for session in all_sessions:
             time_created = data_sessions[session]["time_created"]
             if (datetime.datetime.now() - time_created).total_seconds() > 18 * 3600:
-                print("Daily cleanup deleting", session)
-                del data_sessions[session]
-            
+                if session != "0":
+                    print("Daily cleanup deleting", session)
+                    del data_sessions[session]
+                
             
