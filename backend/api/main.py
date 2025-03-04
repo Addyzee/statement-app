@@ -27,7 +27,8 @@ from app.analysis.analysis import (
 from app.analysis.totals import total_cashflow
 sample_df = pd.read_csv(f"{DATA_DIR}/sample.csv")
 
-data_sessions = {"0":sample_df} 
+data_sessions = {"0":{"data":sample_df,
+                      "time_created": datetime.datetime.now}} 
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -86,11 +87,11 @@ async def decrypt_pdf(file: UploadFile, password: Annotated[str, Body()]):
     except Exception as e:
         raise e
     
-@app.post("/sample-data/")
+@app.post("/sample-analysis/")
 async def sample_analysis():
     try:
         customer_name = "Sample Statement"
-        data = data_sessions["0"]
+        data = data_sessions["0"]["data"]
         clean_data = clean_data2(data)
         session_id = str(uuid.uuid4())
         analysis = await main_analysis(data=clean_data)
