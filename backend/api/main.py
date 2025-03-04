@@ -25,8 +25,9 @@ from app.analysis.analysis import (
     query_analysis
 )
 from app.analysis.totals import total_cashflow
+sample_df = pd.read_csv(f"{DATA_DIR}/sample_csv")
 
-data_sessions = {} 
+data_sessions = {"0":sample_df} 
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
