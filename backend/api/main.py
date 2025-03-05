@@ -90,7 +90,7 @@ async def decrypt_pdf(file: UploadFile, password: Annotated[str, Body()]):
 @app.post("/sample-analysis/")
 async def sample_analysis():
     try:
-        customer_name = "Sample Statement"
+        customer_name = ""
         data = data_sessions["0"]["data"]
         clean_data = clean_data2(data)
         session_id = str(uuid.uuid4())
