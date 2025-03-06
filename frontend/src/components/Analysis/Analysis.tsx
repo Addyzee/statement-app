@@ -1,3 +1,4 @@
+
 import IncomeType from "./IncomeType";
 import IncomevExpenses from "./IncomevExpenses";
 import ExpenditureType from "./ExpenditureType";
@@ -6,9 +7,13 @@ import QueryComponent from "./Query/QueryComponent";
 import QueryResponseProvider from "./Query/Context/QueryResponseProvider";
 
 const Analysis = () => {
+
+ 
   return (
     <QueryResponseProvider>
-      <div className="h-full w-full lg:w-10/12 overflow-y-scroll pr-2">
+      <div
+        className="h-full w-full  bg-zinc-950 lg:w-10/12 overflow-y-scroll pr-2"
+      >
         <SummarySection />
         <ol className="flex flex-col gap-10">
           <li className="border rounded-xl p-3 border-gray-700">
