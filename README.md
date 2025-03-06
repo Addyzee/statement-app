@@ -12,8 +12,8 @@ It’s hosted on Vercel: [Statement App](https://statement-app.vercel.app/). The
 
 - **PDF Decryption**: Users can upload password-protected PDFs, and the app extracts transaction data after decryption.  
 - **Data Cleaning & Processing**: Extracted transaction data is cleaned and formatted for analysis.  
-- **Session-Based Analysis**: Each session is assigned a unique ID to track user interactions and prevent excessive memory usage.  
-- **Querying & Filtering**: Users can filter transaction data based on date ranges, account names, and transaction types.  
+- **Session-Based Analysis**: Each session is assigned a unique ID to save data in memory, and prevent excessive memory usage.  
+- **Querying & Filtering**: Users can filter transaction data based on account names, and transaction types.  
 - **Automatic Session Cleanup**: Sessions are periodically cleared to optimize memory usage.  
 
 ---
@@ -45,7 +45,7 @@ cd statement-app/backend
 Create a virtual environment and activate it:
 ```sh
 python -m venv venv
-source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+source venv/bin/activate  
 ```
 Install the required packages:
 ```sh
@@ -86,7 +86,7 @@ npm run dev
 ### Session Cleanup
 The backend assigns each session a unique `session_id`, which is sent to the frontend. The session data is stored in memory and automatically cleaned using scheduled tasks:  
 
-- **Short-Term Cleanup**: Runs every 15 minutes to clear inactive sessions.  
+- **Short-Term Cleanup**: Runs every few minutes to clear sessions over a certain threshhold  
 - **Max Sessions Cleanup**: Prevents memory overflow by limiting stored sessions.  
 - **Daily Cleanup**: Clears all sessions older than 24 hours.  
 
