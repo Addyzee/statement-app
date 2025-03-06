@@ -2,7 +2,7 @@ import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import UploadPage from "./components/Upload/UploadPage";
 import Analysis from "./components/Analysis/Analysis";
-import AnalysisPDF from "./components/Analysis/AnalysisPDF";
+import AnalysisPDF from "./components/AnalysisPDF/AnalysisPDF";
 import NotFound from "./NotFound";
 import { ResponseProvider } from "./components/context/ResponseProvider";
 
@@ -20,6 +20,7 @@ const router = createBrowserRouter([
   {
     path: "/analysis/pdf",
     element: <AnalysisPDF />,
+    errorElement: <NotFound />,
   },
 ]);
 
