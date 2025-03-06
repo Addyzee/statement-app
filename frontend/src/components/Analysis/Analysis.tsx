@@ -1,14 +1,11 @@
-import { Download } from "lucide-react";
 import IncomeType from "./IncomeType";
 import IncomevExpenses from "./IncomevExpenses";
 import ExpenditureType from "./ExpenditureType";
 import { SummarySection } from "./SummarySection";
 import QueryComponent from "./Query/QueryComponent";
 import QueryResponseProvider from "./Query/Context/QueryResponseProvider";
-import { useNavigate } from "react-router-dom";
 
 const Analysis = () => {
-  const navigate = useNavigate()
 
  
   return (
@@ -16,7 +13,6 @@ const Analysis = () => {
       <div
         className="h-full w-full  bg-zinc-950 lg:w-10/12 overflow-y-scroll pr-2"
       >
-        <Download onClick={() => navigate("/analysis/pdf")}/>
         <SummarySection />
         <ol className="flex flex-col gap-10">
           <li className="border rounded-xl p-3 border-gray-700">
