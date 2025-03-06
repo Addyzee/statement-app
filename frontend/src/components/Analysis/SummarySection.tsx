@@ -6,7 +6,7 @@ export function SummarySection() {
 
   return (
     <div className="mb-5 space-y-6">
-      <h3 className="font-semibold text-lg text-white">Hey, {userName}! 👋</h3>
+      <h3 className="font-semibold text-lg text-white">Hey {userName}! 👋</h3>
 
       <div className="space-y-4 text-gray-300">
         {/* Overview */}
