@@ -1,18 +1,18 @@
-import { ChangeEvent, useContext, useRef, useState } from "react";
+import { ChangeEvent, useRef, useState } from "react";
 import { ArchiveX } from "lucide-react";
-import { Button } from "./ui/button";
-import { LoadingButton } from "./ui/loadingbutton";
+import { Button } from "../ui/button";
+import { LoadingButton } from "../ui/loadingbutton";
 import axios from "axios";
-import { PagingContext } from "./context/PagingContext";
-import { useResponse } from "./context/ResponseContext";
-const baseURL = import.meta.env.VITE_BACKEND_URL
+import { useResponse } from "../context/ResponseContext";
+import { useNavigate } from "react-router-dom";
+const baseURL = import.meta.env.VITE_BACKEND_URL;
 
 type UploadStatus = "idle" | "instate" | "uploading" | "success" | "error";
 
 const FileUploader = () => {
+  const navigate = useNavigate()
   const { setData, isLoading, setIsLoading, setError } = useResponse();
 
-  const { setCurrentPage } = useContext(PagingContext);
   const [pdfFile, setPDFFile] = useState<File | null>(null);
   const [password, setPassword] = useState<string | null>(null);
   const [status, setStatus] = useState<UploadStatus>("idle");
@@ -46,24 +46,20 @@ const FileUploader = () => {
     try {
       setIsLoading(true);
       setError(null);
-      const response = await axios.post(
-        `${baseURL}decrypt/`,
-        formData,
-        {
-          headers: { "Content-Type": "multipart/form-data" },
-          onUploadProgress: (event) => {
-            const progress = event.total
-              ? Math.round((event.loaded * 100) / event.total)
-              : 0;
-            setUploadProgress(progress);
-          },
-        }
-      );
+      const response = await axios.post(`${baseURL}decrypt/`, formData, {
+        headers: { "Content-Type": "multipart/form-data" },
+        onUploadProgress: (event) => {
+          const progress = event.total
+            ? Math.round((event.loaded * 100) / event.total)
+            : 0;
+          setUploadProgress(progress);
+        },
+      });
       setStatus("success");
       setUploadProgress(100);
       setData(response.data);
-      localStorage.setItem('sessionId', response.data.session_id);
-      setCurrentPage("Analysis");
+      localStorage.setItem("sessionId", response.data.session_id);
+      return navigate("/analysis")
     } catch (err) {
       setStatus("error");
       setUploadProgress(0);
@@ -74,7 +70,6 @@ const FileUploader = () => {
       setIsLoading(false);
     }
   };
-
 
   return (
     <div className="flex flex-col gap-3 justify-center items-center">
@@ -125,7 +120,7 @@ const FileUploader = () => {
             {status === "error" && (
               <p className="text-red-700">Upload failed. Please try again.</p>
             )}
-            {isLoading && uploadProgress===100 && <LoadingButton />}
+            {isLoading && uploadProgress === 100 && <LoadingButton />}
           </>
         )}
 
