@@ -19,7 +19,7 @@ const ExpenditureType = () => {
         {top_accounts_out ? (
           <div className="my-4">
             <p className="font-medium mb-2">You sent the highest amounts to these accounts:</p>
-            <table className="w-full border-collapse">
+            <table className="w-full border-collapse table-fixed break-words">
               <thead>
                 <tr className="">
                   <th className="p-2 border text-left">Account Name</th>

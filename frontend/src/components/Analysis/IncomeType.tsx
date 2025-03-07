@@ -21,7 +21,7 @@ const IncomeType = () => {
             <p className="font-medium mb-2">
               You received the highest amounts from these accounts:
             </p>
-            <table className="w-full border-collapse">
+            <table className="w-full border-collapse table-fixed break-words">
               <thead>
                 <tr className="">
                   <th className="p-2 border text-left">Account Name</th>

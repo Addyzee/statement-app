@@ -6,8 +6,6 @@ import QueryComponent from "./Query/QueryComponent";
 import QueryResponseProvider from "./Query/Context/QueryResponseProvider";
 
 const Analysis = () => {
-
- 
   return (
     <QueryResponseProvider>
       <div

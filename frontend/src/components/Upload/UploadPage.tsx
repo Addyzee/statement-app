@@ -1,7 +1,6 @@
 import FileUploader from "./FileUploader";
 import { Button } from "../ui/button";
 import { useResponse } from "../context/ResponseContext";
-import { LoadingButton } from "../ui/loadingbutton";
 import {  useNavigate } from "react-router-dom";
 import axios from "axios";
 
@@ -9,7 +8,7 @@ const baseURL = import.meta.env.VITE_BACKEND_URL;
 
 const UploadPage = () => {
   const navigate = useNavigate()
-  const { setData, isLoading, setIsLoading, setError } = useResponse();
+  const { setData, setIsLoading, setError } = useResponse();
 
   const requestSample = async () => {
     try {
@@ -46,7 +45,6 @@ const UploadPage = () => {
         <Button onClick={requestSample}>
           Or... try with our sample statement
         </Button>
-        {isLoading && <LoadingButton />}
       </div>
     </div>
   );
