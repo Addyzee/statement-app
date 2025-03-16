@@ -7,6 +7,7 @@ setup(
     install_requires=[
         "pandas",
         "pypdf2",
-        "fastapi",
+        "fastapi[all]",
+        "uvicorn"
     ]
 )

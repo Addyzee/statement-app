@@ -1,5 +1,6 @@
 setup.py
 api/__init__.py
+api/cleanup.py
 api/main.py
 app/__init__.py
 app/config.py
@@ -12,6 +13,10 @@ app/analysis/totals.py
 app/analysis/utils.py
 app/data/__init__.py
 app/data/clean.py
+app/data/anonymize_names/__init__.py
+app/data/anonymize_names/change_names.py
+app/data/anonymize_names/name_generator.py
+app/data/anonymize_names/names.py
 app/data_writing/__init__.py
 app/data_writing/utils.py
 app/data_writing/write_data.py
