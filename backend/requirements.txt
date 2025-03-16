@@ -16,7 +16,6 @@ MarkupSafe==3.0.2
 mdurl==0.1.2
 numpy==2.2.3
 pandas==2.2.3
--e git+https://github.com/Addyzee/statement-app.git@4a0f5b8fa2488d4abc4285a826b65c0ed4d644b6#egg=pesa_statements&subdirectory=backend
 pydantic==2.10.6
 pydantic_core==2.27.2
 Pygments==2.19.1
