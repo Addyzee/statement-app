@@ -1,5 +1,6 @@
 import { ChangeEvent, useRef, useState } from "react";
 import { ArchiveX } from "lucide-react";
+import { AxiosError } from "axios";
 import { Button } from "../ui/button";
 import { LoadingButton } from "../ui/loadingbutton";
 import axios from "axios";
@@ -8,10 +9,14 @@ import { useNavigate } from "react-router-dom";
 const baseURL = import.meta.env.VITE_BACKEND_URL;
 
 type UploadStatus = "idle" | "instate" | "uploading" | "success" | "error";
+type ErrorResponse = {
+  detail: string;
+};
 
 const FileUploader = () => {
-  const navigate = useNavigate()
-  const { setData, isLoading, setIsLoading, setError } = useResponse();
+  const navigate = useNavigate();
+  const { setFileUploaded, setData, isLoading, setIsLoading, error, setError } =
+    useResponse();
 
   const [pdfFile, setPDFFile] = useState<File | null>(null);
   const [password, setPassword] = useState<string | null>(null);
@@ -20,7 +25,10 @@ const FileUploader = () => {
   const fileRef = useRef<HTMLInputElement | null>(null);
 
   const handleFileChange = (e: ChangeEvent<HTMLInputElement>) => {
-    if (e.target.files) setPDFFile(e.target.files[0]);
+    if (e.target.files) {
+      setPDFFile(e.target.files[0]);
+      setFileUploaded(true);
+    }
   };
 
   const recordPassword = (e: ChangeEvent<HTMLInputElement>) => {
@@ -29,19 +37,23 @@ const FileUploader = () => {
 
   const clearFileField = () => {
     setPDFFile(null);
+    setFileUploaded(false);
     setStatus("idle");
     setUploadProgress(0);
     if (fileRef.current) fileRef.current.value = "";
   };
 
   const handleFileUpload = async () => {
-    if (!pdfFile || !password) return;
+    if (!pdfFile) {
+      setError(new Error("Please select a file"));
+      return;
+    }
     setStatus("uploading");
     setUploadProgress(0);
 
     const formData = new FormData();
     formData.append("file", pdfFile);
-    formData.append("password", password);
+    if (password) formData.append("password", password);
 
     try {
       setIsLoading(true);
@@ -59,13 +71,16 @@ const FileUploader = () => {
       setUploadProgress(100);
       setData(response.data);
       localStorage.setItem("sessionId", response.data.session_id);
-      return navigate("/analysis")
+      return navigate("/analysis");
     } catch (err) {
       setStatus("error");
       setUploadProgress(0);
-      setError(
-        err instanceof Error ? err : new Error("Unknown error occurred")
-      );
+      if (axios.isAxiosError(err)) {
+        const axiosError = err as AxiosError<ErrorResponse>;
+        if (axiosError.response) {
+          setError(new Error(axiosError.response.data.detail));
+        }
+      }
     } finally {
       setIsLoading(false);
     }
@@ -117,8 +132,8 @@ const FileUploader = () => {
             {status === "success" && (
               <p className="text-green-600">File upload successful!</p>
             )}
-            {status === "error" && (
-              <p className="text-red-700">Upload failed. Please try again.</p>
+            {status === "error" && error && (
+              <p className="text-red-700">{String(error)}</p>
             )}
             {isLoading && uploadProgress === 100 && <LoadingButton />}
           </>
@@ -138,9 +153,14 @@ const FileUploader = () => {
       </div>
 
       {pdfFile && status !== "uploading" && (
-        <Button variant="default" onClick={handleFileUpload}>
-          Upload PDF
-        </Button>
+        <div className="flex flex-col gap-3">
+          <Button variant="default" onClick={handleFileUpload}>
+            Upload PDF
+          </Button>
+          <Button variant="default" onClick={handleFileUpload}>
+            Upload without password
+          </Button>
+        </div>
       )}
     </div>
   );

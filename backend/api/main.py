@@ -1,7 +1,7 @@
 import pandas as pd
 import uuid
 
-from fastapi import FastAPI, UploadFile, Body, BackgroundTasks
+from fastapi import FastAPI, UploadFile, Body, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from contextlib import asynccontextmanager
@@ -14,9 +14,9 @@ from api.cleanup import all_cleanup
 
 from app.config import DATA_DIR
 from app.data_writing.write_data import get_customer_name, write_transactions_data2
-from app.document_handling.extract import extract_and_clean2
-from app.document_handling.decrypt import remove_password_from_pdf2
-from app.data.clean import clean_data2
+from app.document_handling.extract import extract_and_clean
+from app.document_handling.decrypt import remove_password_from_pdf
+from app.data.clean import clean_data
 from app.analysis.analysis import (
     transaction_type_analysis,
     transaction_accounts_analysis,
@@ -65,18 +65,16 @@ class QueryPost(BaseModel):
 @app.post("/decrypt/")
 async def decrypt_pdf(file: UploadFile, password: Annotated[str, Body()]):
     try:
-        decrypted_file = remove_password_from_pdf2(file.file, password)
-        text = extract_and_clean2(file=decrypted_file)
+        decrypted_file = remove_password_from_pdf(file.file, password)
+        text = extract_and_clean(file=decrypted_file)
         customer_name = await get_customer_name(text=text)
         data = await write_transactions_data2(text)
-        clean_data = clean_data2(data)
+        cleaned_data = clean_data(data)
         session_id = str(uuid.uuid4())
-        analysis = await main_analysis(data=clean_data)
+        analysis = await main_analysis(data=cleaned_data)
         data_sessions[session_id] = {}
-        data_sessions[session_id]["data"] = clean_data
+        data_sessions[session_id]["data"] = cleaned_data
         data_sessions[session_id]["time_created"] = datetime.datetime.now()
-
-        
 
         return {
             "the_pdf": file.filename,
@@ -85,21 +83,19 @@ async def decrypt_pdf(file: UploadFile, password: Annotated[str, Body()]):
             "analysis": analysis,
         }
     except Exception as e:
-        raise e
+        raise HTTPException(status_code=400, detail=str(e))
     
 @app.post("/sample-analysis/")
 async def sample_analysis():
     try:
         customer_name = ""
         data = data_sessions["0"]["data"]
-        clean_data = clean_data2(data)
+        cleaned_data = clean_data(data)
         session_id = str(uuid.uuid4())
-        analysis = await main_analysis(data=clean_data)
+        analysis = await main_analysis(data=cleaned_data)
         data_sessions[session_id] = {}
-        data_sessions[session_id]["data"] = clean_data
+        data_sessions[session_id]["data"] = cleaned_data
         data_sessions[session_id]["time_created"] = datetime.datetime.now()
-
-        
 
         return {
             "the_pdf": "sample",
@@ -108,7 +104,7 @@ async def sample_analysis():
             "analysis": analysis,
         }
     except Exception as e:
-        raise e
+        return {"error": str(e)}, 400
 
 
 async def main_analysis(data: pd.DataFrame):
@@ -135,36 +131,37 @@ async def main_analysis(data: pd.DataFrame):
         }
 
     except Exception as e:
-        raise e
+        return {"error": str(e)}, 400
 
 
 @app.post("/query/")
 async def query_transactions(
     query_post: QueryPost
 ):
-    if query_post.SessionId not in data_sessions:
-        return {"Error": "session expired or not found"}
+    try:
+        if query_post.SessionId not in data_sessions:
+            return {"Error": "session expired or not found"}
 
-    data: pd.DataFrame = data_sessions[query_post.SessionId]["data"]
-    query = {}
-    
-    t_type = query_post.TTypes
-    account_name = query_post.AccountNames
-
-    if t_type:
-        if type(t_type) == str:
-            t_type = [t_type]
-        data = data[data["Type"].isin(t_type)]
-        query["Type"] = t_type
+        data: pd.DataFrame = data_sessions[query_post.SessionId]["data"]
+        query = {}
         
-    if account_name:
-        if type(account_name) == str:
-            account_name = [account_name]
-        data = data[data["Account Name"].isin(account_name)]
-        query["account_name"] = account_name
-    try: 
+        t_type = query_post.TTypes
+        account_name = query_post.AccountNames
+
+        if t_type:
+            if type(t_type) == str:
+                t_type = [t_type]
+            data = data[data["Type"].isin(t_type)]
+            query["Type"] = t_type
+            
+        if account_name:
+            if type(account_name) == str:
+                account_name = [account_name]
+            data = data[data["Account Name"].isin(account_name)]
+            query["account_name"] = account_name
+        
         return query_analysis(data=data, queries=query)
     except Exception as e:
-        raise e
+        return {"error": str(e)}, 400
         
 

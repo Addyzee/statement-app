@@ -1,6 +1,8 @@
 import { createContext, useContext } from "react";
 import { Response } from "./types";
 type ResponseContextType = {
+  fileUploaded: boolean;
+  setFileUploaded: React.Dispatch<React.SetStateAction<boolean>>;
   data: Response | null;
   setData: React.Dispatch<React.SetStateAction<Response | null>>;
   isLoading: boolean;
@@ -18,9 +20,6 @@ export function useResponseTest() {
   if (!context)
     throw new Error("useResponse must be used within ResponseProvider");
   return context;
-  // created this to test without having to rely on the api
-  // const  data  = Data
-  // return { data }
 }
 
 export function useResponse() {

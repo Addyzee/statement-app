@@ -1,6 +1,5 @@
 import pandas as pd
 from typing import Dict
-from app.data.clean import clean_data2, clean_data
 from .t_type_analysis import (
     get_transaction_types,
     get_transaction_types_frequencies,

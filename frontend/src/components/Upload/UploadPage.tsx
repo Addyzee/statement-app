@@ -2,16 +2,17 @@ import { useState } from "react";
 import FileUploader from "./FileUploader";
 import { Button } from "../ui/button";
 import { useResponse } from "../context/ResponseContext";
-import {  useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { LoadingButton } from "../ui/loadingbutton";
 
 const baseURL = import.meta.env.VITE_BACKEND_URL;
 
 const UploadPage = () => {
-  const navigate = useNavigate()
-  const { setData, setError } = useResponse();
+  const navigate = useNavigate();
+  const { setData, setError, fileUploaded } = useResponse();
   const [loading, setIsLoading] = useState(false);
+  console.log(fileUploaded);
 
   const requestSample = async () => {
     try {
@@ -29,8 +30,7 @@ const UploadPage = () => {
       );
       setData(response.data);
       localStorage.setItem("sessionId", response.data.session_id);
-      return navigate("/analysis")
-      
+      return navigate("/analysis");
     } catch (err) {
       setError(
         err instanceof Error ? err : new Error("Unknown error occurred")
@@ -45,9 +45,11 @@ const UploadPage = () => {
       <h2 className="text-lg">Upload your M-PESA statement pdf</h2>
       <FileUploader />
       <div className="w-full flex items-center mt-6 flex-col">
-        <Button onClick={requestSample}>
-          Or... try with our sample statement
-        </Button>
+        {!fileUploaded && (
+          <Button onClick={requestSample}>
+            Or... try with our sample statement
+          </Button>
+        )}
         {loading && <LoadingButton />}
       </div>
     </div>

@@ -5,6 +5,31 @@
   src: url('./assets/fonts/Quicksand/Quicksand-VariableFont_wght.ttf');
 }
 
+/* Custom scrollbar for WebKit browsers (Chrome, Safari, newer Edge) */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+}
+
 @plugin "tailwindcss-animate";
 
 @custom-variant dark (&:is(.dark *));
@@ -40,6 +65,7 @@
   --chart-9: hsl(82 65% 45%);
   --chart-10: hsl(190 70% 50%);
   --radius: 0.6rem;
+
 }
 
 .dark {

@@ -8,6 +8,7 @@ type ResponseProviderProps = {
 
 export function ResponseProvider({ children }: ResponseProviderProps) {
   const [data, setData] = useState<Response | null>(null);
+  const [fileUploaded, setFileUploaded] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<Error | null>(null);
 
@@ -18,6 +19,8 @@ export function ResponseProvider({ children }: ResponseProviderProps) {
     setIsLoading,
     error,
     setError,
+    fileUploaded,
+    setFileUploaded,
   };
 
   return (

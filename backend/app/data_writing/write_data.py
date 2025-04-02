@@ -45,11 +45,12 @@ async def write_transactions_data(text):
             transaction["Original Transaction"] = info[0].strip()
 
             transactions.append(transaction)
+            output_dir = OUTPUT_DIR
+            df = pd.DataFrame(transactions)
+            df.to_csv(f"{output_dir}/raw_transactions.csv", index=False)
     except Exception as e:
         raise e
-    output_dir = OUTPUT_DIR
-    df = pd.DataFrame(transactions)
-    df.to_csv(f"{output_dir}/raw_transactions.csv", index=False)
+    
 
 
 async def write_transactions_data2(text: str) -> pd.DataFrame:
