@@ -43,7 +43,7 @@ const FileUploader = () => {
     if (fileRef.current) fileRef.current.value = "";
   };
 
-  const handleFileUpload = async () => {
+  const handleFileUpload = async (pass = password) => {
     if (!pdfFile) {
       setError(new Error("Please select a file"));
       return;
@@ -53,7 +53,8 @@ const FileUploader = () => {
 
     const formData = new FormData();
     formData.append("file", pdfFile);
-    if (password) formData.append("password", password);
+    console.log(pass);
+    if (pass) formData.append("password", pass);
 
     try {
       setIsLoading(true);
@@ -73,6 +74,7 @@ const FileUploader = () => {
       localStorage.setItem("sessionId", response.data.session_id);
       return navigate("/analysis");
     } catch (err) {
+      console.error(err);
       setStatus("error");
       setUploadProgress(0);
       if (axios.isAxiosError(err)) {
@@ -154,10 +156,15 @@ const FileUploader = () => {
 
       {pdfFile && status !== "uploading" && (
         <div className="flex flex-col gap-3">
-          <Button variant="default" onClick={handleFileUpload}>
+          <Button variant="default" onClick={() => handleFileUpload(password)}>
             Upload PDF
           </Button>
-          <Button variant="default" onClick={handleFileUpload}>
+          <Button
+            variant="default"
+            onClick={() => {
+              handleFileUpload(null);
+            }}
+          >
             Upload without password
           </Button>
         </div>

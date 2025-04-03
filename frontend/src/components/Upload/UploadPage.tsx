@@ -12,7 +12,6 @@ const UploadPage = () => {
   const navigate = useNavigate();
   const { setData, setError, fileUploaded } = useResponse();
   const [loading, setIsLoading] = useState(false);
-  console.log(fileUploaded);
 
   const requestSample = async () => {
     try {

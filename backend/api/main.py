@@ -63,7 +63,7 @@ class QueryPost(BaseModel):
   
 
 @app.post("/decrypt/")
-async def decrypt_pdf(file: UploadFile, password: Annotated[str, Body()]):
+async def decrypt_pdf(file: UploadFile, password: Annotated[str | None, Body()] = None):
     try:
         decrypted_file = remove_password_from_pdf(file.file, password)
         text = extract_and_clean(file=decrypted_file)
