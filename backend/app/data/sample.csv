@@ -1,4 +1,4 @@
-,Transaction code,Date,Amount,Balance,Type,Direction,Account ID,Account Name,Original Transaction
+Unnamed: 0,Transaction code,Date,Amount,Balance,Type,Direction,Account ID,Account Name,Original Transaction
 0,SLS85T3UIS,2024-12-28 17:14:15,50.0,9573.02,Send money,Out,XXXXXXXXXXX,Michael Muhammad,Customer Transfer to -  XXXXXXXXXXX Michael Muhammad
 1,SLR73F2QIX,2024-12-27 22:56:45,5.0,9623.02,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Pay Bill Charge
 2,SLR73F2QIX,2024-12-27 22:56:45,300.0,9628.02,Paybill,Out,XXXXXX,Rachel Gatimu,Pay Bill Online to 888880 - KPLC PREPAID Acc. 54607518138
@@ -27,11 +27,11 @@
 25,SLN9IR91AJ,2024-12-23 11:27:37,85.0,40.02,Buy Goods,Out,XXXXXXX,Hassan Kiprono,Merchant Payment to -  XXXXXXX Hassan Kiprono
 26,SLL8BM8IDG,2024-12-21 16:28:27,200.0,125.02,Buy Goods,Out,XXXXXXX,Hannah Khamisi,Merchant Payment to -  XXXXXXX Hannah Khamisi
 27,SLL6BLYI3Y,2024-12-21 16:26:45,260.0,325.02,Buy Goods,Out,XXXXXXX,Christine Kiprono,Merchant Payment to -  XXXXXXX Christine Kiprono
-28,SLL8BIH2EG,2024-12-21 16:04:07,500.0,585.02,Receive money from bank/org,In,XXXXXXX,Rachel Adera,Receive funds from -  XXXXXXX Rachel Adera
+28,SLL8BIH2EG,2024-12-21 16:04:07,500.0,585.02,Receive money from bank/org,In,XXXXXXX,SMEs Money Market Fund,Receive funds from -  XXXXXXX Rachel Adera
 29,SLK854FX3I,2024-12-20 07:54:23,60.0,85.02,Pochi la Biashara,Out,XXXXXXXXXXXXX,Yao Kirui,Customer Payment to Small Business to - 2547******834 TITUS NGARI
 30,SLJ94PVYEV,2024-12-19 23:19:36,20.0,145.02,Airtime,Out,XXXXXXXXX,Safaricom,Recharge for Customer to -  XXXXXXXXX Safaricom
 31,SLJ046SUTS,2024-12-19 20:35:02,50.0,165.02,Pochi la Biashara,Out,XXXXXXXXXXXXX,Mary Kahiga,Customer Payment to Small Business to - 2547******467 FRANCIS WAMBUI
-32,SLJ945UC2B,2024-12-19 20:29:45,200.0,215.02,Receive money from bank/org,In,XXXXXXX,Rachel Adera,Receive funds from -  XXXXXXX Rachel Adera
+32,SLJ945UC2B,2024-12-19 20:29:45,200.0,215.02,Receive money from bank/org,In,XXXXXXX,SMEs Money Market Fund,Receive funds from -  XXXXXXX Rachel Adera
 33,SLJ343XFC1,2024-12-19 20:19:43,20.0,15.02,Pochi la Biashara,Out,XXXXXXXXXXXXX,Paul Atieno,Customer Payment to Small Business to - 2547******653 GEORGE NJOKI
 34,SLJ742R3ZL,2024-12-19 20:13:37,10.0,35.02,Airtime,Out,XXXXXXXXX,Safaricom,Customer Bundle Purchase to -  XXXXXXXXX Safaricom
 35,SLI4XMCDJU,2024-12-18 17:16:24,20.0,45.02,Airtime,Out,XXXXXXXXX,Safaricom,Airtime Purchase XXXXXXXXX Safaricom
@@ -39,7 +39,7 @@
 37,SLI3V273YL,2024-12-18 00:49:50,20.0,85.02,Airtime,Out,XXXXXXXXX,Safaricom,Airtime Purchase XXXXXXXXX Safaricom
 38,SLH0UTOUY8,2024-12-17 22:11:12,5.0,105.02,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Pay Bill Charge
 39,SLH0UTOUY8,2024-12-17 22:11:12,200.0,110.02,Paybill,Out,XXXXXX,Baraka Mbogo,Pay Bill Online to 888880 - KPLC PREPAID Acc. 37231848823
-40,SLH3UTIPCJ,2024-12-17 22:09:36,300.0,310.02,Receive money from bank/org,In,XXXXXXX,Rachel Adera,Receive funds from -  XXXXXXX Rachel Adera
+40,SLH3UTIPCJ,2024-12-17 22:09:36,300.0,310.02,Receive money from bank/org,In,XXXXXXX,SMEs Money Market Fund,Receive funds from -  XXXXXXX Rachel Adera
 41,SLH4T4BI52,2024-12-17 16:47:47,20.0,10.02,Airtime,Out,XXXXXXXXX,Safaricom,Recharge for Customer to -  XXXXXXXXX Safaricom
 42,SLH8RHW7I2,2024-12-17 10:10:59,29.0,30.02,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Withdrawal Charge
 43,SLH8RHW7I2,2024-12-17 10:10:59,200.0,59.02,Withdraw Money,Out,XXXXXXXXXXXXXXXXX,Amani Matiangi,Customer Withdrawal At -  XXXXXXXXXXXXXXXXX Amani Matiangi
@@ -47,7 +47,7 @@
 45,SLH9RFDDFB,2024-12-17 09:53:14,20.0,439.02,Airtime,Out,XXXXXXXXX,Safaricom,Airtime Purchase XXXXXXXXX Safaricom
 46,SLH8RBU0JG,2024-12-17 09:28:06,30.0,459.02,Pochi la Biashara,Out,XXXXXXXXXXXXX,Xolani Akech,Customer Payment to Small Business to - 2547******634 SOLOMON KAMAU
 47,SLH0R5RY02,2024-12-17 08:43:01,50.0,489.02,Pochi la Biashara,Out,XXXXXXXXXXXXX,Elijah Gichuhi,Customer Payment to Small Business to - 2547******599 CHRISTOPHER SYMBUA
-48,SLH2R3GELG,2024-12-17 08:25:07,4600.0,539.02,Buy Goods,Out,XXXXXX,Samuel Akech,Merchant Payment to -  XXXXXX Samuel Akech
+48,SLH2R3GELG,2024-12-17 08:25:07,4600.0,539.02,Buy Goods,Out,XXXXXX,Mama Ntilie,Merchant Payment to -  XXXXXX Samuel Akech
 49,SLH6R1271I,2024-12-17 08:05:26,30.0,5139.02,Pochi la Biashara,Out,XXXXXXXXXXXXX,Imani Mwachiro,Customer Payment to Small Business to - 2547******730 EZEKIEL WANJIKU
 50,SLH5R0L3SL,2024-12-17 08:01:18,7.0,5169.02,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 51,SLH5R0L3SL,2024-12-17 08:01:18,140.0,5176.02,Send money,Out,XXXXXXXXXXX,Olivia Atieno,Customer Transfer to -  XXXXXXXXXXX Olivia Atieno
@@ -55,14 +55,14 @@
 53,SLG4Q6Y6WK,2024-12-16 21:05:47,5000.0,5396.02,Receive money,In,XXXXXXXXXXXXX,Achieng Kipchirchir,Funds received from -  XXXXXXXXXXXXX Achieng Kipchirchir
 54,SLG2OA3RXK,2024-12-16 14:44:28,7.0,396.02,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 55,SLG2OA3RXK,2024-12-16 14:44:28,120.0,403.02,Pochi la Biashara,Out,XXXXXXXXXXXXX,Michael Ibrahim,Customer Payment to Small Business to - 2547******139 Fredrick Ndonga
-56,SLG3NVNH63,2024-12-16 13:07:31,500.0,523.02,Receive money from bank/org,In,XXXXXXX,Rachel Adera,Receive funds from -  XXXXXXX Rachel Adera
+56,SLG3NVNH63,2024-12-16 13:07:31,500.0,523.02,Receive money from bank/org,In,XXXXXXX,SMEs Money Market Fund,Receive funds from -  XXXXXXX Rachel Adera
 57,SLG5NO997D,2024-12-16 12:17:29,70.0,23.02,Pochi la Biashara,Out,XXXXXXXXXXXXX,Peter Kiprono,Customer Payment to Small Business to - 2547******543 GEORGE NJUGUNA
 58,SLG1NC8R2J,2024-12-16 10:53:40,20.0,93.02,Airtime,Out,XXXXXXXXX,Safaricom,Airtime Purchase XXXXXXXXX Safaricom
 59,SLF1M39H3R,2024-12-15 21:56:50,15.0,113.02,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Pay Bill Charge
 60,SLF1M39H3R,2024-12-15 21:56:50,1010.0,128.02,Paybill,Out,XXXXXX,Michael Kirui,Pay Bill Online to 644028 - MOJA EXPRESSWAY CO. LTD Acc. UCZS2WCMVS7JYFAS
 61,SLF4M2QQSA,2024-12-15 21:52:44,20.0,1138.02,Airtime,Out,XXXXXXXXX,Safaricom,Airtime Purchase XXXXXXXXX Safaricom
 62,SLF0L1EDBK,2024-12-15 18:23:36,30.0,1158.02,Send money,Out,XXXXXXXXXXXXX,Hassan Chirchir,Customer Transfer to -  XXXXXXXXXXXXX Hassan Chirchir
-63,SLF5L0RM5P,2024-12-15 18:20:00,900.0,1188.02,Receive money from bank/org,In,XXXXXXX,Rachel Adera,Receive funds from -  XXXXXXX Rachel Adera
+63,SLF5L0RM5P,2024-12-15 18:20:00,900.0,1188.02,Receive money from bank/org,In,XXXXXXX,SMEs Money Market Fund,Receive funds from -  XXXXXXX Rachel Adera
 64,SLF4L0DHG2,2024-12-15 18:17:49,30.0,288.02,Send money,Out,XXXXXXXXXXXXX,Hassan Chirchir,Customer Transfer to -  XXXXXXXXXXXXX Hassan Chirchir
 65,SLF4KPYNCU,2024-12-15 17:13:31,20.0,318.02,Airtime,Out,XXXXXXXXX,Safaricom,Airtime Purchase XXXXXXXXX Safaricom
 66,SLF7KJD7VR,2024-12-15 16:29:13,7.0,338.02,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
@@ -81,16 +81,16 @@
 79,SLF5KCT2N9,2024-12-15 15:42:38,20.0,1285.02,Pochi la Biashara,Out,XXXXXXXXXXXXX,Mary Echessa,Customer Payment to Small Business to - 2547******450 John nduta
 80,SLF7KB62DF,2024-12-15 15:30:59,13.0,1305.02,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 81,SLF7KB62DF,2024-12-15 15:30:59,800.0,1318.02,Send money,Out,XXXXXXXXXXX,George Kariuki,Customer Transfer to -  XXXXXXXXXXX George Kariuki
-82,SLF0KAZAI2,2024-12-15 15:29:39,2000.0,2118.02,Receive money from bank/org,In,XXXXXXX,Rachel Adera,Receive funds from -  XXXXXXX Rachel Adera
+82,SLF0KAZAI2,2024-12-15 15:29:39,2000.0,2118.02,Receive money from bank/org,In,XXXXXXX,SMEs Money Market Fund,Receive funds from -  XXXXXXX Rachel Adera
 83,SLF1K67QG1,2024-12-15 14:55:48,20.0,118.02,Airtime,Out,XXXXXXXXX,Safaricom,Recharge for Customer to -  XXXXXXXXX Safaricom
 84,SLE3H4QHRR,2024-12-14 18:59:59,30.0,138.02,Send money,Out,XXXXXXXXXXXXX,Hassan Chirchir,Customer Transfer to -  XXXXXXXXXXXXX Hassan Chirchir
 85,SLE5GVXLTZ,2024-12-14 18:17:40,20.0,168.02,Airtime,Out,XXXXXXXXX,Safaricom,Airtime Purchase XXXXXXXXX Safaricom
 86,SLE5EYND0L,2024-12-14 10:38:30,65.0,188.02,Buy Goods,Out,XXXXXXX,Hassan Kiprono,Merchant Payment to -  XXXXXXX Hassan Kiprono
 87,SLE2EWB63G,2024-12-14 10:22:04,360.0,253.02,Safaricom Charges,Out,XXXXXXXXX,Safaricom,IMT Send Charge
 88,SLE2EWB63G,2024-12-14 10:22:04,19354.0,613.02,International Money Transfer Sent,Out,XXXXXX,Achieng Kimani,Send Money Abroad to 255255 - M-PESA  GLOBAL Acc. 26772280015
-89,SLE2EVKO9O,2024-12-14 10:16:46,19500.0,19967.02,Receive money from bank/org,In,XXXXXXX,Rachel Adera,Receive funds from -  XXXXXXX Rachel Adera
+89,SLE2EVKO9O,2024-12-14 10:16:46,19500.0,19967.02,Receive money from bank/org,In,XXXXXXX,SMEs Money Market Fund,Receive funds from -  XXXXXXX Rachel Adera
 90,SLD0DZ1Z56,2024-12-13 23:20:13,60.0,467.02,Pochi la Biashara,Out,XXXXXXXXXXXXX,Mary Nyakundi,Customer Payment to Small Business to - 2547******018 James Chege
-91,SLD7DYNGQP,2024-12-13 23:13:05,500.0,527.02,Receive money from bank/org,In,XXXXXXX,Rachel Adera,Receive funds from -  XXXXXXX Rachel Adera
+91,SLD7DYNGQP,2024-12-13 23:13:05,500.0,527.02,Receive money from bank/org,In,XXXXXXX,SMEs Money Market Fund,Receive funds from -  XXXXXXX Rachel Adera
 92,SLD6DDXRGY,2024-12-13 20:31:15,11.0,27.02,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Withdrawal Charge
 93,SLD6DDXRGY,2024-12-13 20:31:15,100.0,38.02,Withdraw Money,Out,XXXXXXXXXXXXXXXXX,Wanjala Kahiga,Customer Withdrawal At -  XXXXXXXXXXXXXXXXX Wanjala Kahiga
 94,SLD0D6PK1K,2024-12-13 19:57:24,60.0,138.02,Pochi la Biashara,Out,XXXXXXXXXXX,Daniel Odhiambo,Customer Payment to Small Business to - 07******249 beatrice khikani
@@ -102,7 +102,7 @@
 100,SLC87UTG74,2024-12-12 16:45:03,300.0,503.02,Paybill,Out,XXXXXX,Paul Juma,Pay Bill to 522522 - KCB Paybill AC Acc. 7551712
 101,SLC87U60Q4,2024-12-12 16:40:40,225.0,803.02,Buy Goods,Out,XXXXXXX,Christine Kiprono,Merchant Payment to -  XXXXXXX Christine Kiprono
 102,SLC67T08D4,2024-12-12 16:32:50,20.0,1028.02,Airtime,Out,XXXXXXXXX,Safaricom,Airtime Purchase XXXXXXXXX Safaricom
-103,SLC37PU68R,2024-12-12 16:10:41,1000.0,1048.02,Receive money from bank/org,In,XXXXXXX,Rachel Adera,Receive funds from -  XXXXXXX Rachel Adera
+103,SLC37PU68R,2024-12-12 16:10:41,1000.0,1048.02,Receive money from bank/org,In,XXXXXXX,SMEs Money Market Fund,Receive funds from -  XXXXXXX Rachel Adera
 104,SLB04H25Y8,2024-12-11 19:37:10,65.0,48.02,Buy Goods,Out,XXXXXXX,Hassan Kiprono,Merchant Payment to -  XXXXXXX Hassan Kiprono
 105,SLB83FHVPC,2024-12-11 16:29:15,60.0,113.02,Pochi la Biashara,Out,XXXXXXXXXXXXX,Christine Jepkemboi,Customer Payment to Small Business to - 2547******673 Eric juma
 106,SLB036JVY2,2024-12-11 15:28:57,70.0,173.02,Send money,Out,XXXXXXXXXXX,Amani Ibrahim,Customer Transfer to -  XXXXXXXXXXX Amani Ibrahim
@@ -119,12 +119,12 @@
 117,SLA9XCROH1,2024-12-10 13:48:18,70.0,823.02,Pochi la Biashara,Out,XXXXXXXXXXX,Baraka Kirui,Customer Payment to Small Business to - 07******151 FAHIM IMBAYI
 118,SL92UUMCDU,2024-12-09 20:00:30,7.0,893.02,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 119,SL92UUMCDU,2024-12-09 20:00:30,250.0,900.02,Send money,Out,XXXXXXXXXXX,Rachel Nyakundi,Customer Transfer to -  XXXXXXXXXXX Rachel Nyakundi
-120,SL96UTZVYM,2024-12-09 19:57:40,1000.0,1150.02,Receive money from bank/org,In,XXXXXXX,Rachel Adera,Receive funds from -  XXXXXXX Rachel Adera
+120,SL96UTZVYM,2024-12-09 19:57:40,1000.0,1150.02,Receive money from bank/org,In,XXXXXXX,SMEs Money Market Fund,Receive funds from -  XXXXXXX Rachel Adera
 121,SL90TCOY9W,2024-12-09 15:10:25,20.0,150.02,Airtime,Out,XXXXXXXXX,Safaricom,Airtime Purchase XXXXXXXXX Safaricom
 122,SL97T4EXRP,2024-12-09 14:14:02,20.0,170.02,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Pay Bill Charge
 123,SL97T4EXRP,2024-12-09 14:14:02,2000.0,190.02,Paybill,Out,XXXXXXX,Imani Kariuki,Pay Bill Online to 8045243 - DELIGHTFUL FIBER LTD Acc. 7111
 124,SL96T4BBRO,2024-12-09 14:13:24,20.0,2190.02,Airtime,Out,XXXXXXXXX,Safaricom,Recharge for Customer to -  XXXXXXXXX Safaricom
-125,SL91T3WDVX,2024-12-09 14:10:36,2000.0,2210.02,Receive money from bank/org,In,XXXXXXX,Rachel Adera,Receive funds from -  XXXXXXX Rachel Adera
+125,SL91T3WDVX,2024-12-09 14:10:36,2000.0,2210.02,Receive money from bank/org,In,XXXXXXX,SMEs Money Market Fund,Receive funds from -  XXXXXXX Rachel Adera
 126,SL90SCSM8C,2024-12-09 11:07:55,20.0,210.02,Airtime,Out,XXXXXXXXX,Safaricom,Customer Bundle Purchase to -  XXXXXXXXX Safaricom
 127,SL90S0DHXO,2024-12-09 09:37:03,20.0,230.02,Airtime,Out,XXXXXXXXX,Safaricom,Recharge for Customer to -  XXXXXXXXX Safaricom
 128,SL91RSJ3BD,2024-12-09 08:36:43,80.0,250.02,Pochi la Biashara,Out,XXXXXXXXXXXXX,Victoria Wanjiru,Customer Payment to Small Business to - 2547******367 ABDALLA NZAI
@@ -138,7 +138,7 @@
 136,SL67HI88H9,2024-12-06 19:19:29,800.0,1038.02,Receive money,In,XXXXXXXXXXX,Achieng Kipkorir,Funds received from -  XXXXXXXXXXX Achieng Kipkorir
 137,SL66HGC53I,2024-12-06 19:12:08,13.0,238.02,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 138,SL66HGC53I,2024-12-06 19:12:08,800.0,251.02,Send money,Out,XXXXXXXXXXXXX,Zainab Odhiambo,Customer Transfer to -  XXXXXXXXXXXXX Zainab Odhiambo
-139,SL65HG3EO1,2024-12-06 19:11:11,1000.0,1051.02,Receive money from bank/org,In,XXXXXXX,Rachel Adera,Receive funds from -  XXXXXXX Rachel Adera
+139,SL65HG3EO1,2024-12-06 19:11:11,1000.0,1051.02,Receive money from bank/org,In,XXXXXXX,SMEs Money Market Fund,Receive funds from -  XXXXXXX Rachel Adera
 140,SL63H877QN,2024-12-06 18:38:40,29.0,51.02,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Withdrawal Charge
 141,SL63H877QN,2024-12-06 18:38:40,400.0,80.02,Withdraw Money,Out,XXXXXXXXXXXXXXXXX,Quinn Makenzi,Customer Withdrawal At -  XXXXXXXXXXXXXXXXX Quinn Makenzi
 142,SL67GZEAAR,2024-12-06 17:56:03,40.0,480.02,Buy Goods,Out,XXXXXXX,Zuberi Kimutai,Merchant Payment to -  XXXXXXX Zuberi Kimutai
@@ -146,8 +146,8 @@
 144,SL66F1TRTA,2024-12-06 10:35:18,20.0,550.02,Airtime,Out,XXXXXXXXX,Safaricom,Recharge for Customer to -  XXXXXXXXX Safaricom
 145,SL65ESJ4MX,2024-12-06 09:29:16,62.0,570.02,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Pay Bill Charge
 146,SL65ESJ4MX,2024-12-06 09:29:16,16700.0,632.02,Paybill,Out,XXXXXXX,Naomi Barasa,Pay Bill Online to 4090833 - CAPE PROPERTIES VIA CO-OP Acc. gachie no2
-147,SL62ES5X84,2024-12-06 09:26:34,8700.0,17332.02,Receive money from bank/org,In,XXXXXXX,Rachel Adera,Receive funds from -  XXXXXXX Rachel Adera
-148,SL60ES35ZA,2024-12-06 09:25:57,8000.0,8632.02,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+147,SL62ES5X84,2024-12-06 09:26:34,8700.0,17332.02,Receive money from bank/org,In,XXXXXXX,SMEs Money Market Fund,Receive funds from -  XXXXXXX Rachel Adera
+148,SL60ES35ZA,2024-12-06 09:25:57,8000.0,8632.02,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 149,SL55DYMA65,2024-12-05 22:54:53,20.0,632.02,Airtime,Out,XXXXXXXXX,Safaricom,Recharge for Customer to -  XXXXXXXXX Safaricom
 150,SL57DYJFR9,2024-12-05 22:53:49,20.0,652.02,Airtime,Out,XXXXXXXXX,Safaricom,Recharge for Customer to -  XXXXXXXXX Safaricom
 151,SL59BXG06D,2024-12-05 16:09:42,600.0,672.02,International Money Transfer Receipt,In,XXXXXXX,Wekesa Atieno,Receive International Transfer From 3036635 - WAPI MONEY TRANSFER LTD 3. Original conversation ID is IMTReceiveMoneyTransferReque st_93efa227-0ab3-ef11-8536- 062ab3a3eac8.
@@ -160,7 +160,7 @@
 158,SL54ABSOEW,2024-12-05 09:40:09,20.0,551.02,Airtime,Out,XXXXXXXXX,Safaricom,Recharge for Customer to -  XXXXXXXXX Safaricom
 159,SL52A6XOYA,2024-12-05 09:03:53,7.0,571.02,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 160,SL52A6XOYA,2024-12-05 09:03:53,400.0,578.02,Send money,Out,XXXXXXXXXXX,Zainab Kinuthia,Customer Transfer to -  XXXXXXXXXXX Zainab Kinuthia
-161,SL55A4UWJF,2024-12-05 08:48:08,700.0,978.02,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+161,SL55A4UWJF,2024-12-05 08:48:08,700.0,978.02,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 162,SL58A46X1E,2024-12-05 08:43:04,50.0,278.02,Send money,Out,XXXXXXXXXXX,Dayo Odhiambo,Customer Transfer to -  XXXXXXXXXXX Dayo Odhiambo
 163,SL55A32CJJ,2024-12-05 08:34:27,50.0,328.02,Send money,Out,XXXXXXXXXXXXX,David Wanjiru,Customer Transfer to -  XXXXXXXXXXXXX David Wanjiru
 164,SL457XANTX,2024-12-04 18:08:43,80.0,378.02,Pochi la Biashara,Out,XXXXXXXXXXX,Elijah Jepchirchir,Customer Payment to Small Business to - 07******867 peter njoroge
@@ -169,7 +169,7 @@
 167,SL427GC3WM,2024-12-04 16:34:22,30.0,513.02,Pochi la Biashara,Out,XXXXXXXXXXXXX,James Nduta,Customer Payment to Small Business to - 2547******944 PATRICK NJOROGE
 168,SL4776WRWX,2024-12-04 15:32:19,30.0,543.02,Pochi la Biashara,Out,XXXXXXXXXXXXX,Elijah Ng'ang'a,Customer Payment to Small Business to - 2547******688 GEORGE MUKUHI
 169,SL496X32A5,2024-12-04 14:26:57,60.0,573.02,Pochi la Biashara,Out,XXXXXXXXXXX,Peter Mutuku,Customer Payment to Small Business to - 07******294 osoro john
-170,SL466T4EJO,2024-12-04 14:01:23,4600.0,633.02,Buy Goods,Out,XXXXXX,Samuel Akech,Merchant Payment to -  XXXXXX Samuel Akech
+170,SL466T4EJO,2024-12-04 14:01:23,4600.0,633.02,Buy Goods,Out,XXXXXX,Mama Ntilie,Merchant Payment to -  XXXXXX Samuel Akech
 171,SL446Q4TJ0,2024-12-04 13:42:30,7.0,5233.02,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 172,SL446Q4TJ0,2024-12-04 13:42:30,150.0,5240.02,Send money,Out,XXXXXXXXXXXXX,Grace Mogaka,Customer Transfer to -  XXXXXXXXXXXXX Grace Mogaka
 173,SL456KEQSL,2024-12-04 13:06:11,5000.0,5390.02,Receive money,In,XXXXXXXXXXXXX,Achieng Kipchirchir,Funds received from -  XXXXXXXXXXXXX Achieng Kipchirchir
@@ -179,7 +179,7 @@
 177,SL425MRGPC,2024-12-04 09:09:36,250.0,434.02,Send money,Out,XXXXXXXXXXX,Rachel Kiptoo,Customer Transfer to -  XXXXXXXXXXX Rachel Kiptoo
 178,SL323IKXOE,2024-12-03 18:18:56,65.0,684.02,Buy Goods,Out,XXXXXXX,Hassan Kiprono,Merchant Payment to -  XXXXXXX Hassan Kiprono
 179,SL333I02I7,2024-12-03 18:16:07,1300.0,749.02,Buy Goods,Out,XXXXXXX,Imani Kiptoo,Merchant Payment to -  XXXXXXX Imani Kiptoo
-180,SL393HNOU7,2024-12-03 18:14:25,2000.0,2049.02,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+180,SL393HNOU7,2024-12-03 18:14:25,2000.0,2049.02,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 181,SL38372DW6,2024-12-03 17:19:10,20.0,49.02,Airtime,Out,XXXXXXXXX,Safaricom,Recharge for Customer to -  XXXXXXXXX Safaricom
 182,SL3833H0U0,2024-12-03 16:58:01,60.0,69.02,Pochi la Biashara,Out,XXXXXXXXXXX,David Lumumba,Customer Payment to Small Business to - 07******566 Benson ngigi
 183,SL3531AIDP,2024-12-03 16:44:46,169.0,129.02,Buy Goods,Out,XXXXXX,Paul Kiprono,Merchant Payment to -  XXXXXX Paul Kiprono
@@ -201,7 +201,7 @@
 199,SL10UCMAWY,2024-12-01 19:34:37,40.0,1107.02,Pochi la Biashara,Out,XXXXXXXXXXXXX,Vuyani Boit,Customer Payment to Small Business to - 2547******162 Naftary Njuguna
 200,SL15TPWF9P,2024-12-01 17:41:32,23.0,1147.02,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 201,SL15TPWF9P,2024-12-01 17:41:32,1500.0,1170.02,Send money,Out,XXXXXXXXXXXXX,Quinn Mutuku,Customer Transfer to -  XXXXXXXXXXXXX Quinn Mutuku
-202,SL13TP8K83,2024-12-01 17:37:38,2500.0,2670.02,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+202,SL13TP8K83,2024-12-01 17:37:38,2500.0,2670.02,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 203,SL10T226WE,2024-12-01 15:10:18,100.0,170.02,Pochi la Biashara,Out,XXXXXXXXXXXXX,Nicholas Atieno,Customer Payment to Small Business to - 2547******412 JULIUS GITAU
 204,SL18SW9AHW,2024-12-01 14:31:17,70.0,270.02,Pochi la Biashara,Out,XXXXXXXXXXX,Esther Adera,Customer Payment to Small Business to - 07******479 kenneth kihuha
 205,SL16SVSVLW,2024-12-01 14:28:17,20.0,340.02,Airtime,Out,XXXXXXXXX,Safaricom,Recharge for Customer to -  XXXXXXXXX Safaricom
@@ -257,10 +257,10 @@
 255,SKP538XS2V,2024-11-25 16:13:42,275.0,5055.39,Send money,Out,XXXXXXXXXXX,Rachel Nyakundi,Customer Transfer to -  XXXXXXXXXXX Rachel Nyakundi
 256,SKP01OMB8E,2024-11-25 09:18:43,7.0,5330.39,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 257,SKP01OMB8E,2024-11-25 09:18:43,500.0,5337.39,Send money,Out,XXXXXXXXXXXXX,Amani Kiplangat,Customer Transfer to -  XXXXXXXXXXXXX Amani Kiplangat
-258,SKO7ZS5YCX,2024-11-24 21:27:19,5000.0,5837.39,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+258,SKO7ZS5YCX,2024-11-24 21:27:19,5000.0,5837.39,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 259,SKO0Z35G4W,2024-11-24 18:59:53,24.91,837.39,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Pay Merchant Charge
 260,SKO0Z35G4W,2024-11-24 18:59:53,4530.0,862.3,Buy Goods,Out,XXXXXXX,Stephen Atieno,Merchant Payment to -  XXXXXXX Stephen Atieno
-261,SKO9Z302XB,2024-11-24 18:59:10,4530.0,5392.3,Receive money from bank/org,In,XXXXXXX,Rachel Adera,Receive funds from -  XXXXXXX Rachel Adera
+261,SKO9Z302XB,2024-11-24 18:59:10,4530.0,5392.3,Receive money from bank/org,In,XXXXXXX,SMEs Money Market Fund,Receive funds from -  XXXXXXX Rachel Adera
 262,SKO0Y7XNF8,2024-11-24 15:52:41,20.0,862.3,Airtime,Out,XXXXXXXXX,Safaricom,Recharge for Customer to -  XXXXXXXXX Safaricom
 263,SKO9XR84TN,2024-11-24 13:54:50,80.0,882.3,Send money,Out,XXXXXXXXXXXXX,Achieng Kimutai,Customer Transfer to -  XXXXXXXXXXXXX Achieng Kimutai
 264,SKO7XQBTDZ,2024-11-24 13:48:21,5.0,962.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Pay Bill Charge
@@ -296,7 +296,7 @@
 294,SKL0MWGIAC,2024-11-21 19:54:52,30.0,5820.3,Pochi la Biashara,Out,XXXXXXXXXXX,Elijah Amollo,Customer Payment to Small Business to - 07******096 CRISPINE KANGU
 295,SKL3M19YLL,2024-11-21 17:26:30,100.0,5850.3,Send money,Out,XXXXXXXXXXXXX,Yao Abdalla,Customer Transfer to -  XXXXXXXXXXXXX Yao Abdalla
 296,SKL3LXXAD3,2024-11-21 17:06:25,70.0,5950.3,Send money,Out,XXXXXXXXXXX,Peter Chirchir,Customer Transfer to -  XXXXXXXXXXX Peter Chirchir
-297,SKL2LVP1ZE,2024-11-21 16:52:20,4468.0,6020.3,Buy Goods,Out,XXXXXX,Samuel Akech,Merchant Payment to -  XXXXXX Samuel Akech
+297,SKL2LVP1ZE,2024-11-21 16:52:20,4468.0,6020.3,Buy Goods,Out,XXXXXX,Mama Ntilie,Merchant Payment to -  XXXXXX Samuel Akech
 298,SKL0LOF65E,2024-11-21 16:03:23,10000.0,10488.3,Receive money,In,XXXXXXXXXXXXX,Achieng Kipchirchir,Funds received from -  XXXXXXXXXXXXX Achieng Kipchirchir
 299,SKL5LN2DYH,2024-11-21 15:53:39,20.0,488.3,Airtime,Out,XXXXXXXXX,Safaricom,Recharge for Customer to -  XXXXXXXXX Safaricom
 300,SKK0IYKINC,2024-11-20 20:24:31,65.0,508.3,Buy Goods,Out,XXXXXXX,Hassan Kiprono,Merchant Payment to -  XXXXXXX Hassan Kiprono
@@ -306,21 +306,21 @@
 304,SKJ0DI1Q5W,2024-11-19 16:27:29,150.0,810.3,Send money,Out,XXXXXXXXXXX,Imani Ochieng,Customer Transfer to -  XXXXXXXXXXX Imani Ochieng
 305,SKJ2DE83M2,2024-11-19 16:00:44,20.0,960.3,Airtime,Out,XXXXXXXXX,Safaricom,Recharge for Customer to -  XXXXXXXXX Safaricom
 306,SKJ2DDDAV2,2024-11-19 15:54:38,70.0,980.3,Pochi la Biashara,Out,XXXXXXXXXXX,Omari Atieno,Customer Payment to Small Business to - 01******087 VINCENT WAFULA
-307,SKJ7DB4M6L,2024-11-19 15:38:39,1000.0,1050.3,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+307,SKJ7DB4M6L,2024-11-19 15:38:39,1000.0,1050.3,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 308,SKJ8D30MX2,2024-11-19 14:39:29,87.0,50.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Withdrawal Charge
 309,SKJ8D30MX2,2024-11-19 14:39:29,5900.0,137.3,Withdraw Money,Out,XXXXXXXXXXXXXXXXXX,Rachel Jelagat,Customer Withdrawal At -  XXXXXXXXXXXXXXXXXX Rachel Jelagat
-310,SKJ9D2UOLT,2024-11-19 14:38:18,6000.0,6037.3,Receive money from bank/org,In,XXXXXXX,Rachel Adera,Receive funds from -  XXXXXXX Rachel Adera
+310,SKJ9D2UOLT,2024-11-19 14:38:18,6000.0,6037.3,Receive money from bank/org,In,XXXXXXX,SMEs Money Market Fund,Receive funds from -  XXXXXXX Rachel Adera
 311,SKJ7CCK2J7,2024-11-19 11:27:34,23.0,37.3,Airtime,Out,XXXXXXXXX,Safaricom,Recharge for Customer to -  XXXXXXXXX Safaricom
 312,SKI57Z200V,2024-11-18 10:28:48,57.0,60.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 313,SKI57Z200V,2024-11-18 10:28:48,3700.0,117.3,Send money,Out,XXXXXXXXXXXXX,Christine Jelagat,Customer Transfer to -  XXXXXXXXXXXXX Christine Jelagat
-314,SKI47Y9734,2024-11-18 10:22:41,1000.0,3817.3,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+314,SKI47Y9734,2024-11-18 10:22:41,1000.0,3817.3,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 315,SKH572DFUD,2024-11-17 23:33:11,7.0,2817.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 316,SKH572DFUD,2024-11-17 23:33:11,350.0,2824.3,Send money,Out,XXXXXXXXXXXXX,Dayo Ng'ang'a,Customer Transfer to -  XXXXXXXXXXXXX Dayo Ng'ang'a
-317,SKH95NIUHL,2024-11-17 17:39:09,3000.0,3174.3,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+317,SKH95NIUHL,2024-11-17 17:39:09,3000.0,3174.3,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 318,SKH75N9XHZ,2024-11-17 17:37:37,23.0,174.3,Airtime,Out,XXXXXXXXX,Safaricom,Recharge for Customer to -  XXXXXXXXX Safaricom
 319,SKH74MUC8L,2024-11-17 13:26:09,15.0,197.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Pay Bill Charge
 320,SKH74MUC8L,2024-11-17 13:26:09,1500.0,212.3,Paybill,Out,XXXXXXX,Zuberi Gichuhi,Pay Bill Online to 4120463 - NETCOM FIBRE INTERNET LIMITED Acc. 532
-321,SKH14MNJK3,2024-11-17 13:24:45,1500.0,1712.3,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+321,SKH14MNJK3,2024-11-17 13:24:45,1500.0,1712.3,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 322,SKG72C7FC9,2024-11-16 19:32:40,1550.0,212.3,Buy Goods,Out,XXXXXXX,Kennedy Atieno,Merchant Payment to -  XXXXXXX Kennedy Atieno
 323,SKG31AHLYF,2024-11-16 16:20:27,60.0,1762.3,Send money,Out,XXXXXXXXXXXXX,Kwame Ng'ang'a,Customer Transfer to -  XXXXXXXXXXXXX Kwame Ng'ang'a
 324,SKG916RH7V,2024-11-16 15:55:31,20.0,1822.3,Airtime,Out,XXXXXXXXX,Safaricom,Recharge for Customer to -  XXXXXXXXX Safaricom
@@ -328,8 +328,8 @@
 326,SKG9121H17,2024-11-16 15:23:40,560.0,1855.3,Send money,Out,XXXXXXXXXXX,Xolani Mwita,Customer Transfer to -  XXXXXXXXXXX Xolani Mwita
 327,SKG111QM3X,2024-11-16 15:21:40,5.0,2415.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Pay Bill Charge
 328,SKG111QM3X,2024-11-16 15:21:40,290.0,2420.3,Paybill,Out,XXXXXX,James Barasa,Pay Bill to 522533 - Lipa na KCB Acc. 7907017
-329,SKG4ZTON12,2024-11-16 14:25:53,2000.0,2710.3,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
-330,SKG0ZRY17G,2024-11-16 14:13:50,700.0,710.3,Receive money from bank/org,In,XXXXXX,Wanjala Juma,Business Payment from -  XXXXXX Wanjala Juma
+329,SKG4ZTON12,2024-11-16 14:25:53,2000.0,2710.3,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
+330,SKG0ZRY17G,2024-11-16 14:13:50,700.0,710.3,Receive money from bank/org,In,XXXXXX,Equity Account,Business Payment from -  XXXXXX Wanjala Juma
 331,SKG8Z4M1TW,2024-11-16 11:20:42,34.0,10.3,Airtime,Out,XXXXXXXXX,Safaricom,Customer Bundle Purchase to -  XXXXXXXXX Safaricom
 332,SKF0UZOCUO,2024-11-15 11:53:29,20.0,44.3,Airtime,Out,XXXXXXXXX,Safaricom,Recharge for Customer to -  XXXXXXXXX Safaricom
 333,SKF8U1B9VG,2024-11-15 07:01:31,90.0,64.3,Buy Goods,Out,XXXXXXX,Daniel Nyakundi,Merchant Payment to -  XXXXXXX Daniel Nyakundi
@@ -388,7 +388,7 @@
 386,SK70WLXQPS,2024-11-07 13:33:21,1377.0,6242.3,Buy Goods,Out,XXXXXX,Caleb Ochieng,Merchant Payment to -  XXXXXX Caleb Ochieng
 387,SK72WHDWW6,2024-11-07 13:02:45,2.0,7619.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Pay Bill Charge
 388,SK72WHDWW6,2024-11-07 13:02:45,20.0,7621.3,Paybill,Out,XXXXXXX,Qamara Kipkorir,Pay Bill Online to 4093275 - Direct Pay Limited 1 Acc. ATL917586091
-389,SK71WCOTS1,2024-11-07 12:29:46,4600.0,7641.3,Buy Goods,Out,XXXXXX,Samuel Akech,Merchant Payment Online to -  XXXXXX Samuel Akech
+389,SK71WCOTS1,2024-11-07 12:29:46,4600.0,7641.3,Buy Goods,Out,XXXXXX,Mama Ntilie,Merchant Payment Online to -  XXXXXX Samuel Akech
 390,SK72W7H2AO,2024-11-07 11:51:14,70.0,12241.3,Pochi la Biashara,Out,XXXXXXXXXXXXX,Joy Mbugua,Customer Payment to Small Business to - 2547******956 CHARLES M'IKIARA
 391,SK79W0Z1O7,2024-11-07 11:03:25,2.0,12311.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Pay Bill Charge
 392,SK79W0Z1O7,2024-11-07 11:03:25,20.0,12313.3,Paybill,Out,XXXXXXX,Hassan Gatimu,Pay Bill Online to 4093275 - Direct Pay Limited 1 Acc. ATL917315121
@@ -405,7 +405,7 @@
 403,SK50N3G7ZQ,2024-11-05 10:12:00,140.0,395.3,Buy Goods,Out,XXXXXXX,Hassan Kiprono,Merchant Payment to -  XXXXXXX Hassan Kiprono
 404,SK54M8TNHU,2024-11-05 00:24:52,62.0,535.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Pay Bill Charge
 405,SK54M8TNHU,2024-11-05 00:24:52,16700.0,597.3,Paybill,Out,XXXXXXX,Paul Ochieng,Pay Bill Online to 4090833 - CAPE PROPERTIES VIA CO-OP Acc. NO2
-406,SK56M8S5EE,2024-11-05 00:23:05,16700.0,17297.3,Receive money from bank/org,In,XXXXXX,Wanjala Juma,Business Payment from -  XXXXXX Wanjala Juma
+406,SK56M8S5EE,2024-11-05 00:23:05,16700.0,17297.3,Receive money from bank/org,In,XXXXXX,Equity Account,Business Payment from -  XXXXXX Wanjala Juma
 407,SK47LCJRRL,2024-11-04 19:38:18,100.0,597.3,Buy Goods,Out,XXXXXXX,Hassan Kiprono,Merchant Payment to -  XXXXXXX Hassan Kiprono
 408,SK46JBZOPW,2024-11-04 12:41:36,50.0,697.3,Pochi la Biashara,Out,XXXXXXXXXXX,Wekesa Wanjiru,Customer Payment to Small Business to - 07******183 preston nyagowa
 409,SK41JAZC9B,2024-11-04 12:34:40,2.0,747.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Pay Bill Charge
@@ -433,7 +433,7 @@
 431,SK239JZ70N,2024-11-02 02:20:19,7.0,890.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 432,SK239JZ70N,2024-11-02 02:20:19,300.0,897.3,Send money,Out,XXXXXXXXXXX,Zuberi Mbugua,Customer Transfer to -  XXXXXXXXXXX Zuberi Mbugua
 433,SK239I8Z71,2024-11-02 00:39:09,4850.0,1197.3,Buy Goods,Out,XXXXXXX,Nicholas Odhiambo,Merchant Payment Online to -  XXXXXXX Nicholas Odhiambo
-434,SK249H7KTC,2024-11-02 00:04:35,3000.0,6047.3,Receive money from bank/org,In,XXXXXX,Wanjala Juma,Business Payment from -  XXXXXX Wanjala Juma
+434,SK249H7KTC,2024-11-02 00:04:35,3000.0,6047.3,Receive money from bank/org,In,XXXXXX,Equity Account,Business Payment from -  XXXXXX Wanjala Juma
 435,SK199GXGUP,2024-11-01 23:56:18,1970.0,3047.3,Receive money,In,XXXXXXXXXXX,Zuberi Mbugua,Funds received from -  XXXXXXXXXXX Zuberi Mbugua
 436,SK189G0E68,2024-11-01 23:32:23,7.0,1077.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 437,SK189G0E68,2024-11-01 23:32:23,240.0,1084.3,Send money,Out,XXXXXXXXXXX,Kennedy Ibrahim,Customer Transfer to -  XXXXXXXXXXX Kennedy Ibrahim
@@ -442,7 +442,7 @@
 440,SK1295ZUK8,2024-11-01 21:33:06,30.0,1691.3,Buy Goods,Out,XXXXXXX,Stephen Echessa,Merchant Payment to -  XXXXXXX Stephen Echessa
 441,SK108U0LJ2,2024-11-01 20:19:57,7.0,1721.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 442,SK108U0LJ2,2024-11-01 20:19:57,500.0,1728.3,Send money,Out,XXXXXXXXXXX,Achieng Atieno,Customer Transfer to -  XXXXXXXXXXX Achieng Atieno
-443,SK178TVSF1,2024-11-01 20:19:14,2000.0,2228.3,Receive money from bank/org,In,XXXXXX,Wanjala Juma,Business Payment from -  XXXXXX Wanjala Juma
+443,SK178TVSF1,2024-11-01 20:19:14,2000.0,2228.3,Receive money from bank/org,In,XXXXXX,Equity Account,Business Payment from -  XXXXXX Wanjala Juma
 444,SK148FL8Z2,2024-11-01 19:13:36,2.0,228.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Pay Bill Charge
 445,SK148FL8Z2,2024-11-01 19:13:36,20.0,230.3,Paybill,Out,XXXXXXX,Wekesa Lagat,Pay Bill Online to 4093275 - Direct Pay Limited 1 Acc. ATL902632250
 446,SK128CIH3O,2024-11-01 19:00:33,50.0,250.3,Pochi la Biashara,Out,XXXXXXXXXXXXX,Paul Kimani,Customer Payment to Small Business to - 2547******865 SIMON NYAKABE
@@ -450,7 +450,7 @@
 448,SK1761XBQF,2024-11-01 10:15:55,13.0,320.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 449,SK1761XBQF,2024-11-01 10:15:55,565.0,333.3,Send money,Out,XXXXXXXXXXX,Achieng Kipkorir,Customer Transfer to -  XXXXXXXXXXX Achieng Kipkorir
 450,SJV44D18W6,2024-10-31 19:57:28,200.0,898.3,Buy Goods,Out,XXXXXXX,Kennedy Gatimu,Merchant Payment to -  XXXXXXX Kennedy Gatimu
-451,SJV94BZ167,2024-10-31 19:52:34,1000.0,1098.3,Receive money from bank/org,In,XXXXXX,Wanjala Juma,Business Payment from -  XXXXXX Wanjala Juma
+451,SJV94BZ167,2024-10-31 19:52:34,1000.0,1098.3,Receive money from bank/org,In,XXXXXX,Equity Account,Business Payment from -  XXXXXX Wanjala Juma
 452,SJV63UZIPU,2024-10-31 18:42:06,34.0,98.3,Airtime,Out,XXXXXXXXX,Safaricom,Recharge for Customer to -  XXXXXXXXX Safaricom
 453,SJU8ZHX2YW,2024-10-30 21:28:30,20.0,132.3,Airtime,Out,XXXXXXXXX,Safaricom,Customer Bundle Purchase to -  XXXXXXXXX Safaricom
 454,SJU1WN993Z,2024-10-30 11:23:02,20.0,152.3,Airtime,Out,XXXXXXXXX,Safaricom,Customer Bundle Purchase to -  XXXXXXXXX Safaricom
@@ -458,8 +458,8 @@
 456,SJS8QOQZIO,2024-10-28 20:16:14,20.0,192.3,Airtime,Out,XXXXXXXXX,Safaricom,Customer Bundle Purchase to -  XXXXXXXXX Safaricom
 457,SJS7QLEQX7,2024-10-28 19:59:27,78.0,212.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 458,SJS7QLEQX7,2024-10-28 19:59:27,5160.0,290.3,Send money,Out,XXXXXXXXXXXXX,Vuyani Lagat,Customer Transfer to -  XXXXXXXXXXXXX Vuyani Lagat
-459,SJS1QL473Z,2024-10-28 19:58:08,38700.0,5450.3,Paybill,Out,XXXXXX,Rachel Barasa,Pay Bill Online to 840020 - M- PESA GLOBAL. Acc. 256773347169
-460,SJS1QK6V9T,2024-10-28 19:53:35,13227.0,44150.3,Receive money from bank/org,In,XXXXXXX,Rachel Adera,Receive funds from -  XXXXXXX Rachel Adera
+459,SJS1QL473Z,2024-10-28 19:58:08,38700.0,5450.3,Paybill,Out,XXXXXX,KPLC Prepaid Tokens,Pay Bill Online to 840020 - M- PESA GLOBAL. Acc. 256773347169
+460,SJS1QK6V9T,2024-10-28 19:53:35,13227.0,44150.3,Receive money from bank/org,In,XXXXXXX,SMEs Money Market Fund,Receive funds from -  XXXXXXX Rachel Adera
 461,SJS1QF2P0N,2024-10-28 19:30:32,29842.0,30923.3,International Money Transfer Receipt,In,XXXXXX,Linet Gichuhi,Receive International Zero Rated Transfer From 295028 - Safaricom International Money Transfer. Original conversation ID is TT1126705550
 462,SJS4OT3FY4,2024-10-28 13:55:01,190.0,1081.3,Buy Goods,Out,XXXXXXX,Hassan Kiprono,Merchant Payment to -  XXXXXXX Hassan Kiprono
 463,SJS6OO47C0,2024-10-28 13:21:21,30.0,1271.3,Paybill,Out,XXXXXX,Grace Kiptoo,Pay Bill to 247247 - Equity Paybill Account Acc. 0728774486
@@ -475,15 +475,15 @@
 473,SJQ2GTNBH6,2024-10-26 14:52:12,15.0,1856.3,Paybill,Out,XXXXXXX,Esther Barasa,Pay Bill Online to 4093275 - Direct Pay Limited 1 Acc. ATL887861348
 474,SJP7E9B747,2024-10-25 20:38:12,54.0,1871.3,Airtime,Out,XXXXXXXXX,Safaricom,Customer Bundle Purchase to -  XXXXXXXXX Safaricom
 475,SJP2E83CQO,2024-10-25 20:31:38,980.0,1025.3,Receive money,In,XXXXXXXXXXX,Achieng Kipkorir,Funds received from -  XXXXXXXXXXX Achieng Kipkorir
-476,SJP7E7V0I7,2024-10-25 20:30:24,3950.0,3995.3,Receive money from bank/org,In,XXXXXX,Wanjala Juma,Business Payment from -  XXXXXX Wanjala Juma
+476,SJP7E7V0I7,2024-10-25 20:30:24,3950.0,3995.3,Receive money from bank/org,In,XXXXXX,Equity Account,Business Payment from -  XXXXXX Wanjala Juma
 477,SJP1CRM5B9,2024-10-25 16:09:11,18.0,45.3,Paybill,Out,XXXXXX,Omari Nduta,Pay Bill Online to 541400 - BRITAM LIFE ASSURANCE COMPANY KENYA LIMITED Acc. 200-36420
-478,SJP9BRX3SH,2024-10-25 12:01:28,4468.0,63.3,Buy Goods,Out,XXXXXX,Samuel Akech,Merchant Payment Online to -  XXXXXX Samuel Akech
-479,SJP9BRU7NB,2024-10-25 12:00:53,4470.0,4531.3,Receive money from bank/org,In,XXXXXX,Wanjala Juma,Business Payment from -  XXXXXX Wanjala Juma
+478,SJP9BRX3SH,2024-10-25 12:01:28,4468.0,63.3,Buy Goods,Out,XXXXXX,Mama Ntilie,Merchant Payment Online to -  XXXXXX Samuel Akech
+479,SJP9BRU7NB,2024-10-25 12:00:53,4470.0,4531.3,Receive money from bank/org,In,XXXXXX,Equity Account,Business Payment from -  XXXXXX Wanjala Juma
 480,SJP9AZH2OB,2024-10-25 08:21:54,2.0,61.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Pay Bill Charge
 481,SJP9AZH2OB,2024-10-25 08:21:54,20.0,63.3,Paybill,Out,XXXXXXX,Faith Akech,Pay Bill Online to 4093275 - Direct Pay Limited 1 Acc. ATL885241334
 482,SJO77VMMOL,2024-10-24 13:11:38,15.0,83.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Pay Bill Charge
 483,SJO77VMMOL,2024-10-24 13:11:38,1500.0,98.3,Paybill,Out,XXXXXX,Omari Nduta,Pay Bill Online to 541400 - BRITAM LIFE ASSURANCE COMPANY KENYA LIMITED Acc. 200-36420
-484,SJO77VA41J,2024-10-24 13:09:06,1500.0,1598.3,Receive money from bank/org,In,XXXXXX,Wanjala Juma,Business Payment from -  XXXXXX Wanjala Juma
+484,SJO77VA41J,2024-10-24 13:09:06,1500.0,1598.3,Receive money from bank/org,In,XXXXXX,Equity Account,Business Payment from -  XXXXXX Wanjala Juma
 485,SJN342WB9P,2024-10-23 14:43:07,5.0,98.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Pay Bill Charge
 486,SJN342WB9P,2024-10-23 14:43:07,220.0,103.3,Paybill,Out,XXXXXX,Peter Jepchirchir,Pay Bill to 222111 - Family Bank Pesa Pap Acc. 2500502
 487,SJN93WE7H1,2024-10-23 13:56:21,30.0,323.3,Pochi la Biashara,Out,XXXXXXXXXXXXX,Faith Kiprono,Customer Payment to Small Business to - 2547******264 LAMECK MOKAYA
@@ -505,12 +505,12 @@
 503,SJM8XU01XG,2024-10-22 09:46:35,60.0,775.3,Send money,Out,XXXXXXXXXXX,Amani Ibrahim,Customer Transfer to -  XXXXXXXXXXX Amani Ibrahim
 504,SJM5XPS2HF,2024-10-22 09:12:06,70.0,835.3,Pochi la Biashara,Out,XXXXXXXXXXXXX,Peter Kiprono,Customer Payment to Small Business to - 2547******543 GEORGE NJUGUNA
 505,SJM1XMMTKP,2024-10-22 08:45:50,30.0,905.3,Pochi la Biashara,Out,XXXXXXXXXXXXX,Elijah Ochieng,Customer Payment to Small Business to - 2547******055 Paul Mburu
-506,SJM7XFSNOT,2024-10-22 07:47:04,17931.0,935.3,Paybill,Out,XXXXXX,Kennedy Mbogo,Pay Bill Online to 859528 - MALI Acc. 0702605230_40144986_538968 #757213d2-acbf-4efe-ba4e- bafe19376c2f
+506,SJM7XFSNOT,2024-10-22 07:47:04,17931.0,935.3,Paybill,Out,XXXXXX,Equity Bank Paybill,Pay Bill Online to 859528 - MALI Acc. 0702605230_40144986_538968 #757213d2-acbf-4efe-ba4e- bafe19376c2f
 507,SJM1XF3WH1,2024-10-22 07:40:33,17931.0,18866.3,International Money Transfer Receipt,In,XXXXXX,Linet Gichuhi,Receive International Zero Rated Transfer From 295028 - Safaricom International Money Transfer. Original conversation ID is TT1122734201
 508,SJL8WVOWJA,2024-10-21 21:49:38,400.0,935.3,Receive money,In,XXXXXXXXXXXXX,Wanjala Kinuthia,Funds received from -  XXXXXXXXXXXXX Wanjala Kinuthia
 509,SJL4WESDSE,2024-10-21 19:59:01,30.0,535.3,Send money,Out,XXXXXXXXXXXXX,Achieng Mwita,Customer Transfer to -  XXXXXXXXXXXXX Achieng Mwita
 510,SJL6WDE1NI,2024-10-21 19:51:54,500.0,594.3,Withdraw Money,Out,XXXXXXXXXXXXXXXXX,Umaru Juma,Customer Withdrawal At -  XXXXXXXXXXXXXXXXX Umaru Juma
-511,SJL7WD6TKR,2024-10-21 19:50:54,1000.0,1094.3,Receive money from bank/org,In,XXXXXX,Wanjala Juma,Business Payment from -  XXXXXX Wanjala Juma
+511,SJL7WD6TKR,2024-10-21 19:50:54,1000.0,1094.3,Receive money from bank/org,In,XXXXXX,Equity Account,Business Payment from -  XXXXXX Wanjala Juma
 512,SJL7UBJTBH,2024-10-21 12:05:31,2.0,133.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Pay Bill Charge
 513,SJL7UBJTBH,2024-10-21 12:05:31,20.0,135.3,Paybill,Out,XXXXXXX,Quinn Matiangi,Pay Bill Online to 4093275 - Direct Pay Limited 1 Acc. ATL878031534
 514,SJK7R259GX,2024-10-20 14:39:03,700.0,155.3,Buy Goods,Out,XXXXXX,Linet Ng'ang'a,Merchant Payment to -  XXXXXX Linet Ng'ang'a
@@ -526,14 +526,14 @@
 524,SJJ7MK1KGN,2024-10-19 12:41:18,500.0,1532.3,Send money,Out,XXXXXXXXXXX,Umaru Gichuhi,Customer Transfer to -  XXXXXXXXXXX Umaru Gichuhi
 525,SJJ9L9LJ81,2024-10-19 03:30:13,7.0,1882.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 526,SJJ9L9LJ81,2024-10-19 03:30:13,420.0,1889.3,Send money,Out,XXXXXXXXXXXXX,Victoria Mwachiro,Customer Transfer to -  XXXXXXXXXXXXX Victoria Mwachiro
-527,SJJ4L6YIR8,2024-10-19 00:28:09,2000.0,2309.3,Receive money from bank/org,In,XXXXXX,Wanjala Juma,Business Payment from -  XXXXXX Wanjala Juma
+527,SJJ4L6YIR8,2024-10-19 00:28:09,2000.0,2309.3,Receive money from bank/org,In,XXXXXX,Equity Account,Business Payment from -  XXXXXX Wanjala Juma
 528,SJI0KU4F0Q,2024-10-18 21:20:25,7.0,309.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 529,SJI0KU4F0Q,2024-10-18 21:20:25,400.0,316.3,Send money,Out,XXXXXXXXXXX,Achieng Kipkorir,Customer Transfer to -  XXXXXXXXXXX Achieng Kipkorir
 530,SJI3KRV5TV,2024-10-18 21:04:14,7.0,716.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 531,SJI3KRV5TV,2024-10-18 21:04:14,120.0,723.3,Send money,Out,XXXXXXXXXXXXX,Kennedy Chirchir,Customer Transfer to -  XXXXXXXXXXXXX Kennedy Chirchir
 532,SJI2KI710G,2024-10-18 20:08:07,7.0,843.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 533,SJI2KI710G,2024-10-18 20:08:07,280.0,850.3,Send money,Out,XXXXXXXXXXXXX,Stephen Kirui,Customer Transfer to -  XXXXXXXXXXXXX Stephen Kirui
-534,SJI8KFNVTK,2024-10-18 19:55:18,1000.0,1130.3,Receive money from bank/org,In,XXXXXX,Wanjala Juma,Business Payment from -  XXXXXX Wanjala Juma
+534,SJI8KFNVTK,2024-10-18 19:55:18,1000.0,1130.3,Receive money from bank/org,In,XXXXXX,Equity Account,Business Payment from -  XXXXXX Wanjala Juma
 535,SJI9KDUTAR,2024-10-18 19:46:37,20.0,130.3,Airtime,Out,XXXXXXXXX,Safaricom,Recharge for Customer to -  XXXXXXXXX Safaricom
 536,SJI9KAIVN7,2024-10-18 19:31:23,30.0,150.3,Pochi la Biashara,Out,XXXXXXXXXXXXX,Christine Kimani,Customer Payment to Small Business to - 2547******341 polycap obutu
 537,SJI4IED0KO,2024-10-18 12:46:18,2.0,180.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Pay Bill Charge
@@ -545,11 +545,11 @@
 543,SJI0H0BIOK,2024-10-18 00:30:28,99.0,328.3,Paybill,Out,XXXXXX,Umaru Odhiambo,Pay Bill Online to 244441 - SAFARICOM POSTPAID BUNDLES Acc. 254705910777
 544,SJI9H09MZV,2024-10-18 00:28:20,99.0,427.3,Paybill,Out,XXXXXX,Umaru Odhiambo,Pay Bill Online to 244441 - SAFARICOM POSTPAID BUNDLES Acc. 254705910777
 545,SJI3H06JLP,2024-10-18 00:24:24,500.0,526.3,Receive money,In,XXXXXXXXXXX,Umaru Gichuhi,Funds received from -  XXXXXXXXXXX Umaru Gichuhi
-546,SJI9GZWF83,2024-10-18 00:13:51,100.0,26.3,Paybill,Out,XXXXXX,Kennedy Mbogo,Pay Bill Online to 859528 - MALI Acc. 0702605230_40144986_4658#7 f590b11-6c57-42a9-8597- 727746865bf6
+546,SJI9GZWF83,2024-10-18 00:13:51,100.0,26.3,Paybill,Out,XXXXXX,Equity Bank Paybill,Pay Bill Online to 859528 - MALI Acc. 0702605230_40144986_4658#7 f590b11-6c57-42a9-8597- 727746865bf6
 547,SJI5GZV79H,2024-10-18 00:12:32,10.0,126.3,Airtime,Out,XXXXXXXXX,Safaricom,Airtime Purchase XXXXXXXXX Safaricom
 548,SJI9GZTP13,2024-10-18 00:10:45,99.0,136.3,Paybill,Out,XXXXXX,Umaru Odhiambo,Pay Bill Online to 244441 - SAFARICOM POSTPAID BUNDLES Acc. 254705910777
 549,SJH6FF0RAO,2024-10-17 17:30:25,70.0,235.3,Pochi la Biashara,Out,XXXXXXXXXXXXX,Baraka Mwachiro,Customer Payment to Small Business to - 2547******255 BONFACE NDIA
-550,SJH0FEWKR2,2024-10-17 17:29:50,300.0,305.3,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+550,SJH0FEWKR2,2024-10-17 17:29:50,300.0,305.3,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 551,SJH9EXRCU3,2024-10-17 15:35:21,152.0,5.3,No description,Out,XXXXXXXXX,Safaricom,
 552,SJH1ENN7JZ,2024-10-17 14:19:50,20.0,157.3,Paybill,Out,XXXXXX,Achieng Kiplangat,Pay Bill to 400200 - Co-operative Bank Money Transfer Acc. 104011
 553,SJH6ENCM5K,2024-10-17 14:17:38,5.0,177.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Pay Bill Charge
@@ -563,13 +563,13 @@
 561,SJG4CL5NJY,2024-10-16 21:12:54,200.0,454.3,Paybill,Out,XXXXXX,Baraka Mbogo,Pay Bill Online to 888880 - KPLC PREPAID Acc. 37231848823
 562,SJG0CJZ306,2024-10-16 21:04:27,15.0,654.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Pay Bill Charge
 563,SJG0CJZ306,2024-10-16 21:04:27,1500.0,669.3,Paybill,Out,XXXXXXX,Zuberi Gichuhi,Pay Bill Online to 4120463 - NETCOM FIBRE INTERNET LIMITED Acc. 532
-564,SJG0CIVDWY,2024-10-16 20:56:59,1500.0,2169.3,Receive money from bank/org,In,XXXXXX,Wanjala Juma,Business Payment from -  XXXXXX Wanjala Juma
+564,SJG0CIVDWY,2024-10-16 20:56:59,1500.0,2169.3,Receive money from bank/org,In,XXXXXX,Equity Account,Business Payment from -  XXXXXX Wanjala Juma
 565,SJG0CI9MKE,2024-10-16 20:53:03,65.0,669.3,Buy Goods,Out,XXXXXXX,Hassan Kiprono,Merchant Payment to -  XXXXXXX Hassan Kiprono
 566,SJG6ANLFV6,2024-10-16 14:29:56,200.0,734.3,Buy Goods,Out,XXXXXXX,Kennedy Gatimu,Merchant Payment to -  XXXXXXX Kennedy Gatimu
 567,SJG7ALXV93,2024-10-16 14:17:39,30.0,934.3,Buy Goods,Out,XXXXXXX,Daniel Nyakundi,Merchant Payment to -  XXXXXXX Daniel Nyakundi
 568,SJG1AK7N8X,2024-10-16 14:04:46,20.0,964.3,Pochi la Biashara,Out,XXXXXXXXXXXXX,Brian Mutuku,Customer Payment to Small Business to - 2547******871 David Chege
 569,SJG2AI5U90,2024-10-16 13:49:49,20.0,984.3,Pochi la Biashara,Out,XXXXXXXXXXXXX,Hassan Atieno,Customer Payment to Small Business to - 2547******285 GEORGE BOSIRE
-570,SJG4AI3RLU,2024-10-16 13:49:25,1000.0,1004.3,Receive money from bank/org,In,XXXXXX,Wanjala Juma,Business Payment from -  XXXXXX Wanjala Juma
+570,SJG4AI3RLU,2024-10-16 13:49:25,1000.0,1004.3,Receive money from bank/org,In,XXXXXX,Equity Account,Business Payment from -  XXXXXX Wanjala Juma
 571,SJG99OR6QR,2024-10-16 10:02:33,2.0,4.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Pay Bill Charge
 572,SJG99OR6QR,2024-10-16 10:02:33,15.0,6.3,Paybill,Out,XXXXXXX,Grace Mbogo,Pay Bill Online to 4093275 - Direct Pay Limited 1 Acc. ATL868020780
 573,SJF57VGMEF,2024-10-15 19:07:13,23.0,21.3,No description,Out,XXXXXXXXX,Safaricom,
@@ -582,7 +582,7 @@
 580,SJF16AJ52T,2024-10-15 13:13:53,1029.0,258.3,Send money,Out,XXXXXXXXXXX,George Kariuki,Customer Transfer to -  XXXXXXXXXXX George Kariuki
 581,SJF45YPIES,2024-10-15 11:43:28,2.0,1287.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Pay Bill Charge
 582,SJF45YPIES,2024-10-15 11:43:28,15.0,1289.3,Paybill,Out,XXXXXXX,Nicholas Kinuthia,Pay Bill Online to 4093275 - Direct Pay Limited 1 Acc. ATL866320359
-583,SJF25YFFGC,2024-10-15 11:41:14,1300.0,1304.3,Receive money from bank/org,In,XXXXXX,Wanjala Juma,Business Payment from -  XXXXXX Wanjala Juma
+583,SJF25YFFGC,2024-10-15 11:41:14,1300.0,1304.3,Receive money from bank/org,In,XXXXXX,Equity Account,Business Payment from -  XXXXXX Wanjala Juma
 584,SJF95WUOYJ,2024-10-15 11:28:43,2.0,4.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Pay Bill Charge
 585,SJF95WUOYJ,2024-10-15 11:28:43,20.0,6.3,Paybill,Out,XXXXXXX,Peter Mwachiro,Pay Bill Online to 4093275 - Direct Pay Limited 1 Acc. ATL866296644
 586,SJF557RSTT,2024-10-15 08:03:26,60.0,26.3,Send money,Out,XXXXXXXXXXX,George Kariuki,Customer Transfer to -  XXXXXXXXXXX George Kariuki
@@ -592,7 +592,7 @@
 590,SJE137LQVD,2024-10-14 17:32:31,30.0,226.3,Send money,Out,XXXXXXXXXXXXX,Furaha Odhiambo,Customer Transfer to -  XXXXXXXXXXXXX Furaha Odhiambo
 591,SJE531N2YH,2024-10-14 16:56:06,200.0,256.3,Buy Goods,Out,XXXXXXX,Kennedy Gatimu,Merchant Payment to -  XXXXXXX Kennedy Gatimu
 592,SJE92WKR6R,2024-10-14 16:22:08,60.0,456.3,Pochi la Biashara,Out,XXXXXXXXXXXXX,Victoria Akech,Customer Payment to Small Business to - 2547******321 GEORGE NDUNGI
-593,SJE72WH0YR,2024-10-14 16:21:25,500.0,516.3,Receive money from bank/org,In,XXXXXX,Wanjala Juma,Business Payment from -  XXXXXX Wanjala Juma
+593,SJE72WH0YR,2024-10-14 16:21:25,500.0,516.3,Receive money from bank/org,In,XXXXXX,Equity Account,Business Payment from -  XXXXXX Wanjala Juma
 594,SJE32SY1BR,2024-10-14 15:55:58,2.0,16.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Pay Bill Charge
 595,SJE32SY1BR,2024-10-14 15:55:58,20.0,18.3,Paybill,Out,XXXXXXX,Yao Kimutai,Pay Bill Online to 4093275 - Direct Pay Limited 1 Acc. ATL864859143
 596,SJE12RU0D9,2024-10-14 15:47:57,100.0,38.3,Paybill,Out,XXXXXX,Liam Kimutai,Pay Bill to 480587 - OLLIN SAVINGS AND CREDIT SOCIETY LTD Acc. 10065746B
@@ -634,7 +634,7 @@
 632,SJ99GG5S9P,2024-10-09 11:08:28,20.0,1331.3,No description,Out,XXXXXXXXX,Safaricom,
 633,SJ87ETGLI9,2024-10-08 20:20:16,20.0,1351.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Pay Bill Charge
 634,SJ87ETGLI9,2024-10-08 20:20:16,2000.0,1371.3,Paybill,Out,XXXXXXX,Imani Kariuki,Pay Bill Online to 8045243 - DELIGHTFUL FIBER LTD Acc. 7111
-635,SJ82ET2OD0,2024-10-08 20:18:13,2000.0,3371.3,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+635,SJ82ET2OD0,2024-10-08 20:18:13,2000.0,3371.3,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 636,SJ83DICT2T,2024-10-08 16:17:51,60.0,1371.3,Pochi la Biashara,Out,XXXXXXXXXXXXX,Christine Jepkemboi,Customer Payment to Small Business to - 2547******673 Eric juma
 637,SJ83DFS5VB,2024-10-08 15:59:30,20.0,1431.3,No description,Out,XXXXXXXXX,Safaricom,
 638,SJ82DFNJ70,2024-10-08 15:58:35,20.0,1451.3,Airtime,Out,XXXXXXXXX,Safaricom,Airtime Purchase XXXXXXXXX Safaricom
@@ -652,7 +652,7 @@
 650,SJ77A0U36N,2024-10-07 18:26:20,3800.0,1457.3,Send money,Out,XXXXXXXXXXXXX,Amani Mwangi,Customer Transfer to -  XXXXXXXXXXXXX Amani Mwangi
 651,SJ759RL4MH,2024-10-07 17:38:52,3.0,5257.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Pay Bill Charge
 652,SJ759RL4MH,2024-10-07 17:38:52,50.0,5260.3,Paybill,Out,XXXXXXX,Ruth Ng'ang'a,Pay Bill Online to 4093275 - Direct Pay Limited 1 Acc. ATL851970307
-653,SJ769DSQL4,2024-10-07 16:14:47,1000.0,5310.3,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+653,SJ769DSQL4,2024-10-07 16:14:47,1000.0,5310.3,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 654,SJ718PEGFD,2024-10-07 13:22:34,70.0,4310.3,Send money,Out,XXXXXXXXXXXXX,Stephen Mwangi,Customer Transfer to -  XXXXXXXXXXXXX Stephen Mwangi
 655,SJ747QE7C8,2024-10-07 08:55:58,30.0,4380.3,Pochi la Biashara,Out,XXXXXXXXXXX,Kennedy Mwangi,Customer Payment to Small Business to - 07******868 peter njenga
 656,SJ707MQHX0,2024-10-07 08:25:55,30.0,4410.3,Pochi la Biashara,Out,XXXXXXXXXXXXX,Vuyani Kahiga,Customer Payment to Small Business to - 2547******782 simon kariuki
@@ -674,7 +674,7 @@
 672,SJ59ZDCXG5,2024-10-05 13:35:25,450.0,373.3,Send money,Out,XXXXXXXXXXXXX,Peter Boit,Customer Transfer to -  XXXXXXXXXXXXX Peter Boit
 673,SJ53YLQRKF,2024-10-05 10:21:22,100.0,843.3,Airtime,Out,XXXXXXXXX,Safaricom,Airtime Purchase XXXXXXXXX Safaricom
 674,SJ58YGMUHE,2024-10-05 09:42:34,125.0,943.3,Buy Goods,Out,XXXXXXX,Hassan Kiprono,Merchant Payment Online to -  XXXXXXX Hassan Kiprono
-675,SJ50YGKQJA,2024-10-05 09:42:12,1000.0,1068.3,Receive money from bank/org,In,XXXXXX,Wanjala Juma,Business Payment from -  XXXXXX Wanjala Juma
+675,SJ50YGKQJA,2024-10-05 09:42:12,1000.0,1068.3,Receive money from bank/org,In,XXXXXX,Equity Account,Business Payment from -  XXXXXX Wanjala Juma
 676,SJ56YF1SLC,2024-10-05 09:30:32,5.0,68.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Pay Bill Charge
 677,SJ56YF1SLC,2024-10-05 09:30:32,200.0,73.3,Paybill,Out,XXXXXX,Baraka Mbogo,Pay Bill Online to 888880 - KPLC PREPAID Acc. 37231848823
 678,SJ44XBVM98,2024-10-04 21:21:33,190.0,273.3,Buy Goods,Out,XXXXXXX,Hassan Kiprono,Merchant Payment to -  XXXXXXX Hassan Kiprono
@@ -684,7 +684,7 @@
 682,SJ44XAKEU2,2024-10-04 21:12:49,540.0,1039.3,Send money,Out,XXXXXXXXXXXXX,Michael Nyakundi,Customer Transfer to -  XXXXXXXXXXXXX Michael Nyakundi
 683,SJ42WJ29XC,2024-10-04 19:01:30,7.0,1579.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 684,SJ42WJ29XC,2024-10-04 19:01:30,500.0,1586.3,Send money,Out,XXXXXXXXXXX,Elijah Kahiga,Customer Transfer to -  XXXXXXXXXXX Elijah Kahiga
-685,SJ45WJ05EP,2024-10-04 19:01:15,2000.0,2086.3,Receive money from bank/org,In,XXXXXX,Wanjala Juma,Business Payment from -  XXXXXX Wanjala Juma
+685,SJ45WJ05EP,2024-10-04 19:01:15,2000.0,2086.3,Receive money from bank/org,In,XXXXXX,Equity Account,Business Payment from -  XXXXXX Wanjala Juma
 686,SJ43W4HZTL,2024-10-04 17:54:18,80.0,86.3,Pochi la Biashara,Out,XXXXXXXXXXX,Vuyani Kiprono,Customer Payment to Small Business to - 07******764 jaquiline makani
 687,SJ45VYCMAV,2024-10-04 17:20:45,20.0,166.3,No description,Out,XXXXXXXXX,Safaricom,
 688,SJ46VGWL2O,2024-10-04 15:30:01,20.0,186.3,Airtime,Out,XXXXXXXXX,Safaricom,Airtime Purchase XXXXXXXXX Safaricom
@@ -695,7 +695,7 @@
 693,SJ35S4MFQP,2024-10-03 18:47:26,80.0,336.3,Pochi la Biashara,Out,XXXXXXXXXXX,David Abdalla,Customer Payment to Small Business to - 07******610 TABITHA KIMAIYO
 694,SJ36RZCW28,2024-10-03 18:23:46,29.0,416.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Withdrawal Charge
 695,SJ36RZCW28,2024-10-03 18:23:46,700.0,445.3,Withdraw Money,Out,XXXXXXXXXXXXXXXXX,Quinn Makenzi,Customer Withdrawal At -  XXXXXXXXXXXXXXXXX Quinn Makenzi
-696,SJ35RZ8W35,2024-10-03 18:23:16,1000.0,1145.3,Receive money from bank/org,In,XXXXXX,Wanjala Juma,Business Payment from -  XXXXXX Wanjala Juma
+696,SJ35RZ8W35,2024-10-03 18:23:16,1000.0,1145.3,Receive money from bank/org,In,XXXXXX,Equity Account,Business Payment from -  XXXXXX Wanjala Juma
 697,SJ37RM9VF3,2024-10-03 17:12:17,50.0,145.3,Send money,Out,XXXXXXXXXXX,Brian Mbogo,Customer Transfer to -  XXXXXXXXXXX Brian Mbogo
 698,SJ26MLJDZ6,2024-10-02 14:03:22,20.0,195.3,Pochi la Biashara,Out,XXXXXXXXXXXXX,Rachel Mwachiro,Customer Payment to Small Business to - 2547******580 JOHN MUMBI
 699,SJ27MI07GT,2024-10-02 13:39:03,30.0,215.3,Pochi la Biashara,Out,XXXXXXXXXXXXX,Yao Mbugua,Customer Payment to Small Business to - 2547******967 Silas Gohore
@@ -705,7 +705,7 @@
 703,SJ21LSFB5B,2024-10-02 10:29:18,40.0,365.3,Airtime,Out,XXXXXXXXX,Safaricom,Airtime Purchase XXXXXXXXX Safaricom
 704,SJ12JZMRT0,2024-10-01 19:42:37,62.0,405.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Pay Bill Charge
 705,SJ12JZMRT0,2024-10-01 19:42:37,15700.0,467.3,Paybill,Out,XXXXXXX,Paul Ochieng,Pay Bill Online to 4090833 - CAPE PROPERTIES VIA CO-OP Acc. NO2
-706,SJ16JZ2YXI,2024-10-01 19:40:15,15700.0,16167.3,Receive money from bank/org,In,XXXXXX,Wanjala Juma,Business Payment from -  XXXXXX Wanjala Juma
+706,SJ16JZ2YXI,2024-10-01 19:40:15,15700.0,16167.3,Receive money from bank/org,In,XXXXXX,Equity Account,Business Payment from -  XXXXXX Wanjala Juma
 707,SJ18IMO9LO,2024-10-01 15:19:03,120.0,467.3,Buy Goods,Out,XXXXXXX,Hassan Kiprono,Merchant Payment to -  XXXXXXX Hassan Kiprono
 708,SJ11I13Z77,2024-10-01 12:46:31,20.0,587.3,Pochi la Biashara,Out,XXXXXXXXXXXXX,Rachel Mwachiro,Customer Payment to Small Business to - 2547******580 JOHN MUMBI
 709,SJ18HXGVEW,2024-10-01 12:19:54,30.0,607.3,Pochi la Biashara,Out,XXXXXXXXXXXXX,Yao Mbugua,Customer Payment to Small Business to - 2547******967 Silas Gohore
@@ -718,12 +718,12 @@
 716,SIU9ET3305,2024-09-30 16:45:25,60.0,857.3,Send money,Out,XXXXXXXXXXXXX,Hassan Chirchir,Customer Transfer to -  XXXXXXXXXXXXX Hassan Chirchir
 717,SIU4DZR2HK,2024-09-30 13:19:43,20.0,917.3,No description,Out,XXXXXXXXX,Safaricom,
 718,SIU8D5LY14,2024-09-30 09:28:19,95.0,937.3,Buy Goods,Out,XXXXXX,Liam Ochieng,Merchant Payment Online to -  XXXXXX Liam Ochieng
-719,SIU1D5IPEL,2024-09-30 09:27:34,1000.0,1032.3,Receive money from bank/org,In,XXXXXX,Wanjala Juma,Business Payment from -  XXXXXX Wanjala Juma
+719,SIU1D5IPEL,2024-09-30 09:27:34,1000.0,1032.3,Receive money from bank/org,In,XXXXXX,Equity Account,Business Payment from -  XXXXXX Wanjala Juma
 720,SIU8D5EGXC,2024-09-30 09:26:40,20.0,32.3,No description,Out,XXXXXXXXX,Safaricom,
 721,SIT6C34I68,2024-09-29 20:58:51,72.0,52.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Pay Bill Charge
 722,SIT6C34I68,2024-09-29 20:58:51,26900.0,124.3,Paybill,Out,XXXXXX,George Boit,Pay Bill Online to 247247 - Equity Paybill Account Acc. 0702605230
-723,SIT4C2RTPO,2024-09-29 20:56:24,400.0,27024.3,Receive money from bank/org,In,XXXXXX,Wanjala Juma,Business Payment from -  XXXXXX Wanjala Juma
-724,SIT6C22F64,2024-09-29 20:51:48,3000.0,26624.3,Receive money from bank/org,In,XXXXXX,Wanjala Juma,Business Payment from -  XXXXXX Wanjala Juma
+723,SIT4C2RTPO,2024-09-29 20:56:24,400.0,27024.3,Receive money from bank/org,In,XXXXXX,Equity Account,Business Payment from -  XXXXXX Wanjala Juma
+724,SIT6C22F64,2024-09-29 20:51:48,3000.0,26624.3,Receive money from bank/org,In,XXXXXX,Equity Account,Business Payment from -  XXXXXX Wanjala Juma
 725,SIT7B4IMJD,2024-09-29 17:41:51,33.0,23624.3,No description,Out,XXXXXXXXX,Safaricom,
 726,SIT6AZZ11O,2024-09-29 17:13:58,20.0,23657.3,Pochi la Biashara,Out,XXXXXXXXXXXXX,Christine Mwangi,Customer Payment to Small Business to - 2547******844 PETER CUMARI
 727,SIT9AZ4D9X,2024-09-29 17:08:38,300.0,23677.3,Buy Goods,Out,XXXXXXX,Naomi Amollo,Merchant Payment to -  XXXXXXX Naomi Amollo
@@ -747,11 +747,11 @@
 745,SIR92Y604D,2024-09-27 18:00:34,20.0,25888.3,No description,Out,XXXXXXXXX,Safaricom,
 746,SIR61Y63T8,2024-09-27 14:08:38,20.0,25908.3,No description,Out,XXXXXXXXX,Safaricom,
 747,SIR918AXOD,2024-09-27 10:59:21,20.0,25928.3,No description,Out,XXXXXXXXX,Safaricom,
-748,SIQ9Z00ZCR,2024-09-26 21:51:46,25600.0,25948.3,Paybill,Out,XXXXXX,Rachel Barasa,Pay Bill Online to 840020 - M- PESA GLOBAL. Acc. 256773347169
+748,SIQ9Z00ZCR,2024-09-26 21:51:46,25600.0,25948.3,Paybill,Out,XXXXXX,KPLC Prepaid Tokens,Pay Bill Online to 840020 - M- PESA GLOBAL. Acc. 256773347169
 749,SIQ0XHOI6M,2024-09-26 17:12:23,108.0,51548.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 750,SIQ0XHOI6M,2024-09-26 17:12:23,25600.0,51656.3,Send money,Out,XXXXXXXXXXX,Baraka Mwangi,Customer Transfer to -  XXXXXXXXXXX Baraka Mwangi
-751,SIQ0XC89Y4,2024-09-26 16:37:37,17628.0,77256.3,Receive money from bank/org,In,XXXXXX,Wanjala Juma,Business Payment from -  XXXXXX Wanjala Juma
-752,SIQ2XBZLSY,2024-09-26 16:35:58,59172.0,59628.3,Receive money from bank/org,In,XXXXXXX,Rachel Adera,Receive funds from -  XXXXXXX Rachel Adera
+751,SIQ0XC89Y4,2024-09-26 16:37:37,17628.0,77256.3,Receive money from bank/org,In,XXXXXX,Equity Account,Business Payment from -  XXXXXX Wanjala Juma
+752,SIQ2XBZLSY,2024-09-26 16:35:58,59172.0,59628.3,Receive money from bank/org,In,XXXXXXX,SMEs Money Market Fund,Receive funds from -  XXXXXXX Rachel Adera
 753,SIQ6WBFY2W,2024-09-26 12:05:40,20.0,456.3,No description,Out,XXXXXXXXX,Safaricom,
 754,SIQ5WB67SV,2024-09-26 12:03:29,60.0,476.3,Pochi la Biashara,Out,XXXXXXXXXXXXX,Baraka Ng'ang'a,Customer Payment to Small Business to - 2547******215 TIMOTHY NYONGESA
 755,SIQ6W8BP3M,2024-09-26 11:40:33,584.0,536.3,Buy Goods,Out,XXXXXX,Caleb Ochieng,Merchant Payment to -  XXXXXX Caleb Ochieng
@@ -774,7 +774,7 @@
 772,SIN6L4RU0O,2024-09-23 15:21:39,50.0,842.3,Buy Goods,Out,XXXXXXX,Hannah Matiangi,Merchant Payment Online to -  XXXXXXX Hannah Matiangi
 773,SIM8IQ1B2U,2024-09-22 20:26:17,7.0,892.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 774,SIM8IQ1B2U,2024-09-22 20:26:17,160.0,899.3,Pochi la Biashara,Out,XXXXXXXXXXXXX,Zainab Khamisi,Customer Payment to Small Business to - 2541******679 David Wanjiku
-775,SIM7IPXN4J,2024-09-22 20:25:36,1000.0,1059.3,Receive money from bank/org,In,XXXXXX,Wanjala Juma,Business Payment from -  XXXXXX Wanjala Juma
+775,SIM7IPXN4J,2024-09-22 20:25:36,1000.0,1059.3,Receive money from bank/org,In,XXXXXX,Equity Account,Business Payment from -  XXXXXX Wanjala Juma
 776,SIM7IHYBBV,2024-09-22 19:37:51,60.0,59.3,Pochi la Biashara,Out,XXXXXXXXXXX,Achieng Juma,Customer Payment to Small Business to - 07******631 william odero
 777,SIM7I99USX,2024-09-22 18:53:54,40.0,119.3,Pochi la Biashara,Out,XXXXXXXXXXXXX,Kwame Kiptoo,Customer Payment to Small Business to - 2547******641 MORINATO CALEB
 778,SIM8I60IVK,2024-09-22 18:37:11,30.0,159.3,Send money,Out,XXXXXXXXXXXXX,Zuberi Gatimu,Customer Transfer to -  XXXXXXXXXXXXX Zuberi Gatimu
@@ -783,15 +783,15 @@
 781,SIM0HQ8ONM,2024-09-22 17:01:08,26.0,696.3,No description,Out,XXXXXXXXX,Safaricom,
 782,SIM7HOB70D,2024-09-22 16:47:35,29.0,722.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Withdrawal Charge
 783,SIM7HOB70D,2024-09-22 16:47:35,2050.0,751.3,Withdraw Money,Out,XXXXXXXXXXXXXXXXX,Michael Kinuthia,Customer Withdrawal At -  XXXXXXXXXXXXXXXXX Michael Kinuthia
-784,SIM4HO6KSY,2024-09-22 16:46:44,2000.0,2801.3,Receive money from bank/org,In,XXXXXX,Wanjala Juma,Business Payment from -  XXXXXX Wanjala Juma
+784,SIM4HO6KSY,2024-09-22 16:46:44,2000.0,2801.3,Receive money from bank/org,In,XXXXXX,Equity Account,Business Payment from -  XXXXXX Wanjala Juma
 785,SIM1HLB363,2024-09-22 16:26:17,30.0,801.3,Send money,Out,XXXXXXXXXXX,Mary Mwachiro,Customer Transfer to -  XXXXXXXXXXX Mary Mwachiro
 786,SIM8HGH4ZO,2024-09-22 15:50:15,60.0,831.3,Pochi la Biashara,Out,XXXXXXXXXXX,Liam Lumumba,Customer Payment to Small Business to - 07******628 elicanah mwaniki
 787,SIM0HARXHG,2024-09-22 15:07:55,70.0,891.3,Pochi la Biashara,Out,XXXXXXXXXXXXX,Tahir Kagwe,Customer Payment to Small Business to - 2547******936 AGGREY LICHOTI
 788,SIM5H4ZX97,2024-09-22 14:25:11,27.0,961.3,No description,Out,XXXXXXXXX,Safaricom,
 789,SIL0E2JE9W,2024-09-21 17:47:17,60.0,988.3,Pochi la Biashara,Out,XXXXXXXXXXXXX,Xolani Odhiambo,Customer Payment to Small Business to - 2547******902 HARRISON NGUNYI
-790,SIL5DX4KUZ,2024-09-21 17:15:09,1000.0,1048.3,Receive money from bank/org,In,XXXXXX,Wanjala Juma,Business Payment from -  XXXXXX Wanjala Juma
-791,SIL5DWUGIB,2024-09-21 17:13:22,5214.0,48.3,Buy Goods,Out,XXXXXX,Samuel Akech,Merchant Payment Online to -  XXXXXX Samuel Akech
-792,SIL0DWR2GA,2024-09-21 17:12:46,5200.0,5262.3,Receive money from bank/org,In,XXXXXX,Wanjala Juma,Business Payment from -  XXXXXX Wanjala Juma
+790,SIL5DX4KUZ,2024-09-21 17:15:09,1000.0,1048.3,Receive money from bank/org,In,XXXXXX,Equity Account,Business Payment from -  XXXXXX Wanjala Juma
+791,SIL5DWUGIB,2024-09-21 17:13:22,5214.0,48.3,Buy Goods,Out,XXXXXX,Mama Ntilie,Merchant Payment Online to -  XXXXXX Samuel Akech
+792,SIL0DWR2GA,2024-09-21 17:12:46,5200.0,5262.3,Receive money from bank/org,In,XXXXXX,Equity Account,Business Payment from -  XXXXXX Wanjala Juma
 793,SIL1DK0ENL,2024-09-21 15:47:49,60.0,62.3,Pochi la Biashara,Out,XXXXXXXXXXXXX,Imani Mutuku,Customer Payment to Small Business to - 2547******351 FRANCIS NDUNGU
 794,SIL2DH9MCO,2024-09-21 15:28:39,20.0,122.3,No description,Out,XXXXXXXXX,Safaricom,
 795,SIL7CNQS7L,2024-09-21 12:01:59,20.0,142.3,No description,Out,XXXXXXXXX,Safaricom,
@@ -804,7 +804,7 @@
 802,SIK79XXMU5,2024-09-20 17:37:11,35.0,909.3,No description,Out,XXXXXXXXX,Safaricom,
 803,SIK59H4XW5,2024-09-20 15:46:06,53.0,944.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 804,SIK59H4XW5,2024-09-20 15:46:06,3000.0,997.3,Send money,Out,XXXXXXXXXXXXX,Xolani Chirchir,Customer Transfer to -  XXXXXXXXXXXXX Xolani Chirchir
-805,SIK49H1AWK,2024-09-20 15:45:17,3000.0,3997.3,Receive money from bank/org,In,XXXXXX,Wanjala Juma,Business Payment from -  XXXXXX Wanjala Juma
+805,SIK49H1AWK,2024-09-20 15:45:17,3000.0,3997.3,Receive money from bank/org,In,XXXXXX,Equity Account,Business Payment from -  XXXXXX Wanjala Juma
 806,SIK78MC8HF,2024-09-20 11:56:59,20.0,997.3,No description,Out,XXXXXXXXX,Safaricom,
 807,SIK08H4UQA,2024-09-20 11:16:09,27.0,1017.3,No description,Out,XXXXXXXXX,Safaricom,
 808,SIJ260H6MQ,2024-09-19 17:54:58,71.0,1044.3,No description,Out,XXXXXXXXX,Safaricom,
@@ -813,7 +813,7 @@
 811,SII817P6KO,2024-09-18 14:34:06,2000.0,1233.3,Send money,Out,XXXXXXXXXXXXX,Xolani Chirchir,Customer Transfer to -  XXXXXXXXXXXXX Xolani Chirchir
 812,SII217MBZQ,2024-09-18 14:33:29,13.0,3233.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 813,SII217MBZQ,2024-09-18 14:33:29,1000.0,3246.3,Send money,Out,XXXXXXXXXXXXX,Xolani Chirchir,Customer Transfer to -  XXXXXXXXXXXXX Xolani Chirchir
-814,SII417JP2U,2024-09-18 14:32:54,4000.0,4246.3,Receive money from bank/org,In,XXXXXX,Wanjala Juma,Business Payment from -  XXXXXX Wanjala Juma
+814,SII417JP2U,2024-09-18 14:32:54,4000.0,4246.3,Receive money from bank/org,In,XXXXXX,Equity Account,Business Payment from -  XXXXXX Wanjala Juma
 815,SIH7W5R7K1,2024-09-17 14:20:18,20.0,246.3,Pochi la Biashara,Out,XXXXXXXXXXXXX,Linet Wanjiru,Customer Payment to Small Business to - 2547******267 CAROLINE MURUGI
 816,SIH9W5FKFH,2024-09-17 14:17:52,450.0,266.3,Buy Goods,Out,XXXXXXX,Mary Kagwe,Merchant Payment to -  XXXXXXX Mary Kagwe
 817,SIH9W4GH3R,2024-09-17 14:10:32,7.0,716.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
@@ -863,36 +863,36 @@
 861,SIC7AURYM9,2024-09-12 08:36:01,20.0,9000.3,No description,Out,XXXXXXXXX,Safaricom,
 862,SIB5A9QQR7,2024-09-11 22:43:40,7.0,9020.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 863,SIB5A9QQR7,2024-09-11 22:43:40,500.0,9027.3,Send money,Out,XXXXXXXXXXXXX,Xolani Chirchir,Customer Transfer to -  XXXXXXXXXXXXX Xolani Chirchir
-864,SIB9A40N2Z,2024-09-11 21:44:33,20.0,9527.3,Buy Goods,Out,XXXXXXX,Rachel Adera,Merchant Payment to -  XXXXXXX Rachel Adera
+864,SIB9A40N2Z,2024-09-11 21:44:33,20.0,9527.3,Buy Goods,Out,XXXXXXX,SMEs Money Market Fund,Merchant Payment to -  XXXXXXX Rachel Adera
 865,SIB88ND022,2024-09-11 17:08:38,20.0,9547.3,No description,Out,XXXXXXXXX,Safaricom,
 866,SIB783N6SJ,2024-09-11 14:45:30,23.0,9567.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
-867,SIB783N6SJ,2024-09-11 14:45:30,1300.0,9590.3,Send money,Out,XXXXXXXXXXX,Kwame Kagwe,Customer Transfer to -  XXXXXXXXXXX Kwame Kagwe
+867,SIB783N6SJ,2024-09-11 14:45:30,1300.0,9590.3,Send money,Out,XXXXXXXXXXX,Give foundation,Customer Transfer to -  XXXXXXXXXXX Kwame Kagwe
 868,SIB07YWU2U,2024-09-11 14:10:07,5.0,10890.3,Airtime,Out,XXXXXXXXX,Safaricom,Airtime Purchase XXXXXXXXX Safaricom
 869,SIB07UY1BW,2024-09-11 13:41:31,22.0,10895.3,No description,Out,XXXXXXXXX,Safaricom,
 870,SIB06OJRSG,2024-09-11 08:05:28,6000.0,10917.3,Receive money,In,XXXXXXXXXXXXX,Achieng Kipchirchir,Funds received from -  XXXXXXXXXXXXX Achieng Kipchirchir
 871,SIB36C5FMX,2024-09-11 01:26:59,20.0,4917.3,Airtime,Out,XXXXXXXXX,Safaricom,Airtime Purchase XXXXXXXXX Safaricom
 872,SIA3676DKB,2024-09-10 22:42:33,105.0,4937.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
-873,SIA3676DKB,2024-09-10 22:42:33,20000.0,5042.3,Send money,Out,XXXXXXXXXXX,Kwame Kagwe,Customer Transfer to -  XXXXXXXXXXX Kwame Kagwe
-874,SIA5674V0R,2024-09-10 22:42:00,20000.0,25042.3,Receive money from bank/org,In,XXXXXX,Wanjala Juma,Business Payment from -  XXXXXX Wanjala Juma
+873,SIA3676DKB,2024-09-10 22:42:33,20000.0,5042.3,Send money,Out,XXXXXXXXXXX,Give foundation,Customer Transfer to -  XXXXXXXXXXX Kwame Kagwe
+874,SIA5674V0R,2024-09-10 22:42:00,20000.0,25042.3,Receive money from bank/org,In,XXXXXX,Equity Account,Business Payment from -  XXXXXX Wanjala Juma
 875,SIA85QXAJU,2024-09-10 20:35:44,20.0,5042.3,No description,Out,XXXXXXXXX,Safaricom,
 876,SIA65B4N62,2024-09-10 19:20:10,500.0,5062.3,Buy Goods,Out,XXXXXXX,Amani Lumumba,Merchant Payment to -  XXXXXXX Amani Lumumba
 877,SIA156VXTR,2024-09-10 19:02:12,2800.0,5562.3,Receive money,In,XXXXXXXXXXXXX,Elijah Makenzi,Funds received from -  XXXXXXXXXXXXX Elijah Makenzi
 878,SIA84Q8MVW,2024-09-10 17:38:01,30.0,2762.3,Pochi la Biashara,Out,XXXXXXXXXXXXX,Brian Kipchirchir,Customer Payment to Small Business to - 2547******295 WILFRED MWAI
-879,SIA34DYJ8Z,2024-09-10 16:18:30,5075.0,2792.3,Buy Goods,Out,XXXXXX,Samuel Akech,Merchant Payment Online to -  XXXXXX Samuel Akech
-880,SIA44DW7WQ,2024-09-10 16:18:03,5000.0,7867.3,Receive money from bank/org,In,XXXXXX,Wanjala Juma,Business Payment from -  XXXXXX Wanjala Juma
+879,SIA34DYJ8Z,2024-09-10 16:18:30,5075.0,2792.3,Buy Goods,Out,XXXXXX,Mama Ntilie,Merchant Payment Online to -  XXXXXX Samuel Akech
+880,SIA44DW7WQ,2024-09-10 16:18:03,5000.0,7867.3,Receive money from bank/org,In,XXXXXX,Equity Account,Business Payment from -  XXXXXX Wanjala Juma
 881,SIA9496UI7,2024-09-10 15:43:26,20.0,2867.3,No description,Out,XXXXXXXXX,Safaricom,
 882,SIA948ALNX,2024-09-10 15:36:48,90.0,2887.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 883,SIA948ALNX,2024-09-10 15:36:48,10000.0,2977.3,Send money,Out,XXXXXXXXXXXXX,Esther Kiplimo,Customer Transfer to -  XXXXXXXXXXXXX Esther Kiplimo
-884,SIA3485PZV,2024-09-10 15:35:51,10000.0,12977.3,Receive money from bank/org,In,XXXXXX,Wanjala Juma,Business Payment from -  XXXXXX Wanjala Juma
+884,SIA3485PZV,2024-09-10 15:35:51,10000.0,12977.3,Receive money from bank/org,In,XXXXXX,Equity Account,Business Payment from -  XXXXXX Wanjala Juma
 885,SIA83O5XKI,2024-09-10 13:13:40,50.0,2977.3,Pochi la Biashara,Out,XXXXXXXXXXXXX,Stephen Mwangi,Customer Payment to Small Business to - 2547******821 JOHN AOKO
 886,SIA03E9N2E,2024-09-10 12:00:50,20.0,3027.3,No description,Out,XXXXXXXXX,Safaricom,
 887,SIA52O91BX,2024-09-10 08:33:21,20.0,3047.3,No description,Out,XXXXXXXXX,Safaricom,
 888,SI981XROSA,2024-09-09 21:40:06,34.0,3067.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Pay Bill Charge
 889,SI981XROSA,2024-09-09 21:40:06,4000.0,3101.3,Paybill,Out,XXXXXX,George Boit,Pay Bill Online to 247247 - Equity Paybill Account Acc. 0702605230
-890,SI911XLI5D,2024-09-09 21:38:50,4000.0,7101.3,Receive money from bank/org,In,XXXXXX,Wanjala Juma,Business Payment from -  XXXXXX Wanjala Juma
+890,SI911XLI5D,2024-09-09 21:38:50,4000.0,7101.3,Receive money from bank/org,In,XXXXXX,Equity Account,Business Payment from -  XXXXXX Wanjala Juma
 891,SI971X4J7N,2024-09-09 21:35:08,62.0,3101.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Pay Bill Charge
 892,SI971X4J7N,2024-09-09 21:35:08,20000.0,3163.3,Paybill,Out,XXXXXX,George Boit,Pay Bill Online to 247247 - Equity Paybill Account Acc. 0702605230
-893,SI911WPQLV,2024-09-09 21:32:09,20000.0,23163.3,Receive money from bank/org,In,XXXXXX,Wanjala Juma,Business Payment from -  XXXXXX Wanjala Juma
+893,SI911WPQLV,2024-09-09 21:32:09,20000.0,23163.3,Receive money from bank/org,In,XXXXXX,Equity Account,Business Payment from -  XXXXXX Wanjala Juma
 894,SI99ZN36DJ,2024-09-09 17:39:15,20.0,3163.3,Airtime,Out,XXXXXXXXX,Safaricom,Airtime Purchase XXXXXXXXX Safaricom
 895,SI94YY3JWM,2024-09-09 14:48:59,20.0,3183.3,Airtime,Out,XXXXXXXXX,Safaricom,Airtime Purchase XXXXXXXXX Safaricom
 896,SI98YSUBRI,2024-09-09 14:10:42,50.0,3203.3,Airtime,Out,XXXXXXXXX,Safaricom,Airtime Purchase XXXXXXXXX Safaricom
@@ -908,7 +908,7 @@
 906,SI77QS6IYP,2024-09-07 14:06:05,29.0,6495.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Withdrawal Charge
 907,SI77QS6IYP,2024-09-07 14:06:05,1200.0,6524.3,Withdraw Money,Out,XXXXXXXXXXXXXXXXX,Joy Ochieng,Customer Withdrawal At -  XXXXXXXXXXXXXXXXX Joy Ochieng
 908,SI78QRN7VE,2024-09-07 14:02:25,20.0,7724.3,Pochi la Biashara,Out,XXXXXXXXXXXXX,Caleb Kimani,Customer Payment to Small Business to - 2547******649 Jeremiah Kamau
-909,SI76Q2R3YO,2024-09-07 11:05:32,13000.0,7744.3,Paybill,Out,XXXXXX,Kennedy Mbogo,Pay Bill Online to 859528 - MALI Acc. 0702605230_40144986_797629 #c2e93370-837e-486c-8592- dc863505fa98
+909,SI76Q2R3YO,2024-09-07 11:05:32,13000.0,7744.3,Paybill,Out,XXXXXX,Equity Bank Paybill,Pay Bill Online to 859528 - MALI Acc. 0702605230_40144986_797629 #c2e93370-837e-486c-8592- dc863505fa98
 910,SI72Q2N6JG,2024-09-07 11:04:38,20.0,20744.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Pay Bill Charge
 911,SI72Q2N6JG,2024-09-07 11:04:38,2000.0,20764.3,Paybill,Out,XXXXXXX,Imani Kariuki,Pay Bill Online to 8045243 - DELIGHTFUL FIBER LTD Acc. 7111
 912,SI63O3RBM1,2024-09-06 19:24:55,60.0,22764.3,Send money,Out,XXXXXXXXXXXXX,Peter Kipchirchir,Customer Transfer to -  XXXXXXXXXXXXX Peter Kipchirchir
@@ -931,7 +931,7 @@
 929,SI103W100O,2024-09-01 20:16:02,50.0,4773.3,Buy Goods,Out,XXXXXXX,Joy Ibrahim,Merchant Payment to -  XXXXXXX Joy Ibrahim
 930,SI103NTYYW,2024-09-01 19:32:05,150.0,4823.3,Buy Goods,Out,XXXXXXX,Joy Ibrahim,Merchant Payment Online to -  XXXXXXX Joy Ibrahim
 931,SI193MHQ7T,2024-09-01 19:25:18,40.0,4973.3,Send money,Out,XXXXXXXXXXXXX,Christine Lumumba,Customer Transfer to -  XXXXXXXXXXXXX Christine Lumumba
-932,SI143MEFTG,2024-09-01 19:24:52,5000.0,5013.3,Receive money from bank/org,In,XXXXXX,Wanjala Juma,Business Payment from -  XXXXXX Wanjala Juma
+932,SI143MEFTG,2024-09-01 19:24:52,5000.0,5013.3,Receive money from bank/org,In,XXXXXX,Equity Account,Business Payment from -  XXXXXX Wanjala Juma
 933,SI153M4PZB,2024-09-01 19:23:30,20.0,13.3,No description,Out,XXXXXXXXX,Safaricom,
 934,SI102QILC6,2024-09-01 16:17:18,20.0,33.3,Paybill,Out,XXXXXX,Safaricom,Pay Bill Online to 826915 - Safaricom Offers Acc. Tunukiwa
 935,SI182NKFQ2,2024-09-01 15:56:01,36.0,53.3,No description,Out,XXXXXXXXX,Safaricom,
@@ -955,9 +955,9 @@
 953,SHV4VGIEUU,2024-08-31 00:04:20,70.0,5699.3,Paybill,Out,XXXXXX,James Jepkemboi,Pay Bill to 247247 - Equity Paybill Account Acc. 0793996612
 954,SHU8VD9WBC,2024-08-30 22:52:10,78.0,5769.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 955,SHU8VD9WBC,2024-08-30 22:52:10,6925.0,5847.3,Send money,Out,XXXXXXXXXXX,Zuberi Mbugua,Customer Transfer to -  XXXXXXXXXXX Zuberi Mbugua
-956,SHU7VD8ERT,2024-08-30 22:51:40,10000.0,12772.3,Receive money from bank/org,In,XXXXXX,Wanjala Juma,Business Payment from -  XXXXXX Wanjala Juma
+956,SHU7VD8ERT,2024-08-30 22:51:40,10000.0,12772.3,Receive money from bank/org,In,XXXXXX,Equity Account,Business Payment from -  XXXXXX Wanjala Juma
 957,SHU3UDEZ29,2024-08-30 19:12:34,4600.0,2772.3,Buy Goods,Out,XXXXXXX,Olivia Boit,Merchant Payment Online to -  XXXXXXX Olivia Boit
-958,SHU3UBYHQ5,2024-08-30 19:06:18,6000.0,7372.3,Receive money from bank/org,In,XXXXXX,Wanjala Juma,Business Payment from -  XXXXXX Wanjala Juma
+958,SHU3UBYHQ5,2024-08-30 19:06:18,6000.0,7372.3,Receive money from bank/org,In,XXXXXX,Equity Account,Business Payment from -  XXXXXX Wanjala Juma
 959,SHU4U4ALLS,2024-08-30 18:30:52,3800.0,1372.3,Buy Goods,Out,XXXXXXX,Grace Gitau,Merchant Payment Online to -  XXXXXXX Grace Gitau
 960,SHU7TMSUPN,2024-08-30 16:51:41,500.0,5172.3,Buy Goods,Out,XXXXXX,Zuberi Juma,Merchant Payment to -  XXXXXX Zuberi Juma
 961,SHU6TJWL1O,2024-08-30 16:33:17,139.0,5672.3,Buy Goods,Out,XXXXXX,Michael Kiplimo,Merchant Payment Online to -  XXXXXX Michael Kiplimo
@@ -973,8 +973,8 @@
 971,SHS3MCLMY7,2024-08-28 19:29:09,60.0,6236.3,Send money,Out,XXXXXXXXXXXXX,Hassan Mwita,Customer Transfer to -  XXXXXXXXXXXXX Hassan Mwita
 972,SHS1LEBJAL,2024-08-28 16:17:05,30.0,6296.3,Pochi la Biashara,Out,XXXXXXXXXXXXX,Esther Kariuki,Customer Payment to Small Business to - 2547******075 SIMON NJOKI
 973,SHS0L616VK,2024-08-28 15:17:06,60.0,6326.3,Pochi la Biashara,Out,XXXXXXXXXXX,Furaha Gacheru,Customer Payment to Small Business to - 07******728 Gerald Kieru
-974,SHS2KXIJHK,2024-08-28 14:13:51,5215.0,6386.3,Buy Goods,Out,XXXXXX,Samuel Akech,Merchant Payment Online to -  XXXXXX Samuel Akech
-975,SHS4KXDTJ0,2024-08-28 14:12:51,10000.0,11601.3,Receive money from bank/org,In,XXXXXX,Wanjala Juma,Business Payment from -  XXXXXX Wanjala Juma
+974,SHS2KXIJHK,2024-08-28 14:13:51,5215.0,6386.3,Buy Goods,Out,XXXXXX,Mama Ntilie,Merchant Payment Online to -  XXXXXX Samuel Akech
+975,SHS4KXDTJ0,2024-08-28 14:12:51,10000.0,11601.3,Receive money from bank/org,In,XXXXXX,Equity Account,Business Payment from -  XXXXXX Wanjala Juma
 976,SHS4KR9Q48,2024-08-28 13:29:14,200.0,1601.3,Buy Goods,Out,XXXXXXX,Elijah Mwangi,Merchant Payment to -  XXXXXXX Elijah Mwangi
 977,SHS9K4RPQH,2024-08-28 10:40:49,7.0,1801.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 978,SHS9K4RPQH,2024-08-28 10:40:49,200.0,1808.3,Send money,Out,XXXXXXXXXXX,Nicholas Lagat,Customer Transfer to -  XXXXXXXXXXX Nicholas Lagat
@@ -982,7 +982,7 @@
 980,SHS2JNMESG,2024-08-28 08:20:19,75.0,2108.3,No description,Out,XXXXXXXXX,Safaricom,
 981,SHQ9CGRIKV,2024-08-26 12:41:52,105.0,2183.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 982,SHQ9CGRIKV,2024-08-26 12:41:52,20000.0,2288.3,Send money,Out,XXXXXXXXXXXXX,Esther Kiplimo,Customer Transfer to -  XXXXXXXXXXXXX Esther Kiplimo
-983,SHQ4CGG9V0,2024-08-26 12:39:34,10000.0,22288.3,Receive money from bank/org,In,XXXXXX,Wanjala Juma,Business Payment from -  XXXXXX Wanjala Juma
+983,SHQ4CGG9V0,2024-08-26 12:39:34,10000.0,22288.3,Receive money from bank/org,In,XXXXXX,Equity Account,Business Payment from -  XXXXXX Wanjala Juma
 984,SHQ2BMT9QA,2024-08-26 08:47:23,65.0,12288.3,Send money,Out,XXXXXXXXXXXXX,Isaac Nduta,Customer Transfer to -  XXXXXXXXXXXXX Isaac Nduta
 985,SHP3A8GW3J,2024-08-25 19:16:47,30.0,12353.3,Send money,Out,XXXXXXXXXXXXX,Zuberi Gatimu,Customer Transfer to -  XXXXXXXXXXXXX Zuberi Gatimu
 986,SHP4A07MB4,2024-08-25 18:33:57,70.0,12383.3,Pochi la Biashara,Out,XXXXXXXXXXXXX,Dayo Kiplangat,Customer Payment to Small Business to - 2547******836 Isaiah Ouma
@@ -995,7 +995,7 @@
 993,SHO266D4OY,2024-08-24 18:11:11,20.0,11313.3,No description,Out,XXXXXXXXX,Safaricom,
 994,SHO358II45,2024-08-24 14:27:01,100.0,11333.3,Pochi la Biashara,Out,XXXXXXXXXXXXX,Christine Nduta,Customer Payment to Small Business to - 2547******658 ONCHIRI OMBUI
 995,SHO24VP0G6,2024-08-24 12:57:11,30000.0,11433.3,Buy Goods,Out,XXXXXXX,Achieng Kahiga,Merchant Payment Online to -  XXXXXXX Achieng Kahiga
-996,SHO64NIPQU,2024-08-24 11:56:31,40000.0,41433.3,Receive money from bank/org,In,XXXXXX,Wanjala Juma,Business Payment from -  XXXXXX Wanjala Juma
+996,SHO64NIPQU,2024-08-24 11:56:31,40000.0,41433.3,Receive money from bank/org,In,XXXXXX,Equity Account,Business Payment from -  XXXXXX Wanjala Juma
 997,SHO33JZBKZ,2024-08-24 00:23:57,75.0,1433.3,No description,Out,XXXXXXXXX,Safaricom,
 998,SHN631G33A,2024-08-23 20:47:21,60.0,1508.3,Pochi la Biashara,Out,XXXXXXXXXXX,Daniel Kiprono,Customer Payment to Small Business to - 01******045 joseph m'mworia
 999,SHN72RVEDF,2024-08-23 19:54:53,7.0,1568.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
@@ -1013,8 +1013,8 @@
 1011,SHN1ZJDN3D,2024-08-23 11:17:16,62.0,2949.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Pay Bill Charge
 1012,SHN1ZJDN3D,2024-08-23 11:17:16,15700.0,3011.3,Paybill,Out,XXXXXXX,Paul Ochieng,Pay Bill Online to 4090833 - CAPE PROPERTIES VIA CO-OP Acc. NO2
 1013,SHN0ZJ87I8,2024-08-23 11:16:05,57.0,18711.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
-1014,SHN0ZJ87I8,2024-08-23 11:16:05,5000.0,18768.3,Send money,Out,XXXXXXXXXXX,Kwame Kagwe,Customer Transfer to -  XXXXXXXXXXX Kwame Kagwe
-1015,SHN0ZJ3RCE,2024-08-23 11:15:07,22000.0,23768.3,Receive money from bank/org,In,XXXXXX,Wanjala Juma,Business Payment from -  XXXXXX Wanjala Juma
+1014,SHN0ZJ87I8,2024-08-23 11:16:05,5000.0,18768.3,Send money,Out,XXXXXXXXXXX,Give foundation,Customer Transfer to -  XXXXXXXXXXX Kwame Kagwe
+1015,SHN0ZJ3RCE,2024-08-23 11:15:07,22000.0,23768.3,Receive money from bank/org,In,XXXXXX,Equity Account,Business Payment from -  XXXXXX Wanjala Juma
 1016,SHM3XPQAQX,2024-08-22 19:31:25,20.0,1768.3,Paybill,Out,XXXXXX,Quinn Juma,Pay Bill to 522522 - KCB Paybill AC Acc. 6019787
 1017,SHM9XGQ14J,2024-08-22 18:49:47,50.0,1788.3,Send money,Out,XXXXXXXXXXX,Vuyani Mwita,Customer Transfer to -  XXXXXXXXXXX Vuyani Mwita
 1018,SHM1X4E5TL,2024-08-22 17:40:51,30.0,1838.3,Send money,Out,XXXXXXXXXXXXX,Umaru Ng'ang'a,Customer Transfer to -  XXXXXXXXXXXXX Umaru Ng'ang'a
@@ -1107,7 +1107,7 @@
 1105,SHE91X6M25,2024-08-14 15:16:19,40.0,13469.3,Send money,Out,XXXXXXXXXXXXX,Michael Odhiambo,Customer Transfer to -  XXXXXXXXXXXXX Michael Odhiambo
 1106,SHE71OUCMN,2024-08-14 14:11:24,50.0,13509.3,Buy Goods,Out,XXXXXXX,Furaha Kiplimo,Merchant Payment to -  XXXXXXX Furaha Kiplimo
 1107,SHE7ZV113L,2024-08-14 10:22:17,100.0,13559.3,Pochi la Biashara,Out,XXXXXXXXXXXXX,Ruth Amollo,Customer Payment to Small Business to - 2547******094 JOSEPH WAMBUI
-1108,SHE2ZRSQGU,2024-08-14 09:55:44,5214.0,13659.3,Buy Goods,Out,XXXXXX,Samuel Akech,Merchant Payment to -  XXXXXX Samuel Akech
+1108,SHE2ZRSQGU,2024-08-14 09:55:44,5214.0,13659.3,Buy Goods,Out,XXXXXX,Mama Ntilie,Merchant Payment to -  XXXXXX Samuel Akech
 1109,SHE7Z4AUIZ,2024-08-14 00:44:08,7.0,18873.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 1110,SHE7Z4AUIZ,2024-08-14 00:44:08,300.0,18880.3,Send money,Out,XXXXXXXXXXXXX,Thomas Kipchirchir,Customer Transfer to -  XXXXXXXXXXXXX Thomas Kipchirchir
 1111,SHD9YWHIRB,2024-08-13 22:03:49,20.0,19180.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Pay Bill Charge
@@ -1135,7 +1135,7 @@
 1133,SHA8LEKEN6,2024-08-10 14:23:12,1000.0,25013.3,Receive money,In,XXXXXXXXXXXXX,Linet Jepkemboi,Funds received from -  XXXXXXXXXXXXX Linet Jepkemboi
 1134,SH86BZBZF4,2024-08-08 04:18:41,15.0,24013.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Pay Bill Charge
 1135,SH86BZBZF4,2024-08-08 04:18:41,1500.0,24028.3,Paybill,Out,XXXXXXX,Zuberi Gichuhi,Pay Bill Online to 4120463 - NETCOM FIBRE INTERNET LIMITED Acc. 532
-1136,SH675HYJ7Z,2024-08-06 14:03:20,10000.0,25528.3,Paybill,Out,XXXXXX,Kennedy Mbogo,Pay Bill Online to 859528 - MALI Acc. 0702605230_40144986_215989 #d177f626-9b90-4a4b-ba11- 7a7fd95f50c4
+1136,SH675HYJ7Z,2024-08-06 14:03:20,10000.0,25528.3,Paybill,Out,XXXXXX,Equity Bank Paybill,Pay Bill Online to 859528 - MALI Acc. 0702605230_40144986_215989 #d177f626-9b90-4a4b-ba11- 7a7fd95f50c4
 1137,SH615HLSSR,2024-08-06 14:00:54,1.0,35528.3,Paybill,Out,XXXXXX,Peter Juma,Pay Bill Online to 174379 - Daraja-Sandbox Acc. 254702605230
 1138,SH665H8NDA,2024-08-06 13:58:18,2.0,35529.3,Paybill,Out,XXXXXX,Peter Juma,Pay Bill Online to 174379 - Daraja-Sandbox Acc. 254702605230
 1139,SH562NGTL0,2024-08-05 18:46:58,1.0,35531.3,Paybill,Out,XXXXXX,Peter Juma,Pay Bill Online to 174379 - Daraja-Sandbox Acc. 254702605230
@@ -1175,8 +1175,8 @@
 1173,SH17L99EZJ,2024-08-01 17:49:40,500.0,33636.3,Send money,Out,XXXXXXXXXXX,Achieng Atieno,Customer Transfer to -  XXXXXXXXXXX Achieng Atieno
 1174,SH19KO0GU9,2024-08-01 15:28:47,80.0,34136.3,Send money,Out,XXXXXXXXXXX,Quinn Echessa,Customer Transfer to -  XXXXXXXXXXX Quinn Echessa
 1175,SH17KM6LMV,2024-08-01 15:15:13,5301.0,34216.3,Receive money,In,XXXXXXXXXXXXX,Achieng Kipchirchir,Funds received from -  XXXXXXXXXXXXX Achieng Kipchirchir
-1176,SH10KJU132,2024-08-01 14:57:40,5214.0,28915.3,Buy Goods,Out,XXXXXX,Samuel Akech,Merchant Payment to -  XXXXXX Samuel Akech
-1177,SGV3FLKMMX,2024-07-31 11:04:29,10000.0,34129.3,Paybill,Out,XXXXXX,Kennedy Mbogo,Pay Bill Online to 859528 - MALI Acc. 0702605230_40144986_738833 #56e46077-e622-4577-9cfa- b812c033375e
+1176,SH10KJU132,2024-08-01 14:57:40,5214.0,28915.3,Buy Goods,Out,XXXXXX,Mama Ntilie,Merchant Payment to -  XXXXXX Samuel Akech
+1177,SGV3FLKMMX,2024-07-31 11:04:29,10000.0,34129.3,Paybill,Out,XXXXXX,Equity Bank Paybill,Pay Bill Online to 859528 - MALI Acc. 0702605230_40144986_738833 #56e46077-e622-4577-9cfa- b812c033375e
 1178,SGV6FKVAI2,2024-07-31 10:58:56,10000.0,44129.3,Receive money,In,XXXXXXXXXXX,Rachel Abdalla,Funds received from -  XXXXXXXXXXX Rachel Abdalla
 1179,SGU4DEXCEI,2024-07-30 18:27:02,1000.0,34129.3,No description,Out,XXXXXXXXX,Safaricom,
 1180,SGU0CHJ8YA,2024-07-30 14:44:24,7.0,35129.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
@@ -1204,7 +1204,7 @@
 1202,SGS96LYDIR,2024-07-28 21:21:34,13.0,22391.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 1203,SGS96LYDIR,2024-07-28 21:21:34,760.0,22404.3,Send money,Out,XXXXXXXXXXX,Paul Wanjiru,Customer Transfer to -  XXXXXXXXXXX Paul Wanjiru
 1204,SGS26L6VEY,2024-07-28 21:15:24,800.0,23164.3,Receive money,In,XXXXXXXXXXX,Caleb Boit,Funds received from -  XXXXXXXXXXX Caleb Boit
-1205,SGS66KQR02,2024-07-28 21:11:57,20000.0,22364.3,Receive money from bank/org,In,XXXXXX,Wanjala Juma,Business Payment from -  XXXXXX Wanjala Juma
+1205,SGS66KQR02,2024-07-28 21:11:57,20000.0,22364.3,Receive money from bank/org,In,XXXXXX,Equity Account,Business Payment from -  XXXXXX Wanjala Juma
 1206,SGS56KJMMB,2024-07-28 21:10:24,800.0,2364.3,Receive money,In,XXXXXXXXXXX,Elijah Lumumba,Funds received from -  XXXXXXXXXXX Elijah Lumumba
 1207,SGS76KIZZN,2024-07-28 21:10:14,800.0,1564.3,Receive money from bank/org,In,XXXXXX,Umaru Muhammad,Business Payment from -  XXXXXX Umaru Muhammad
 1208,SGS9530HVX,2024-07-28 15:33:04,30.0,764.3,Send money,Out,XXXXXXXXXXXXX,Olivia Mbugua,Customer Transfer to -  XXXXXXXXXXXXX Olivia Mbugua
@@ -1252,22 +1252,22 @@
 1250,SGQ5V3AUQF,2024-07-26 09:44:08,1500.0,9962.3,Send money,Out,XXXXXXXXXXX,Achieng Kipkorir,Customer Transfer to -  XXXXXXXXXXX Achieng Kipkorir
 1251,SGP4TF81TC,2024-07-25 19:09:18,7.0,11462.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 1252,SGP4TF81TC,2024-07-25 19:09:18,500.0,11469.3,Send money,Out,XXXXXXXXXXX,Amani Atieno,Customer Transfer to -  XXXXXXXXXXX Amani Atieno
-1253,SGP0SE8YR4,2024-07-25 15:06:56,50866.0,11969.3,Paybill,Out,XXXXXX,Rachel Barasa,Pay Bill Online to 840020 - M- PESA GLOBAL. Acc. 256773347169
-1254,SGP9SE4Q61,2024-07-25 15:05:53,50866.0,62835.3,Receive money from bank/org,In,XXXXXX,Wanjala Juma,Business Payment from -  XXXXXX Wanjala Juma
+1253,SGP0SE8YR4,2024-07-25 15:06:56,50866.0,11969.3,Paybill,Out,XXXXXX,KPLC Prepaid Tokens,Pay Bill Online to 840020 - M- PESA GLOBAL. Acc. 256773347169
+1254,SGP9SE4Q61,2024-07-25 15:05:53,50866.0,62835.3,Receive money from bank/org,In,XXXXXX,Equity Account,Business Payment from -  XXXXXX Wanjala Juma
 1255,SGO3QLW9PP,2024-07-24 23:11:46,23.0,11969.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 1256,SGO3QLW9PP,2024-07-24 23:11:46,1329.0,11992.3,Send money,Out,XXXXXXXXXXXXX,Daniel Gitau,Customer Transfer to -  XXXXXXXXXXXXX Daniel Gitau
 1257,SGO4PG0IEG,2024-07-24 18:28:20,108.0,13321.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
-1258,SGO4PG0IEG,2024-07-24 18:28:20,53200.0,13429.3,Send money,Out,XXXXXXXXXXX,Kwame Kagwe,Customer Transfer to -  XXXXXXXXXXX Kwame Kagwe
-1259,SGO5PFWDD7,2024-07-24 18:27:42,53200.0,66629.3,Receive money from bank/org,In,XXXXXX,Wanjala Juma,Business Payment from -  XXXXXX Wanjala Juma
+1258,SGO4PG0IEG,2024-07-24 18:28:20,53200.0,13429.3,Send money,Out,XXXXXXXXXXX,Give foundation,Customer Transfer to -  XXXXXXXXXXX Kwame Kagwe
+1259,SGO5PFWDD7,2024-07-24 18:27:42,53200.0,66629.3,Receive money from bank/org,In,XXXXXX,Equity Account,Business Payment from -  XXXXXX Wanjala Juma
 1260,SGO9OXPKHZ,2024-07-24 16:30:42,11615.0,13429.3,Receive money,In,XXXXXXXXXXX,Olivia Kahiga,Funds received from -  XXXXXXXXXXX Olivia Kahiga
-1261,SGN9KXCAF9,2024-07-23 14:23:15,1000.0,1814.3,Paybill,Out,XXXXXX,Rachel Barasa,Pay Bill Online to 840020 - M- PESA GLOBAL. Acc. 256773347169
-1262,SGN7KN97HB,2024-07-23 12:57:21,10660.0,2814.3,Paybill,Out,XXXXXX,Kennedy Mbogo,Pay Bill Online to 859528 - MALI Acc. 0702605230_40144986_614387 #cd06b953-0a04-4ae9-9c5e- f4a98fedd621
+1261,SGN9KXCAF9,2024-07-23 14:23:15,1000.0,1814.3,Paybill,Out,XXXXXX,KPLC Prepaid Tokens,Pay Bill Online to 840020 - M- PESA GLOBAL. Acc. 256773347169
+1262,SGN7KN97HB,2024-07-23 12:57:21,10660.0,2814.3,Paybill,Out,XXXXXX,Equity Bank Paybill,Pay Bill Online to 859528 - MALI Acc. 0702605230_40144986_614387 #cd06b953-0a04-4ae9-9c5e- f4a98fedd621
 1263,SGN6KN3KZU,2024-07-23 12:55:56,75.0,13474.3,No description,Out,XXXXXXXXX,Safaricom,
 1264,SGM9H2OKG5,2024-07-22 13:15:00,10660.0,13549.3,Receive money,In,XXXXXXXXXXXXX,Daniel Gitau,Funds received from -  XXXXXXXXXXXXX Daniel Gitau
 1265,SGL1E4Q02F,2024-07-21 16:22:55,100.0,2889.3,Receive money from bank/org,In,XXXXXXX,Yao Odhiambo,Business Payment from -  XXXXXXX Yao Odhiambo
 1266,SGL4DMXSTY,2024-07-21 13:59:42,2500.0,2789.3,Receive money,In,XXXXXXXXXXXXX,Faith Kirui,Funds received from -  XXXXXXXXXXXXX Faith Kirui
 1267,SGL6DHU8L2,2024-07-21 13:17:28,2350.0,289.3,Buy Goods,Out,XXXXXXX,Amani Lumumba,Merchant Payment to -  XXXXXXX Amani Lumumba
-1268,SGL1DHR79D,2024-07-21 13:16:39,1000.0,2639.3,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+1268,SGL1DHR79D,2024-07-21 13:16:39,1000.0,2639.3,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 1269,SGL8CP8QES,2024-07-21 08:46:04,5.0,1639.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Pay Bill Charge
 1270,SGL8CP8QES,2024-07-21 08:46:04,500.0,1644.3,Paybill,Out,XXXXXX,Kwame Kirui,Pay Bill Online to 522522 - KCB Paybill AC Acc. 7877632
 1271,SGK49XFA6Q,2024-07-20 13:36:29,29.0,2144.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Withdrawal Charge
@@ -1284,7 +1284,7 @@
 1282,SGJ56N1LHH,2024-07-19 15:41:24,300.0,5462.3,Pochi la Biashara,Out,XXXXXXXXXXXXX,Liam Matiangi,Customer Payment to Small Business to - 2547******742 TIMOTHY KAMAU
 1283,SGJ36L2ZNL,2024-07-19 15:26:21,220.0,5762.3,Buy Goods,Out,XXXXXXX,Zainab Kirui,Merchant Payment to -  XXXXXXX Zainab Kirui
 1284,SGJ16I1I35,2024-07-19 15:02:57,5300.0,5982.3,Receive money,In,XXXXXXXXXXXXX,Achieng Kipchirchir,Funds received from -  XXXXXXXXXXXXX Achieng Kipchirchir
-1285,SGJ36HL5JF,2024-07-19 14:59:24,5214.0,682.3,Buy Goods,Out,XXXXXX,Samuel Akech,Merchant Payment to -  XXXXXX Samuel Akech
+1285,SGJ36HL5JF,2024-07-19 14:59:24,5214.0,682.3,Buy Goods,Out,XXXXXX,Mama Ntilie,Merchant Payment to -  XXXXXX Samuel Akech
 1286,SGJ168GEJN,2024-07-19 13:48:14,40.0,5896.3,Pochi la Biashara,Out,XXXXXXXXXXX,Kwame Lumumba,Customer Payment to Small Business to - 07******069 Nelson Omete
 1287,SGJ7663YOJ,2024-07-19 13:30:29,40.0,5936.3,Send money,Out,XXXXXXXXXXXXX,Vuyani Juma,Customer Transfer to -  XXXXXXXXXXXXX Vuyani Juma
 1288,SGG2UDVQXY,2024-07-16 13:55:52,7.0,5976.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
@@ -1299,7 +1299,7 @@
 1297,SGE1OPUHDR,2024-07-14 20:46:06,1100.0,6451.3,Send money,Out,XXXXXXXXXXX,Zuberi Kirui,Customer Transfer to -  XXXXXXXXXXX Zuberi Kirui
 1298,SGE0NK7YT2,2024-07-14 16:29:53,500.0,7551.3,No description,Out,XXXXXXXXX,Safaricom,
 1299,SGE9MMPQSV,2024-07-14 11:55:13,65.0,8051.3,Buy Goods,Out,XXXXXXX,Joy Ibrahim,Merchant Payment to -  XXXXXXX Joy Ibrahim
-1300,SGD0LF5KBI,2024-07-13 21:56:00,5000.0,8116.3,Paybill,Out,XXXXXX,Kennedy Mbogo,Pay Bill Online to 859528 - MALI Acc. 0702605230_40144986_583987 #d9b0de16-f9d6-47e9-8e8a- 2c8dc9345608
+1300,SGD0LF5KBI,2024-07-13 21:56:00,5000.0,8116.3,Paybill,Out,XXXXXX,Equity Bank Paybill,Pay Bill Online to 859528 - MALI Acc. 0702605230_40144986_583987 #d9b0de16-f9d6-47e9-8e8a- 2c8dc9345608
 1301,SGD3L61WX5,2024-07-13 20:49:56,5000.0,13116.3,Receive money,In,XXXXXXXXXXXXX,Hassan Kipchirchir,Funds received from -  XXXXXXXXXXXXX Hassan Kipchirchir
 1302,SGD3JMCQSV,2024-07-13 15:19:18,100.0,8116.3,Send money,Out,XXXXXXXXXXXXX,Christine Lumumba,Customer Transfer to -  XXXXXXXXXXXXX Christine Lumumba
 1303,SGD3JB7PF1,2024-07-13 13:54:31,20.0,8216.3,Send money,Out,XXXXXXXXXXX,Dayo Akech,Customer Transfer to -  XXXXXXXXXXX Dayo Akech
@@ -1319,14 +1319,14 @@
 1317,SG904LBH9I,2024-07-09 17:01:57,75.0,3835.3,No description,Out,XXXXXXXXX,Safaricom,
 1318,SG984J21RU,2024-07-09 16:46:17,50.0,3910.3,Send money,Out,XXXXXXXXXXXXX,Hassan Wanjiru,Customer Transfer to -  XXXXXXXXXXXXX Hassan Wanjiru
 1319,SG934I4JQR,2024-07-09 16:39:47,1860.0,3960.3,Receive money,In,XXXXXXXXXXXXX,Achieng Kipchirchir,Funds received from -  XXXXXXXXXXXXX Achieng Kipchirchir
-1320,SG974HV0G9,2024-07-09 16:37:56,1859.0,2100.3,Buy Goods,Out,XXXXXX,Samuel Akech,Merchant Payment to -  XXXXXX Samuel Akech
+1320,SG974HV0G9,2024-07-09 16:37:56,1859.0,2100.3,Buy Goods,Out,XXXXXX,Mama Ntilie,Merchant Payment to -  XXXXXX Samuel Akech
 1321,SG94488JN2,2024-07-09 15:26:01,150.0,3959.3,Buy Goods,Out,XXXXXXX,Qamara Kinuthia,Merchant Payment to -  XXXXXXX Qamara Kinuthia
 1322,SG9344ZK55,2024-07-09 15:00:49,1800.0,4109.3,Receive money,In,XXXXXXXXXXXXX,Achieng Kipchirchir,Funds received from -  XXXXXXXXXXXXX Achieng Kipchirchir
-1323,SG9044KCVY,2024-07-09 14:57:33,1770.0,2309.3,Buy Goods,Out,XXXXXX,Samuel Akech,Merchant Payment to -  XXXXXX Samuel Akech
-1324,SG9744HRYL,2024-07-09 14:57:02,4000.0,4079.3,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+1323,SG9044KCVY,2024-07-09 14:57:33,1770.0,2309.3,Buy Goods,Out,XXXXXX,Mama Ntilie,Merchant Payment to -  XXXXXX Samuel Akech
+1324,SG9744HRYL,2024-07-09 14:57:02,4000.0,4079.3,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 1325,SG953ZD3LF,2024-07-09 14:17:41,50.0,79.3,Pochi la Biashara,Out,XXXXXXXXXXX,Kwame Barasa,Customer Payment to Small Business to - 07******501 Dickson Gichora
 1326,SG953WECC7,2024-07-09 13:55:07,30.0,129.3,Send money,Out,XXXXXXXXXXXXX,Amani Gichuhi,Customer Transfer to -  XXXXXXXXXXXXX Amani Gichuhi
-1327,SG8222M5JW,2024-07-08 21:33:48,15000.0,159.3,Paybill,Out,XXXXXX,Kennedy Mbogo,Pay Bill Online to 859528 - MALI Acc. 0702605230_40144986_314580 #1080aac2-e9ea-4c20-8299- a3d13a8ce3a7
+1327,SG8222M5JW,2024-07-08 21:33:48,15000.0,159.3,Paybill,Out,XXXXXX,Equity Bank Paybill,Pay Bill Online to 859528 - MALI Acc. 0702605230_40144986_314580 #1080aac2-e9ea-4c20-8299- a3d13a8ce3a7
 1328,SG88ZPG8SG,2024-07-08 17:01:59,15000.0,15159.3,Receive money,In,XXXXXXXXXXXXX,Daniel Gitau,Funds received from -  XXXXXXXXXXXXX Daniel Gitau
 1329,SG77XEL1CL,2024-07-07 23:10:03,15.0,159.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Pay Bill Charge
 1330,SG77XEL1CL,2024-07-07 23:10:03,1500.0,174.3,Paybill,Out,XXXXXXX,Zuberi Gichuhi,Pay Bill Online to 4120463 - NETCOM FIBRE INTERNET LIMITED Acc. 532
@@ -1349,27 +1349,27 @@
 1347,SG60Q05OXW,2024-07-06 00:53:16,7.0,3058.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 1348,SG60Q05OXW,2024-07-06 00:53:16,400.0,3065.3,Send money,Out,XXXXXXXXXXX,Hassan Kirui,Customer Transfer to -  XXXXXXXXXXX Hassan Kirui
 1349,SG61Q04FYH,2024-07-06 00:52:13,6000.0,3465.3,Buy Goods,Out,XXXXXXX,Rachel Kinuthia,Merchant Payment to -  XXXXXXX Rachel Kinuthia
-1350,SG68Q033FG,2024-07-06 00:50:47,6000.0,9465.3,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+1350,SG68Q033FG,2024-07-06 00:50:47,6000.0,9465.3,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 1351,SG59PS1CVH,2024-07-05 22:11:16,70.0,3465.3,Send money,Out,XXXXXXXXXXXXX,Omari Wanjiru,Customer Transfer to -  XXXXXXXXXXXXX Omari Wanjiru
 1352,SG53PRLDKH,2024-07-05 22:06:51,7.0,3535.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 1353,SG53PRLDKH,2024-07-05 22:06:51,270.0,3542.3,Send money,Out,XXXXXXXXXXXXX,Umaru Kiprono,Customer Transfer to -  XXXXXXXXXXXXX Umaru Kiprono
 1354,SG56PKX8AK,2024-07-05 21:14:20,2000.0,3812.3,Buy Goods,Out,XXXXXXX,Christine Mwita,Merchant Payment to -  XXXXXXX Christine Mwita
-1355,SG51PKTJAN,2024-07-05 21:13:34,4000.0,5812.3,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+1355,SG51PKTJAN,2024-07-05 21:13:34,4000.0,5812.3,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 1356,SG52PC1VLC,2024-07-05 20:20:17,7.0,1812.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 1357,SG52PC1VLC,2024-07-05 20:20:17,280.0,1819.3,Send money,Out,XXXXXXXXXXXXX,Umaru Jepchirchir,Customer Transfer to -  XXXXXXXXXXXXX Umaru Jepchirchir
 1358,SG59OKCG2Z,2024-07-05 18:07:03,75.0,2099.3,No description,Out,XXXXXXXXX,Safaricom,
 1359,SG54O22ODO,2024-07-05 16:13:39,450.0,2174.3,Buy Goods,Out,XXXXXXX,Esther Kipkorir,Merchant Payment to -  XXXXXXX Esther Kipkorir
 1360,SG42LQS0L6,2024-07-04 21:53:40,75.0,2624.3,No description,Out,XXXXXXXXX,Safaricom,
-1361,SG45LJMB39,2024-07-04 20:58:41,17000.0,2699.3,Paybill,Out,XXXXXX,Kennedy Mbogo,Pay Bill Online to 859528 - MALI Acc. 0702605230_40144986_186835 #a75c4255-eb70-4919-9341- 5a0f6e3f8369
+1361,SG45LJMB39,2024-07-04 20:58:41,17000.0,2699.3,Paybill,Out,XXXXXX,Equity Bank Paybill,Pay Bill Online to 859528 - MALI Acc. 0702605230_40144986_186835 #a75c4255-eb70-4919-9341- 5a0f6e3f8369
 1362,SG41L8NFDL,2024-07-04 19:56:42,520.0,19699.3,Buy Goods,Out,XXXXXXX,Qamara Kinuthia,Merchant Payment to -  XXXXXXX Qamara Kinuthia
-1363,SG40L8FIYY,2024-07-04 19:55:38,3000.0,20219.3,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+1363,SG40L8FIYY,2024-07-04 19:55:38,3000.0,20219.3,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 1364,SG47K86U21,2024-07-04 16:37:46,17000.0,17219.3,Receive money,In,XXXXXXXXXXXXX,Olivia Kahiga,Funds received from -  XXXXXXXXXXXXX Olivia Kahiga
-1365,SG33HNFKHV,2024-07-03 20:47:32,8000.0,219.3,Paybill,Out,XXXXXX,Kennedy Mbogo,Pay Bill Online to 859528 - MALI Acc. 0702605230_40144986_997164 #e3d0e680-6801-49c2-ab52- 2a3479c3a08c
+1365,SG33HNFKHV,2024-07-03 20:47:32,8000.0,219.3,Paybill,Out,XXXXXX,Equity Bank Paybill,Pay Bill Online to 859528 - MALI Acc. 0702605230_40144986_997164 #e3d0e680-6801-49c2-ab52- 2a3479c3a08c
 1366,SG39HMGWYN,2024-07-03 20:41:44,8000.0,8219.3,Receive money,In,XXXXXXXXXXX,Rachel Abdalla,Funds received from -  XXXXXXXXXXX Rachel Abdalla
 1367,SG36HL6TT4,2024-07-03 20:34:13,13.0,219.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 1368,SG36HL6TT4,2024-07-03 20:34:13,850.0,232.3,Send money,Out,XXXXXXXXXXXXX,Esther Odhiambo,Customer Transfer to -  XXXXXXXXXXXXX Esther Odhiambo
 1369,SG32GCO35C,2024-07-03 16:34:14,75.0,1082.3,No description,Out,XXXXXXXXX,Safaricom,
-1370,SG26CP601W,2024-07-02 17:13:04,25340.0,1157.3,Paybill,Out,XXXXXX,Kennedy Mbogo,Pay Bill Online to 859528 - MALI Acc. 0702605230_40144986_535102 #e08e0567-963e-47e9-81e0- 016c93f3e3b2
+1370,SG26CP601W,2024-07-02 17:13:04,25340.0,1157.3,Paybill,Out,XXXXXX,Equity Bank Paybill,Pay Bill Online to 859528 - MALI Acc. 0702605230_40144986_535102 #e08e0567-963e-47e9-81e0- 016c93f3e3b2
 1371,SG22CKCGAC,2024-07-02 16:37:22,15340.0,26497.3,Receive money,In,XXXXXXXXXXXXX,Omari Kiptoo,Funds received from -  XXXXXXXXXXXXX Omari Kiptoo
 1372,SG22CEUJ2U,2024-07-02 15:52:46,10000.0,11157.3,Receive money,In,XXXXXXXXXXXXX,Michael Gatimu,Funds received from -  XXXXXXXXXXXXX Michael Gatimu
 1373,SG10AFUC5S,2024-07-01 22:54:00,75.0,1157.3,No description,Out,XXXXXXXXX,Safaricom,
@@ -1384,12 +1384,12 @@
 1382,SG148IEWCU,2024-07-01 15:36:43,7.0,3613.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 1383,SG148IEWCU,2024-07-01 15:36:43,200.0,3620.3,Send money,Out,XXXXXXXXXXXXX,Victoria Matiangi,Customer Transfer to -  XXXXXXXXXXXXX Victoria Matiangi
 1384,SG178HLAID,2024-07-01 15:30:34,500.0,3820.3,Buy Goods,Out,XXXXXXX,Victoria Kariuki,Merchant Payment to -  XXXXXXX Victoria Kariuki
-1385,SG178HHVXL,2024-07-01 15:29:52,4000.0,4320.3,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+1385,SG178HHVXL,2024-07-01 15:29:52,4000.0,4320.3,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 1386,SG178H6YLB,2024-07-01 15:27:39,100.0,320.3,Send money,Out,XXXXXXXXXXX,Stephen Nyakundi,Customer Transfer to -  XXXXXXXXXXX Stephen Nyakundi
 1387,SG1786J4Q9,2024-07-01 14:09:45,52.0,420.3,Buy Goods,Out,XXXXXXX,Grace Kimutai,Merchant Payment Online to -  XXXXXXX Grace Kimutai
 1388,SG128309V6,2024-07-01 13:44:54,75.0,472.3,No description,Out,XXXXXXXXX,Safaricom,
 1389,SG12828720,2024-07-01 13:39:30,30.0,547.3,Send money,Out,XXXXXXXXXXX,James Akech,Customer Transfer to -  XXXXXXXXXXX James Akech
-1390,SG137HWPVB,2024-07-01 11:09:24,22750.0,577.3,Paybill,Out,XXXXXX,Kennedy Mbogo,Pay Bill Online to 859528 - MALI Acc. 0702605230_40144986_346938 #8bec0519-6bb3-41d8-9703- 8a9e5e4ffb24
+1390,SG137HWPVB,2024-07-01 11:09:24,22750.0,577.3,Paybill,Out,XXXXXX,Equity Bank Paybill,Pay Bill Online to 859528 - MALI Acc. 0702605230_40144986_346938 #8bec0519-6bb3-41d8-9703- 8a9e5e4ffb24
 1391,SG137CPTV9,2024-07-01 10:29:40,22750.0,23327.3,Receive money,In,XXXXXXXXXXXXX,Tahir Mogaka,Funds received from -  XXXXXXXXXXXXX Tahir Mogaka
 1392,SFU05IGC22,2024-06-30 18:54:58,220.0,577.3,Buy Goods,Out,XXXXXXX,Joy Ibrahim,Merchant Payment to -  XXXXXXX Joy Ibrahim
 1393,SFU341J2LL,2024-06-30 12:32:17,30.0,797.3,Send money,Out,XXXXXXXXXXX,Christine Muhammad,Customer Transfer to -  XXXXXXXXXXX Christine Muhammad
@@ -1404,7 +1404,7 @@
 1402,SFT1ZE11WN,2024-06-29 13:02:53,57.0,7747.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 1403,SFT1ZE11WN,2024-06-29 13:02:53,5000.0,7804.3,Send money,Out,XXXXXXXXXXXXX,Xolani Chirchir,Customer Transfer to -  XXXXXXXXXXXXX Xolani Chirchir
 1404,SFT7ZAZPGL,2024-06-29 12:40:13,7000.0,12804.3,Receive money,In,XXXXXXXXXXXXX,Achieng Kipchirchir,Funds received from -  XXXXXXXXXXXXX Achieng Kipchirchir
-1405,SFT6Z92C4E,2024-06-29 12:25:36,5000.0,5804.3,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+1405,SFT6Z92C4E,2024-06-29 12:25:36,5000.0,5804.3,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 1406,SFT5YULO4R,2024-06-29 10:31:54,65.0,804.3,Buy Goods,Out,XXXXXXX,Joy Ibrahim,Merchant Payment to -  XXXXXXX Joy Ibrahim
 1407,SFS4U9CQL6,2024-06-28 02:36:55,75.0,869.3,No description,Out,XXXXXXXXX,Safaricom,
 1408,SFR0TJPT30,2024-06-27 19:48:54,50.0,944.3,Pochi la Biashara,Out,XXXXXXXXXXXXX,Peter Kipchirchir,Customer Payment to Small Business to - 2547******429 Doreen Kiria
@@ -1412,13 +1412,13 @@
 1410,SFR5TCYJ4R,2024-06-27 19:15:17,65.0,1044.3,Buy Goods,Out,XXXXXXX,Joy Ibrahim,Merchant Payment to -  XXXXXXX Joy Ibrahim
 1411,SFR2TCL208,2024-06-27 19:13:25,13.0,1109.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 1412,SFR2TCL208,2024-06-27 19:13:25,600.0,1122.3,Send money,Out,XXXXXXXXXXXXX,Achieng Mbogo,Customer Transfer to -  XXXXXXXXXXXXX Achieng Mbogo
-1413,SFQ8OY3CN2,2024-06-26 16:02:56,5000.0,1722.3,Paybill,Out,XXXXXX,Kennedy Mbogo,Pay Bill Online to 859528 - MALI Acc. 0702605230_40144986_156388 #9f5c233a-2aaf-4d4c-8928- 7612e4fd0e09
+1413,SFQ8OY3CN2,2024-06-26 16:02:56,5000.0,1722.3,Paybill,Out,XXXXXX,Equity Bank Paybill,Pay Bill Online to 859528 - MALI Acc. 0702605230_40144986_156388 #9f5c233a-2aaf-4d4c-8928- 7612e4fd0e09
 1414,SFQ9OXY5CL,2024-06-26 16:01:47,5000.0,6722.3,Receive money from bank/org,In,XXXXXX,Umaru Muhammad,Business Payment from -  XXXXXX Umaru Muhammad
 1415,SFQ7OKT7MZ,2024-06-26 14:15:45,30.0,1722.3,Pochi la Biashara,Out,XXXXXXXXXXX,Achieng Wanjiru,Customer Payment to Small Business to - 07******001 Brian Njoki
 1416,SFQ0OEC90G,2024-06-26 13:26:45,50.0,1752.3,Pochi la Biashara,Out,XXXXXXXXXXXXX,Naomi Mbugua,Customer Payment to Small Business to - 2547******744 edward kariuki
 1417,SFQ5ODVRZP,2024-06-26 13:23:22,75.0,1802.3,No description,Out,XXXXXXXXX,Safaricom,
-1418,SFQ4O9QWNA,2024-06-26 12:51:44,3318.0,1877.3,Buy Goods,Out,XXXXXX,Samuel Akech,Merchant Payment to -  XXXXXX Samuel Akech
-1419,SFQ3O7UCWN,2024-06-26 12:36:53,4000.0,5195.3,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+1418,SFQ4O9QWNA,2024-06-26 12:51:44,3318.0,1877.3,Buy Goods,Out,XXXXXX,Mama Ntilie,Merchant Payment to -  XXXXXX Samuel Akech
+1419,SFQ3O7UCWN,2024-06-26 12:36:53,4000.0,5195.3,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 1420,SFQ6O1VGDQ,2024-06-26 11:48:48,10.0,1195.3,Pochi la Biashara,Out,XXXXXXXXXXXXX,Achieng Echessa,Customer Payment to Small Business to - 2547******983 JAPHET MICHIEKA
 1421,SFQ8O1FX3C,2024-06-26 11:45:18,30.0,1205.3,Pochi la Biashara,Out,XXXXXXXXXXXXX,Achieng Echessa,Customer Payment to Small Business to - 2547******983 JAPHET MICHIEKA
 1422,SFQ7NYD9RL,2024-06-26 11:20:14,30.0,1235.3,Pochi la Biashara,Out,XXXXXXXXXXX,Thomas Kipkorir,Customer Payment to Small Business to - 07******768 BRIAN CHESOLI
@@ -1447,7 +1447,7 @@
 1445,SFL56MR609,2024-06-21 12:44:45,30.0,3803.3,Send money,Out,XXXXXXXXXXX,Omari Kariuki,Customer Transfer to -  XXXXXXXXXXX Omari Kariuki
 1446,SFL56CLBGT,2024-06-21 11:20:04,7.0,3833.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 1447,SFL56CLBGT,2024-06-21 11:20:04,250.0,3840.3,Send money,Out,XXXXXXXXXXXXX,Xolani Chirchir,Customer Transfer to -  XXXXXXXXXXXXX Xolani Chirchir
-1448,SFL06CJ2EC,2024-06-21 11:19:32,4000.0,4090.3,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+1448,SFL06CJ2EC,2024-06-21 11:19:32,4000.0,4090.3,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 1449,SFK02ZTD6U,2024-06-20 12:48:36,75.0,90.3,No description,Out,XXXXXXXXX,Safaricom,
 1450,SFJ0Y4GI44,2024-06-19 11:23:36,65.0,165.3,Buy Goods,Out,XXXXXXX,Joy Ibrahim,Merchant Payment to -  XXXXXXX Joy Ibrahim
 1451,SFI6WXIN0U,2024-06-18 21:33:51,100.0,230.3,Send money,Out,XXXXXXXXXXXXX,Christine Mbogo,Customer Transfer to -  XXXXXXXXXXXXX Christine Mbogo
@@ -1462,7 +1462,7 @@
 1460,SFG5OJ5AAR,2024-06-16 16:31:38,1500.0,1033.3,Send money,Out,XXXXXXXXXXXXX,Amani Kiplangat,Customer Transfer to -  XXXXXXXXXXXXX Amani Kiplangat
 1461,SFG9NZW4RN,2024-06-16 13:56:24,80.0,2533.3,Send money,Out,XXXXXXXXXXXXX,Peter Kipchirchir,Customer Transfer to -  XXXXXXXXXXXXX Peter Kipchirchir
 1462,SFG1NSBKMH,2024-06-16 12:53:35,600.0,2613.3,Buy Goods,Out,XXXXXXX,Kennedy Khamisi,Merchant Payment to -  XXXXXXX Kennedy Khamisi
-1463,SFG6NRDN3W,2024-06-16 12:45:24,3000.0,3213.3,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+1463,SFG6NRDN3W,2024-06-16 12:45:24,3000.0,3213.3,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 1464,SFF4KWSU0E,2024-06-15 16:42:19,29.0,213.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Withdrawal Charge
 1465,SFF4KWSU0E,2024-06-15 16:42:19,900.0,242.3,Withdraw Money,Out,XXXXXXXXXXXXXXXXX,Wanjala Gitau,Customer Withdrawal At -  XXXXXXXXXXXXXXXXX Wanjala Gitau
 1466,SFF0KVLDWS,2024-06-15 16:33:39,20.0,1142.3,Paybill,Out,XXXXXX,Faith Lumumba,Pay Bill to 522522 - KCB Paybill AC Acc. 5910255
@@ -1490,7 +1490,7 @@
 1488,SFE4GNA30W,2024-06-14 14:31:17,628.0,5005.3,Buy Goods,Out,XXXXXX,Caleb Ochieng,Merchant Payment to -  XXXXXX Caleb Ochieng
 1489,SFE4FVOJ64,2024-06-14 10:50:02,5000.0,5633.3,Receive money,In,XXXXXXXXXXXXX,Amani Kiplangat,Funds received from -  XXXXXXXXXXXXX Amani Kiplangat
 1490,SFE0FM00BM,2024-06-14 09:26:05,50.0,633.3,Pochi la Biashara,Out,XXXXXXXXXXX,Caleb Amollo,Customer Payment to Small Business to - 07******140 brian moya
-1491,SFE6FJR2X0,2024-06-14 09:05:29,500.0,683.3,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+1491,SFE6FJR2X0,2024-06-14 09:05:29,500.0,683.3,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 1492,SFE5FJCLDF,2024-06-14 09:01:47,30.0,183.3,Pochi la Biashara,Out,XXXXXXXXXXX,Christine Barasa,Customer Payment to Small Business to - 07******433 Happiness Mogaka
 1493,SFD9EU7DLJ,2024-06-13 22:02:43,23.0,213.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 1494,SFD9EU7DLJ,2024-06-13 22:02:43,1500.0,236.3,Send money,Out,XXXXXXXXXXXXX,Baraka Adera,Customer Transfer to -  XXXXXXXXXXXXX Baraka Adera
@@ -1499,13 +1499,13 @@
 1497,SFD4CCDPU2,2024-06-13 11:43:33,75.0,1801.3,Paybill,Out,XXXXXX,Safaricom,Pay Bill Online to 826915 - Safaricom Offers Acc. Tunukiwa
 1498,SFC89KGLAM,2024-06-12 16:16:36,20.0,1876.3,Pochi la Biashara,Out,XXXXXXXXXXXXX,Isaac Lumumba,Customer Payment to Small Business to - 2547******871 EGIDE NDUWAMUNGU
 1499,SFC79D0NQ1,2024-06-12 15:15:19,100.0,1896.3,Pochi la Biashara,Out,XXXXXXXXXXX,Nicholas Kirui,Customer Payment to Small Business to - 07******326 wycliff ogero
-1500,SFC598GFG1,2024-06-12 14:36:33,3318.0,1996.3,Buy Goods,Out,XXXXXX,Samuel Akech,Merchant Payment to -  XXXXXX Samuel Akech
-1501,SFC298EEJI,2024-06-12 14:36:00,5000.0,5314.3,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+1500,SFC598GFG1,2024-06-12 14:36:33,3318.0,1996.3,Buy Goods,Out,XXXXXX,Mama Ntilie,Merchant Payment to -  XXXXXX Samuel Akech
+1501,SFC298EEJI,2024-06-12 14:36:00,5000.0,5314.3,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 1502,SFC695TK4E,2024-06-12 14:14:28,450.0,314.3,Buy Goods,Out,XXXXXXX,James Lagat,Merchant Payment to -  XXXXXXX James Lagat
 1503,SFC383PXAT,2024-06-12 08:51:54,60.0,764.3,Send money,Out,XXXXXXXXXXX,Amani Ibrahim,Customer Transfer to -  XXXXXXXXXXX Amani Ibrahim
 1504,SFC77Z1LSP,2024-06-12 08:06:27,100.0,824.3,Pochi la Biashara,Out,XXXXXXXXXXXXX,Hannah Nduta,Customer Payment to Small Business to - 2547******732 JOHNSON NJOROGE
 1505,SFC87YA6II,2024-06-12 07:58:47,20.0,924.3,Pochi la Biashara,Out,XXXXXXXXXXXXX,Zuberi Matiangi,Customer Payment to Small Business to - 2547******431 PETER WANJIKU
-1506,SFB77KA3P7,2024-06-11 22:58:26,19000.0,944.3,Paybill,Out,XXXXXX,Kennedy Mbogo,Pay Bill Online to 859528 - MALI Acc. 0702605230_40144986_489336 #c79002d9-b97b-49c4-aa91- bf92ab787601
+1506,SFB77KA3P7,2024-06-11 22:58:26,19000.0,944.3,Paybill,Out,XXXXXX,Equity Bank Paybill,Pay Bill Online to 859528 - MALI Acc. 0702605230_40144986_489336 #c79002d9-b97b-49c4-aa91- bf92ab787601
 1507,SFB26Q9K9C,2024-06-11 19:19:18,19000.0,19944.3,Receive money,In,XXXXXXXXXXX,Liam Odhiambo,Funds received from -  XXXXXXXXXXX Liam Odhiambo
 1508,SFB9580NHV,2024-06-11 13:09:13,30.0,944.3,Pochi la Biashara,Out,XXXXXXXXXXX,Grace Chirchir,Customer Payment to Small Business to - 07******726 JAMES MURIITHI
 1509,SFB850D1JK,2024-06-11 12:07:42,52.0,974.3,Buy Goods,Out,XXXXXXX,Grace Kimutai,Merchant Payment Online to -  XXXXXXX Grace Kimutai
@@ -1559,23 +1559,23 @@
 1557,SF32C8IBRQ,2024-06-03 21:23:28,30.0,7796.3,Send money,Out,XXXXXXXXXXX,Christine Kipchirchir,Customer Transfer to -  XXXXXXXXXXX Christine Kipchirchir
 1558,SF32C7L0HA,2024-06-03 21:16:26,7.0,7826.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 1559,SF32C7L0HA,2024-06-03 21:16:26,500.0,7833.3,Send money,Out,XXXXXXXXXXX,Amani Atieno,Customer Transfer to -  XXXXXXXXXXX Amani Atieno
-1560,SF35C4W3CH,2024-06-03 20:57:31,10000.0,8333.3,Paybill,Out,XXXXXX,Kennedy Mbogo,Pay Bill Online to 859528 - MALI Acc. 0702605230_40144986_574372 #c6351347-5dae-415c-8e08- e4f4d2e829b7
+1560,SF35C4W3CH,2024-06-03 20:57:31,10000.0,8333.3,Paybill,Out,XXXXXX,Equity Bank Paybill,Pay Bill Online to 859528 - MALI Acc. 0702605230_40144986_574372 #c6351347-5dae-415c-8e08- e4f4d2e829b7
 1561,SF36C2CZOQ,2024-06-03 20:41:16,10000.0,18333.3,Receive money,In,XXXXXXXXXXX,Zuberi Mbugua,Funds received from -  XXXXXXXXXXX Zuberi Mbugua
 1562,SF33AWCT1J,2024-06-03 16:52:13,60.0,8333.3,Buy Goods,Out,XXXXXXX,Joy Ibrahim,Merchant Payment to -  XXXXXXX Joy Ibrahim
-1563,SF31AV745T,2024-06-03 16:43:51,20000.0,8393.3,Paybill,Out,XXXXXX,Kennedy Mbogo,Pay Bill Online to 859528 - MALI Acc. 0702605230_40144986_7874#d 9a7f433-1ac9-4331-9450- 4e5f74f91e4a
+1563,SF31AV745T,2024-06-03 16:43:51,20000.0,8393.3,Paybill,Out,XXXXXX,Equity Bank Paybill,Pay Bill Online to 859528 - MALI Acc. 0702605230_40144986_7874#d 9a7f433-1ac9-4331-9450- 4e5f74f91e4a
 1564,SF31AV48IF,2024-06-03 16:43:19,7.0,28393.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 1565,SF31AV48IF,2024-06-03 16:43:19,500.0,28400.3,Send money,Out,XXXXXXXXXXX,Imani Lumumba,Customer Transfer to -  XXXXXXXXXXX Imani Lumumba
 1566,SF30AV0CWU,2024-06-03 16:42:32,78.0,28900.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 1567,SF30AV0CWU,2024-06-03 16:42:32,7000.0,28978.3,Send money,Out,XXXXXXXXXXX,Zuberi Mbugua,Customer Transfer to -  XXXXXXXXXXX Zuberi Mbugua
 1568,SF38AO1TUY,2024-06-03 15:48:40,35500.0,35978.3,Receive money,In,XXXXXXXXXXXXXXX,Baraka Gichuhi,Funds received from -  XXXXXXXXXXXXXXX Baraka Gichuhi
-1569,SF37AHUYWT,2024-06-03 14:58:17,5000.0,478.3,Paybill,Out,XXXXXX,Kennedy Mbogo,Pay Bill Online to 859528 - MALI Acc. 0702605230_40144986_445459 #58a85c69-c1b4-4284-9d7f- cd7b13d94864
+1569,SF37AHUYWT,2024-06-03 14:58:17,5000.0,478.3,Paybill,Out,XXXXXX,Equity Bank Paybill,Pay Bill Online to 859528 - MALI Acc. 0702605230_40144986_445459 #58a85c69-c1b4-4284-9d7f- cd7b13d94864
 1570,SF33AEMRVJ,2024-06-03 14:32:15,5000.0,5478.3,Receive money,In,XXXXXXXXXXXXX,Hassan Kipchirchir,Funds received from -  XXXXXXXXXXXXX Hassan Kipchirchir
-1571,SF389AJA5K,2024-06-03 09:06:48,17000.0,478.3,Paybill,Out,XXXXXX,Kennedy Mbogo,Pay Bill Online to 859528 - MALI Acc. 0702605230_40144986_326477 #2c2a67a2-525f-4a8b-882a- 67a6ada54355
+1571,SF389AJA5K,2024-06-03 09:06:48,17000.0,478.3,Paybill,Out,XXXXXX,Equity Bank Paybill,Pay Bill Online to 859528 - MALI Acc. 0702605230_40144986_326477 #2c2a67a2-525f-4a8b-882a- 67a6ada54355
 1572,SF3098YYV4,2024-06-03 08:52:29,17000.0,17478.3,Receive money,In,XXXXXXXXXXXXX,Olivia Kahiga,Funds received from -  XXXXXXXXXXXXX Olivia Kahiga
 1573,SF238BQ72T,2024-06-02 20:44:31,13.0,478.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 1574,SF238BQ72T,2024-06-02 20:44:31,750.0,491.3,Send money,Out,XXXXXXXXXXX,Zuberi Mbugua,Customer Transfer to -  XXXXXXXXXXX Zuberi Mbugua
 1575,SF277WDKE1,2024-06-02 19:16:36,100.0,1241.3,Send money,Out,XXXXXXXXXXX,Paul Nduta,Customer Transfer to -  XXXXXXXXXXX Paul Nduta
-1576,SF267JXOLM,2024-06-02 18:06:09,12000.0,1341.3,Paybill,Out,XXXXXX,Kennedy Mbogo,Pay Bill Online to 859528 - MALI Acc. 0702605230_40144986_921246 #015c362a-f89a-4f78-ab11- d154746628bb
+1576,SF267JXOLM,2024-06-02 18:06:09,12000.0,1341.3,Paybill,Out,XXXXXX,Equity Bank Paybill,Pay Bill Online to 859528 - MALI Acc. 0702605230_40144986_921246 #015c362a-f89a-4f78-ab11- d154746628bb
 1577,SF2376C38R,2024-06-02 16:29:16,2700.0,13341.3,Buy Goods,Out,XXXXXX,David Mogaka,Merchant Payment to -  XXXXXX David Mogaka
 1578,SF26601KXG,2024-06-02 10:30:53,34.0,16041.3,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Pay Bill Charge
 1579,SF26601KXG,2024-06-02 10:30:53,3600.0,16075.3,Paybill,Out,XXXXXX,Michael Lumumba,Pay Bill to 247247 - Equity Paybill Account Acc. 0722913715
@@ -1600,14 +1600,14 @@
 1598,SEV9ZHC1QD,2024-05-31 19:21:04,2000.0,13544.69,Receive money,In,XXXXXXXXXXXXX,Paul Khamisi,Funds received from -  XXXXXXXXXXXXX Paul Khamisi
 1599,SEV6ZH08T2,2024-05-31 19:19:31,100.0,11544.69,Pochi la Biashara,Out,XXXXXXXXXXXXX,Christine Chirchir,Customer Payment to Small Business to - 2547******653 Francis Nyakundi
 1600,SEV9XOOQHZ,2024-05-31 11:52:46,200.0,11644.69,Buy Goods,Out,XXXXXXX,Qamara Wanjiru,Merchant Payment to -  XXXXXXX Qamara Wanjiru
-1601,SEV5XMDPWF,2024-05-31 11:33:56,2500.0,11844.69,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+1601,SEV5XMDPWF,2024-05-31 11:33:56,2500.0,11844.69,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 1602,SEV6XD6GDK,2024-05-31 10:18:01,130.0,9344.69,Buy Goods,Out,XXXXXXX,George Wanjiru,Merchant Payment to -  XXXXXXX George Wanjiru
 1603,SEV5XBW8XN,2024-05-31 10:07:19,15.0,9474.69,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Pay Bill Charge
 1604,SEV5XBW8XN,2024-05-31 10:07:19,1200.0,9489.69,Paybill,Out,XXXXXX,James Mogaka,Pay Bill to 247247 - Equity Paybill Account Acc. 0766212221
 1605,SEV8X5OGSC,2024-05-31 09:12:12,90.0,10689.69,Pochi la Biashara,Out,XXXXXXXXXXX,Daniel Kiprono,Customer Payment to Small Business to - 01******045 joseph m'mworia
 1606,SEV6X5CVBE,2024-05-31 09:09:13,180.0,10779.69,Buy Goods,Out,XXXXXXX,Esther Kipkorir,Merchant Payment to -  XXXXXXX Esther Kipkorir
 1607,SEV4WYWKNI,2024-05-31 08:08:21,100.0,10959.69,Pochi la Biashara,Out,XXXXXXXXXXXXX,Liam Ng'ang'a,Customer Payment to Small Business to - 2547******819 GERALD KIRUGU
-1608,SEU8WKEPNY,2024-05-30 23:17:15,14000.0,11059.69,Paybill,Out,XXXXXX,Kennedy Mbogo,Pay Bill Online to 859528 - MALI Acc. 0702605230_40144986_159948 #1d084ca7-9fe7-4104-b546- 3cb5c97c0ec9
+1608,SEU8WKEPNY,2024-05-30 23:17:15,14000.0,11059.69,Paybill,Out,XXXXXX,Equity Bank Paybill,Pay Bill Online to 859528 - MALI Acc. 0702605230_40144986_159948 #1d084ca7-9fe7-4104-b546- 3cb5c97c0ec9
 1609,SEU0WAIRD0,2024-05-30 21:16:37,14000.0,25059.69,Receive money,In,XXXXXXXXXXX,Rachel Abdalla,Funds received from -  XXXXXXXXXXX Rachel Abdalla
 1610,SEU7UTGPJX,2024-05-30 15:57:53,60.0,11059.69,Pochi la Biashara,Out,XXXXXXXXXXXXX,Olivia Nyakundi,Customer Payment to Small Business to - 2547******003 JOHN NJIIRU
 1611,SEU3UP69YT,2024-05-30 15:22:47,419.0,11119.69,Buy Goods,Out,XXXXXXX,Isaac Kiplangat,Merchant Payment to -  XXXXXXX Isaac Kiplangat
@@ -1621,7 +1621,7 @@
 1619,SES0NY12R8,2024-05-28 17:43:35,80.0,12295.69,Buy Goods,Out,XXXXXXX,Joy Ibrahim,Merchant Payment to -  XXXXXXX Joy Ibrahim
 1620,SES4NMJR2G,2024-05-28 16:21:04,30.0,12375.69,Pochi la Biashara,Out,XXXXXXXXXXX,Thomas Kipkorir,Customer Payment to Small Business to - 07******768 BRIAN CHESOLI
 1621,SES5ND8CHR,2024-05-28 15:02:30,60.0,12405.69,Pochi la Biashara,Out,XXXXXXXXXXXXX,Dayo Mwangi,Customer Payment to Small Business to - 2547******160 JOHN GICHORA
-1622,SES4NAPG78,2024-05-28 14:41:24,3160.0,12465.69,Buy Goods,Out,XXXXXX,Samuel Akech,Merchant Payment to -  XXXXXX Samuel Akech
+1622,SES4NAPG78,2024-05-28 14:41:24,3160.0,12465.69,Buy Goods,Out,XXXXXX,Mama Ntilie,Merchant Payment to -  XXXXXX Samuel Akech
 1623,SES0MZFJMC,2024-05-28 13:10:43,50.0,15625.69,Send money,Out,XXXXXXXXXXXXX,Michael Kahiga,Customer Transfer to -  XXXXXXXXXXXXX Michael Kahiga
 1624,SES6MVSU3M,2024-05-28 12:40:44,20.0,15675.69,Send money,Out,XXXXXXXXXXXXX,Dayo Mbugua,Customer Transfer to -  XXXXXXXXXXXXX Dayo Mbugua
 1625,SES4MQ4RBE,2024-05-28 11:52:14,60.0,15695.69,Send money,Out,XXXXXXXXXXX,Amani Ibrahim,Customer Transfer to -  XXXXXXXXXXX Amani Ibrahim
@@ -1647,7 +1647,7 @@
 1645,SEQ3FRERPP,2024-05-26 12:44:02,20.0,18270.69,Pochi la Biashara,Out,XXXXXXXXXXXXX,Baraka Mwita,Customer Payment to Small Business to - 2547******825 EVANSON SAVURE
 1646,SEQ3FN4Q5F,2024-05-26 12:04:10,33.0,18290.69,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 1647,SEQ3FN4Q5F,2024-05-26 12:04:10,2250.0,18323.69,Send money,Out,XXXXXXXXXXXXX,Amani Mwangi,Customer Transfer to -  XXXXXXXXXXXXX Amani Mwangi
-1648,SEQ6FN1OG2,2024-05-26 12:03:20,20000.0,20573.69,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+1648,SEQ6FN1OG2,2024-05-26 12:03:20,20000.0,20573.69,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 1649,SEQ5FF1QD5,2024-05-26 10:45:52,80.0,573.69,Buy Goods,Out,XXXXXXX,Joy Ibrahim,Merchant Payment to -  XXXXXXX Joy Ibrahim
 1650,SEP1DQLT61,2024-05-25 19:08:11,20.0,653.69,Send money,Out,XXXXXXXXXXXXX,Achieng Akech,Customer Transfer to -  XXXXXXXXXXXXX Achieng Akech
 1651,SEP1DDZPQJ,2024-05-25 17:56:30,7.0,673.69,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
@@ -1661,23 +1661,23 @@
 1659,SEP1COGHNJ,2024-05-25 14:54:24,100.0,1797.69,Send money,Out,XXXXXXXXXXXXX,Caleb Jelagat,Customer Transfer to -  XXXXXXXXXXXXX Caleb Jelagat
 1660,SEP5CLB9GV,2024-05-25 14:29:35,20.0,1897.69,Pochi la Biashara,Out,XXXXXXXXXXXXX,Stephen Abdalla,Customer Payment to Small Business to - 2547******752 PETER KAGO
 1661,SEP5CHR3U1,2024-05-25 14:01:34,100.0,1917.69,Send money,Out,XXXXXXXXXXXXX,Samuel Mogaka,Customer Transfer to -  XXXXXXXXXXXXX Samuel Mogaka
-1662,SEP4CHFT7O,2024-05-25 13:59:05,2000.0,2017.69,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+1662,SEP4CHFT7O,2024-05-25 13:59:05,2000.0,2017.69,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 1663,SEP6CG8CYY,2024-05-25 13:49:40,20.0,17.69,Pochi la Biashara,Out,XXXXXXXXXXXXX,Ruth Abdalla,Customer Payment to Small Business to - 2547******105 DOUGLAS GICHANA
 1664,SEP7CFPRVH,2024-05-25 13:45:41,75.0,37.69,Paybill,Out,XXXXXX,Safaricom,Pay Bill Online to 826915 - Safaricom Offers Acc. Tunukiwa
 1665,SEP5CDD8DB,2024-05-25 13:27:53,7.0,112.69,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 1666,SEP5CDD8DB,2024-05-25 13:27:53,110.0,119.69,Send money,Out,XXXXXXXXXXXXX,Peter Kipchirchir,Customer Transfer to -  XXXXXXXXXXXXX Peter Kipchirchir
-1667,SEP3CD969J,2024-05-25 13:26:59,200.0,229.69,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+1667,SEP3CD969J,2024-05-25 13:26:59,200.0,229.69,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 1668,SEP4B2X59Y,2024-05-25 01:52:51,20.0,29.69,No description,Out,XXXXXXXXX,Safaricom,
 1669,SEO6A64WWC,2024-05-24 19:18:18,100.0,49.69,Send money,Out,XXXXXXXXXXXXX,David Ng'ang'a,Customer Transfer to -  XXXXXXXXXXXXX David Ng'ang'a
 1670,SEO08D7GUQ,2024-05-24 11:27:25,100.0,149.69,Pochi la Biashara,Out,XXXXXXXXXXXXX,Michael Gichuhi,Customer Payment to Small Business to - 2547******738 PETER NJAI
-1671,SEO47YRIDU,2024-05-24 09:17:08,220.0,249.69,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
-1672,SEN46DXCZA,2024-05-23 18:48:54,20000.0,29.69,Paybill,Out,XXXXXX,Kennedy Mbogo,Pay Bill Online to 859528 - MALI Acc. 0702605230_40144986_565881 #87773e92-cb75-44ac-aa59- f889a439accf
+1671,SEO47YRIDU,2024-05-24 09:17:08,220.0,249.69,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
+1672,SEN46DXCZA,2024-05-23 18:48:54,20000.0,29.69,Paybill,Out,XXXXXX,Equity Bank Paybill,Pay Bill Online to 859528 - MALI Acc. 0702605230_40144986_565881 #87773e92-cb75-44ac-aa59- f889a439accf
 1673,SEN15LND3V,2024-05-23 15:34:04,40.0,20029.69,Send money,Out,XXXXXXXXXXXXX,Esther Akech,Customer Transfer to -  XXXXXXXXXXXXX Esther Akech
 1674,SEN45GCNL2,2024-05-23 14:47:35,100.0,20069.69,Pochi la Biashara,Out,XXXXXXXXXXX,Vuyani Kiplangat,Customer Payment to Small Business to - 07******182 michael etyang
 1675,SEN14MJ2F9,2024-05-23 10:30:56,75.0,20169.69,Paybill,Out,XXXXXX,Safaricom,Pay Bill Online to 826915 - Safaricom Offers Acc. Tunukiwa
 1676,SEN44MBLEW,2024-05-23 10:29:06,100.0,20244.69,Pochi la Biashara,Out,XXXXXXXXXXXXX,Michael Gichuhi,Customer Payment to Small Business to - 2547******738 PETER NJAI
 1677,SEM11XK1ZL,2024-05-22 14:54:14,20000.0,20344.69,Receive money,In,XXXXXXXXXXXXX,Daniel Gitau,Funds received from -  XXXXXXXXXXXXX Daniel Gitau
-1678,SEM1104UAL,2024-05-22 10:05:17,67287.0,344.69,Paybill,Out,XXXXXX,Kennedy Mbogo,Pay Bill Online to 859528 - MALI Acc. 0702605230_40144986_712637 #96125e75-fd58-46c7-a054- afbf77a5fd6e
+1678,SEM1104UAL,2024-05-22 10:05:17,67287.0,344.69,Paybill,Out,XXXXXX,Equity Bank Paybill,Pay Bill Online to 859528 - MALI Acc. 0702605230_40144986_712637 #96125e75-fd58-46c7-a054- afbf77a5fd6e
 1679,SEM1ZZYCK5,2024-05-22 10:03:36,45137.0,67631.69,M-Shwari,In,XXXXXXXXX,Safaricom,M-Shwari Withdraw
 1680,SEM7ZB1NNT,2024-05-22 00:16:36,22150.0,22494.69,International Money Transfer Receipt,In,XXXXXX,Ruth Kimani,Receive International Transfer From 151261 - STANBIC  BANK. Original conversation ID is 2343160_198007454_FT24143M 43WB.
 1681,SEL6YKF5SY,2024-05-21 19:31:52,20.0,344.69,Paybill,Out,XXXXXX,Samuel Atieno,Pay Bill to 247247 - Equity Paybill Account Acc. 0710266386
@@ -1689,7 +1689,7 @@
 1687,SEL3XUTF0V,2024-05-21 17:03:30,30.0,831.69,Send money,Out,XXXXXXXXXXXXX,Michael Nduta,Customer Transfer to -  XXXXXXXXXXXXX Michael Nduta
 1688,SEL2XDNMV0,2024-05-21 14:42:35,20.0,861.69,No description,Out,XXXXXXXXX,Safaricom,
 1689,SEL3VWVSFB,2024-05-21 05:40:26,0.0,881.69,M-Shwari,In,XXXXXXXXX,Safaricom,M-Shwari Lock Withdraw to Savings
-1690,SEL9VWUW3B,2024-05-21 05:39:12,36895.0,881.69,Paybill,Out,XXXXXX,Kennedy Mbogo,Pay Bill Online to 859528 - MALI Acc. 0702605230_40144986_539706 #3504017c-e988-4add-857f- 94e5c7f9f666
+1690,SEL9VWUW3B,2024-05-21 05:39:12,36895.0,881.69,Paybill,Out,XXXXXX,Equity Bank Paybill,Pay Bill Online to 859528 - MALI Acc. 0702605230_40144986_539706 #3504017c-e988-4add-857f- 94e5c7f9f666
 1691,SEL2VW012G,2024-05-21 04:18:04,75.0,37776.69,Paybill,Out,XXXXXX,Safaricom,Pay Bill Online to 826915 - Safaricom Offers Acc. Tunukiwa
 1692,SEK0UVE51E,2024-05-20 18:57:36,21895.0,37851.69,International Money Transfer Receipt,In,XXXXXX,Ruth Kimani,Receive International Transfer From 151261 - STANBIC  BANK. Original conversation ID is 2335990_197914292_FT24141W 3N94.
 1693,SEK9UBHR95,2024-05-20 16:54:55,15000.0,15956.69,Receive money,In,XXXXXXXXXXXXX,Omari Kiptoo,Funds received from -  XXXXXXXXXXXXX Omari Kiptoo
@@ -1710,7 +1710,7 @@
 1708,SEI2OJNM4A,2024-05-18 21:20:34,7.0,2507.69,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 1709,SEI2OJNM4A,2024-05-18 21:20:34,350.0,2514.69,Send money,Out,XXXXXXXXXXXXX,Thomas Khamisi,Customer Transfer to -  XXXXXXXXXXXXX Thomas Khamisi
 1710,SEI6OFHBE0,2024-05-18 20:49:32,200.0,2864.69,Buy Goods,Out,XXXXXX,George Ibrahim,Merchant Payment to -  XXXXXX George Ibrahim
-1711,SEI9OFCAK3,2024-05-18 20:48:32,3000.0,3064.69,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+1711,SEI9OFCAK3,2024-05-18 20:48:32,3000.0,3064.69,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 1712,SEI0L8NDI2,2024-05-18 00:49:29,708.0,64.69,Buy Goods,Out,XXXXXXX,Thomas Kimani,Merchant Payment to -  XXXXXXX Thomas Kimani
 1713,SEH3L6ZAV5,2024-05-17 23:45:34,1380.0,772.69,Buy Goods,Out,XXXXXXX,Baraka Amollo,Merchant Payment to -  XXXXXXX Baraka Amollo
 1714,SEH4L6VPT2,2024-05-17 23:42:19,75.0,2152.69,No description,Out,XXXXXXXXX,Safaricom,
@@ -1732,7 +1732,7 @@
 1730,SEG5FXV4BB,2024-05-16 16:22:06,20.0,4843.69,No description,Out,XXXXXXXXX,Safaricom,
 1731,SEG2FTRP10,2024-05-16 15:48:03,7.0,4863.69,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 1732,SEG2FTRP10,2024-05-16 15:48:03,450.0,4870.69,Send money,Out,XXXXXXXXXXX,Zuberi Mbugua,Customer Transfer to -  XXXXXXXXXXX Zuberi Mbugua
-1733,SEG4FTOA06,2024-05-16 15:47:12,5000.0,5320.69,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+1733,SEG4FTOA06,2024-05-16 15:47:12,5000.0,5320.69,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 1734,SEF6DYAPBS,2024-05-15 23:24:52,20.0,320.69,No description,Out,XXXXXXXXX,Safaricom,
 1735,SEF1DWY0CZ,2024-05-15 22:56:51,20.0,340.69,No description,Out,XXXXXXXXX,Safaricom,
 1736,SEF3DUVRNT,2024-05-15 22:23:50,90.0,360.69,Pochi la Biashara,Out,XXXXXXXXXXX,Daniel Kiprono,Customer Payment to Small Business to - 01******045 joseph m'mworia
@@ -1742,7 +1742,7 @@
 1740,SEF3D97BNP,2024-05-15 19:44:24,400.0,599.69,Send money,Out,XXXXXXXXXXXXX,Christine Kiptoo,Customer Transfer to -  XXXXXXXXXXXXX Christine Kiptoo
 1741,SEF0CJDA74,2024-05-15 17:23:36,20.0,999.69,No description,Out,XXXXXXXXX,Safaricom,
 1742,SEF8CIVHEG,2024-05-15 17:20:12,45066.0,1019.69,M-Shwari,Out,XXXXXXXXX,Safaricom,M-Shwari Lock Activate and Save
-1743,SEF9CIKMBV,2024-05-15 17:18:08,9000.0,46085.69,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+1743,SEF9CIKMBV,2024-05-15 17:18:08,9000.0,46085.69,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 1744,SEF2CDVB32,2024-05-15 16:44:12,480.0,37085.69,Buy Goods,Out,XXXXXXX,Quinn Gatimu,Merchant Payment Online to -  XXXXXXX Quinn Gatimu
 1745,SEF0C89QSW,2024-05-15 15:59:22,90.0,37565.69,Buy Goods,Out,XXXXXXX,Hassan Mutuku,Merchant Payment to -  XXXXXXX Hassan Mutuku
 1746,SEF6BKCF1W,2024-05-15 12:40:22,13.0,37655.69,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
@@ -1760,7 +1760,7 @@
 1758,SEE1945O5J,2024-05-14 18:12:03,1050.0,17974.69,Send money,Out,XXXXXXXXXXXXX,Wanjala Ibrahim,Customer Transfer to -  XXXXXXXXXXXXX Wanjala Ibrahim
 1759,SEE58ZKYCB,2024-05-14 17:43:26,3500.0,19024.69,Receive money,In,XXXXXXXXXXXXX,Achieng Kipchirchir,Funds received from -  XXXXXXXXXXXXX Achieng Kipchirchir
 1760,SEE48V9D5S,2024-05-14 17:14:13,75.0,15524.69,No description,Out,XXXXXXXXX,Safaricom,
-1761,SEE88UKXX4,2024-05-14 17:09:22,3318.0,15599.69,Buy Goods,Out,XXXXXX,Samuel Akech,Merchant Payment to -  XXXXXX Samuel Akech
+1761,SEE88UKXX4,2024-05-14 17:09:22,3318.0,15599.69,Buy Goods,Out,XXXXXX,Mama Ntilie,Merchant Payment to -  XXXXXX Samuel Akech
 1762,SEE58KJSY1,2024-05-14 15:50:39,150.0,18917.69,Buy Goods,Out,XXXXXXX,Achieng Matiangi,Merchant Payment to -  XXXXXXX Achieng Matiangi
 1763,SEE38HB2B9,2024-05-14 15:23:10,200.0,19067.69,Buy Goods,Out,XXXXXXX,Elijah Mwangi,Merchant Payment to -  XXXXXXX Elijah Mwangi
 1764,SEE28H1CV8,2024-05-14 15:20:53,150.0,19267.69,Receive money,In,XXXXXXXXXXX,Achieng Atieno,Funds received from -  XXXXXXXXXXX Achieng Atieno
@@ -1807,7 +1807,7 @@
 1805,SEA9UORNNH,2024-05-10 23:18:50,1500.0,5289.69,Buy Goods,Out,XXXXXX,Liam Nyakundi,Merchant Payment to -  XXXXXX Liam Nyakundi
 1806,SEA8UG2EKG,2024-05-10 21:27:14,20.0,6789.69,No description,Out,XXXXXXXXX,Safaricom,
 1807,SEA8UDYBXM,2024-05-10 21:09:53,450.0,6809.69,Buy Goods,Out,XXXXXXX,Esther Kipkorir,Merchant Payment to -  XXXXXXX Esther Kipkorir
-1808,SEA0UDT4MW,2024-05-10 21:08:40,7000.0,7259.69,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+1808,SEA0UDT4MW,2024-05-10 21:08:40,7000.0,7259.69,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 1809,SEA8UDOELG,2024-05-10 21:07:41,20.0,259.69,No description,Out,XXXXXXXXX,Safaricom,
 1810,SEA3UDLAZJ,2024-05-10 21:06:57,20.0,279.69,Airtime,Out,XXXXXXXXX,Safaricom,Airtime Purchase XXXXXXXXX Safaricom
 1811,SEA1TGI0M1,2024-05-10 17:59:42,7.0,299.69,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
@@ -1833,7 +1833,7 @@
 1831,SE89LFALPH,2024-05-08 15:28:04,1500.0,3381.69,Paybill,Out,XXXXXXX,Zuberi Gichuhi,Pay Bill Online to 4120463 - NETCOM FIBRE INTERNET LIMITED Acc. 532
 1832,SE87LEV96V,2024-05-08 15:24:41,13.0,4881.69,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 1833,SE87LEV96V,2024-05-08 15:24:41,1000.0,4894.69,Send money,Out,XXXXXXXXXXXXX,Xolani Chirchir,Customer Transfer to -  XXXXXXXXXXXXX Xolani Chirchir
-1834,SE84LET0VE,2024-05-08 15:24:10,5000.0,5894.69,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+1834,SE84LET0VE,2024-05-08 15:24:10,5000.0,5894.69,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 1835,SE83LBXRAB,2024-05-08 15:01:30,95.0,894.69,No description,Out,XXXXXXXXX,Safaricom,
 1836,SE76IE09JG,2024-05-07 18:06:08,100.0,989.69,Buy Goods,Out,XXXXXXX,Joy Ibrahim,Merchant Payment to -  XXXXXXX Joy Ibrahim
 1837,SE78HTEBVQ,2024-05-07 15:46:41,30.0,1089.69,Paybill,Out,XXXXXX,Safaricom,Pay Bill Online to 826915 - Safaricom Offers Acc. Tunukiwa
@@ -1865,14 +1865,14 @@
 1863,SE498BBSLZ,2024-05-04 20:21:20,10.0,11936.69,Airtime,Out,XXXXXXXXX,Safaricom,Airtime Purchase XXXXXXXXX Safaricom
 1864,SE447UK7DC,2024-05-04 18:52:05,7.0,11946.69,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 1865,SE447UK7DC,2024-05-04 18:52:05,320.0,11953.69,Pochi la Biashara,Out,XXXXXXXXXXX,Daniel Kiprono,Customer Payment to Small Business to - 01******045 joseph m'mworia
-1866,SE437UBQ3B,2024-05-04 18:50:54,12000.0,12173.69,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+1866,SE437UBQ3B,2024-05-04 18:50:54,12000.0,12173.69,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 1867,SE467UBV1G,2024-05-04 18:50:54,100.0,12273.69,Receive money,In,XXXXXXXXXXX,Zuberi Mbugua,Funds received from -  XXXXXXXXXXX Zuberi Mbugua
 1868,SE417TRM33,2024-05-04 18:48:02,110.0,173.69,Buy Goods,Out,XXXXXXX,George Wanjiru,Merchant Payment to -  XXXXXXX George Wanjiru
 1869,SE407T6XVE,2024-05-04 18:45:03,7.0,283.69,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 1870,SE407T6XVE,2024-05-04 18:45:03,140.0,290.69,Send money,Out,XXXXXXXXXXXXX,Michael Kahiga,Customer Transfer to -  XXXXXXXXXXXXX Michael Kahiga
 1871,SE487QROU4,2024-05-04 18:31:55,15.0,430.69,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Pay Bill Charge
 1872,SE487QROU4,2024-05-04 18:31:55,1300.0,445.69,Paybill,Out,XXXXXX,Kennedy Gitau,Pay Bill to 247247 - Equity Paybill Account Acc. 451700
-1873,SE477QKSM9,2024-05-04 18:30:53,1600.0,1745.69,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+1873,SE477QKSM9,2024-05-04 18:30:53,1600.0,1745.69,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 1874,SE417PKJCD,2024-05-04 18:25:17,5.0,145.69,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Pay Bill Charge
 1875,SE417PKJCD,2024-05-04 18:25:17,480.0,150.69,Paybill,Out,XXXXXX,Kwame Mutuku,Pay Bill to 522533 - Lipa na KCB Acc. 7846246
 1876,SE407GH4L0,2024-05-04 17:30:15,7.0,630.69,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
@@ -1906,7 +1906,7 @@
 1904,SE21XSLDKV,2024-05-02 11:10:44,20.0,865.69,Receive money,In,XXXXXXXXXXX,David Kahiga,Funds received from -  XXXXXXXXXXX David Kahiga
 1905,SE23XCX5MX,2024-05-02 08:52:58,100.0,845.69,Pochi la Biashara,Out,XXXXXXXXXXX,Elijah Kinuthia,Customer Payment to Small Business to - 01******484 FRANCIS NGUNJIRI
 1906,SE24XCGUHQ,2024-05-02 08:48:34,70.0,945.69,No description,Out,XXXXXXXXX,Safaricom,
-1907,SE22XCF0SO,2024-05-02 08:48:03,1000.0,1015.69,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+1907,SE22XCF0SO,2024-05-02 08:48:03,1000.0,1015.69,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 1908,SE11V2X6OZ,2024-05-01 15:22:46,29.0,15.69,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Withdrawal Charge
 1909,SE11V2X6OZ,2024-05-01 15:22:46,500.0,44.69,Withdraw Money,Out,XXXXXXXXXXXXXXXXX,Nicholas Khamisi,Customer Withdrawal At -  XXXXXXXXXXXXXXXXX Nicholas Khamisi
 1910,SE10V1XVS6,2024-05-01 15:15:04,13.0,544.69,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
@@ -1917,8 +1917,8 @@
 1915,SE18UYYVVI,2024-05-01 14:51:42,3100.0,1923.69,Pochi la Biashara,Out,XXXXXXXXXXXXX,Naomi Gatimu,Customer Payment to Small Business to - 2547******843 ANTONY WAMBIRI
 1916,SE17UXBH6F,2024-05-01 14:38:49,10.0,5023.69,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Pay Bill Charge
 1917,SE17UXBH6F,2024-05-01 14:38:49,1000.0,5033.69,Paybill,Out,XXXXXX,Olivia Kiplimo,Pay Bill to 222111 - Family Bank Pesa Pap Acc. 069000004565
-1918,SE12UV52A4,2024-05-01 14:21:46,3500.0,6033.69,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
-1919,SE14UV1FXO,2024-05-01 14:20:58,3540.0,2533.69,Buy Goods,Out,XXXXXX,Samuel Akech,Merchant Payment to -  XXXXXX Samuel Akech
+1918,SE12UV52A4,2024-05-01 14:21:46,3500.0,6033.69,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
+1919,SE14UV1FXO,2024-05-01 14:20:58,3540.0,2533.69,Buy Goods,Out,XXXXXX,Mama Ntilie,Merchant Payment to -  XXXXXX Samuel Akech
 1920,SE11UP9NZ9,2024-05-01 13:36:13,50.0,6073.69,Pochi la Biashara,Out,XXXXXXXXXXXXX,Faith Jepkemboi,Customer Payment to Small Business to - 2547******915 MARY WAMBUI
 1921,SE12ULOH50,2024-05-01 13:08:12,30.0,6123.69,Send money,Out,XXXXXXXXXXXXX,George Adera,Customer Transfer to -  XXXXXXXXXXXXX George Adera
 1922,SE19UJUML7,2024-05-01 12:53:15,13.0,6153.69,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
@@ -1971,7 +1971,7 @@
 1969,SDJ5NXU9OV,2024-04-19 14:36:35,229.0,2746.69,Buy Goods,Out,XXXXXX,Amani Kahiga,Merchant Payment to -  XXXXXX Amani Kahiga
 1970,SDJ1NX0XQB,2024-04-19 14:30:08,7.0,2975.69,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 1971,SDJ1NX0XQB,2024-04-19 14:30:08,150.0,2982.69,Send money,Out,XXXXXXXXXXXXX,Baraka Kariuki,Customer Transfer to -  XXXXXXXXXXXXX Baraka Kariuki
-1972,SDJ6NWQK5U,2024-04-19 14:27:47,3000.0,3132.69,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+1972,SDJ6NWQK5U,2024-04-19 14:27:47,3000.0,3132.69,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 1973,SDJ6N3846W,2024-04-19 10:22:01,60.0,132.69,Buy Goods,Out,XXXXXXX,George Wanjiru,Merchant Payment to -  XXXXXXX George Wanjiru
 1974,SDJ6N35OBK,2024-04-19 10:21:26,13.0,192.69,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 1975,SDJ6N35OBK,2024-04-19 10:21:26,1000.0,205.69,Send money,Out,XXXXXXXXXXX,Achieng Atieno,Customer Transfer to -  XXXXXXXXXXX Achieng Atieno
@@ -1992,7 +1992,7 @@
 1990,SDH4FS1QLI,2024-04-17 10:17:13,80.0,5198.69,Airtime,Out,XXXXXXXXX,Safaricom,Airtime Purchase XXXXXXXXX Safaricom
 1991,SDH3FRUBJ1,2024-04-17 10:15:27,23.0,5278.69,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 1992,SDH3FRUBJ1,2024-04-17 10:15:27,1200.0,5301.69,Send money,Out,XXXXXXXXXXX,Zuberi Mbugua,Customer Transfer to -  XXXXXXXXXXX Zuberi Mbugua
-1993,SDH7FRT2FJ,2024-04-17 10:15:06,6500.0,6501.69,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+1993,SDH7FRT2FJ,2024-04-17 10:15:06,6500.0,6501.69,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 1994,SDH9FHWNRF,2024-04-17 08:43:15,29.0,1.69,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Withdrawal Charge
 1995,SDH9FHWNRF,2024-04-17 08:43:15,300.0,30.69,Withdraw Money,Out,XXXXXXXXXXXXXXXXXX,Kwame Chirchir,Customer Withdrawal At -  XXXXXXXXXXXXXXXXXX Kwame Chirchir
 1996,SDG0D4R68C,2024-04-16 14:59:46,60.0,330.69,Paybill,Out,XXXXXX,Safaricom,Pay Bill Online to 826915 - Safaricom Offers Acc. Tunukiwa
@@ -2021,7 +2021,7 @@
 2019,SDC7WRYNUB,2024-04-12 08:43:42,7.0,5442.69,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 2020,SDC7WRYNUB,2024-04-12 08:43:42,308.0,5449.69,Send money,Out,XXXXXXXXXXX,Achieng Atieno,Customer Transfer to -  XXXXXXXXXXX Achieng Atieno
 2021,SDB3WAOAWF,2024-04-11 23:16:57,250.0,5757.69,Paybill,Out,XXXXXX,Umaru Lumumba,Pay Bill Online to 244441 - SAFARICOM POSTPAID BUNDLES Acc. Talkmore
-2022,SDB3W44535,2024-04-11 21:49:04,6000.0,6007.69,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+2022,SDB3W44535,2024-04-11 21:49:04,6000.0,6007.69,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 2023,SDB0W1UL10,2024-04-11 21:29:27,7.0,7.69,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 2024,SDB0W1UL10,2024-04-11 21:29:27,150.0,14.69,Send money,Out,XXXXXXXXXXX,Zuberi Mbugua,Customer Transfer to -  XXXXXXXXXXX Zuberi Mbugua
 2025,SDB0U1S0GK,2024-04-11 13:29:39,70.0,164.69,Pochi la Biashara,Out,XXXXXXXXXXXXX,Stephen Mwangi,Customer Payment to Small Business to - 2547******821 JOHN AOKO
@@ -2042,7 +2042,7 @@
 2040,SDA1P885P5,2024-04-10 04:58:11,29.0,3672.69,Paybill,Out,XXXXXXX,Omari Muhammad,Pay Bill Online to 4194792 - TREATMEPAL TECHNOLOGIES LIMITED  Acc. ca1coav4a8bhegs73l6e21g
 2041,SD92NOBKPO,2024-04-09 17:46:58,15.0,3701.69,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Pay Bill Charge
 2042,SD92NOBKPO,2024-04-09 17:46:58,1500.0,3716.69,Paybill,Out,XXXXXXX,Zuberi Gichuhi,Pay Bill Online to 4120463 - NETCOM FIBRE INTERNET LIMITED Acc. 532
-2043,SD99NO7N7Z,2024-04-09 17:46:19,5000.0,5216.69,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+2043,SD99NO7N7Z,2024-04-09 17:46:19,5000.0,5216.69,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 2044,SD94NO20A0,2024-04-09 17:45:20,7.0,216.69,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 2045,SD94NO20A0,2024-04-09 17:45:20,200.0,223.69,Send money,Out,XXXXXXXXXXX,Zuberi Mbugua,Customer Transfer to -  XXXXXXXXXXX Zuberi Mbugua
 2046,SD90NJQF20,2024-04-09 17:16:56,100.0,423.69,Send money,Out,XXXXXXXXXXXXX,Paul Kirui,Customer Transfer to -  XXXXXXXXXXXXX Paul Kirui
@@ -2072,7 +2072,7 @@
 2070,SD598DXY0L,2024-04-05 14:13:29,3000.0,6928.69,Send money,Out,XXXXXXXXXXXXX,Christine Kiptoo,Customer Transfer to -  XXXXXXXXXXXXX Christine Kiptoo
 2071,SD548BBN8S,2024-04-05 13:53:50,80.0,9928.69,Pochi la Biashara,Out,XXXXXXXXXXX,Wanjala Kagwe,Customer Payment to Small Business to - 07******706 Dennis shilisia
 2072,SD5188G027,2024-04-05 13:32:42,60.0,10008.69,Send money,Out,XXXXXXXXXXX,Amani Ibrahim,Customer Transfer to -  XXXXXXXXXXX Amani Ibrahim
-2073,SD5688CPSU,2024-04-05 13:32:01,10000.0,10068.69,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+2073,SD5688CPSU,2024-04-05 13:32:01,10000.0,10068.69,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 2074,SD557TUH3T,2024-04-05 11:38:36,7.0,68.69,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 2075,SD557TUH3T,2024-04-05 11:38:36,200.0,75.69,Send money,Out,XXXXXXXXXXXXX,Daniel Kiplimo,Customer Transfer to -  XXXXXXXXXXXXX Daniel Kiplimo
 2076,SD426FNTK4,2024-04-04 21:12:05,10.0,275.69,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Pay Bill Charge
@@ -2084,7 +2084,7 @@
 2082,SD332LN90N,2024-04-03 20:35:15,200.0,887.69,Buy Goods,Out,XXXXXXX,George Wanjiru,Merchant Payment to -  XXXXXXX George Wanjiru
 2083,SD3828C0TM,2024-04-03 19:24:07,500.0,1087.69,Buy Goods,Out,XXXXXXX,Victoria Kariuki,Merchant Payment to -  XXXXXXX Victoria Kariuki
 2084,SD24X2J55U,2024-04-02 18:03:38,80.0,1587.69,Send money,Out,XXXXXXXXXXX,Nicholas Chirchir,Customer Transfer to -  XXXXXXXXXXX Nicholas Chirchir
-2085,SD23WVNU43,2024-04-02 17:20:05,3540.0,1667.69,Buy Goods,Out,XXXXXX,Samuel Akech,Merchant Payment to -  XXXXXX Samuel Akech
+2085,SD23WVNU43,2024-04-02 17:20:05,3540.0,1667.69,Buy Goods,Out,XXXXXX,Mama Ntilie,Merchant Payment to -  XXXXXX Samuel Akech
 2086,SD28WPDW9C,2024-04-02 16:35:48,3609.0,5207.69,Receive money,In,XXXXXXXXXXXXX,Achieng Kipchirchir,Funds received from -  XXXXXXXXXXXXX Achieng Kipchirchir
 2087,SD21W3N0U3,2024-04-02 13:43:37,70.0,1598.69,Pochi la Biashara,Out,XXXXXXXXXXXXX,Stephen Mwangi,Customer Payment to Small Business to - 2547******821 JOHN AOKO
 2088,SD28VL8346,2024-04-02 11:12:53,29.0,1668.69,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Withdrawal Charge
@@ -2112,7 +2112,7 @@
 2110,SCU2NNIHDS,2024-03-30 21:18:57,150.0,5300.69,Buy Goods,Out,XXXXXXX,Naomi Kipchirchir,Merchant Payment to -  XXXXXXX Naomi Kipchirchir
 2111,SCU2NMVLDC,2024-03-30 21:13:55,1500.0,5450.69,Buy Goods,Out,XXXXXXX,Baraka Boit,Merchant Payment to -  XXXXXXX Baraka Boit
 2112,SCU3NMLVX3,2024-03-30 21:11:45,200.0,6950.69,Buy Goods,Out,XXXXXXX,George Wanjiru,Merchant Payment to -  XXXXXXX George Wanjiru
-2113,SCU3NLNK29,2024-03-30 21:04:34,6000.0,7150.69,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+2113,SCU3NLNK29,2024-03-30 21:04:34,6000.0,7150.69,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 2114,SCU1MZUK95,2024-03-30 19:01:03,13.0,1150.69,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 2115,SCU1MZUK95,2024-03-30 19:01:03,982.0,1163.69,Send money,Out,XXXXXXXXXXXXX,James Atieno,Customer Transfer to -  XXXXXXXXXXXXX James Atieno
 2116,SCU0MUOUYA,2024-03-30 18:32:33,450.0,2145.69,Receive money,In,XXXXXXXXXXX,Achieng Atieno,Funds received from -  XXXXXXXXXXX Achieng Atieno
@@ -2147,7 +2147,7 @@
 2145,SCQ17FI1AZ,2024-03-26 14:20:05,200.0,10446.69,Buy Goods,Out,XXXXXXX,George Wanjiru,Merchant Payment to -  XXXXXXX George Wanjiru
 2146,SCQ47ESOQK,2024-03-26 14:13:58,15.0,10646.69,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Pay Bill Charge
 2147,SCQ47ESOQK,2024-03-26 14:13:58,1450.0,10661.69,Paybill,Out,XXXXXX,Kennedy Gitau,Pay Bill to 247247 - Equity Paybill Account Acc. 451700
-2148,SCQ07EPMF2,2024-03-26 14:13:14,10000.0,12111.69,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+2148,SCQ07EPMF2,2024-03-26 14:13:14,10000.0,12111.69,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 2149,SCQ17E78W3,2024-03-26 14:08:44,1000.0,2111.69,Receive money,In,XXXXXXXXXXX,Zuberi Mbugua,Funds received from -  XXXXXXXXXXX Zuberi Mbugua
 2150,SCQ07E3K2Y,2024-03-26 14:07:51,640.0,1111.69,Receive money,In,XXXXXXXXXXX,Zuberi Mbugua,Funds received from -  XXXXXXXXXXX Zuberi Mbugua
 2151,SCQ56WTDVT,2024-03-26 11:41:53,60.0,471.69,Paybill,Out,XXXXXX,Safaricom,Pay Bill Online to 826915 - Safaricom Offers Acc. Tunukiwa
@@ -2159,7 +2159,7 @@
 2157,SCP94HIW0X,2024-03-25 17:14:13,300.0,1076.69,Receive money,In,XXXXXXXXXXX,Achieng Atieno,Funds received from -  XXXXXXXXXXX Achieng Atieno
 2158,SCP433MBYG,2024-03-25 10:01:13,20.0,776.69,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Pay Bill Charge
 2159,SCP433MBYG,2024-03-25 10:01:13,2320.0,796.69,Paybill,Out,XXXXXX,Linet Kiplimo,Pay Bill to 987550 - Rainlex Investment Ltd Acc. NT
-2160,SCP92YNLZJ,2024-03-25 09:13:04,3000.0,3116.69,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+2160,SCP92YNLZJ,2024-03-25 09:13:04,3000.0,3116.69,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 2161,SCO7202ZN5,2024-03-24 20:18:31,75.0,116.69,No description,Out,XXXXXXXXX,Safaricom,
 2162,SCO31BJM5P,2024-03-24 17:43:58,20.0,191.69,No description,Out,XXXXXXXXX,Safaricom,
 2163,SCO2ZOYWA2,2024-03-24 14:32:15,20.0,211.69,No description,Out,XXXXXXXXX,Safaricom,
@@ -2183,7 +2183,7 @@
 2181,SCM2UKII1A,2024-03-22 21:38:49,200.0,3724.69,Buy Goods,Out,XXXXXXX,George Wanjiru,Merchant Payment to -  XXXXXXX George Wanjiru
 2182,SCM4TKIYY4,2024-03-22 18:08:14,15.0,3924.69,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Pay Bill Charge
 2183,SCM4TKIYY4,2024-03-22 18:08:14,1100.0,3939.69,Paybill,Out,XXXXXX,James Mogaka,Pay Bill to 247247 - Equity Paybill Account Acc. 0766212221
-2184,SCM5TIOC9D,2024-03-22 17:56:10,5000.0,5039.69,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+2184,SCM5TIOC9D,2024-03-22 17:56:10,5000.0,5039.69,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 2185,SCM5TGTT89,2024-03-22 17:43:44,5.0,39.69,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Pay Bill Charge
 2186,SCM5TGTT89,2024-03-22 17:43:44,150.0,44.69,Paybill,Out,XXXXXX,Zainab Akech,Pay Bill to 522533 - Lipa na KCB Acc. 7824956
 2187,SCM2TFX79O,2024-03-22 17:37:27,200.0,194.69,Buy Goods,Out,XXXXXXX,Qamara Wanjiru,Merchant Payment to -  XXXXXXX Qamara Wanjiru
@@ -2203,19 +2203,19 @@
 2201,SCL3Q98Z19,2024-03-21 18:55:35,100.0,11397.69,Buy Goods,Out,XXXXXXX,Quinn Amollo,Merchant Payment to -  XXXXXXX Quinn Amollo
 2202,SCL0Q8J2NC,2024-03-21 18:51:31,420.0,11497.69,Buy Goods,Out,XXXXXXX,Amani Mwita,Merchant Payment Online to -  XXXXXXX Amani Mwita
 2203,SCL9Q1WQCR,2024-03-21 18:10:57,100.0,11917.69,Send money,Out,XXXXXXXXXXXXX,Caleb Matiangi,Customer Transfer to -  XXXXXXXXXXXXX Caleb Matiangi
-2204,SCL3Q1TTKD,2024-03-21 18:10:27,12000.0,12017.69,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+2204,SCL3Q1TTKD,2024-03-21 18:10:27,12000.0,12017.69,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 2205,SCL7PL7UUT,2024-03-21 16:02:38,60.0,17.69,Paybill,Out,XXXXXX,Safaricom,Pay Bill Online to 826915 - Safaricom Offers Acc. Tunukiwa
 2206,SCL0P6KOMI,2024-03-21 13:53:27,20.0,77.69,No description,Out,XXXXXXXXX,Safaricom,
 2207,SCL3OZK8TH,2024-03-21 12:54:29,20.0,97.69,No description,Out,XXXXXXXXX,Safaricom,
 2208,SCK8MSE19Y,2024-03-20 18:56:26,13.0,117.69,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 2209,SCK8MSE19Y,2024-03-20 18:56:26,510.0,130.69,Send money,Out,XXXXXXXXXXXXX,Umaru Lagat,Customer Transfer to -  XXXXXXXXXXXXX Umaru Lagat
-2210,SCK4MRVJ1E,2024-03-20 18:53:41,250.0,640.69,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+2210,SCK4MRVJ1E,2024-03-20 18:53:41,250.0,640.69,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 2211,SCK5MR1DKR,2024-03-20 18:48:53,60.0,390.69,Send money,Out,XXXXXXXXXXX,Umaru Jepkemboi,Customer Transfer to -  XXXXXXXXXXX Umaru Jepkemboi
 2212,SCK9MHHTZ9,2024-03-20 17:48:51,40.0,450.69,Pochi la Biashara,Out,XXXXXXXXXXXXX,Zainab Gatimu,Customer Payment to Small Business to - 2547******657 JANE WAWERU
 2213,SCK6M5OPBY,2024-03-20 16:18:28,140.0,490.69,Buy Goods,Out,XXXXXXX,Stephen Mwita,Merchant Payment to -  XXXXXXX Stephen Mwita
 2214,SCK5M33F07,2024-03-20 15:55:28,7.0,630.69,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 2215,SCK5M33F07,2024-03-20 15:55:28,400.0,637.69,Send money,Out,XXXXXXXXXXXXX,Olivia Wanjiru,Customer Transfer to -  XXXXXXXXXXXXX Olivia Wanjiru
-2216,SCK5LTMLMP,2024-03-20 14:30:58,1000.0,1037.69,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+2216,SCK5LTMLMP,2024-03-20 14:30:58,1000.0,1037.69,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 2217,SCK5LP4SED,2024-03-20 13:52:04,7.0,37.69,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 2218,SCK5LP4SED,2024-03-20 13:52:04,150.0,44.69,Send money,Out,XXXXXXXXXXXXX,Christine Kiptoo,Customer Transfer to -  XXXXXXXXXXXXX Christine Kiptoo
 2219,SCK7LMIU1F,2024-03-20 13:30:00,30.0,194.69,Pochi la Biashara,Out,XXXXXXXXXXX,Kwame Juma,Customer Payment to Small Business to - 01******884 Moses Kimani
@@ -2225,17 +2225,17 @@
 2223,SCK7KSMPON,2024-03-20 09:01:02,29.0,104.69,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Withdrawal Charge
 2224,SCK7KSMPON,2024-03-20 09:01:02,300.0,133.69,Withdraw Money,Out,XXXXXXXXXXXXXXXXX,Achieng Boit,Customer Withdrawal At -  XXXXXXXXXXXXXXXXX Achieng Boit
 2225,SCK5KS9Z4T,2024-03-20 08:57:30,70.0,433.69,Send money,Out,XXXXXXXXXXXXX,Victoria Adera,Customer Transfer to -  XXXXXXXXXXXXX Victoria Adera
-2226,SCK3KS7OS1,2024-03-20 08:56:55,500.0,503.69,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+2226,SCK3KS7OS1,2024-03-20 08:56:55,500.0,503.69,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 2227,SCJ2JPDG7C,2024-03-19 20:04:51,7.0,3.69,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 2228,SCJ2JPDG7C,2024-03-19 20:04:51,440.0,10.69,Pochi la Biashara,Out,XXXXXXXXXXX,Daniel Kiprono,Customer Payment to Small Business to - 01******045 joseph m'mworia
-2229,SCJ9J5Z4H9,2024-03-19 18:21:36,3540.0,450.69,Buy Goods,Out,XXXXXX,Samuel Akech,Merchant Payment Online to -  XXXXXX Samuel Akech
+2229,SCJ9J5Z4H9,2024-03-19 18:21:36,3540.0,450.69,Buy Goods,Out,XXXXXX,Mama Ntilie,Merchant Payment Online to -  XXXXXX Samuel Akech
 2230,SCJ0J3O3L0,2024-03-19 18:06:47,425.0,3990.69,Buy Goods,Out,XXXXXX,Thomas Gatimu,Merchant Payment to -  XXXXXX Thomas Gatimu
 2231,SCJ1J375ZH,2024-03-19 18:03:40,100.0,4415.69,Receive money,In,XXXXXXXXXXX,Achieng Atieno,Funds received from -  XXXXXXXXXXX Achieng Atieno
-2232,SCJ0J0UMCM,2024-03-19 17:47:46,3500.0,4315.69,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+2232,SCJ0J0UMCM,2024-03-19 17:47:46,3500.0,4315.69,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 2233,SCJ2I6BQRO,2024-03-19 13:30:39,80.0,815.69,Pochi la Biashara,Out,XXXXXXXXXXXXX,Stephen Mwangi,Customer Payment to Small Business to - 2547******821 JOHN AOKO
 2234,SCJ7HQDMTF,2024-03-19 11:11:45,60.0,895.69,Paybill,Out,XXXXXX,Safaricom,Pay Bill Online to 826915 - Safaricom Offers Acc. Tunukiwa
 2235,SCJ9HOR7EF,2024-03-19 10:57:28,60.0,955.69,Send money,Out,XXXXXXXXXXXXX,Naomi Adera,Customer Transfer to -  XXXXXXXXXXXXX Naomi Adera
-2236,SCJ4HOLAP2,2024-03-19 10:56:02,1000.0,1015.69,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+2236,SCJ4HOLAP2,2024-03-19 10:56:02,1000.0,1015.69,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 2237,SCJ3HO4661,2024-03-19 10:51:45,20.0,15.69,No description,Out,XXXXXXXXX,Safaricom,
 2238,SCJ6HCH1CW,2024-03-19 09:03:11,20.0,35.69,No description,Out,XXXXXXXXX,Safaricom,
 2239,SCI4GQ5CQY,2024-03-18 22:39:22,70.0,55.69,Buy Goods,Out,XXXXXXX,George Wanjiru,Merchant Payment to -  XXXXXXX George Wanjiru
@@ -2246,7 +2246,7 @@
 2244,SCI9DPHYAZ,2024-03-18 08:34:08,29.0,425.69,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Withdrawal Charge
 2245,SCI9DPHYAZ,2024-03-18 08:34:08,500.0,454.69,Withdraw Money,Out,XXXXXXXX,Kennedy Kimani,Customer Withdrawal At Agent Till 463203 - MASTER TECHNOLOGY Peponi road Car Wash at -  XXXXXXXX Kennedy Kimani
 2246,SCI0DNSYOS,2024-03-18 08:17:03,75.0,954.69,No description,Out,XXXXXXXXX,Safaricom,
-2247,SCI6DLGW2W,2024-03-18 07:52:06,1000.0,1029.69,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+2247,SCI6DLGW2W,2024-03-18 07:52:06,1000.0,1029.69,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 2248,SCH1CZNTCP,2024-03-17 21:20:46,20.0,29.69,No description,Out,XXXXXXXXX,Safaricom,
 2249,SCH7C3GSBH,2024-03-17 17:56:14,50.0,49.69,Paybill,Out,XXXXXX,Zainab Akech,Pay Bill to 522533 - Lipa na KCB Acc. 7824956
 2250,SCH2BZHUQ8,2024-03-17 17:26:13,445.0,99.69,Buy Goods,Out,XXXXXX,Caleb Ochieng,Merchant Payment to -  XXXXXX Caleb Ochieng
@@ -2260,7 +2260,7 @@
 2258,SCG29OAFJ0,2024-03-16 21:23:16,870.0,6600.69,Receive money,In,XXXXXXXXXXX,Zuberi Mbugua,Funds received from -  XXXXXXXXXXX Zuberi Mbugua
 2259,SCG89O7PKI,2024-03-16 21:22:43,820.0,5730.69,Receive money,In,XXXXXXXXXXXXX,Baraka Adera,Funds received from -  XXXXXXXXXXXXX Baraka Adera
 2260,SCG09O5M50,2024-03-16 21:22:17,870.0,4910.69,Receive money,In,XXXXXXXXXXX,Achieng Atieno,Funds received from -  XXXXXXXXXXX Achieng Atieno
-2261,SCG59B3C2X,2024-03-16 20:02:18,4000.0,4040.69,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+2261,SCG59B3C2X,2024-03-16 20:02:18,4000.0,4040.69,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 2262,SCG195YKSZ,2024-03-16 19:36:51,100.0,40.69,Send money,Out,XXXXXXXXXXXXX,Hannah Kagwe,Customer Transfer to -  XXXXXXXXXXXXX Hannah Kagwe
 2263,SCG192GXS3,2024-03-16 19:20:09,100.0,140.69,Send money,Out,XXXXXXXXXXX,Paul Nduta,Customer Transfer to -  XXXXXXXXXXX Paul Nduta
 2264,SCG387CBYV,2024-03-16 15:54:55,5.0,240.69,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Pay Bill Charge
@@ -2269,19 +2269,19 @@
 2267,SCG67K9YA6,2024-03-16 12:49:59,60.0,775.69,Paybill,Out,XXXXXX,Safaricom,Pay Bill Online to 826915 - Safaricom Offers Acc. Tunukiwa
 2268,SCG57B14B1,2024-03-16 11:33:36,20.0,835.69,No description,Out,XXXXXXXXX,Safaricom,
 2269,SCF0680M7W,2024-03-15 22:29:02,200.0,855.69,Buy Goods,Out,XXXXXXX,George Wanjiru,Merchant Payment to -  XXXXXXX George Wanjiru
-2270,SCF567ZBE7,2024-03-15 22:28:28,1000.0,1055.69,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+2270,SCF567ZBE7,2024-03-15 22:28:28,1000.0,1055.69,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 2271,SCF05P1914,2024-03-15 20:08:43,20.0,55.69,No description,Out,XXXXXXXXX,Safaricom,
 2272,SCF44CD7CG,2024-03-15 14:50:50,1040.0,75.69,Buy Goods,Out,XXXXXXX,Liam Adera,Merchant Payment Online to -  XXXXXXX Liam Adera
 2273,SCF54CBEFJ,2024-03-15 14:50:23,520.0,1115.69,Receive money,In,XXXXXXXXXXX,Imani Abdalla,Funds received from -  XXXXXXXXXXX Imani Abdalla
 2274,SCF2430SKC,2024-03-15 13:34:37,30.0,595.69,Send money,Out,XXXXXXXXXXXXX,Mary Amollo,Customer Transfer to -  XXXXXXXXXXXXX Mary Amollo
 2275,SCF841PQA2,2024-03-15 13:24:17,53.0,625.69,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 2276,SCF841PQA2,2024-03-15 13:24:17,3000.0,678.69,Send money,Out,XXXXXXXXXXXXX,Linet Kimutai,Customer Transfer to -  XXXXXXXXXXXXX Linet Kimutai
-2277,SCF741BNWV,2024-03-15 13:21:11,3100.0,3678.69,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+2277,SCF741BNWV,2024-03-15 13:21:11,3100.0,3678.69,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 2278,SCF737G46L,2024-03-15 08:59:43,7.0,578.69,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 2279,SCF737G46L,2024-03-15 08:59:43,250.0,585.69,Send money,Out,XXXXXXXXXXXXX,Wanjala Akech,Customer Transfer to -  XXXXXXXXXXXXX Wanjala Akech
 2280,SCF530YMMT,2024-03-15 07:54:22,130.0,835.69,Buy Goods,Out,XXXXXXX,George Wanjiru,Merchant Payment to -  XXXXXXX George Wanjiru
 2281,SCF12SXOYP,2024-03-15 04:22:51,60.0,965.69,Paybill,Out,XXXXXX,Safaricom,Pay Bill Online to 826915 - Safaricom Offers Acc. Tunukiwa
-2282,SCF62SXP80,2024-03-15 04:21:51,1000.0,1025.69,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+2282,SCF62SXP80,2024-03-15 04:21:51,1000.0,1025.69,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 2283,SCF52QTN4B,2024-03-15 00:42:24,20.0,25.69,No description,Out,XXXXXXXXX,Safaricom,
 2284,SCE52PADGJ,2024-03-14 23:38:00,20.0,45.69,No description,Out,XXXXXXXXX,Safaricom,
 2285,SCE62M19FW,2024-03-14 22:33:00,20.0,65.69,No description,Out,XXXXXXXXX,Safaricom,
@@ -2292,14 +2292,14 @@
 2290,SCE5Y5J6BF,2024-03-14 00:04:36,60.0,785.69,Paybill,Out,XXXXXX,Safaricom,Pay Bill Online to 826915 - Safaricom Offers Acc. Tunukiwa
 2291,SCD4WX3S1C,2024-03-13 18:17:29,70.0,845.69,Send money,Out,XXXXXXXXXXXXX,Baraka Abdalla,Customer Transfer to -  XXXXXXXXXXXXX Baraka Abdalla
 2292,SCD1WWHDAR,2024-03-13 18:13:35,300.0,915.69,Buy Goods,Out,XXXXXXX,Victoria Kariuki,Merchant Payment Online to -  XXXXXXX Victoria Kariuki
-2293,SCD8WWCY58,2024-03-13 18:12:47,1000.0,1215.69,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+2293,SCD8WWCY58,2024-03-13 18:12:47,1000.0,1215.69,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 2294,SCD5WVPQ79,2024-03-13 18:08:34,5.0,215.69,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Pay Bill Charge
 2295,SCD5WVPQ79,2024-03-13 18:08:34,200.0,220.69,Paybill,Out,XXXXXX,Zainab Akech,Pay Bill Online to 522533 - Lipa na KCB Acc. 7824956
 2296,SCD6WNPG5A,2024-03-13 17:12:55,29.0,420.69,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Withdrawal Charge
 2297,SCD6WNPG5A,2024-03-13 17:12:55,500.0,449.69,Withdraw Money,Out,XXXXXXXXXXXXXXXXXX,Nicholas Akech,Customer Withdrawal At -  XXXXXXXXXXXXXXXXXX Nicholas Akech
 2298,SCD1WH6QTL,2024-03-13 16:21:18,50.0,949.69,Pochi la Biashara,Out,XXXXXXXXXXXXX,Ruth Mutuku,Customer Payment to Small Business to - 2547******134 PETER MACHARIA
 2299,SCD2WE52OU,2024-03-13 15:54:59,30.0,999.69,Pochi la Biashara,Out,XXXXXXXXXXX,Furaha Ochieng,Customer Payment to Small Business to - 07******738 SAMUEL NDUNGU
-2300,SCD2WE1MO4,2024-03-13 15:54:03,1000.0,1029.69,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+2300,SCD2WE1MO4,2024-03-13 15:54:03,1000.0,1029.69,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 2301,SCD8WDOZMM,2024-03-13 15:50:59,13.0,29.69,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 2302,SCD8WDOZMM,2024-03-13 15:50:59,1000.0,42.69,Send money,Out,XXXXXXXXXXX,Zuberi Mbugua,Customer Transfer to -  XXXXXXXXXXX Zuberi Mbugua
 2303,SCD0W2GH62,2024-03-13 14:12:45,40.0,1042.69,Pochi la Biashara,Out,XXXXXXXXXXXXX,Peter Echessa,Customer Payment to Small Business to - 2547******190 SIMON WAINAINA
@@ -2313,7 +2313,7 @@
 2311,SCC6TVSUQ2,2024-03-12 19:56:40,310.0,1532.69,Buy Goods,Out,XXXXXXX,Christine Kinuthia,Merchant Payment to -  XXXXXXX Christine Kinuthia
 2312,SCC0TGZR3A,2024-03-12 18:40:59,25.0,1842.69,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Pay Bill Charge
 2313,SCC0TGZR3A,2024-03-12 18:40:59,3000.0,1867.69,Paybill,Out,XXXXXX,Brian Chirchir,Pay Bill to 630640 - GAB COLLECT Acc. 488888
-2314,SCC8TGPP2Q,2024-03-12 18:39:19,4000.0,4867.69,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+2314,SCC8TGPP2Q,2024-03-12 18:39:19,4000.0,4867.69,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 2315,SCC3SW417V,2024-03-12 16:11:49,60.0,867.69,Paybill,Out,XXXXXX,Safaricom,Pay Bill Online to 826915 - Safaricom Offers Acc. Tunukiwa
 2316,SCC7SHP73H,2024-03-12 14:07:43,7.0,927.69,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 2317,SCC7SHP73H,2024-03-12 14:07:43,150.0,934.69,Send money,Out,XXXXXXXXXXXXX,Christine Kiptoo,Customer Transfer to -  XXXXXXXXXXXXX Christine Kiptoo
@@ -2336,7 +2336,7 @@
 2334,SCA2KXP3XS,2024-03-10 12:02:26,60.0,4689.69,Paybill,Out,XXXXXX,Safaricom,Pay Bill Online to 826915 - Safaricom Offers Acc. Tunukiwa
 2335,SC97JOQIH3,2024-03-09 21:36:32,15.0,4749.69,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Pay Bill Charge
 2336,SC97JOQIH3,2024-03-09 21:36:32,1500.0,4764.69,Paybill,Out,XXXXXXX,Zuberi Gichuhi,Pay Bill Online to 4120463 - NETCOM FIBRE INTERNET LIMITED Acc. 532
-2337,SC96JOMXD0,2024-03-09 21:35:47,5000.0,6264.69,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+2337,SC96JOMXD0,2024-03-09 21:35:47,5000.0,6264.69,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 2338,SC98IN7EYM,2024-03-09 18:02:35,7.0,1264.69,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 2339,SC98IN7EYM,2024-03-09 18:02:35,250.0,1271.69,Send money,Out,XXXXXXXXXXXXX,Nicholas Mbugua,Customer Transfer to -  XXXXXXXXXXXXX Nicholas Mbugua
 2340,SC98ICJYVO,2024-03-09 16:51:14,7.0,1521.69,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
@@ -2352,7 +2352,7 @@
 2350,SC89FYYRIV,2024-03-08 21:48:55,400.0,4410.69,Buy Goods,Out,XXXXXXX,Christine Kinuthia,Merchant Payment Online to -  XXXXXXX Christine Kinuthia
 2351,SC81FT4W5L,2024-03-08 21:05:25,100.0,4810.69,Send money,Out,XXXXXXXXXXXXX,Michael Kahiga,Customer Transfer to -  XXXXXXXXXXXXX Michael Kahiga
 2352,SC85EZU1Z5,2024-03-08 18:30:17,120.0,4910.69,Buy Goods,Out,XXXXXXX,George Wanjiru,Merchant Payment to -  XXXXXXX George Wanjiru
-2353,SC85EZAK0L,2024-03-08 18:27:10,5000.0,5030.69,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+2353,SC85EZAK0L,2024-03-08 18:27:10,5000.0,5030.69,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 2354,SC86EPBS2Q,2024-03-08 17:24:35,7.0,30.69,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 2355,SC86EPBS2Q,2024-03-08 17:24:35,300.0,37.69,Send money,Out,XXXXXXXXXXXXX,Grace Matiangi,Customer Transfer to -  XXXXXXXXXXXXX Grace Matiangi
 2356,SC86EMFZQ4,2024-03-08 17:04:45,900.0,337.69,Buy Goods,Out,XXXXXXX,Amani Khamisi,Merchant Payment Online to -  XXXXXXX Amani Khamisi
@@ -2395,14 +2395,14 @@
 2393,SC49ZF9UEB,2024-03-04 19:42:10,70.0,9493.69,Pochi la Biashara,Out,XXXXXXXXXXXXX,Isaac Barasa,Customer Payment to Small Business to - 2547******689 SUSAN KAMUNYA
 2394,SC49ZB1EFX,2024-03-04 19:22:13,7.0,9563.69,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 2395,SC49ZB1EFX,2024-03-04 19:22:13,450.0,9570.69,Pochi la Biashara,Out,XXXXXXXXXXXXX,Wekesa Boit,Customer Payment to Small Business to - 2547******056 Francis Barasa
-2396,SC45ZAMI7N,2024-03-04 19:20:19,10000.0,10020.69,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+2396,SC45ZAMI7N,2024-03-04 19:20:19,10000.0,10020.69,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 2397,SC48Z4ADW4,2024-03-04 18:48:45,100.0,20.69,Buy Goods,Out,XXXXXXX,Zuberi Mogaka,Merchant Payment to -  XXXXXXX Zuberi Mogaka
 2398,SC49YZUQ6N,2024-03-04 18:24:08,20.0,120.69,No description,Out,XXXXXXXXX,Safaricom,
 2399,SC48YKRY4E,2024-03-04 16:47:47,920.0,140.69,Buy Goods,Out,XXXXXX,Qamara Ibrahim,Merchant Payment Online to -  XXXXXX Qamara Ibrahim
-2400,SC42YJ6ITG,2024-03-04 16:36:12,900.0,1060.69,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+2400,SC42YJ6ITG,2024-03-04 16:36:12,900.0,1060.69,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 2401,SC41YGRUL3,2024-03-04 16:18:15,189.0,160.69,Buy Goods,Out,XXXXXX,Liam Nduta,Merchant Payment to -  XXXXXX Liam Nduta
 2402,SC43YBC4KH,2024-03-04 15:35:38,20.0,349.69,No description,Out,XXXXXXXXX,Safaricom,
-2403,SC43Y9BFL3,2024-03-04 15:19:34,3540.0,369.69,Buy Goods,Out,XXXXXX,Samuel Akech,Merchant Payment to -  XXXXXX Samuel Akech
+2403,SC43Y9BFL3,2024-03-04 15:19:34,3540.0,369.69,Buy Goods,Out,XXXXXX,Mama Ntilie,Merchant Payment to -  XXXXXX Samuel Akech
 2404,SC45XVTNB3,2024-03-04 13:36:15,20.0,3909.69,No description,Out,XXXXXXXXX,Safaricom,
 2405,SC30TLH84Q,2024-03-03 10:13:42,20.0,3929.69,No description,Out,XXXXXXXXX,Safaricom,
 2406,SC24S2FR2K,2024-03-02 19:38:32,29.0,3949.69,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Withdrawal Charge
@@ -2411,7 +2411,7 @@
 2409,SC22P48JQ0,2024-03-02 00:52:18,180.0,4678.69,Buy Goods,Out,XXXXXXX,George Wanjiru,Merchant Payment to -  XXXXXXX George Wanjiru
 2410,SC26P43FNG,2024-03-02 00:45:20,7.0,4858.69,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 2411,SC26P43FNG,2024-03-02 00:45:20,300.0,4865.69,Send money,Out,XXXXXXXXXXXXX,Wekesa Kipkorir,Customer Transfer to -  XXXXXXXXXXXXX Wekesa Kipkorir
-2412,SC25P3TOLD,2024-03-02 00:32:53,5000.0,5165.69,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+2412,SC25P3TOLD,2024-03-02 00:32:53,5000.0,5165.69,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 2413,SC27P3Q3BJ,2024-03-02 00:28:18,1550.0,165.69,Buy Goods,Out,XXXXXXX,Thomas Kimani,Merchant Payment Online to -  XXXXXXX Thomas Kimani
 2414,SC29P3F83F,2024-03-02 00:17:03,110.0,1715.69,Paybill,Out,XXXXXX,Safaricom,Pay Bill Online to 826915 - Safaricom Offers Acc. Tunukiwa
 2415,SC14OZSITK,2024-03-01 22:53:01,4690.0,1825.69,Buy Goods,Out,XXXXXX,David Makenzi,Merchant Payment to -  XXXXXX David Makenzi
@@ -2420,9 +2420,9 @@
 2418,SC17OLQSWL,2024-03-01 20:48:51,250.0,8222.69,Send money,Out,XXXXXXXXXXX,Amani Akech,Customer Transfer to -  XXXXXXXXXXX Amani Akech
 2419,SC15OFCFIB,2024-03-01 20:12:02,7.0,8472.69,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 2420,SC15OFCFIB,2024-03-01 20:12:02,500.0,8479.69,Send money,Out,XXXXXXXXXXX,Rachel Gitau,Customer Transfer to -  XXXXXXXXXXX Rachel Gitau
-2421,SC17O0QRNR,2024-03-01 19:01:07,8000.0,8979.69,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+2421,SC17O0QRNR,2024-03-01 19:01:07,8000.0,8979.69,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 2422,SC16MZJF46,2024-03-01 14:53:17,30.0,979.69,Buy Goods,Out,XXXXXXX,George Wanjiru,Merchant Payment to -  XXXXXXX George Wanjiru
-2423,SBT8L5KCPA,2024-02-29 22:49:31,1000.0,1009.69,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+2423,SBT8L5KCPA,2024-02-29 22:49:31,1000.0,1009.69,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 2424,SBT5KS1PY7,2024-02-29 20:44:30,20.0,9.69,No description,Out,XXXXXXXXX,Safaricom,
 2425,SBT2JYA0F4,2024-02-29 18:02:55,80.0,29.69,Send money,Out,XXXXXXXXXXXXX,Michael Kahiga,Customer Transfer to -  XXXXXXXXXXXXX Michael Kahiga
 2426,SBT8JVVNCC,2024-02-29 17:47:56,540.0,109.69,Buy Goods,Out,XXXXXXX,Imani Kahiga,Merchant Payment to -  XXXXXXX Imani Kahiga
@@ -2450,7 +2450,7 @@
 2448,SBP8719KPQ,2024-02-25 22:49:16,75.0,2730.69,Airtime,Out,XXXXXXXXX,Safaricom,Buy Bundles XXXXXXXXX Safaricom
 2449,SBP26WDML8,2024-02-25 21:45:47,20.0,2805.69,Airtime,Out,XXXXXXXXX,Safaricom,Buy Bundles XXXXXXXXX Safaricom
 2450,SBP76RH4X5,2024-02-25 21:04:29,870.0,2825.69,Buy Goods,Out,XXXXXXX,Victoria Kipchirchir,Merchant Payment to -  XXXXXXX Victoria Kipchirchir
-2451,SBP56RE0YT,2024-02-25 21:03:56,3000.0,3695.69,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+2451,SBP56RE0YT,2024-02-25 21:03:56,3000.0,3695.69,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 2452,SBP76RA31Z,2024-02-25 21:03:01,10.0,695.69,Airtime,Out,XXXXXXXXX,Safaricom,Airtime Purchase XXXXXXXXX Safaricom
 2453,SBP06J12NY,2024-02-25 20:05:14,250.0,705.69,Receive money,In,XXXXXXXXXXX,Achieng Atieno,Funds received from -  XXXXXXXXXXX Achieng Atieno
 2454,SBP26CO3ES,2024-02-25 19:27:28,20.0,455.69,Airtime,Out,XXXXXXXXX,Safaricom,Buy Bundles XXXXXXXXX Safaricom
@@ -2471,7 +2471,7 @@
 2469,SBP64HS8F4,2024-02-25 09:49:45,20.0,4417.91,Airtime,Out,XXXXXXXXX,Safaricom,Buy Bundles XXXXXXXXX Safaricom
 2470,SBO53V86EN,2024-02-24 22:42:55,57.0,4437.91,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 2471,SBO53V86EN,2024-02-24 22:42:55,4569.0,4494.91,Send money,Out,XXXXXXXXXXXXX,Tahir Kipchirchir,Customer Transfer to -  XXXXXXXXXXXXX Tahir Kipchirchir
-2472,SBO73V6QCJ,2024-02-24 22:42:12,8000.0,9063.91,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+2472,SBO73V6QCJ,2024-02-24 22:42:12,8000.0,9063.91,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 2473,SBO33R4FM7,2024-02-24 21:52:01,20.0,1063.91,Airtime,Out,XXXXXXXXX,Safaricom,Buy Bundles XXXXXXXXX Safaricom
 2474,SBO13O57MF,2024-02-24 21:24:40,50.0,1083.91,Buy Goods,Out,XXXXXXX,George Wanjiru,Merchant Payment to -  XXXXXXX George Wanjiru
 2475,SBO23I91LK,2024-02-24 20:41:02,100.0,1133.91,Send money,Out,XXXXXXXXXXX,Omari Gichuhi,Customer Transfer to -  XXXXXXXXXXX Omari Gichuhi
@@ -2508,7 +2508,7 @@
 2506,SBL0R2PMRW,2024-02-21 16:29:03,10.0,4705.91,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Pay Bill Charge
 2507,SBL0R2PMRW,2024-02-21 16:29:03,1000.0,4715.91,Paybill,Out,XXXXXX,Rachel Mutuku,Pay Bill to 222111 - Family Bank Pesa Pap Acc. 1910744
 2508,SBL0QB4D4C,2024-02-21 12:23:53,50.0,5715.91,Pochi la Biashara,Out,XXXXXXXXXXX,Linet Nduta,Customer Payment to Small Business to - 07******485 Joash Bagaka
-2509,SBL5QAMSUT,2024-02-21 12:19:27,5500.0,5765.91,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+2509,SBL5QAMSUT,2024-02-21 12:19:27,5500.0,5765.91,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 2510,SBL1Q9ZLQT,2024-02-21 12:13:41,30.0,265.91,Send money,Out,XXXXXXXXXXXXX,Paul Kariuki,Customer Transfer to -  XXXXXXXXXXXXX Paul Kariuki
 2511,SBL0Q8OWX2,2024-02-21 12:01:40,55.0,295.91,Airtime,Out,XXXXXXXXX,Safaricom,Buy Bundles XXXXXXXXX Safaricom
 2512,SBL8PZCPWE,2024-02-21 10:35:24,20.0,350.91,Airtime,Out,XXXXXXXXX,Safaricom,Buy Bundles XXXXXXXXX Safaricom
@@ -2519,7 +2519,7 @@
 2517,SBK2OQ4WCY,2024-02-20 20:21:41,20.0,450.91,Paybill,Out,XXXXXX,Safaricom,Pay Bill Online to 826915 - Safaricom Offers Acc. Tunukiwa
 2518,SBJ0L64FD6,2024-02-19 19:38:37,20.0,470.91,Airtime,Out,XXXXXXXXX,Safaricom,Buy Bundles XXXXXXXXX Safaricom
 2519,SBJ7KEVD31,2024-02-19 16:46:03,20.0,490.91,Airtime,Out,XXXXXXXXX,Safaricom,Buy Bundles XXXXXXXXX Safaricom
-2520,SBJ0KESCYC,2024-02-19 16:45:28,500.0,510.91,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+2520,SBJ0KESCYC,2024-02-19 16:45:28,500.0,510.91,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 2521,SBJ5K51JJ1,2024-02-19 15:20:33,20.0,10.91,Airtime,Out,XXXXXXXXX,Safaricom,Buy Bundles XXXXXXXXX Safaricom
 2522,SBJ4JC7BQY,2024-02-19 11:08:08,29.0,30.91,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Withdrawal Charge
 2523,SBJ4JC7BQY,2024-02-19 11:08:08,108.0,59.91,Withdraw Money,Out,XXXXXXXXXXXXXXXXX,Daniel Amollo,Customer Withdrawal At -  XXXXXXXXXXXXXXXXX Daniel Amollo
@@ -2566,7 +2566,7 @@
 2564,SBG3BL15RD,2024-02-16 22:29:44,200.0,4576.91,Send money,Out,XXXXXXXXXXX,Yao Gitau,Customer Transfer to -  XXXXXXXXXXX Yao Gitau
 2565,SBG0BKROH6,2024-02-16 22:26:32,1500.0,4776.91,Buy Goods,Out,XXXXXXX,Baraka Boit,Merchant Payment to -  XXXXXXX Baraka Boit
 2566,SBG0BKFN4M,2024-02-16 22:22:43,850.0,6276.91,Buy Goods,Out,XXXXXXX,Naomi Kipchirchir,Merchant Payment to -  XXXXXXX Naomi Kipchirchir
-2567,SBG8BJ7JZC,2024-02-16 22:09:13,6000.0,7126.91,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+2567,SBG8BJ7JZC,2024-02-16 22:09:13,6000.0,7126.91,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 2568,SBG6BJ0IHQ,2024-02-16 22:07:10,20.0,1126.91,No description,Out,XXXXXXXXX,Safaricom,
 2569,SBG3AOTKOB,2024-02-16 19:02:18,20.0,1146.91,Airtime,Out,XXXXXXXXX,Safaricom,Buy Bundles XXXXXXXXX Safaricom
 2570,SBG8ACWMRK,2024-02-16 17:48:00,20.0,1166.91,Airtime,Out,XXXXXXXXX,Safaricom,Buy Bundles XXXXXXXXX Safaricom
@@ -2580,7 +2580,7 @@
 2578,SBG785WSK9,2024-02-16 00:02:57,2000.0,2496.91,Buy Goods,Out,XXXXXXX,Paul Kagwe,Merchant Payment to -  XXXXXXX Paul Kagwe
 2579,SBF8855VNG,2024-02-15 23:35:55,20.0,4496.91,No description,Out,XXXXXXXXX,Safaricom,
 2580,SBF1820CHR,2024-02-15 22:32:48,1560.0,4516.91,Buy Goods,Out,XXXXXX,Achieng Lumumba,Merchant Payment to -  XXXXXX Achieng Lumumba
-2581,SBF47WF0XW,2024-02-15 21:34:05,5000.0,6076.91,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+2581,SBF47WF0XW,2024-02-15 21:34:05,5000.0,6076.91,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 2582,SBF47WBP9A,2024-02-15 21:33:19,900.0,1076.91,Receive money,In,XXXXXXXXXXX,Zuberi Mbugua,Funds received from -  XXXXXXXXXXX Zuberi Mbugua
 2583,SBF67P0RCA,2024-02-15 20:41:28,20.0,176.91,No description,Out,XXXXXXXXX,Safaricom,
 2584,SBF97BO223,2024-02-15 19:30:11,13.0,196.91,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
@@ -2591,7 +2591,7 @@
 2589,SBF26W4W5I,2024-02-15 18:00:48,500.0,1479.91,Buy Goods,Out,XXXXXXX,Victoria Kariuki,Merchant Payment to -  XXXXXXX Victoria Kariuki
 2590,SBF06R2R3A,2024-02-15 17:25:23,20.0,1979.91,Airtime,Out,XXXXXXXXX,Safaricom,Buy Bundles XXXXXXXXX Safaricom
 2591,SBF36GPXXZ,2024-02-15 16:01:17,20.0,1999.91,No description,Out,XXXXXXXXX,Safaricom,
-2592,SBF36GO91R,2024-02-15 16:00:46,2000.0,2019.91,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+2592,SBF36GO91R,2024-02-15 16:00:46,2000.0,2019.91,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 2593,SBF26COQPY,2024-02-15 15:25:07,40.0,19.91,Send money,Out,XXXXXXXXXXX,Samuel Ng'ang'a,Customer Transfer to -  XXXXXXXXXXX Samuel Ng'ang'a
 2594,SBF95RIC6V,2024-02-15 12:22:30,20.0,59.91,Airtime,Out,XXXXXXXXX,Safaricom,Buy Bundles XXXXXXXXX Safaricom
 2595,SBF45H7BDG,2024-02-15 10:50:52,20.0,79.91,Airtime,Out,XXXXXXXXX,Safaricom,Buy Bundles XXXXXXXXX Safaricom
@@ -2603,7 +2603,7 @@
 2601,SBC6UBZAUA,2024-02-12 12:37:44,30.0,858.91,Send money,Out,XXXXXXXXXXXXX,Esther Mutuku,Customer Transfer to -  XXXXXXXXXXXXX Esther Mutuku
 2602,SBC4U56TZE,2024-02-12 11:38:42,100.0,888.91,Buy Goods,Out,XXXXXXX,Furaha Chirchir,Merchant Payment to -  XXXXXXX Furaha Chirchir
 2603,SBC8U47Z1Q,2024-02-12 11:30:09,20.0,988.91,Airtime,Out,XXXXXXXXX,Safaricom,Buy Bundles XXXXXXXXX Safaricom
-2604,SBC4U3T0SE,2024-02-12 11:26:32,1000.0,1008.91,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+2604,SBC4U3T0SE,2024-02-12 11:26:32,1000.0,1008.91,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 2605,SBC1U2H5O3,2024-02-12 11:14:46,100.0,8.91,Send money,Out,XXXXXXXXXXXXX,Rachel Kipkorir,Customer Transfer to -  XXXXXXXXXXXXX Rachel Kipkorir
 2606,SBC1U1SQ5V,2024-02-12 11:08:49,600.0,108.91,Buy Goods,Out,XXXXXXX,Victoria Boit,Merchant Payment to -  XXXXXXX Victoria Boit
 2607,SBC0TZHAZE,2024-02-12 10:48:30,100.0,708.91,Buy Goods,Out,XXXXXXX,Hassan Mutuku,Merchant Payment to -  XXXXXXX Hassan Mutuku
@@ -2616,7 +2616,7 @@
 2614,SBB8RL5FQE,2024-02-11 16:00:32,400.0,1515.91,Receive money,In,XXXXXXXXXXXXX,Amani Kiplangat,Funds received from -  XXXXXXXXXXXXX Amani Kiplangat
 2615,SBA2OGIAN6,2024-02-10 17:29:13,29.0,1115.91,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Withdrawal Charge
 2616,SBA2OGIAN6,2024-02-10 17:29:13,900.0,1144.91,Withdraw Money,Out,XXXXXXXXXXXXXXXXX,Victoria Gatimu,Customer Withdrawal At -  XXXXXXXXXXXXXXXXX Victoria Gatimu
-2617,SBA3OA7XSL,2024-02-10 16:45:12,2000.0,2044.91,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+2617,SBA3OA7XSL,2024-02-10 16:45:12,2000.0,2044.91,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 2618,SBA5OA2BAD,2024-02-10 16:44:07,20.0,44.91,No description,Out,XXXXXXXXX,Safaricom,
 2619,SBA7MQNBV9,2024-02-10 09:21:10,20.0,64.91,Airtime,Out,XXXXXXXXX,Safaricom,Buy Bundles XXXXXXXXX Safaricom
 2620,SB85H4ZOBJ,2024-02-08 17:27:08,29.0,334.91,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Withdrawal Charge
@@ -2660,12 +2660,12 @@
 2658,SB30Y3JDAQ,2024-02-03 15:57:05,500.0,8372.91,Pochi la Biashara,Out,XXXXXXXXXXXXX,James Juma,Customer Payment to Small Business to - 2547******405 WILSON KARIUKI
 2659,SB30WW82PG,2024-02-03 10:10:13,60.0,8872.91,Paybill,Out,XXXXXX,Safaricom,Pay Bill Online to 826915 - Safaricom Offers Acc. Tunukiwa
 2660,SB34WW1RF2,2024-02-03 10:08:46,1070.0,8932.91,Paybill,Out,XXXXXX,Xolani Mbugua,Pay Bill Online to 244441 - SAFARICOM POSTPAID BUNDLES Acc. EasyTalk
-2661,SB35WVZ4TJ,2024-02-03 10:08:03,10000.0,10002.91,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+2661,SB35WVZ4TJ,2024-02-03 10:08:03,10000.0,10002.91,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 2662,SB24V8599C,2024-02-02 19:30:15,20.0,2.91,Paybill,Out,XXXXXX,Safaricom,Pay Bill Online to 826915 - Safaricom Offers Acc. Tunukiwa
 2663,SB24V4SWG8,2024-02-02 19:14:17,20.0,22.91,Airtime,Out,XXXXXXXXX,Safaricom,Buy Bundles Online XXXXXXXXX Safaricom
 2664,SB28TMUKGQ,2024-02-02 12:42:44,60.0,42.91,Airtime,Out,XXXXXXXXX,Safaricom,Airtime Purchase XXXXXXXXX Safaricom
 2665,SB27STSYXZ,2024-02-02 08:25:48,120.0,102.91,Airtime,Out,XXXXXXXXX,Safaricom,Buy Bundles XXXXXXXXX Safaricom
-2666,SB26STR2HS,2024-02-02 08:25:10,200.0,222.91,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+2666,SB26STR2HS,2024-02-02 08:25:10,200.0,222.91,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 2667,SB29SHFIF1,2024-02-02 01:17:46,5.0,22.91,Airtime,Out,XXXXXXXXX,Safaricom,Buy Bundles Online XXXXXXXXX Safaricom
 2668,SB27SG76M3,2024-02-02 00:06:47,20.0,27.91,Airtime,Out,XXXXXXXXX,Safaricom,Buy Bundles XXXXXXXXX Safaricom
 2669,SB11SD2YQN,2024-02-01 22:48:59,20.0,47.91,Airtime,Out,XXXXXXXXX,Safaricom,Buy Bundles XXXXXXXXX Safaricom
@@ -2674,27 +2674,27 @@
 2672,SAV2OTWE4Y,2024-01-31 23:10:13,20.0,187.91,Airtime,Out,XXXXXXXXX,Safaricom,Buy Bundles XXXXXXXXX Safaricom
 2673,SAV1NWQJ8D,2024-01-31 19:07:58,75.0,207.91,Airtime,Out,XXXXXXXXX,Safaricom,Buy Bundles XXXXXXXXX Safaricom
 2674,SAV2NK4Z46,2024-01-31 17:52:55,2180.0,282.91,M-Shwari Loan,Out,XXXXXXXXX,Safaricom,M-Shwari Loan Repayment
-2675,SAV4NK1BWC,2024-01-31 17:52:14,500.0,2462.91,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+2675,SAV4NK1BWC,2024-01-31 17:52:14,500.0,2462.91,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 2676,SAV5NJM5FL,2024-01-31 17:49:27,20.0,1962.91,Airtime,Out,XXXXXXXXX,Safaricom,Buy Bundles XXXXXXXXX Safaricom
 2677,SAV3MURPJZ,2024-01-31 14:30:21,20.0,1982.91,Buy Goods,Out,XXXXXXX,Yao Jepkemboi,Merchant Payment to -  XXXXXXX Yao Jepkemboi
 2678,SAV8MTMJHO,2024-01-31 14:20:40,29.0,2002.91,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Withdrawal Charge
 2679,SAV8MTMJHO,2024-01-31 14:20:40,700.0,2031.91,Withdraw Money,Out,XXXXXXXXXXXXXXXXX,Hassan Kiplangat,Customer Withdrawal At -  XXXXXXXXXXXXXXXXX Hassan Kiplangat
 2680,SAV8MTE5GW,2024-01-31 14:18:39,500.0,2731.91,Buy Goods,Out,XXXXXX,Thomas Mwachiro,Merchant Payment to -  XXXXXX Thomas Mwachiro
-2681,SAV5MTBPNZ,2024-01-31 14:18:07,3000.0,3231.91,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+2681,SAV5MTBPNZ,2024-01-31 14:18:07,3000.0,3231.91,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 2682,SAV8MLUZS2,2024-01-31 13:17:02,100.0,231.91,Pochi la Biashara,Out,XXXXXXXXXXXXX,Michael Makenzi,Customer Payment to Small Business to - 2547******014 PETER MUTITU
 2683,SAV1MHJ1JN,2024-01-31 12:40:31,544.0,331.91,Buy Goods,Out,XXXXXX,Caleb Ochieng,Merchant Payment to -  XXXXXX Caleb Ochieng
 2684,SAV3LOSRPD,2024-01-31 08:12:13,60.0,875.91,Paybill,Out,XXXXXX,Safaricom,Pay Bill Online to 826915 - Safaricom Offers Acc. Tunukiwa
 2685,SAV5LDETML,2024-01-31 00:22:06,20.0,935.91,Airtime,Out,XXXXXXXXX,Safaricom,Buy Bundles XXXXXXXXX Safaricom
 2686,SAU8L5VYE8,2024-01-30 21:56:56,1.0,955.91,Paybill,Out,XXXXXX,Samuel Mwachiro,Pay Bill Online to 847092 - NEVEREST LTD Acc. TLKbovgaXd
 2687,SAU0KYOS36,2024-01-30 20:56:57,75.0,956.91,Airtime,Out,XXXXXXXXX,Safaricom,Buy Bundles XXXXXXXXX Safaricom
-2688,SAU5KYMOLJ,2024-01-30 20:56:28,1000.0,1031.91,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+2688,SAU5KYMOLJ,2024-01-30 20:56:28,1000.0,1031.91,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 2689,SAU8KMYZIE,2024-01-30 19:46:55,20.0,31.91,Airtime,Out,XXXXXXXXX,Safaricom,Buy Bundles XXXXXXXXX Safaricom
 2690,SAU5JQ3QID,2024-01-30 16:15:53,13.0,51.91,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 2691,SAU5JQ3QID,2024-01-30 16:15:53,700.0,64.91,Send money,Out,XXXXXXXXXXXXX,Amani Mwangi,Customer Transfer to -  XXXXXXXXXXXXX Amani Mwangi
 2692,SAU8J9GH84,2024-01-30 13:51:44,7.0,764.91,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 2693,SAU8J9GH84,2024-01-30 13:51:44,200.0,771.91,Send money,Out,XXXXXXXXXXX,Zuberi Mbugua,Customer Transfer to -  XXXXXXXXXXX Zuberi Mbugua
 2694,SAU7IZX96V,2024-01-30 12:31:30,75.0,971.91,Airtime,Out,XXXXXXXXX,Safaricom,Buy Bundles XXXXXXXXX Safaricom
-2695,SAU1IZV77D,2024-01-30 12:31:01,1000.0,1046.91,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+2695,SAU1IZV77D,2024-01-30 12:31:01,1000.0,1046.91,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 2696,SAU9IJXFZ9,2024-01-30 10:07:31,20.0,46.91,Airtime,Out,XXXXXXXXX,Safaricom,Buy Bundles XXXXXXXXX Safaricom
 2697,SAT2H9LHNU,2024-01-29 19:57:09,7.0,66.91,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 2698,SAT2H9LHNU,2024-01-29 19:57:09,140.0,73.91,Send money,Out,XXXXXXXXXXXXX,Michael Kahiga,Customer Transfer to -  XXXXXXXXXXXXX Michael Kahiga
@@ -2718,7 +2718,7 @@
 2716,SAS7BRIXZ3,2024-01-28 09:33:31,1000.0,3572.91,Send money,Out,XXXXXXXXXXX,Zuberi Mbugua,Customer Transfer to -  XXXXXXXXXXX Zuberi Mbugua
 2717,SAS5BRC2CV,2024-01-28 09:31:27,23.0,4572.91,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 2718,SAS5BRC2CV,2024-01-28 09:31:27,1030.0,4595.91,Send money,Out,XXXXXXXXXXXXX,Esther Gichuhi,Customer Transfer to -  XXXXXXXXXXXXX Esther Gichuhi
-2719,SAS4BAQGG0,2024-01-28 00:27:27,5000.0,5625.91,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+2719,SAS4BAQGG0,2024-01-28 00:27:27,5000.0,5625.91,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 2720,SAR3A222QV,2024-01-27 18:13:47,7.0,625.91,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 2721,SAR3A222QV,2024-01-27 18:13:47,160.0,632.91,Send money,Out,XXXXXXXXXXX,Furaha Mbugua,Customer Transfer to -  XXXXXXXXXXX Furaha Mbugua
 2722,SAR79YMMW3,2024-01-27 17:51:05,65.0,792.91,Buy Goods,Out,XXXXXXX,Paul Nyakundi,Merchant Payment Online to -  XXXXXXX Paul Nyakundi
@@ -2729,7 +2729,7 @@
 2727,SAQ56OPAC3,2024-01-26 18:46:17,15.0,1982.91,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Pay Bill Charge
 2728,SAQ56OPAC3,2024-01-26 18:46:17,1400.0,1997.91,Paybill,Out,XXXXXX,James Mogaka,Pay Bill Online to 247247 - Equity Paybill Account Acc. 0766212221
 2729,SAQ76LSS0J,2024-01-26 18:29:06,638.0,3397.91,Buy Goods,Out,XXXXXXX,Olivia Amollo,Merchant Payment Online to -  XXXXXXX Olivia Amollo
-2730,SAQ46GI8VA,2024-01-26 17:55:55,4000.0,4035.91,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+2730,SAQ46GI8VA,2024-01-26 17:55:55,4000.0,4035.91,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 2731,SAQ14VDF3P,2024-01-26 09:58:19,75.0,35.91,Airtime,Out,XXXXXXXXX,Safaricom,Buy Bundles XXXXXXXXX Safaricom
 2732,SAP83WP0O4,2024-01-25 21:03:54,75.0,110.91,Airtime,Out,XXXXXXXXX,Safaricom,Buy Bundles XXXXXXXXX Safaricom
 2733,SAP63KDPHI,2024-01-25 19:48:10,20.0,185.91,Pochi la Biashara,Out,XXXXXXXXXXXXX,Linet Mutuku,Customer Payment to Small Business to - 2547******332 HARON NJOGU
@@ -2741,7 +2741,7 @@
 2739,SAP62R3WKW,2024-01-25 16:43:37,20.0,1141.91,Airtime,Out,XXXXXXXXX,Safaricom,Buy Bundles Online XXXXXXXXX Safaricom
 2740,SAP2ZXGZ2Q,2024-01-25 03:36:57,60.0,1161.91,Paybill,Out,XXXXXX,Safaricom,Pay Bill Online to 826915 - Safaricom Offers Acc. Tunukiwa
 2741,SAO9Z7EYVN,2024-01-24 19:58:47,600.0,1221.91,Buy Goods,Out,XXXXXXX,Yao Gatimu,Merchant Payment Online to -  XXXXXXX Yao Gatimu
-2742,SAO0Z78VAO,2024-01-24 19:57:53,1500.0,1821.91,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+2742,SAO0Z78VAO,2024-01-24 19:57:53,1500.0,1821.91,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 2743,SAO6Z2HLOM,2024-01-24 19:33:32,500.0,321.91,Buy Goods,Out,XXXXXXX,Victoria Kariuki,Merchant Payment to -  XXXXXXX Victoria Kariuki
 2744,SAO7YNBBUX,2024-01-24 18:05:51,60.0,821.91,Paybill,Out,XXXXXX,Safaricom,Pay Bill Online to 826915 - Safaricom Offers Acc. Tunukiwa
 2745,SAO9YBHX8L,2024-01-24 16:37:23,20.0,881.91,Airtime,Out,XXXXXXXXX,Safaricom,Buy Bundles XXXXXXXXX Safaricom
@@ -2751,7 +2751,7 @@
 2749,SAO5XW4GYL,2024-01-24 14:19:21,20.0,1934.91,Airtime,Out,XXXXXXXXX,Safaricom,Airtime Purchase XXXXXXXXX Safaricom
 2750,SAO8XO21N0,2024-01-24 13:11:11,5.0,1954.91,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Pay Bill Charge
 2751,SAO8XO21N0,2024-01-24 13:11:11,240.0,1959.91,Paybill,Out,XXXXXX,Hassan Ng'ang'a,Pay Bill to 222111 - Family Bank Pesa Pap Acc. 170890
-2752,SAO2XNC8JC,2024-01-24 13:05:05,2000.0,2199.91,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+2752,SAO2XNC8JC,2024-01-24 13:05:05,2000.0,2199.91,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 2753,SAO0XMUUQY,2024-01-24 13:00:59,20.0,199.91,Airtime,Out,XXXXXXXXX,Safaricom,Airtime Purchase XXXXXXXXX Safaricom
 2754,SAO5XEOXPB,2024-01-24 11:48:34,20.0,219.91,Airtime,Out,XXXXXXXXX,Safaricom,Buy Bundles XXXXXXXXX Safaricom
 2755,SAO1X6L5JH,2024-01-24 10:34:54,20.0,239.91,Pochi la Biashara,Out,XXXXXXXXXXX,Vuyani Matiangi,Customer Payment to Small Business to - 07******293 EDWIN KARITA
@@ -2805,7 +2805,7 @@
 2803,SAI9CNO7Q7,2024-01-18 07:41:26,75.0,7215.91,Airtime,Out,XXXXXXXXX,Safaricom,Buy Bundles XXXXXXXXX Safaricom
 2804,SAH6C0876I,2024-01-17 20:47:43,30.0,7290.91,Pochi la Biashara,Out,XXXXXXXXXXXXX,Baraka Mwita,Customer Payment to Small Business to - 2547******825 EVANSON SAVURE
 2805,SAH2BUDSQO,2024-01-17 20:10:09,3474.0,7320.91,Buy Goods,Out,XXXXXX,Kennedy Jepchirchir,Merchant Payment Online to -  XXXXXX Kennedy Jepchirchir
-2806,SAH6BGYYSI,2024-01-17 18:56:48,10000.0,10794.91,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+2806,SAH6BGYYSI,2024-01-17 18:56:48,10000.0,10794.91,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 2807,SAH6BGD25Y,2024-01-17 18:53:15,20.0,794.91,Pochi la Biashara,Out,XXXXXXXXXXXXX,Qamara Mwangi,Customer Payment to Small Business to - 2547******024 David Mwangi
 2808,SAH899QX6A,2024-01-17 07:16:48,88.0,1889.91,Airtime,Out,XXXXXXXXX,Safaricom,Buy Bundles XXXXXXXXX Safaricom
 2809,SAG8712COW,2024-01-16 13:44:51,29.0,1977.91,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Withdrawal Charge
@@ -2820,7 +2820,7 @@
 2818,SAF44DM6FE,2024-01-15 17:23:45,30.0,3131.91,Send money,Out,XXXXXXXXXXXXX,Liam Jelagat,Customer Transfer to -  XXXXXXXXXXXXX Liam Jelagat
 2819,SAF54BA6OZ,2024-01-15 17:06:35,100.0,3161.91,Send money,Out,XXXXXXXXXXXXX,Umaru Adera,Customer Transfer to -  XXXXXXXXXXXXX Umaru Adera
 2820,SAF449W3UG,2024-01-15 16:55:54,747.0,3261.91,Buy Goods,Out,XXXXXXX,Kennedy Kipchirchir,Merchant Payment Online to -  XXXXXXX Kennedy Kipchirchir
-2821,SAF749PBKX,2024-01-15 16:54:30,4000.0,4008.91,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+2821,SAF749PBKX,2024-01-15 16:54:30,4000.0,4008.91,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 2822,SAF748XCF5,2024-01-15 16:48:25,40.0,8.91,Airtime,Out,XXXXXXXXX,Safaricom,Buy Bundles XXXXXXXXX Safaricom
 2823,SAE32AEZM5,2024-01-14 23:46:15,5.0,48.91,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Pay Bill Charge
 2824,SAE32AEZM5,2024-01-14 23:46:15,400.0,53.91,Paybill,Out,XXXXXX,Rachel Gatimu,Pay Bill Online to 888880 - KPLC PREPAID Acc. 54607518138
@@ -2834,7 +2834,7 @@
 2832,SAD4XJ5RFA,2024-01-13 19:45:39,34.0,84.91,Airtime,Out,XXXXXXXXX,Safaricom,Buy Bundles Online XXXXXXXXX Safaricom
 2833,SAD7X9JKQZ,2024-01-13 18:53:30,5.0,118.91,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Pay Bill Charge
 2834,SAD7X9JKQZ,2024-01-13 18:53:30,500.0,123.91,Paybill,Out,XXXXXX,Rachel Gatimu,Pay Bill Online to 888880 - KPLC PREPAID Acc. 54607518138
-2835,SAD6X9F7G6,2024-01-13 18:52:46,500.0,623.91,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+2835,SAD6X9F7G6,2024-01-13 18:52:46,500.0,623.91,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 2836,SAD9W9J0C7,2024-01-13 14:23:33,20.0,123.91,Airtime,Out,XXXXXXXXX,Safaricom,Buy Bundles XXXXXXXXX Safaricom
 2837,SAC1US2FQ5,2024-01-12 22:24:23,20.0,143.91,Airtime,Out,XXXXXXXXX,Safaricom,Buy Bundles Online XXXXXXXXX Safaricom
 2838,SAB2R3C19K,2024-01-11 20:25:01,30.0,163.91,Pochi la Biashara,Out,XXXXXXXXXXXXX,Thomas Kiplimo,Customer Payment to Small Business to - 2547******872 DAVID KARANJA
@@ -2848,7 +2848,7 @@
 2846,SAB5Q5O9LF,2024-01-11 16:47:29,30.0,268.91,Send money,Out,XXXXXXXXXXXXX,Kennedy Abdalla,Customer Transfer to -  XXXXXXXXXXXXX Kennedy Abdalla
 2847,SAB6Q255DK,2024-01-11 16:18:21,30.0,298.91,Pochi la Biashara,Out,XXXXXXXXXXXXX,Isaac Kariuki,Customer Payment to Small Business to - 2547******576 TOM OMWANGA
 2848,SAB5Q0FEZ5,2024-01-11 16:03:36,75.0,328.91,Airtime,Out,XXXXXXXXX,Safaricom,Buy Bundles XXXXXXXXX Safaricom
-2849,SAB8Q0BWWW,2024-01-11 16:02:42,400.0,403.91,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+2849,SAB8Q0BWWW,2024-01-11 16:02:42,400.0,403.91,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 2850,SAA8MI915S,2024-01-10 15:18:08,20.0,3.91,Airtime,Out,XXXXXXXXX,Safaricom,Airtime Purchase XXXXXXXXX Safaricom
 2851,SAA8LD6NS2,2024-01-10 09:22:05,20.0,23.91,Airtime,Out,XXXXXXXXX,Safaricom,Buy Bundles XXXXXXXXX Safaricom
 2852,SA97KTOQKD,2024-01-09 23:22:18,20.0,43.91,Airtime,Out,XXXXXXXXX,Safaricom,Buy Bundles Online XXXXXXXXX Safaricom
@@ -2857,14 +2857,14 @@
 2855,SA85FXOZBH,2024-01-08 16:00:33,20.0,103.91,Airtime,Out,XXXXXXXXX,Safaricom,Airtime Purchase XXXXXXXXX Safaricom
 2856,SA85FLC10V,2024-01-08 14:18:49,23.0,123.91,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 2857,SA85FLC10V,2024-01-08 14:18:49,1029.0,146.91,Send money,Out,XXXXXXXXXXXXX,Xolani Chirchir,Customer Transfer to -  XXXXXXXXXXXXX Xolani Chirchir
-2858,SA86FL9KNI,2024-01-08 14:18:12,1000.0,1175.91,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+2858,SA86FL9KNI,2024-01-08 14:18:12,1000.0,1175.91,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 2859,SA87EGU3PT,2024-01-08 08:23:45,20.0,175.91,Airtime,Out,XXXXXXXXX,Safaricom,Buy Bundles XXXXXXXXX Safaricom
 2860,SA72DTPBCW,2024-01-07 21:09:03,80.0,195.91,Pochi la Biashara,Out,XXXXXXXXXXXXX,Umaru Kimani,Customer Payment to Small Business to - 2547******055 JOYCE MWANGI
 2861,SA72DSWFUE,2024-01-07 21:01:35,20.0,275.91,Paybill,Out,XXXXXX,Safaricom,Pay Bill Online to 826915 - Safaricom Offers Acc. Tunukiwa
 2862,SA73DJGVSB,2024-01-07 19:52:23,20.0,295.91,Airtime,Out,XXXXXXXXX,Safaricom,Buy Bundles Online XXXXXXXXX Safaricom
 2863,SA72DGAFFS,2024-01-07 19:33:11,10.0,315.91,Paybill,Out,XXXXXX,Safaricom,Pay Bill Online to 826915 - Safaricom Offers Acc. Ofa Moto
 2864,SA70DFW1XG,2024-01-07 19:30:47,580.0,325.91,Buy Goods,Out,XXXXXXX,Tahir Jepkemboi,Merchant Payment Online to -  XXXXXXX Tahir Jepkemboi
-2865,SA70DFHGJK,2024-01-07 19:28:28,600.0,905.91,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+2865,SA70DFHGJK,2024-01-07 19:28:28,600.0,905.91,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 2866,SA70D9TBOY,2024-01-07 18:54:30,100.0,305.91,Buy Goods,Out,XXXXXXX,Tahir Jepkemboi,Merchant Payment to -  XXXXXXX Tahir Jepkemboi
 2867,SA70BN0GFA,2024-01-07 10:02:11,70.0,405.91,Pochi la Biashara,Out,XXXXXXXXXXXXX,Linet Mwachiro,Customer Payment to Small Business to - 2547******525 GEORGE MURIUKI
 2868,SA63AUQ4F3,2024-01-06 21:35:54,5.0,475.91,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Pay Bill Charge
@@ -2873,13 +2873,13 @@
 2871,SA66AL7LM0,2024-01-06 20:23:28,1251.0,953.66,Buy Goods,Out,XXXXXXX,Isaac Kiplangat,Merchant Payment Online to -  XXXXXXX Isaac Kiplangat
 2872,SA67AHYRMR,2024-01-06 20:03:19,10.0,2204.66,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Pay Bill Charge
 2873,SA67AHYRMR,2024-01-06 20:03:19,650.0,2214.66,Paybill,Out,XXXXXX,Xolani Ng'ang'a,Pay Bill to 400200 - Co-operative Bank Money Transfer Acc. 40097363
-2874,SA67AHGUNV,2024-01-06 20:00:22,2500.0,2864.66,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+2874,SA67AHGUNV,2024-01-06 20:00:22,2500.0,2864.66,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 2875,SA60AEJEK8,2024-01-06 19:43:25,75.0,364.66,Airtime,Out,XXXXXXXXX,Safaricom,Buy Bundles XXXXXXXXX Safaricom
 2876,SA6583DVRD,2024-01-06 08:36:55,100.0,439.66,Buy Goods,Out,XXXXXXX,Paul Gacheru,Merchant Payment to -  XXXXXXX Paul Gacheru
 2877,SA567Q4NQU,2024-01-05 23:39:33,20.0,539.66,Airtime,Out,XXXXXXXXX,Safaricom,Buy Bundles Online XXXXXXXXX Safaricom
 2878,SA517ARGWT,2024-01-05 20:33:47,5.0,559.66,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Pay Bill Charge
 2879,SA517ARGWT,2024-01-05 20:33:47,300.0,564.66,Paybill,Out,XXXXXX,Rachel Gatimu,Pay Bill Online to 888880 - KPLC PREPAID Acc. 54607518138
-2880,SA587AMSGK,2024-01-05 20:32:56,700.0,864.66,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+2880,SA587AMSGK,2024-01-05 20:32:56,700.0,864.66,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 2881,SA524GMPTG,2024-01-05 00:11:51,5.0,164.66,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Pay Bill Charge
 2882,SA524GMPTG,2024-01-05 00:11:51,200.0,169.66,Paybill,Out,XXXXXX,Rachel Gatimu,Pay Bill Online to 888880 - KPLC PREPAID Acc. 54607518138
 2883,SA3413MT2M,2024-01-03 22:24:12,5.0,369.66,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Pay Bill Charge
@@ -2898,7 +2898,7 @@
 2896,SA10TJGY2A,2024-01-01 20:14:20,10.0,3639.66,Airtime,Out,XXXXXXXXX,Safaricom,Airtime Purchase XXXXXXXXX Safaricom
 2897,SA15SADPEF,2024-01-01 13:29:09,13.0,3649.66,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 2898,SA15SADPEF,2024-01-01 13:29:09,700.0,3662.66,Send money,Out,XXXXXXXXXXXXX,Xolani Chirchir,Customer Transfer to -  XXXXXXXXXXXXX Xolani Chirchir
-2899,SA14SABMVC,2024-01-01 13:28:39,4000.0,4362.66,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+2899,SA14SABMVC,2024-01-01 13:28:39,4000.0,4362.66,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 2900,SA13S99HO1,2024-01-01 13:18:02,20.0,362.66,Paybill,Out,XXXXXX,Safaricom,Pay Bill Online to 826915 - Safaricom Offers Acc. Tunukiwa
 2901,SA12RQVWII,2024-01-01 10:16:42,20.0,382.66,Paybill,Out,XXXXXX,Safaricom,Pay Bill Online to 826915 - Safaricom Offers Acc. Tunukiwa
 2902,SA19RJU39L,2024-01-01 08:57:24,200.0,607.66,Buy Goods,Out,XXXXXXX,Paul Gacheru,Merchant Payment to -  XXXXXXX Paul Gacheru
@@ -2907,11 +2907,11 @@
 2905,RLU4LC2GAI,2023-12-30 10:13:43,53.0,412.66,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Customer Transfer of Funds Charge
 2906,RLU4LC2GAI,2023-12-30 10:13:43,3000.0,465.66,Send money,Out,XXXXXXXXXXXXX,Achieng Kipchirchir,Customer Transfer to -  XXXXXXXXXXXXX Achieng Kipchirchir
 2907,RLU8LBEQCY,2023-12-30 10:07:22,100.0,3465.66,Buy Goods,Out,XXXXXXX,Paul Gacheru,Merchant Payment to -  XXXXXXX Paul Gacheru
-2908,RLU4LBDB2G,2023-12-30 10:06:54,3500.0,3565.66,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+2908,RLU4LBDB2G,2023-12-30 10:06:54,3500.0,3565.66,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 2909,RLU0LA27AA,2023-12-30 09:53:47,20.0,65.66,Airtime,Out,XXXXXXXXX,Safaricom,Buy Bundles XXXXXXXXX Safaricom
 2910,RLT7KPZYVR,2023-12-29 23:52:50,5.0,85.66,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Pay Bill Charge
 2911,RLT7KPZYVR,2023-12-29 23:52:50,500.0,90.66,Paybill,Out,XXXXXX,Rachel Gatimu,Pay Bill Online to 888880 - KPLC PREPAID Acc. 54607518138
-2912,RLT8KPZNOG,2023-12-29 23:52:09,500.0,590.66,Receive money from bank/org,In,XXXXXX,Mary Abdalla,Business Payment from -  XXXXXX Mary Abdalla
+2912,RLT8KPZNOG,2023-12-29 23:52:09,500.0,590.66,Receive money from bank/org,In,XXXXXX,M-shwari,Business Payment from -  XXXXXX Mary Abdalla
 2913,RLT4JVANXS,2023-12-29 18:59:01,50.0,90.66,Buy Goods,Out,XXXXXXX,Paul Gacheru,Merchant Payment to -  XXXXXXX Paul Gacheru
 2914,RLT3J51QM5,2023-12-29 15:30:28,69.0,140.66,Safaricom Charges,Out,XXXXXXXXX,Safaricom,Withdrawal Charge
 2915,RLT3J51QM5,2023-12-29 15:30:28,4500.0,209.66,Withdraw Money,Out,XXXXXXXXXXXXXXXXX,Stephen Lagat,Customer Withdrawal At -  XXXXXXXXXXXXXXXXX Stephen Lagat

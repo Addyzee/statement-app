@@ -28,7 +28,7 @@ from app.analysis.totals import total_cashflow
 sample_df = pd.read_csv(f"{DATA_DIR}/sample.csv")
 
 data_sessions = {"0":{"data":sample_df,
-                      "time_created": datetime.datetime.now}} 
+                      "time_created": datetime.datetime.now}}
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
