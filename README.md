@@ -49,12 +49,11 @@ source venv/bin/activate
 ```
 Install the required packages:
 ```sh
-pip install -r requirements.txt
+pip install -e .
 ```
-Run the FastAPI server:
+Run the FastAPI server from backend directory:
 ```sh
-cd api
-fastapi dev main.py
+fastapi dev api/main.py
 ```
 
 ### **Frontend Setup**

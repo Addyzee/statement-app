@@ -174,6 +174,10 @@ export function DropdownMenuCheckbox({
                     });
                   }
                 }}
+                onSelect={(event) => {
+                  // Prevent dropdown from closing when checkbox is clicked
+                  event.preventDefault();
+                }}
               >
                 {value}
               </DropdownMenuCheckboxItem>

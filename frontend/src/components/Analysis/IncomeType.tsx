@@ -49,13 +49,19 @@ const IncomeType = () => {
         {t_type_others ? (
           <div>
             Other sources of income include{" "}
-            {t_type_others.map((t_type, idx) => (
-              <span key={idx} className="font-bold">
-                {idx == t_type_others.length - 1
-                  ? `and ${t_type.Type}.`
-                  : `${t_type.Type}, `}
-              </span>
-            ))}
+            {t_type_others.length === 1
+              ? <span className="font-bold">{t_type_others[0].Type}.</span>
+              : (
+                <>
+                  {t_type_others.map((t_type, idx) => (
+                    <span key={idx} className="font-bold">
+                      {idx === t_type_others.length - 1
+                        ? `and ${t_type.Type}.`
+                        : `${t_type.Type}, `}
+                    </span>
+                  ))}
+                </>
+              )}
           </div>
         ) : (
           ""
